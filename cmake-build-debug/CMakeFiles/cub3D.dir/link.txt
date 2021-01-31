@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/cub3D.dir/main.c.o CMakeFiles/cub3D.dir/parser/parser.c.o  -o cub3D 
