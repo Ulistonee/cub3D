@@ -1,17 +1,17 @@
-#include <stdio.h>
-#include <fcntl.h>
-#include <unistd.h>
 #include "cub3D.h"
+#include "get_next_line/get_next_line.h"
 
-int main() {
+int main(){
 	int 			fd;
-	char			buf[5];
-	int				status;
+	char			*line;
 	t_struct		data;
-	fd = open("map.cub", O_RDONLY);
-	while (read(fd, buf, 5))
+
+	fd = open("../map.cub", O_RDONLY);
+	while (get_next_line(fd, &line))
 	{
-		status = parser(data, &map);
+		parser(&data, line);
+		printf("%s\n", line);
+		//parser(data, &map);
 	}
 	return 0;
 }

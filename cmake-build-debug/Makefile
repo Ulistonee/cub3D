@@ -59,19 +59,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/139/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/139/bin/cmake/linux/bin/cmake -E rm -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aizhan/cub3D
+CMAKE_SOURCE_DIR = /Users/rchalmer/c/cub3D
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aizhan/cub3D/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/rchalmer/c/cub3D/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,7 +79,7 @@ CMAKE_BINARY_DIR = /home/aizhan/cub3D/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/139/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -90,7 +90,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/139/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aizhan/cub3D/cmake-build-debug/CMakeFiles /home/aizhan/cub3D/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles /Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aizhan/cub3D/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -142,6 +142,73 @@ cub3D: cmake_check_build_system
 cub3D/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/build
 .PHONY : cub3D/fast
+
+#=============================================================================
+# Target rules for targets named libft
+
+# Build rule for target.
+libft: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libft
+.PHONY : libft
+
+# fast build rule for target.
+libft/fast:
+	$(MAKE) $(MAKESILENT) -f libft/CMakeFiles/libft.dir/build.make libft/CMakeFiles/libft.dir/build
+.PHONY : libft/fast
+
+get_next_line/get_next_line.o: get_next_line/get_next_line.c.o
+
+.PHONY : get_next_line/get_next_line.o
+
+# target to build an object file
+get_next_line/get_next_line.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/get_next_line/get_next_line.c.o
+.PHONY : get_next_line/get_next_line.c.o
+
+get_next_line/get_next_line.i: get_next_line/get_next_line.c.i
+
+.PHONY : get_next_line/get_next_line.i
+
+# target to preprocess a source file
+get_next_line/get_next_line.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/get_next_line/get_next_line.c.i
+.PHONY : get_next_line/get_next_line.c.i
+
+get_next_line/get_next_line.s: get_next_line/get_next_line.c.s
+
+.PHONY : get_next_line/get_next_line.s
+
+# target to generate assembly for a file
+get_next_line/get_next_line.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/get_next_line/get_next_line.c.s
+.PHONY : get_next_line/get_next_line.c.s
+
+get_next_line/get_next_line_utils.o: get_next_line/get_next_line_utils.c.o
+
+.PHONY : get_next_line/get_next_line_utils.o
+
+# target to build an object file
+get_next_line/get_next_line_utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/get_next_line/get_next_line_utils.c.o
+.PHONY : get_next_line/get_next_line_utils.c.o
+
+get_next_line/get_next_line_utils.i: get_next_line/get_next_line_utils.c.i
+
+.PHONY : get_next_line/get_next_line_utils.i
+
+# target to preprocess a source file
+get_next_line/get_next_line_utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/get_next_line/get_next_line_utils.c.i
+.PHONY : get_next_line/get_next_line_utils.c.i
+
+get_next_line/get_next_line_utils.s: get_next_line/get_next_line_utils.c.s
+
+.PHONY : get_next_line/get_next_line_utils.s
+
+# target to generate assembly for a file
+get_next_line/get_next_line_utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/get_next_line/get_next_line_utils.c.s
+.PHONY : get_next_line/get_next_line_utils.c.s
 
 main.o: main.c.o
 
@@ -206,6 +273,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cub3D"
+	@echo "... libft"
+	@echo "... get_next_line/get_next_line.o"
+	@echo "... get_next_line/get_next_line.i"
+	@echo "... get_next_line/get_next_line.s"
+	@echo "... get_next_line/get_next_line_utils.o"
+	@echo "... get_next_line/get_next_line_utils.i"
+	@echo "... get_next_line/get_next_line_utils.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
