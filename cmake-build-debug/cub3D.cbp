@@ -131,6 +131,9 @@
 		<Unit filename="/Users/rchalmer/c/cub3D/get_next_line/get_next_line_utils.c">
 			<Option target="cub3D"/>
 		</Unit>
+		<Unit filename="/Users/rchalmer/c/cub3D/handle_error.c">
+			<Option target="cub3D"/>
+		</Unit>
 		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_atoi.c">
 			<Option target="libft"/>
 		</Unit>
@@ -138,6 +141,9 @@
 			<Option target="libft"/>
 		</Unit>
 		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_calloc.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_free_mem.c">
 			<Option target="libft"/>
 		</Unit>
 		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_isalnum.c">
@@ -156,6 +162,15 @@
 			<Option target="libft"/>
 		</Unit>
 		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_itoa.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_itoa_base.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_itoa_u.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_itoa_uhex.c">
 			<Option target="libft"/>
 		</Unit>
 		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_lstnew.c">
@@ -242,7 +257,13 @@
 		<Unit filename="/Users/rchalmer/c/cub3D/main.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rchalmer/c/cub3D/parser/parser.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/parser/is_map.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/rchalmer/c/cub3D/parser/parse_map.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/rchalmer/c/cub3D/parser/parse_other.c">
 			<Option target="cub3D"/>
 		</Unit>
 		<Unit filename="/Users/rchalmer/c/cub3D/CMakeLists.txt">

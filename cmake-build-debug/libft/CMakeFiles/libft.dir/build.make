@@ -194,9 +194,61 @@ libft/CMakeFiles/libft.dir/ft_itoa.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libft.dir/ft_itoa.c.s"
 	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rchalmer/c/cub3D/libft/ft_itoa.c -o CMakeFiles/libft.dir/ft_itoa.c.s
 
+libft/CMakeFiles/libft.dir/ft_itoa_base.c.o: libft/CMakeFiles/libft.dir/flags.make
+libft/CMakeFiles/libft.dir/ft_itoa_base.c.o: ../libft/ft_itoa_base.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object libft/CMakeFiles/libft.dir/ft_itoa_base.c.o"
+	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/ft_itoa_base.c.o   -c /Users/rchalmer/c/cub3D/libft/ft_itoa_base.c
+
+libft/CMakeFiles/libft.dir/ft_itoa_base.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libft.dir/ft_itoa_base.c.i"
+	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/rchalmer/c/cub3D/libft/ft_itoa_base.c > CMakeFiles/libft.dir/ft_itoa_base.c.i
+
+libft/CMakeFiles/libft.dir/ft_itoa_base.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libft.dir/ft_itoa_base.c.s"
+	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rchalmer/c/cub3D/libft/ft_itoa_base.c -o CMakeFiles/libft.dir/ft_itoa_base.c.s
+
+libft/CMakeFiles/libft.dir/ft_itoa_uhex.c.o: libft/CMakeFiles/libft.dir/flags.make
+libft/CMakeFiles/libft.dir/ft_itoa_uhex.c.o: ../libft/ft_itoa_uhex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object libft/CMakeFiles/libft.dir/ft_itoa_uhex.c.o"
+	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/ft_itoa_uhex.c.o   -c /Users/rchalmer/c/cub3D/libft/ft_itoa_uhex.c
+
+libft/CMakeFiles/libft.dir/ft_itoa_uhex.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libft.dir/ft_itoa_uhex.c.i"
+	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/rchalmer/c/cub3D/libft/ft_itoa_uhex.c > CMakeFiles/libft.dir/ft_itoa_uhex.c.i
+
+libft/CMakeFiles/libft.dir/ft_itoa_uhex.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libft.dir/ft_itoa_uhex.c.s"
+	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rchalmer/c/cub3D/libft/ft_itoa_uhex.c -o CMakeFiles/libft.dir/ft_itoa_uhex.c.s
+
+libft/CMakeFiles/libft.dir/ft_itoa_u.c.o: libft/CMakeFiles/libft.dir/flags.make
+libft/CMakeFiles/libft.dir/ft_itoa_u.c.o: ../libft/ft_itoa_u.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object libft/CMakeFiles/libft.dir/ft_itoa_u.c.o"
+	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/ft_itoa_u.c.o   -c /Users/rchalmer/c/cub3D/libft/ft_itoa_u.c
+
+libft/CMakeFiles/libft.dir/ft_itoa_u.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libft.dir/ft_itoa_u.c.i"
+	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/rchalmer/c/cub3D/libft/ft_itoa_u.c > CMakeFiles/libft.dir/ft_itoa_u.c.i
+
+libft/CMakeFiles/libft.dir/ft_itoa_u.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libft.dir/ft_itoa_u.c.s"
+	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rchalmer/c/cub3D/libft/ft_itoa_u.c -o CMakeFiles/libft.dir/ft_itoa_u.c.s
+
+libft/CMakeFiles/libft.dir/ft_free_mem.c.o: libft/CMakeFiles/libft.dir/flags.make
+libft/CMakeFiles/libft.dir/ft_free_mem.c.o: ../libft/ft_free_mem.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object libft/CMakeFiles/libft.dir/ft_free_mem.c.o"
+	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/ft_free_mem.c.o   -c /Users/rchalmer/c/cub3D/libft/ft_free_mem.c
+
+libft/CMakeFiles/libft.dir/ft_free_mem.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libft.dir/ft_free_mem.c.i"
+	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/rchalmer/c/cub3D/libft/ft_free_mem.c > CMakeFiles/libft.dir/ft_free_mem.c.i
+
+libft/CMakeFiles/libft.dir/ft_free_mem.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libft.dir/ft_free_mem.c.s"
+	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rchalmer/c/cub3D/libft/ft_free_mem.c -o CMakeFiles/libft.dir/ft_free_mem.c.s
+
 libft/CMakeFiles/libft.dir/ft_lstnew.c.o: libft/CMakeFiles/libft.dir/flags.make
 libft/CMakeFiles/libft.dir/ft_lstnew.c.o: ../libft/ft_lstnew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object libft/CMakeFiles/libft.dir/ft_lstnew.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object libft/CMakeFiles/libft.dir/ft_lstnew.c.o"
 	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/ft_lstnew.c.o   -c /Users/rchalmer/c/cub3D/libft/ft_lstnew.c
 
 libft/CMakeFiles/libft.dir/ft_lstnew.c.i: cmake_force
@@ -209,7 +261,7 @@ libft/CMakeFiles/libft.dir/ft_lstnew.c.s: cmake_force
 
 libft/CMakeFiles/libft.dir/ft_memccpy.c.o: libft/CMakeFiles/libft.dir/flags.make
 libft/CMakeFiles/libft.dir/ft_memccpy.c.o: ../libft/ft_memccpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object libft/CMakeFiles/libft.dir/ft_memccpy.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object libft/CMakeFiles/libft.dir/ft_memccpy.c.o"
 	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/ft_memccpy.c.o   -c /Users/rchalmer/c/cub3D/libft/ft_memccpy.c
 
 libft/CMakeFiles/libft.dir/ft_memccpy.c.i: cmake_force
@@ -222,7 +274,7 @@ libft/CMakeFiles/libft.dir/ft_memccpy.c.s: cmake_force
 
 libft/CMakeFiles/libft.dir/ft_memchr.c.o: libft/CMakeFiles/libft.dir/flags.make
 libft/CMakeFiles/libft.dir/ft_memchr.c.o: ../libft/ft_memchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object libft/CMakeFiles/libft.dir/ft_memchr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object libft/CMakeFiles/libft.dir/ft_memchr.c.o"
 	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/ft_memchr.c.o   -c /Users/rchalmer/c/cub3D/libft/ft_memchr.c
 
 libft/CMakeFiles/libft.dir/ft_memchr.c.i: cmake_force
@@ -235,7 +287,7 @@ libft/CMakeFiles/libft.dir/ft_memchr.c.s: cmake_force
 
 libft/CMakeFiles/libft.dir/ft_memcmp.c.o: libft/CMakeFiles/libft.dir/flags.make
 libft/CMakeFiles/libft.dir/ft_memcmp.c.o: ../libft/ft_memcmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object libft/CMakeFiles/libft.dir/ft_memcmp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object libft/CMakeFiles/libft.dir/ft_memcmp.c.o"
 	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/ft_memcmp.c.o   -c /Users/rchalmer/c/cub3D/libft/ft_memcmp.c
 
 libft/CMakeFiles/libft.dir/ft_memcmp.c.i: cmake_force
@@ -248,7 +300,7 @@ libft/CMakeFiles/libft.dir/ft_memcmp.c.s: cmake_force
 
 libft/CMakeFiles/libft.dir/ft_memcpy.c.o: libft/CMakeFiles/libft.dir/flags.make
 libft/CMakeFiles/libft.dir/ft_memcpy.c.o: ../libft/ft_memcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object libft/CMakeFiles/libft.dir/ft_memcpy.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object libft/CMakeFiles/libft.dir/ft_memcpy.c.o"
 	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/ft_memcpy.c.o   -c /Users/rchalmer/c/cub3D/libft/ft_memcpy.c
 
 libft/CMakeFiles/libft.dir/ft_memcpy.c.i: cmake_force
@@ -261,7 +313,7 @@ libft/CMakeFiles/libft.dir/ft_memcpy.c.s: cmake_force
 
 libft/CMakeFiles/libft.dir/ft_memmove.c.o: libft/CMakeFiles/libft.dir/flags.make
 libft/CMakeFiles/libft.dir/ft_memmove.c.o: ../libft/ft_memmove.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object libft/CMakeFiles/libft.dir/ft_memmove.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object libft/CMakeFiles/libft.dir/ft_memmove.c.o"
 	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/ft_memmove.c.o   -c /Users/rchalmer/c/cub3D/libft/ft_memmove.c
 
 libft/CMakeFiles/libft.dir/ft_memmove.c.i: cmake_force
@@ -274,7 +326,7 @@ libft/CMakeFiles/libft.dir/ft_memmove.c.s: cmake_force
 
 libft/CMakeFiles/libft.dir/ft_memset.c.o: libft/CMakeFiles/libft.dir/flags.make
 libft/CMakeFiles/libft.dir/ft_memset.c.o: ../libft/ft_memset.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object libft/CMakeFiles/libft.dir/ft_memset.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object libft/CMakeFiles/libft.dir/ft_memset.c.o"
 	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/ft_memset.c.o   -c /Users/rchalmer/c/cub3D/libft/ft_memset.c
 
 libft/CMakeFiles/libft.dir/ft_memset.c.i: cmake_force
@@ -287,7 +339,7 @@ libft/CMakeFiles/libft.dir/ft_memset.c.s: cmake_force
 
 libft/CMakeFiles/libft.dir/ft_putchar_fd.c.o: libft/CMakeFiles/libft.dir/flags.make
 libft/CMakeFiles/libft.dir/ft_putchar_fd.c.o: ../libft/ft_putchar_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object libft/CMakeFiles/libft.dir/ft_putchar_fd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object libft/CMakeFiles/libft.dir/ft_putchar_fd.c.o"
 	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/ft_putchar_fd.c.o   -c /Users/rchalmer/c/cub3D/libft/ft_putchar_fd.c
 
 libft/CMakeFiles/libft.dir/ft_putchar_fd.c.i: cmake_force
@@ -300,7 +352,7 @@ libft/CMakeFiles/libft.dir/ft_putchar_fd.c.s: cmake_force
 
 libft/CMakeFiles/libft.dir/ft_putendl_fd.c.o: libft/CMakeFiles/libft.dir/flags.make
 libft/CMakeFiles/libft.dir/ft_putendl_fd.c.o: ../libft/ft_putendl_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object libft/CMakeFiles/libft.dir/ft_putendl_fd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object libft/CMakeFiles/libft.dir/ft_putendl_fd.c.o"
 	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/ft_putendl_fd.c.o   -c /Users/rchalmer/c/cub3D/libft/ft_putendl_fd.c
 
 libft/CMakeFiles/libft.dir/ft_putendl_fd.c.i: cmake_force
@@ -313,7 +365,7 @@ libft/CMakeFiles/libft.dir/ft_putendl_fd.c.s: cmake_force
 
 libft/CMakeFiles/libft.dir/ft_putnbr_fd.c.o: libft/CMakeFiles/libft.dir/flags.make
 libft/CMakeFiles/libft.dir/ft_putnbr_fd.c.o: ../libft/ft_putnbr_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object libft/CMakeFiles/libft.dir/ft_putnbr_fd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object libft/CMakeFiles/libft.dir/ft_putnbr_fd.c.o"
 	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/ft_putnbr_fd.c.o   -c /Users/rchalmer/c/cub3D/libft/ft_putnbr_fd.c
 
 libft/CMakeFiles/libft.dir/ft_putnbr_fd.c.i: cmake_force
@@ -326,7 +378,7 @@ libft/CMakeFiles/libft.dir/ft_putnbr_fd.c.s: cmake_force
 
 libft/CMakeFiles/libft.dir/ft_putstr_fd.c.o: libft/CMakeFiles/libft.dir/flags.make
 libft/CMakeFiles/libft.dir/ft_putstr_fd.c.o: ../libft/ft_putstr_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object libft/CMakeFiles/libft.dir/ft_putstr_fd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object libft/CMakeFiles/libft.dir/ft_putstr_fd.c.o"
 	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/ft_putstr_fd.c.o   -c /Users/rchalmer/c/cub3D/libft/ft_putstr_fd.c
 
 libft/CMakeFiles/libft.dir/ft_putstr_fd.c.i: cmake_force
@@ -339,7 +391,7 @@ libft/CMakeFiles/libft.dir/ft_putstr_fd.c.s: cmake_force
 
 libft/CMakeFiles/libft.dir/ft_split.c.o: libft/CMakeFiles/libft.dir/flags.make
 libft/CMakeFiles/libft.dir/ft_split.c.o: ../libft/ft_split.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object libft/CMakeFiles/libft.dir/ft_split.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object libft/CMakeFiles/libft.dir/ft_split.c.o"
 	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/ft_split.c.o   -c /Users/rchalmer/c/cub3D/libft/ft_split.c
 
 libft/CMakeFiles/libft.dir/ft_split.c.i: cmake_force
@@ -352,7 +404,7 @@ libft/CMakeFiles/libft.dir/ft_split.c.s: cmake_force
 
 libft/CMakeFiles/libft.dir/ft_strchr.c.o: libft/CMakeFiles/libft.dir/flags.make
 libft/CMakeFiles/libft.dir/ft_strchr.c.o: ../libft/ft_strchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object libft/CMakeFiles/libft.dir/ft_strchr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object libft/CMakeFiles/libft.dir/ft_strchr.c.o"
 	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/ft_strchr.c.o   -c /Users/rchalmer/c/cub3D/libft/ft_strchr.c
 
 libft/CMakeFiles/libft.dir/ft_strchr.c.i: cmake_force
@@ -365,7 +417,7 @@ libft/CMakeFiles/libft.dir/ft_strchr.c.s: cmake_force
 
 libft/CMakeFiles/libft.dir/ft_strdup.c.o: libft/CMakeFiles/libft.dir/flags.make
 libft/CMakeFiles/libft.dir/ft_strdup.c.o: ../libft/ft_strdup.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object libft/CMakeFiles/libft.dir/ft_strdup.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object libft/CMakeFiles/libft.dir/ft_strdup.c.o"
 	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/ft_strdup.c.o   -c /Users/rchalmer/c/cub3D/libft/ft_strdup.c
 
 libft/CMakeFiles/libft.dir/ft_strdup.c.i: cmake_force
@@ -378,7 +430,7 @@ libft/CMakeFiles/libft.dir/ft_strdup.c.s: cmake_force
 
 libft/CMakeFiles/libft.dir/ft_strjoin.c.o: libft/CMakeFiles/libft.dir/flags.make
 libft/CMakeFiles/libft.dir/ft_strjoin.c.o: ../libft/ft_strjoin.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object libft/CMakeFiles/libft.dir/ft_strjoin.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object libft/CMakeFiles/libft.dir/ft_strjoin.c.o"
 	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/ft_strjoin.c.o   -c /Users/rchalmer/c/cub3D/libft/ft_strjoin.c
 
 libft/CMakeFiles/libft.dir/ft_strjoin.c.i: cmake_force
@@ -391,7 +443,7 @@ libft/CMakeFiles/libft.dir/ft_strjoin.c.s: cmake_force
 
 libft/CMakeFiles/libft.dir/ft_strlcat.c.o: libft/CMakeFiles/libft.dir/flags.make
 libft/CMakeFiles/libft.dir/ft_strlcat.c.o: ../libft/ft_strlcat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object libft/CMakeFiles/libft.dir/ft_strlcat.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object libft/CMakeFiles/libft.dir/ft_strlcat.c.o"
 	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/ft_strlcat.c.o   -c /Users/rchalmer/c/cub3D/libft/ft_strlcat.c
 
 libft/CMakeFiles/libft.dir/ft_strlcat.c.i: cmake_force
@@ -404,7 +456,7 @@ libft/CMakeFiles/libft.dir/ft_strlcat.c.s: cmake_force
 
 libft/CMakeFiles/libft.dir/ft_strlcpy.c.o: libft/CMakeFiles/libft.dir/flags.make
 libft/CMakeFiles/libft.dir/ft_strlcpy.c.o: ../libft/ft_strlcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object libft/CMakeFiles/libft.dir/ft_strlcpy.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object libft/CMakeFiles/libft.dir/ft_strlcpy.c.o"
 	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/ft_strlcpy.c.o   -c /Users/rchalmer/c/cub3D/libft/ft_strlcpy.c
 
 libft/CMakeFiles/libft.dir/ft_strlcpy.c.i: cmake_force
@@ -417,7 +469,7 @@ libft/CMakeFiles/libft.dir/ft_strlcpy.c.s: cmake_force
 
 libft/CMakeFiles/libft.dir/ft_strlen.c.o: libft/CMakeFiles/libft.dir/flags.make
 libft/CMakeFiles/libft.dir/ft_strlen.c.o: ../libft/ft_strlen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object libft/CMakeFiles/libft.dir/ft_strlen.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object libft/CMakeFiles/libft.dir/ft_strlen.c.o"
 	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/ft_strlen.c.o   -c /Users/rchalmer/c/cub3D/libft/ft_strlen.c
 
 libft/CMakeFiles/libft.dir/ft_strlen.c.i: cmake_force
@@ -430,7 +482,7 @@ libft/CMakeFiles/libft.dir/ft_strlen.c.s: cmake_force
 
 libft/CMakeFiles/libft.dir/ft_strmapi.c.o: libft/CMakeFiles/libft.dir/flags.make
 libft/CMakeFiles/libft.dir/ft_strmapi.c.o: ../libft/ft_strmapi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object libft/CMakeFiles/libft.dir/ft_strmapi.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object libft/CMakeFiles/libft.dir/ft_strmapi.c.o"
 	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/ft_strmapi.c.o   -c /Users/rchalmer/c/cub3D/libft/ft_strmapi.c
 
 libft/CMakeFiles/libft.dir/ft_strmapi.c.i: cmake_force
@@ -443,7 +495,7 @@ libft/CMakeFiles/libft.dir/ft_strmapi.c.s: cmake_force
 
 libft/CMakeFiles/libft.dir/ft_strncmp.c.o: libft/CMakeFiles/libft.dir/flags.make
 libft/CMakeFiles/libft.dir/ft_strncmp.c.o: ../libft/ft_strncmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object libft/CMakeFiles/libft.dir/ft_strncmp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object libft/CMakeFiles/libft.dir/ft_strncmp.c.o"
 	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/ft_strncmp.c.o   -c /Users/rchalmer/c/cub3D/libft/ft_strncmp.c
 
 libft/CMakeFiles/libft.dir/ft_strncmp.c.i: cmake_force
@@ -456,7 +508,7 @@ libft/CMakeFiles/libft.dir/ft_strncmp.c.s: cmake_force
 
 libft/CMakeFiles/libft.dir/ft_strnstr.c.o: libft/CMakeFiles/libft.dir/flags.make
 libft/CMakeFiles/libft.dir/ft_strnstr.c.o: ../libft/ft_strnstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object libft/CMakeFiles/libft.dir/ft_strnstr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object libft/CMakeFiles/libft.dir/ft_strnstr.c.o"
 	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/ft_strnstr.c.o   -c /Users/rchalmer/c/cub3D/libft/ft_strnstr.c
 
 libft/CMakeFiles/libft.dir/ft_strnstr.c.i: cmake_force
@@ -469,7 +521,7 @@ libft/CMakeFiles/libft.dir/ft_strnstr.c.s: cmake_force
 
 libft/CMakeFiles/libft.dir/ft_strrchr.c.o: libft/CMakeFiles/libft.dir/flags.make
 libft/CMakeFiles/libft.dir/ft_strrchr.c.o: ../libft/ft_strrchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object libft/CMakeFiles/libft.dir/ft_strrchr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object libft/CMakeFiles/libft.dir/ft_strrchr.c.o"
 	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/ft_strrchr.c.o   -c /Users/rchalmer/c/cub3D/libft/ft_strrchr.c
 
 libft/CMakeFiles/libft.dir/ft_strrchr.c.i: cmake_force
@@ -482,7 +534,7 @@ libft/CMakeFiles/libft.dir/ft_strrchr.c.s: cmake_force
 
 libft/CMakeFiles/libft.dir/ft_strtrim.c.o: libft/CMakeFiles/libft.dir/flags.make
 libft/CMakeFiles/libft.dir/ft_strtrim.c.o: ../libft/ft_strtrim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object libft/CMakeFiles/libft.dir/ft_strtrim.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object libft/CMakeFiles/libft.dir/ft_strtrim.c.o"
 	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/ft_strtrim.c.o   -c /Users/rchalmer/c/cub3D/libft/ft_strtrim.c
 
 libft/CMakeFiles/libft.dir/ft_strtrim.c.i: cmake_force
@@ -495,7 +547,7 @@ libft/CMakeFiles/libft.dir/ft_strtrim.c.s: cmake_force
 
 libft/CMakeFiles/libft.dir/ft_substr.c.o: libft/CMakeFiles/libft.dir/flags.make
 libft/CMakeFiles/libft.dir/ft_substr.c.o: ../libft/ft_substr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object libft/CMakeFiles/libft.dir/ft_substr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object libft/CMakeFiles/libft.dir/ft_substr.c.o"
 	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/ft_substr.c.o   -c /Users/rchalmer/c/cub3D/libft/ft_substr.c
 
 libft/CMakeFiles/libft.dir/ft_substr.c.i: cmake_force
@@ -508,7 +560,7 @@ libft/CMakeFiles/libft.dir/ft_substr.c.s: cmake_force
 
 libft/CMakeFiles/libft.dir/ft_tolower.c.o: libft/CMakeFiles/libft.dir/flags.make
 libft/CMakeFiles/libft.dir/ft_tolower.c.o: ../libft/ft_tolower.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object libft/CMakeFiles/libft.dir/ft_tolower.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object libft/CMakeFiles/libft.dir/ft_tolower.c.o"
 	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/ft_tolower.c.o   -c /Users/rchalmer/c/cub3D/libft/ft_tolower.c
 
 libft/CMakeFiles/libft.dir/ft_tolower.c.i: cmake_force
@@ -521,7 +573,7 @@ libft/CMakeFiles/libft.dir/ft_tolower.c.s: cmake_force
 
 libft/CMakeFiles/libft.dir/ft_toupper.c.o: libft/CMakeFiles/libft.dir/flags.make
 libft/CMakeFiles/libft.dir/ft_toupper.c.o: ../libft/ft_toupper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object libft/CMakeFiles/libft.dir/ft_toupper.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object libft/CMakeFiles/libft.dir/ft_toupper.c.o"
 	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/ft_toupper.c.o   -c /Users/rchalmer/c/cub3D/libft/ft_toupper.c
 
 libft/CMakeFiles/libft.dir/ft_toupper.c.i: cmake_force
@@ -543,6 +595,10 @@ libft_OBJECTS = \
 "CMakeFiles/libft.dir/ft_isdigit.c.o" \
 "CMakeFiles/libft.dir/ft_isprint.c.o" \
 "CMakeFiles/libft.dir/ft_itoa.c.o" \
+"CMakeFiles/libft.dir/ft_itoa_base.c.o" \
+"CMakeFiles/libft.dir/ft_itoa_uhex.c.o" \
+"CMakeFiles/libft.dir/ft_itoa_u.c.o" \
+"CMakeFiles/libft.dir/ft_free_mem.c.o" \
 "CMakeFiles/libft.dir/ft_lstnew.c.o" \
 "CMakeFiles/libft.dir/ft_memccpy.c.o" \
 "CMakeFiles/libft.dir/ft_memchr.c.o" \
@@ -582,6 +638,10 @@ libft/liblibft.a: libft/CMakeFiles/libft.dir/ft_isascii.c.o
 libft/liblibft.a: libft/CMakeFiles/libft.dir/ft_isdigit.c.o
 libft/liblibft.a: libft/CMakeFiles/libft.dir/ft_isprint.c.o
 libft/liblibft.a: libft/CMakeFiles/libft.dir/ft_itoa.c.o
+libft/liblibft.a: libft/CMakeFiles/libft.dir/ft_itoa_base.c.o
+libft/liblibft.a: libft/CMakeFiles/libft.dir/ft_itoa_uhex.c.o
+libft/liblibft.a: libft/CMakeFiles/libft.dir/ft_itoa_u.c.o
+libft/liblibft.a: libft/CMakeFiles/libft.dir/ft_free_mem.c.o
 libft/liblibft.a: libft/CMakeFiles/libft.dir/ft_lstnew.c.o
 libft/liblibft.a: libft/CMakeFiles/libft.dir/ft_memccpy.c.o
 libft/liblibft.a: libft/CMakeFiles/libft.dir/ft_memchr.c.o
@@ -610,7 +670,7 @@ libft/liblibft.a: libft/CMakeFiles/libft.dir/ft_tolower.c.o
 libft/liblibft.a: libft/CMakeFiles/libft.dir/ft_toupper.c.o
 libft/liblibft.a: libft/CMakeFiles/libft.dir/build.make
 libft/liblibft.a: libft/CMakeFiles/libft.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Linking C static library liblibft.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Linking C static library liblibft.a"
 	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && $(CMAKE_COMMAND) -P CMakeFiles/libft.dir/cmake_clean_target.cmake
 	cd /Users/rchalmer/c/cub3D/cmake-build-debug/libft && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libft.dir/link.txt --verbose=$(VERBOSE)
 

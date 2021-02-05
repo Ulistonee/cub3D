@@ -210,6 +210,33 @@ get_next_line/get_next_line_utils.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/get_next_line/get_next_line_utils.c.s
 .PHONY : get_next_line/get_next_line_utils.c.s
 
+handle_error.o: handle_error.c.o
+
+.PHONY : handle_error.o
+
+# target to build an object file
+handle_error.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/handle_error.c.o
+.PHONY : handle_error.c.o
+
+handle_error.i: handle_error.c.i
+
+.PHONY : handle_error.i
+
+# target to preprocess a source file
+handle_error.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/handle_error.c.i
+.PHONY : handle_error.c.i
+
+handle_error.s: handle_error.c.s
+
+.PHONY : handle_error.s
+
+# target to generate assembly for a file
+handle_error.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/handle_error.c.s
+.PHONY : handle_error.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -237,32 +264,86 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/main.c.s
 .PHONY : main.c.s
 
-parser/parser.o: parser/parser.c.o
+parser/is_map.o: parser/is_map.c.o
 
-.PHONY : parser/parser.o
+.PHONY : parser/is_map.o
 
 # target to build an object file
-parser/parser.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/parser/parser.c.o
-.PHONY : parser/parser.c.o
+parser/is_map.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/parser/is_map.c.o
+.PHONY : parser/is_map.c.o
 
-parser/parser.i: parser/parser.c.i
+parser/is_map.i: parser/is_map.c.i
 
-.PHONY : parser/parser.i
+.PHONY : parser/is_map.i
 
 # target to preprocess a source file
-parser/parser.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/parser/parser.c.i
-.PHONY : parser/parser.c.i
+parser/is_map.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/parser/is_map.c.i
+.PHONY : parser/is_map.c.i
 
-parser/parser.s: parser/parser.c.s
+parser/is_map.s: parser/is_map.c.s
 
-.PHONY : parser/parser.s
+.PHONY : parser/is_map.s
 
 # target to generate assembly for a file
-parser/parser.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/parser/parser.c.s
-.PHONY : parser/parser.c.s
+parser/is_map.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/parser/is_map.c.s
+.PHONY : parser/is_map.c.s
+
+parser/parse_map.o: parser/parse_map.c.o
+
+.PHONY : parser/parse_map.o
+
+# target to build an object file
+parser/parse_map.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/parser/parse_map.c.o
+.PHONY : parser/parse_map.c.o
+
+parser/parse_map.i: parser/parse_map.c.i
+
+.PHONY : parser/parse_map.i
+
+# target to preprocess a source file
+parser/parse_map.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/parser/parse_map.c.i
+.PHONY : parser/parse_map.c.i
+
+parser/parse_map.s: parser/parse_map.c.s
+
+.PHONY : parser/parse_map.s
+
+# target to generate assembly for a file
+parser/parse_map.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/parser/parse_map.c.s
+.PHONY : parser/parse_map.c.s
+
+parser/parse_other.o: parser/parse_other.c.o
+
+.PHONY : parser/parse_other.o
+
+# target to build an object file
+parser/parse_other.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/parser/parse_other.c.o
+.PHONY : parser/parse_other.c.o
+
+parser/parse_other.i: parser/parse_other.c.i
+
+.PHONY : parser/parse_other.i
+
+# target to preprocess a source file
+parser/parse_other.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/parser/parse_other.c.i
+.PHONY : parser/parse_other.c.i
+
+parser/parse_other.s: parser/parse_other.c.s
+
+.PHONY : parser/parse_other.s
+
+# target to generate assembly for a file
+parser/parse_other.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/parser/parse_other.c.s
+.PHONY : parser/parse_other.c.s
 
 # Help Target
 help:
@@ -280,12 +361,21 @@ help:
 	@echo "... get_next_line/get_next_line_utils.o"
 	@echo "... get_next_line/get_next_line_utils.i"
 	@echo "... get_next_line/get_next_line_utils.s"
+	@echo "... handle_error.o"
+	@echo "... handle_error.i"
+	@echo "... handle_error.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... parser/parser.o"
-	@echo "... parser/parser.i"
-	@echo "... parser/parser.s"
+	@echo "... parser/is_map.o"
+	@echo "... parser/is_map.i"
+	@echo "... parser/is_map.s"
+	@echo "... parser/parse_map.o"
+	@echo "... parser/parse_map.i"
+	@echo "... parser/parse_map.s"
+	@echo "... parser/parse_other.o"
+	@echo "... parser/parse_other.i"
+	@echo "... parser/parse_other.s"
 .PHONY : help
 
 

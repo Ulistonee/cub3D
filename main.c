@@ -1,22 +1,37 @@
 #include "cub3D.h"
 #include "get_next_line/get_next_line.h"
 
-int main(){
+int				main()
+{
 	int 			fd;
 	char			*line;
 	t_all			all;
+	int 			counter;
 
-	fd = open("map.cub", O_RDONLY);
+	counter = 0;
+	fd = open("../map.cub", O_RDONLY);
+	handle_error(errno, &all);
 	while (get_next_line(fd , &line))
 	{
 		if (is_map(line))
+		{
+			counter++;
+		}
+		ft_free_mem(&line);
+	}
+	close(fd);
+	fd = open("../map.cub", O_RDONLY);
+	handle_error(errno, &all);
+	while (get_next_line(fd , &line))
+	{
+		if (is_map(line))
+		{
 			parse_map(&all, line);
+			counter++;
+		}
 		else
 			parse_other(&all, line);
 		ft_free_mem(&line);
-//	 we have to free line after the parser because the line`s pointer gets
-//	 broken
-
 	}
 	printf("RES_1: %d\n", all.data.res1);
 	printf("RES_2: %d\n", all.data.res2);

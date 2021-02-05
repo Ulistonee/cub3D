@@ -7,11 +7,12 @@ SRCS	= \
 			get_next_line/get_next_line.c \
 			get_next_line/get_next_line_utils.c \
 			main.c \
+			handle_error.c \
 
 OBJS		= $(patsubst %.c, %.o, $(SRCS))
 
 CC			= gcc
-FLAGS		= -Wall -Wextra -Werror
+FLAGS		= #-Wall -Wextra -Werror
 HEADER		= cub3D.h
 
 RM			= rm -f
@@ -25,9 +26,9 @@ init:
 
 $(NAME):	$(OBJS) $(HEADER)
 # MAC:
-#  			$(CC) $(FLAGS) $? $(HEADER) -Llibft -lft -Lminilibx_opengl_20191021 -lmlx -framework OpenGL -framework AppKit
+			$(CC) $(FLAGS) $? $(HEADER) -Llibft -lft -Lminilibx_opengl_20191021 -lmlx -framework OpenGL -framework AppKit
 # Lnx:
-			$(CC) $(FLAGS) $(OBJS) $(HEADER) -Llibft -lft -o $(NAME)
+# 			$(CC) $(FLAGS) $(OBJS) $(HEADER) -Llibft -lft -o $(NAME)
 
 %.o : %.c
 			${CC} $(FLAGS) -c $< -o $@

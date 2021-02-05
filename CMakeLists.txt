@@ -7,7 +7,10 @@ add_subdirectory(./libft)
 
 add_executable(cub3D
 		main.c
-		parser/parser.c
+		handle_error.c
+		parser/parse_other.c
+		parser/parse_map.c
+		parser/is_map.c
 		get_next_line/get_next_line.c
 		get_next_line/get_next_line_utils.c)
 target_link_libraries(cub3D

@@ -10,6 +10,9 @@ libft/CMakeFiles/libft.dir/ft_bzero.c.o: ../libft/libft.h
 libft/CMakeFiles/libft.dir/ft_calloc.c.o: ../libft/ft_calloc.c
 libft/CMakeFiles/libft.dir/ft_calloc.c.o: ../libft/libft.h
 
+libft/CMakeFiles/libft.dir/ft_free_mem.c.o: ../libft/ft_free_mem.c
+libft/CMakeFiles/libft.dir/ft_free_mem.c.o: ../libft/libft.h
+
 libft/CMakeFiles/libft.dir/ft_isalnum.c.o: ../libft/ft_isalnum.c
 libft/CMakeFiles/libft.dir/ft_isalnum.c.o: ../libft/libft.h
 
@@ -27,6 +30,15 @@ libft/CMakeFiles/libft.dir/ft_isprint.c.o: ../libft/libft.h
 
 libft/CMakeFiles/libft.dir/ft_itoa.c.o: ../libft/ft_itoa.c
 libft/CMakeFiles/libft.dir/ft_itoa.c.o: ../libft/libft.h
+
+libft/CMakeFiles/libft.dir/ft_itoa_base.c.o: ../libft/ft_itoa_base.c
+libft/CMakeFiles/libft.dir/ft_itoa_base.c.o: ../libft/libft.h
+
+libft/CMakeFiles/libft.dir/ft_itoa_u.c.o: ../libft/ft_itoa_u.c
+libft/CMakeFiles/libft.dir/ft_itoa_u.c.o: ../libft/libft.h
+
+libft/CMakeFiles/libft.dir/ft_itoa_uhex.c.o: ../libft/ft_itoa_uhex.c
+libft/CMakeFiles/libft.dir/ft_itoa_uhex.c.o: ../libft/libft.h
 
 libft/CMakeFiles/libft.dir/ft_lstnew.c.o: ../libft/ft_lstnew.c
 libft/CMakeFiles/libft.dir/ft_lstnew.c.o: ../libft/libft.h

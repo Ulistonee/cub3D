@@ -6,8 +6,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/rchalmer/c/cub3D/get_next_line/get_next_line.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/get_next_line/get_next_line.c.o"
   "/Users/rchalmer/c/cub3D/get_next_line/get_next_line_utils.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/get_next_line/get_next_line_utils.c.o"
+  "/Users/rchalmer/c/cub3D/handle_error.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/handle_error.c.o"
   "/Users/rchalmer/c/cub3D/main.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/main.c.o"
-  "/Users/rchalmer/c/cub3D/parser/parser.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/parser/parser.c.o"
+  "/Users/rchalmer/c/cub3D/parser/is_map.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/parser/is_map.c.o"
+  "/Users/rchalmer/c/cub3D/parser/parse_map.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/parser/parse_map.c.o"
+  "/Users/rchalmer/c/cub3D/parser/parse_other.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/parser/parse_other.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

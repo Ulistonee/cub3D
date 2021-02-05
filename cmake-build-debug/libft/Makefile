@@ -226,6 +226,33 @@ ft_calloc.c.s:
 	cd /Users/rchalmer/c/cub3D/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libft/CMakeFiles/libft.dir/build.make libft/CMakeFiles/libft.dir/ft_calloc.c.s
 .PHONY : ft_calloc.c.s
 
+ft_free_mem.o: ft_free_mem.c.o
+
+.PHONY : ft_free_mem.o
+
+# target to build an object file
+ft_free_mem.c.o:
+	cd /Users/rchalmer/c/cub3D/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libft/CMakeFiles/libft.dir/build.make libft/CMakeFiles/libft.dir/ft_free_mem.c.o
+.PHONY : ft_free_mem.c.o
+
+ft_free_mem.i: ft_free_mem.c.i
+
+.PHONY : ft_free_mem.i
+
+# target to preprocess a source file
+ft_free_mem.c.i:
+	cd /Users/rchalmer/c/cub3D/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libft/CMakeFiles/libft.dir/build.make libft/CMakeFiles/libft.dir/ft_free_mem.c.i
+.PHONY : ft_free_mem.c.i
+
+ft_free_mem.s: ft_free_mem.c.s
+
+.PHONY : ft_free_mem.s
+
+# target to generate assembly for a file
+ft_free_mem.c.s:
+	cd /Users/rchalmer/c/cub3D/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libft/CMakeFiles/libft.dir/build.make libft/CMakeFiles/libft.dir/ft_free_mem.c.s
+.PHONY : ft_free_mem.c.s
+
 ft_isalnum.o: ft_isalnum.c.o
 
 .PHONY : ft_isalnum.o
@@ -387,6 +414,87 @@ ft_itoa.s: ft_itoa.c.s
 ft_itoa.c.s:
 	cd /Users/rchalmer/c/cub3D/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libft/CMakeFiles/libft.dir/build.make libft/CMakeFiles/libft.dir/ft_itoa.c.s
 .PHONY : ft_itoa.c.s
+
+ft_itoa_base.o: ft_itoa_base.c.o
+
+.PHONY : ft_itoa_base.o
+
+# target to build an object file
+ft_itoa_base.c.o:
+	cd /Users/rchalmer/c/cub3D/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libft/CMakeFiles/libft.dir/build.make libft/CMakeFiles/libft.dir/ft_itoa_base.c.o
+.PHONY : ft_itoa_base.c.o
+
+ft_itoa_base.i: ft_itoa_base.c.i
+
+.PHONY : ft_itoa_base.i
+
+# target to preprocess a source file
+ft_itoa_base.c.i:
+	cd /Users/rchalmer/c/cub3D/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libft/CMakeFiles/libft.dir/build.make libft/CMakeFiles/libft.dir/ft_itoa_base.c.i
+.PHONY : ft_itoa_base.c.i
+
+ft_itoa_base.s: ft_itoa_base.c.s
+
+.PHONY : ft_itoa_base.s
+
+# target to generate assembly for a file
+ft_itoa_base.c.s:
+	cd /Users/rchalmer/c/cub3D/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libft/CMakeFiles/libft.dir/build.make libft/CMakeFiles/libft.dir/ft_itoa_base.c.s
+.PHONY : ft_itoa_base.c.s
+
+ft_itoa_u.o: ft_itoa_u.c.o
+
+.PHONY : ft_itoa_u.o
+
+# target to build an object file
+ft_itoa_u.c.o:
+	cd /Users/rchalmer/c/cub3D/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libft/CMakeFiles/libft.dir/build.make libft/CMakeFiles/libft.dir/ft_itoa_u.c.o
+.PHONY : ft_itoa_u.c.o
+
+ft_itoa_u.i: ft_itoa_u.c.i
+
+.PHONY : ft_itoa_u.i
+
+# target to preprocess a source file
+ft_itoa_u.c.i:
+	cd /Users/rchalmer/c/cub3D/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libft/CMakeFiles/libft.dir/build.make libft/CMakeFiles/libft.dir/ft_itoa_u.c.i
+.PHONY : ft_itoa_u.c.i
+
+ft_itoa_u.s: ft_itoa_u.c.s
+
+.PHONY : ft_itoa_u.s
+
+# target to generate assembly for a file
+ft_itoa_u.c.s:
+	cd /Users/rchalmer/c/cub3D/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libft/CMakeFiles/libft.dir/build.make libft/CMakeFiles/libft.dir/ft_itoa_u.c.s
+.PHONY : ft_itoa_u.c.s
+
+ft_itoa_uhex.o: ft_itoa_uhex.c.o
+
+.PHONY : ft_itoa_uhex.o
+
+# target to build an object file
+ft_itoa_uhex.c.o:
+	cd /Users/rchalmer/c/cub3D/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libft/CMakeFiles/libft.dir/build.make libft/CMakeFiles/libft.dir/ft_itoa_uhex.c.o
+.PHONY : ft_itoa_uhex.c.o
+
+ft_itoa_uhex.i: ft_itoa_uhex.c.i
+
+.PHONY : ft_itoa_uhex.i
+
+# target to preprocess a source file
+ft_itoa_uhex.c.i:
+	cd /Users/rchalmer/c/cub3D/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libft/CMakeFiles/libft.dir/build.make libft/CMakeFiles/libft.dir/ft_itoa_uhex.c.i
+.PHONY : ft_itoa_uhex.c.i
+
+ft_itoa_uhex.s: ft_itoa_uhex.c.s
+
+.PHONY : ft_itoa_uhex.s
+
+# target to generate assembly for a file
+ft_itoa_uhex.c.s:
+	cd /Users/rchalmer/c/cub3D/cmake-build-debug && $(MAKE) $(MAKESILENT) -f libft/CMakeFiles/libft.dir/build.make libft/CMakeFiles/libft.dir/ft_itoa_uhex.c.s
+.PHONY : ft_itoa_uhex.c.s
 
 ft_lstnew.o: ft_lstnew.c.o
 
@@ -1108,6 +1216,9 @@ help:
 	@echo "... ft_calloc.o"
 	@echo "... ft_calloc.i"
 	@echo "... ft_calloc.s"
+	@echo "... ft_free_mem.o"
+	@echo "... ft_free_mem.i"
+	@echo "... ft_free_mem.s"
 	@echo "... ft_isalnum.o"
 	@echo "... ft_isalnum.i"
 	@echo "... ft_isalnum.s"
@@ -1126,6 +1237,15 @@ help:
 	@echo "... ft_itoa.o"
 	@echo "... ft_itoa.i"
 	@echo "... ft_itoa.s"
+	@echo "... ft_itoa_base.o"
+	@echo "... ft_itoa_base.i"
+	@echo "... ft_itoa_base.s"
+	@echo "... ft_itoa_u.o"
+	@echo "... ft_itoa_u.i"
+	@echo "... ft_itoa_u.s"
+	@echo "... ft_itoa_uhex.o"
+	@echo "... ft_itoa_uhex.i"
+	@echo "... ft_itoa_uhex.s"
 	@echo "... ft_lstnew.o"
 	@echo "... ft_lstnew.i"
 	@echo "... ft_lstnew.s"

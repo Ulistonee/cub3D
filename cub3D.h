@@ -3,6 +3,9 @@
 # include <stdarg.h>
 # include <stdio.h>
 # include <fcntl.h>
+# include <string.h> // for strerror
+# include <errno.h> // for errno
+# include <stdlib.h> // for exit
 # include "libft/libft.h"
 # include "get_next_line/get_next_line.h"
 #define VALID_SYMBOLS "102 NESW"
@@ -36,7 +39,7 @@ typedef struct		s_all
 	t_struct		data;
 }					t_all;
 
-int					parse_other(t_struct *data, char *line);
-int 				parse_map(t_map *map, char *line);
-int					get_next_line(int fd, char **line);
+int					parse_other(t_all *all, char *line);
+int 				parse_map(t_all *all, char *line);
 int 				is_map(char *line);
+int 				handle_error(int code, t_all *all);

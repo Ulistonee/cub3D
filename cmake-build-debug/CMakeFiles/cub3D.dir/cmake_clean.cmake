@@ -1,8 +1,11 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cub3D.dir/get_next_line/get_next_line.c.o"
   "CMakeFiles/cub3D.dir/get_next_line/get_next_line_utils.c.o"
+  "CMakeFiles/cub3D.dir/handle_error.c.o"
   "CMakeFiles/cub3D.dir/main.c.o"
-  "CMakeFiles/cub3D.dir/parser/parser.c.o"
+  "CMakeFiles/cub3D.dir/parser/is_map.c.o"
+  "CMakeFiles/cub3D.dir/parser/parse_map.c.o"
+  "CMakeFiles/cub3D.dir/parser/parse_other.c.o"
   "cub3D"
   "cub3D.pdb"
 )

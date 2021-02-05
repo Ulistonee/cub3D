@@ -7,13 +7,28 @@ CMakeFiles/cub3D.dir/get_next_line/get_next_line.c.o
 CMakeFiles/cub3D.dir/get_next_line/get_next_line_utils.c.o
  /Users/rchalmer/c/cub3D/get_next_line/get_next_line.h
  /Users/rchalmer/c/cub3D/get_next_line/get_next_line_utils.c
+CMakeFiles/cub3D.dir/handle_error.c.o
+ /Users/rchalmer/c/cub3D/cub3D.h
+ /Users/rchalmer/c/cub3D/get_next_line/get_next_line.h
+ /Users/rchalmer/c/cub3D/handle_error.c
+ /Users/rchalmer/c/cub3D/libft/libft.h
 CMakeFiles/cub3D.dir/main.c.o
  /Users/rchalmer/c/cub3D/cub3D.h
  /Users/rchalmer/c/cub3D/get_next_line/get_next_line.h
  /Users/rchalmer/c/cub3D/libft/libft.h
  /Users/rchalmer/c/cub3D/main.c
-CMakeFiles/cub3D.dir/parser/parser.c.o
+CMakeFiles/cub3D.dir/parser/is_map.c.o
  /Users/rchalmer/c/cub3D/cub3D.h
  /Users/rchalmer/c/cub3D/get_next_line/get_next_line.h
  /Users/rchalmer/c/cub3D/libft/libft.h
- /Users/rchalmer/c/cub3D/parser/parser.c
+ /Users/rchalmer/c/cub3D/parser/is_map.c
+CMakeFiles/cub3D.dir/parser/parse_map.c.o
+ /Users/rchalmer/c/cub3D/cub3D.h
+ /Users/rchalmer/c/cub3D/get_next_line/get_next_line.h
+ /Users/rchalmer/c/cub3D/libft/libft.h
+ /Users/rchalmer/c/cub3D/parser/parse_map.c
+CMakeFiles/cub3D.dir/parser/parse_other.c.o
+ /Users/rchalmer/c/cub3D/cub3D.h
+ /Users/rchalmer/c/cub3D/get_next_line/get_next_line.h
+ /Users/rchalmer/c/cub3D/libft/libft.h
+ /Users/rchalmer/c/cub3D/parser/parse_other.c

@@ -69,6 +69,9 @@
 		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_calloc.c">
 			<Option target="libft"/>
 		</Unit>
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_free_mem.c">
+			<Option target="libft"/>
+		</Unit>
 		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_isalnum.c">
 			<Option target="libft"/>
 		</Unit>
@@ -85,6 +88,15 @@
 			<Option target="libft"/>
 		</Unit>
 		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_itoa.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_itoa_base.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_itoa_u.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_itoa_uhex.c">
 			<Option target="libft"/>
 		</Unit>
 		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_lstnew.c">
