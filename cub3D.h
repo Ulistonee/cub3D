@@ -8,7 +8,7 @@
 # include <stdlib.h> // for exit
 # include "libft/libft.h"
 # include "get_next_line/get_next_line.h"
-#define VALID_SYMBOLS "102 NESW"
+#define VALID_SYMBOLS "102 NEWS"
 
 
 typedef struct		s_struct

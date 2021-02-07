@@ -38,6 +38,10 @@ unistd.h
 fcntl.h
 -
 
+/Users/rchalmer/c/cub3D/handle_error.c
+cub3D.h
+/Users/rchalmer/c/cub3D/cub3D.h
+
 /Users/rchalmer/c/cub3D/libft/libft.h
 stddef.h
 -
@@ -49,6 +53,16 @@ unistd.h
 /Users/rchalmer/c/cub3D/main.c
 cub3D.h
 /Users/rchalmer/c/cub3D/cub3D.h
-get_next_line/get_next_line.h
-/Users/rchalmer/c/cub3D/get_next_line/get_next_line.h
+
+/Users/rchalmer/c/cub3D/parser/is_map.c
+../cub3D.h
+/Users/rchalmer/c/cub3D/cub3D.h
+
+/Users/rchalmer/c/cub3D/parser/parse_map.c
+../cub3D.h
+/Users/rchalmer/c/cub3D/cub3D.h
+
+/Users/rchalmer/c/cub3D/parser/parse_other.c
+../cub3D.h
+/Users/rchalmer/c/cub3D/cub3D.h
 

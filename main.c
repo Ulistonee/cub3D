@@ -1,33 +1,35 @@
 #include "cub3D.h"
-#include "get_next_line/get_next_line.h"
 
-int				main()
+int				main(int argc, char *argv[])
 {
 	int 			fd;
 	char			*line;
 	t_all			all;
-	int 			counter;
+	int				counter;
+	int 			i;
 
 	counter = 0;
-	fd = open("../map.cub", O_RDONLY);
-	handle_error(errno, &all);
-	while (get_next_line(fd , &line))
+	fd = open(argv[1], O_RDONLY);
+//	handle_error(errno, &all); // identify errors on the initial stage such as no file etc.
+	while (get_next_line(fd, &line)) // start GNL to count map size
 	{
 		if (is_map(line))
 		{
 			counter++;
+			ft_free_mem(&line);
 		}
-		ft_free_mem(&line);
 	}
 	close(fd);
-	fd = open("../map.cub", O_RDONLY);
-	handle_error(errno, &all);
+	all.map.map = (char**)malloc(sizeof(char*) * counter);
+//	handle_error(errno, &all);
+	fd = open(argv[1], O_RDONLY); // open flow again for parsing
+//	handle_error(errno, &all);
+	i = 0;
 	while (get_next_line(fd , &line))
 	{
 		if (is_map(line))
 		{
-			parse_map(&all, line);
-			counter++;
+			all.map.map[i++] = ft_strdup(line);
 		}
 		else
 			parse_other(&all, line);
@@ -45,5 +47,10 @@ int				main()
 	printf("CEIL_1: %d\n", all.data.ceil_1);
 	printf("CEIL_2: %d\n", all.data.ceil_2);
 	printf("CEIL_3: %d\n", all.data.ceil_3);
+	i = 0;
+	while (i < counter)
+	{
+		printf("MAP: %s\n", all.map.map[i++]);
+	}
 	return 0;
 }
