@@ -26,14 +26,15 @@ init:
 
 $(NAME):	$(OBJS) $(HEADER)
 # MAC:
-			$(CC) $(FLAGS) $? $(HEADER) -Llibft -lft -Lminilibx_opengl_20191021 -lmlx -framework OpenGL -framework AppKit
-# Lnx:
-# 			$(CC) $(FLAGS) $(OBJS) $(HEADER) -Llibft -lft -o $(NAME)
+#			$(CC) $(FLAGS) $? $(HEADER) -Llibft -lft
+#-Lminilibx_opengl_20191021 -lmlx -framework OpenGL -framework AppKit
+#Lnx:
+			$(CC) $(FLAGS) $? $(HEADER) -Llibft -lft -o $(NAME)
 
 %.o : %.c
 			${CC} $(FLAGS) -c $< -o $@
 
-# LINUX:
+#LINUX:
 	# $(CC) $(FLAGS) main.c -Llibft -lft
 
 clean:
