@@ -24,12 +24,28 @@ int             main(void)
 	t_data  img;
 
 	mlx = mlx_init();
-	mlx_win = mlx_new_window(mlx, 800, 500, "My_cub3D");
-	img.img = mlx_new_image(mlx, 800, 500);
+	mlx_win = mlx_new_window(mlx, 1920, 1080, "My_cub3D");
+	img.img = mlx_new_image(mlx, 1920, 1080);
 	img.addr = mlx_get_data_addr(img.img, &img.bits_per_pixel, &img.line_length,
 								 &img.endian);
-	my_mlx_pixel_put(&img, 5, 5, 0x00006400);
-	mlx_put_image_to_window(mlx, mlx_win, img.img, 750, 250);
+	int x = 0;
+	int y = 0;
+	while (y < 50)
+	{
+		printf("Y:%d\n", y);
+		my_mlx_pixel_put(&img, x, y, 0xFF0000);
+		x = 0;
+		while (x < 50)
+		{
+			printf("X:%d\t", x);
+			my_mlx_pixel_put(&img, x, y, 0xFF0000);
+			x++;
+		}
+		printf("\n");
+		y++;
+	}
+	mlx_put_image_to_window(mlx, mlx_win, img.img, 200, 200);
 	mlx_loop(mlx);
+	return (0);
 }
 

@@ -26,8 +26,7 @@ init:
 
 $(NAME):	$(OBJS) $(HEADER)
 # MAC:
-#			$(CC) $(FLAGS) $? $(HEADER) -Llibft -lft
-#-Lminilibx_opengl_20191021 -lmlx -framework OpenGL -framework AppKit
+			$(CC) $(FLAGS) $? $(HEADER) -Llibft -lft -Lminilibx_opengl_20191021 -lmlx -framework OpenGL -framework AppKit
 #Lnx:
 			$(CC) $(FLAGS) $? $(HEADER) -Llibft -lft -o $(NAME)
 

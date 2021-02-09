@@ -23,6 +23,8 @@ errno.h
 -
 stdlib.h
 -
+mlx.h
+-
 libft/libft.h
 /Users/rchalmer/c/cub3D/libft/libft.h
 get_next_line/get_next_line.h

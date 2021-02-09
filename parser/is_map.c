@@ -2,7 +2,7 @@
 
 int 		is_map(char *line)
 {
-	if (*line == '\0')
+	if (*line == '\0') // to avoid '\n'
 		return (0);
 	while(*line)
 	{

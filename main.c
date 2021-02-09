@@ -20,7 +20,7 @@ int				main(int argc, char *argv[])
 		}
 	}
 	close(fd);
-	all.map.map = (char**)malloc(sizeof(char*) * counter);
+	all.map.map = (char**)malloc(sizeof(char*) * counter); // allocate memory for two-dimensional array
 //	handle_error(errno, &all);
 	fd = open(argv[1], O_RDONLY); // open flow again for parsing
 //	handle_error(errno, &all);

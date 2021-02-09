@@ -6,6 +6,7 @@
 # include <string.h> // for strerror
 # include <errno.h> // for errno
 # include <stdlib.h> // for exit
+# include <mlx.h>
 # include "libft/libft.h"
 # include "get_next_line/get_next_line.h"
 #define VALID_SYMBOLS "102 NEWS"
