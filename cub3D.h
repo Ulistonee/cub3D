@@ -6,11 +6,10 @@
 # include <string.h> // for strerror
 # include <errno.h> // for errno
 # include <stdlib.h> // for exit
-# include <mlx.h>
+# include "libmlx/mlx.h"
 # include "libft/libft.h"
 # include "get_next_line/get_next_line.h"
-#define VALID_SYMBOLS "102 NEWS"
-
+#define VALID_SYMBOLS "102 NEW"
 
 typedef struct		s_struct
 {
@@ -31,14 +30,27 @@ typedef struct		s_struct
 typedef struct		s_map
 {
 	char 			**map;
+	int 			lines;
 }					t_map;
 
+typedef struct		s_display
+{
+	void			*img;
+	char			*addr;
+	int				bits_per_pixel;
+	int				line_length;
+	int				endian;
+	void			*mlx;
+	void			*mlx_win;
+}					t_display;
 
 typedef struct		s_all
 {
 	t_map			map;
 	t_struct		data;
+	t_display		display;
 }					t_all;
+
 
 int					parse_other(t_all *all, char *line);
 int 				parse_map(t_all *all, char *line);
