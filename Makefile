@@ -8,6 +8,8 @@ SRCS	= \
 			get_next_line/get_next_line_utils.c \
 			main.c \
 			handle_error.c \
+			scaler.c \
+			draw_player.c
 
 OBJS		= $(patsubst %.c, %.o, $(SRCS))
 

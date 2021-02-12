@@ -1,8 +1,8 @@
 #include "cub3D.h"
 
-void            my_mlx_pixel_put(t_all *all, int x, int y, int color)
+void			my_mlx_pixel_put(t_all *all, int x, int y, int color)
 {
-	char    *dst;
+	char		*dst;
 
 	dst = all->display.addr + (y * all->display.line_length + x *
 			(all->display.bits_per_pixel /
@@ -10,7 +10,7 @@ void            my_mlx_pixel_put(t_all *all, int x, int y, int color)
 	*(unsigned int*)dst = color;
 }
 
-int             draw_cub(t_all *all)
+int				draw_map(t_all *all)
 {
 	all->display.mlx = mlx_init();
 	all->display.mlx_win = mlx_new_window(all->display.mlx, all->data.res1, all->data.res2,
@@ -20,8 +20,7 @@ int             draw_cub(t_all *all)
 			&all->display.line_length, &all->display.endian);
 	int x = 0;
 	int y = 0;
-//	my_mlx_pixel_put(all, 5, 5, 0xFFFFFF);
-	printf("[%s]\n", all->map.map[0]);
+//	printf("[%s]\n", all->map.map[0]);
 	while (y < all->map.lines)
 	{
 //		printf("Y:%s\n", all->map.map[y]);
@@ -31,11 +30,12 @@ int             draw_cub(t_all *all)
 //			printf("X:%d\t", x);
 			if (all->map.map[y][x] == '1')
 			{
-				my_mlx_pixel_put(all, x, y, 0xFFFFFF);
+//				my_mlx_pixel_put(all, x, y, 0xFFFFFF);
+				scaler(all, x, y);
 			}
 			x++;
 		}
-//		printf("\n");
+//		printf("\n");6
 		y++;
 	}
 	mlx_put_image_to_window(all->display.mlx, all->display.mlx_win,
@@ -51,7 +51,7 @@ int				main(int argc, char *argv[])
 	t_all			all;
 	int 			i;
 
-	all.map.lines = 0;
+	all.map.lines = 0; // lines` counter
 	fd = open(argv[1], O_RDONLY);
 //	handle_error(errno, &all); // identify errors on the initial stage such as no file etc.
 	while (get_next_line(fd, &line)) // start GNL to count map size
@@ -79,7 +79,6 @@ int				main(int argc, char *argv[])
 			parse_other(&all, line);
 		ft_free_mem(&line);
 	}
-
 	printf("RES_1: %d\n", all.data.res1);
 	printf("RES_2: %d\n", all.data.res2);
 	printf("NO: %s\n", all.data.no);
@@ -98,6 +97,7 @@ int				main(int argc, char *argv[])
 	{
 		printf("MAP: %s\n", all.map.map[i++]);
 	}
-	draw_cub(&all);
+	draw_player(&all);
+	draw_map(&all);
 	return 0;
 }

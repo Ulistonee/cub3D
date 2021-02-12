@@ -9,7 +9,8 @@
 # include "libmlx/mlx.h"
 # include "libft/libft.h"
 # include "get_next_line/get_next_line.h"
-#define VALID_SYMBOLS "102 NEW"
+#define VALID_SYMBOLS "102 NEWS"
+#define SCALE 45
 
 typedef struct		s_struct
 {
@@ -56,3 +57,6 @@ int					parse_other(t_all *all, char *line);
 int 				parse_map(t_all *all, char *line);
 int 				is_map(char *line);
 int 				handle_error(int code, t_all *all);
+int					scaler(t_all *all, int x_input, int y_input);
+void				my_mlx_pixel_put(t_all *all, int x, int y, int color);
+int 				draw_player(t_all *all);

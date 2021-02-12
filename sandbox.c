@@ -1,5 +1,5 @@
 #include "cub3D.h"
-#include "minilibx-linux/mlx.h"
+#include "libmlx/mlx.h"
 
 typedef struct  s_data {
 	void        *img;
