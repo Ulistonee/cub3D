@@ -31,13 +31,16 @@ int				draw_map(t_all *all)
 			if (all->map.map[y][x] == '1')
 			{
 //				my_mlx_pixel_put(all, x, y, 0xFFFFFF);
-				scaler(all, x, y);
+				scaler(all, x, y, 0xFFFFFF);
 			}
+			else if (all->map.map[y][x] == 'N')
+				scaler(all, x, y, 0xff0000);
 			x++;
 		}
 //		printf("\n");6
 		y++;
 	}
+//	draw_player(all);
 	mlx_put_image_to_window(all->display.mlx, all->display.mlx_win,
 						 all->display.img,0, 0);
 	mlx_loop(all->display.mlx);
@@ -97,7 +100,7 @@ int				main(int argc, char *argv[])
 	{
 		printf("MAP: %s\n", all.map.map[i++]);
 	}
-	draw_player(&all);
 	draw_map(&all);
+//	draw_player(&all);
 	return 0;
 }

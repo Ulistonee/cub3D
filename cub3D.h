@@ -57,6 +57,6 @@ int					parse_other(t_all *all, char *line);
 int 				parse_map(t_all *all, char *line);
 int 				is_map(char *line);
 int 				handle_error(int code, t_all *all);
-int					scaler(t_all *all, int x_input, int y_input);
+int					scaler(t_all *all, int x_input, int y_input, int color);
 void				my_mlx_pixel_put(t_all *all, int x, int y, int color);
 int 				draw_player(t_all *all);
