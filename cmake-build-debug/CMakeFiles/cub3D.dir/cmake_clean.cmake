@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/cub3D.dir/parser/is_map.c.o"
   "CMakeFiles/cub3D.dir/parser/parse_map.c.o"
   "CMakeFiles/cub3D.dir/parser/parse_other.c.o"
+  "CMakeFiles/cub3D.dir/scaler.c.o"
   "cub3D"
   "cub3D.pdb"
 )

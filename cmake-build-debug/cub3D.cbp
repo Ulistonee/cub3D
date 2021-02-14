@@ -44,8 +44,8 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/rchalmer/c/cub3D/./libft"/>
 					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/rchalmer/c/cub3D/./libft"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
@@ -65,8 +65,8 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/rchalmer/c/cub3D/./libft"/>
 					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/rchalmer/c/cub3D/./libft"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
@@ -86,8 +86,8 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/rchalmer/c/cub3D/./libft"/>
 					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/rchalmer/c/cub3D/./libft"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
@@ -107,8 +107,8 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/rchalmer/c/cub3D/./libft"/>
 					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/rchalmer/c/cub3D/./libft"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
@@ -264,6 +264,9 @@
 			<Option target="cub3D"/>
 		</Unit>
 		<Unit filename="/Users/rchalmer/c/cub3D/parser/parse_other.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/rchalmer/c/cub3D/scaler.c">
 			<Option target="cub3D"/>
 		</Unit>
 		<Unit filename="/Users/rchalmer/c/cub3D/CMakeLists.txt">

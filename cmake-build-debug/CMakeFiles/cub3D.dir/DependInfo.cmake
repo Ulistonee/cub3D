@@ -11,11 +11,13 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/rchalmer/c/cub3D/parser/is_map.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/parser/is_map.c.o"
   "/Users/rchalmer/c/cub3D/parser/parse_map.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/parser/parse_map.c.o"
   "/Users/rchalmer/c/cub3D/parser/parse_other.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/parser/parse_other.c.o"
+  "/Users/rchalmer/c/cub3D/scaler.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/scaler.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "/usr/local/include"
   ".././libft"
   )
 

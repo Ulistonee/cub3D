@@ -345,6 +345,33 @@ parser/parse_other.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/parser/parse_other.c.s
 .PHONY : parser/parse_other.c.s
 
+scaler.o: scaler.c.o
+
+.PHONY : scaler.o
+
+# target to build an object file
+scaler.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/scaler.c.o
+.PHONY : scaler.c.o
+
+scaler.i: scaler.c.i
+
+.PHONY : scaler.i
+
+# target to preprocess a source file
+scaler.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/scaler.c.i
+.PHONY : scaler.c.i
+
+scaler.s: scaler.c.s
+
+.PHONY : scaler.s
+
+# target to generate assembly for a file
+scaler.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/scaler.c.s
+.PHONY : scaler.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -376,6 +403,9 @@ help:
 	@echo "... parser/parse_other.o"
 	@echo "... parser/parse_other.i"
 	@echo "... parser/parse_other.s"
+	@echo "... scaler.o"
+	@echo "... scaler.i"
+	@echo "... scaler.s"
 .PHONY : help
 
 
