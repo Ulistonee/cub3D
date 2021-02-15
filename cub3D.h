@@ -6,11 +6,18 @@
 # include <string.h> // for strerror
 # include <errno.h> // for errno
 # include <stdlib.h> // for exit
-# include "libmlx/mlx.h"
+# include "minilibx_opengl_20191021/mlx.h"
 # include "libft/libft.h"
 # include "get_next_line/get_next_line.h"
+# include <mlx.h>
 #define VALID_SYMBOLS "102 NEWS"
 #define SCALE 45
+
+typedef struct		s_player
+{
+	int 			x;
+	int 			y;
+}					t_player;
 
 typedef struct		s_struct
 {
@@ -50,6 +57,7 @@ typedef struct		s_all
 	t_map			map;
 	t_struct		data;
 	t_display		display;
+	t_player 		player;
 }					t_all;
 
 
@@ -60,3 +68,4 @@ int 				handle_error(int code, t_all *all);
 int					scaler(t_all *all, int x_input, int y_input, int color);
 void				my_mlx_pixel_put(t_all *all, int x, int y, int color);
 int 				draw_player(t_all *all);
+int 				player_x_y(t_all *all);

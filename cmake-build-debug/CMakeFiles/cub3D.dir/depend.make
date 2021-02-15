@@ -11,24 +11,35 @@ CMakeFiles/cub3D.dir/handle_error.c.o: ../cub3D.h
 CMakeFiles/cub3D.dir/handle_error.c.o: ../get_next_line/get_next_line.h
 CMakeFiles/cub3D.dir/handle_error.c.o: ../handle_error.c
 CMakeFiles/cub3D.dir/handle_error.c.o: ../libft/libft.h
+CMakeFiles/cub3D.dir/handle_error.c.o: ../minilibx_opengl_20191021/mlx.h
 
 CMakeFiles/cub3D.dir/main.c.o: ../cub3D.h
 CMakeFiles/cub3D.dir/main.c.o: ../get_next_line/get_next_line.h
 CMakeFiles/cub3D.dir/main.c.o: ../libft/libft.h
 CMakeFiles/cub3D.dir/main.c.o: ../main.c
+CMakeFiles/cub3D.dir/main.c.o: ../minilibx_opengl_20191021/mlx.h
 
 CMakeFiles/cub3D.dir/parser/is_map.c.o: ../cub3D.h
 CMakeFiles/cub3D.dir/parser/is_map.c.o: ../get_next_line/get_next_line.h
 CMakeFiles/cub3D.dir/parser/is_map.c.o: ../libft/libft.h
+CMakeFiles/cub3D.dir/parser/is_map.c.o: ../minilibx_opengl_20191021/mlx.h
 CMakeFiles/cub3D.dir/parser/is_map.c.o: ../parser/is_map.c
 
 CMakeFiles/cub3D.dir/parser/parse_map.c.o: ../cub3D.h
 CMakeFiles/cub3D.dir/parser/parse_map.c.o: ../get_next_line/get_next_line.h
 CMakeFiles/cub3D.dir/parser/parse_map.c.o: ../libft/libft.h
+CMakeFiles/cub3D.dir/parser/parse_map.c.o: ../minilibx_opengl_20191021/mlx.h
 CMakeFiles/cub3D.dir/parser/parse_map.c.o: ../parser/parse_map.c
 
 CMakeFiles/cub3D.dir/parser/parse_other.c.o: ../cub3D.h
 CMakeFiles/cub3D.dir/parser/parse_other.c.o: ../get_next_line/get_next_line.h
 CMakeFiles/cub3D.dir/parser/parse_other.c.o: ../libft/libft.h
+CMakeFiles/cub3D.dir/parser/parse_other.c.o: ../minilibx_opengl_20191021/mlx.h
 CMakeFiles/cub3D.dir/parser/parse_other.c.o: ../parser/parse_other.c
+
+CMakeFiles/cub3D.dir/scaler.c.o: ../cub3D.h
+CMakeFiles/cub3D.dir/scaler.c.o: ../get_next_line/get_next_line.h
+CMakeFiles/cub3D.dir/scaler.c.o: ../libft/libft.h
+CMakeFiles/cub3D.dir/scaler.c.o: ../minilibx_opengl_20191021/mlx.h
+CMakeFiles/cub3D.dir/scaler.c.o: ../scaler.c
 

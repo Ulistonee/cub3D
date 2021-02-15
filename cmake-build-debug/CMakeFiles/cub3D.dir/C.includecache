@@ -23,8 +23,8 @@ errno.h
 -
 stdlib.h
 -
-mlx.h
--
+minilibx_opengl_20191021/mlx.h
+/Users/rchalmer/c/cub3D/minilibx_opengl_20191021/mlx.h
 libft/libft.h
 /Users/rchalmer/c/cub3D/libft/libft.h
 get_next_line/get_next_line.h
@@ -56,6 +56,8 @@ unistd.h
 cub3D.h
 /Users/rchalmer/c/cub3D/cub3D.h
 
+/Users/rchalmer/c/cub3D/minilibx_opengl_20191021/mlx.h
+
 /Users/rchalmer/c/cub3D/parser/is_map.c
 ../cub3D.h
 /Users/rchalmer/c/cub3D/cub3D.h
@@ -66,5 +68,9 @@ cub3D.h
 
 /Users/rchalmer/c/cub3D/parser/parse_other.c
 ../cub3D.h
+/Users/rchalmer/c/cub3D/cub3D.h
+
+/Users/rchalmer/c/cub3D/scaler.c
+cub3D.h
 /Users/rchalmer/c/cub3D/cub3D.h
 

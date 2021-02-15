@@ -6,27 +6,3 @@
 
 #IncludeRegexTransform: 
 
-/Users/rchalmer/c/cub3D/libft/ft_free_mem.c
-libft.h
-/Users/rchalmer/c/cub3D/libft/libft.h
-
-/Users/rchalmer/c/cub3D/libft/ft_itoa_base.c
-libft.h
-/Users/rchalmer/c/cub3D/libft/libft.h
-
-/Users/rchalmer/c/cub3D/libft/ft_itoa_u.c
-libft.h
-/Users/rchalmer/c/cub3D/libft/libft.h
-
-/Users/rchalmer/c/cub3D/libft/ft_itoa_uhex.c
-libft.h
-/Users/rchalmer/c/cub3D/libft/libft.h
-
-/Users/rchalmer/c/cub3D/libft/libft.h
-stddef.h
--
-stdlib.h
--
-unistd.h
--
-

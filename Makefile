@@ -9,7 +9,8 @@ SRCS	= \
 			main.c \
 			handle_error.c \
 			scaler.c \
-			draw_player.c
+			draw_player.c \
+			player_x_y.c
 
 OBJS		= $(patsubst %.c, %.o, $(SRCS))
 
@@ -24,13 +25,14 @@ all:		init ${NAME}
 init:
 			@ echo "......init......"
 			make -C libft
-			make -C libmlx
+			make -C minilibx_opengl_20191021
 
 $(NAME):	$(OBJS) $(HEADER)
 #MAC:
-# 			$(CC) $(FLAGS) $? $(HEADER) -Llibft -lft -Lminilibx_opengl_20191021 -lmlx -framework OpenGL -framework AppKit
+			$(CC) $(FLAGS) $? $(HEADER) -Llibft -lft -Lminilibx_opengl_20191021 -lmlx -framework OpenGL -framework AppKit
+
 #Lnx:
-			$(CC) $(FLAGS) $? $(HEADER) -Llibft -lft -Llibmlx -lmlx -lXext -lX11 -lbsd -lm -o $(NAME)
+#			$(CC) $(FLAGS) $? $(HEADER) -Llibft -lft -Llibmlx -lmlx -lXext -lX11 -lbsd -lm -o $(NAME)
 
 %.o : %.c
 			${CC} $(FLAGS) -c $< -o $@
