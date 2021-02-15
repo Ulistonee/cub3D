@@ -12,14 +12,17 @@ void			my_mlx_pixel_put(t_all *all, int x, int y, int color)
 
 int				draw_map(t_all *all)
 {
+	int x;
+	int y;
+
+	x = 0;
+	y = 0;
 	all->display.mlx = mlx_init();
 	all->display.mlx_win = mlx_new_window(all->display.mlx, all->data.res1, all->data.res2,
 									   "My_cub3D");
 	all->display.img = mlx_new_image(all->display.mlx, all->data.res1, all->data.res2);
 	all->display.addr = mlx_get_data_addr(all->display.img, &all->display.bits_per_pixel,
 			&all->display.line_length, &all->display.endian);
-	int x = 0;
-	int y = 0;
 //	printf("[%s]\n", all->map.map[0]);
 	while (y < all->map.lines)
 	{
