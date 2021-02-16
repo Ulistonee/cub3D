@@ -1,19 +1,26 @@
 #include "cub3D.h"
 
-int 			draw_player(t_all *all)
+void 			draw_player(t_all *all)
 {
-//	int 		x;
-//	int 		y;
-//
-//	x = 0;
-//	y = 0;
-//	printf("CHECK_PLAYER\n");
-//	while (all->map.lines)
-//	if (all->map.map[y][x] == 'N' || all->map.map[y][x] == 'E' ||
-//			all->map.map[y][x] == 'S' || all->map.map[y][x] == 'W')
-//	{
-//		my_mlx_pixel_put(all, x, y, 0x32CD32);
-//		scaler(all, x, y);
-//	}
-	return (0);
-};
+	double			angle;
+	int 			i;
+	double			x;
+	double 			y;
+	double 			step;
+	t_player		vector;
+
+	vector.x = 1;
+	vector.y = 1;
+	i = 0;
+	x = all->player.x;
+	y = all->player.y;
+	step = 0.1;
+	my_mlx_pixel_put(all, all->player.x * SCALE, all->player.y * SCALE, 0xFF0000);
+	while (i < 5)
+	{
+		y += step * vector.x;
+		x += step * vector.y;
+		my_mlx_pixel_put(all, x * SCALE, y * SCALE, 0x00FF7F);
+		i++;
+	}
+}
