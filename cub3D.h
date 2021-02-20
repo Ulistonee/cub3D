@@ -6,14 +6,17 @@
 # include <string.h> // for strerror
 # include <errno.h> // for errno
 # include <stdlib.h> // for exit
+# include <math.h>
 # include "minilibx_opengl_20191021/mlx.h"
 # include "libft/libft.h"
 # include "get_next_line/get_next_line.h"
 # include "libmlx/mlx.h"
 #define VALID_SYMBOLS "102 NEWS"
-#define SCALE 45
+#define SCALE 90
+#define STEP 0.1
+#define ANGLE 0.1
 # ifdef linux
-#  define ESC 53
+#  define ESC 65307
 #  define W 119
 #  define A 97
 #  define S 115
@@ -34,12 +37,18 @@
 #  define DOWN 125
 # endif
 
-
-typedef struct		s_player
+typedef struct		s_pos
 {
 	double 			x;
 	double 			y;
+}					t_pos;
+
+typedef struct 		s_player
+{
+	t_pos			pos;
+	t_pos			dir;
 }					t_player;
+
 
 typedef struct		s_struct
 {
@@ -90,4 +99,4 @@ int 				handle_error(int code, t_all *all);
 int					scaler(t_all *all, int x_input, int y_input, int color);
 void				my_mlx_pixel_put(t_all *all, int x, int y, int color);
 void 				draw_player(t_all *all);
-int 				player_x_y(t_all *all);
+int 				set_player_x_y(t_all *all);
