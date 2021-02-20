@@ -71,24 +71,42 @@ void			my_mlx_pixel_put(t_all *all, int x, int y, int color)
 
 int 			key_hook(int keynumber, t_all *all)
 {
-	if (keynumber == ESC)
-		exit(0);
-	if (keynumber == W || keynumber == UP)
-		all->player.y -= 1;;
-	if (keynumber == A || keynumber == LEFT)
-		all->player.x -= 1;
-	if (keynumber == S || keynumber == DOWN)
-		all->player.y += 1;
-	if (keynumber == D || keynumber == RIGHT)
-		all->player.x += 1;
-	mlx_destroy_image(all->display.mlx, all->display.img);
-	all->display.img = mlx_new_image(all->display.mlx, all->data.res1, all->data.res2);
-	all->display.addr = mlx_get_data_addr(all->display.img, &all->display.bits_per_pixel,
-										  &all->display.line_length, &all->display.endian);
-	draw_map(all);
-	draw_player(all);
-	mlx_put_image_to_window(all->display.mlx, all->display.mlx_win, all->display.img, 0, 0);
-	return (0);
+		double 			old_x;
+
+		if (keynumber == ESC)
+			exit(0);
+		if (keynumber == W || keynumber == UP)
+			if (all->map.map[(int)(all->player.pos.y - STEP)][(int)(all->player.pos.x)] == '0')
+				all->player.pos.y -= STEP;
+		if (keynumber == S || keynumber == DOWN)
+			if (all->map.map[(int)(all->player.pos.y + STEP)][(int)(all->player.pos.x)] == '0')
+				all->player.pos.y += STEP;
+		if (keynumber == LEFT)
+		{
+			old_x = all->player.dir.x;
+			all->player.dir.x = old_x * cos(-ANGLE) - all->player.dir.y * sin(-ANGLE);
+			all->player.dir.y = old_x * sin(-ANGLE) + all->player.dir.y * cos(-ANGLE);
+		}
+		if (keynumber == A)
+			if (all->map.map[(int)(all->player.pos.y)][(int)(all->player.pos.x - STEP)] == '0')
+				all->player.pos.x -= STEP;
+		if (keynumber == D)
+			if (all->map.map[(int)(all->player.pos.y)][(int)(all->player.pos.x + STEP)] == '0')
+				all->player.pos.x += STEP;
+		if (keynumber == RIGHT)
+			{
+				old_x = all->player.dir.x;
+				all->player.dir.x = old_x * cos(ANGLE) - all->player.dir.y * sin(ANGLE);
+				all->player.dir.y = old_x * sin(ANGLE) + all->player.dir.y * cos(ANGLE);
+			}
+		mlx_destroy_image(all->display.mlx, all->display.img);
+		all->display.img = mlx_new_image(all->display.mlx, all->data.res1, all->data.res2);
+		all->display.addr = mlx_get_data_addr(all->display.img, &all->display.bits_per_pixel,
+											  &all->display.line_length, &all->display.endian);
+		draw_map(all);
+		draw_player(all);
+		mlx_put_image_to_window(all->display.mlx, all->display.mlx_win, all->display.img, 0, 0);
+		return (0);
 }
 
 int				draw_map(t_all *all)
@@ -105,8 +123,6 @@ int				draw_map(t_all *all)
 		{
 			if (all->map.map[y][x] == '1')
 				scaler(all, x, y, 0xFFFFFF);
-//			if (all->player.x == x && all->player.y == y)
-//				scaler(all, x, y, 0xFFFF00);
 			x++;
 		}
 		y++;
@@ -125,7 +141,7 @@ int				main(int argc, char *argv[])
 //	handle_error(errno, &all); // identify errors on the initial stage such as no file etc.
 	if (!(parse_file(argv[1], &all)))
 		return (-1);
-	player_x_y(&all);
+	set_player_x_y(&all);
 //	printf("PLAYER_X: %d\n", all.player.x);
 //	printf("PLAYER_Y: %d\n", all.player.y);
 //	printf("RES_1: %d\n", all.data.res1);

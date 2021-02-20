@@ -1,26 +1,26 @@
 #include "cub3D.h"
 
-void 			draw_player(t_all *all)
+void 			draw_ray(t_all *all)
 {
-	double			angle;
 	int 			i;
-	double			x;
-	double 			y;
 	double 			step;
-	t_player		vector;
+	t_pos			dot_ray;
 
-	vector.x = 1;
-	vector.y = 1;
 	i = 0;
-	x = all->player.x;
-	y = all->player.y;
+	dot_ray.x = all->player.pos.x;
+	dot_ray.y = all->player.pos.y;
 	step = 0.1;
-	my_mlx_pixel_put(all, all->player.x * SCALE, all->player.y * SCALE, 0xFF0000);
-	while (i < 5)
+	while (all->map.map[(int)dot_ray.y][(int)dot_ray.x] != '1')
 	{
-		y += step * vector.x;
-		x += step * vector.y;
-		my_mlx_pixel_put(all, x * SCALE, y * SCALE, 0x00FF7F);
+		dot_ray.y += step * all->player.dir.y;
+		dot_ray.x += step * all->player.dir.x;
+		my_mlx_pixel_put(all, dot_ray.x * SCALE, dot_ray.y * SCALE, 0x00FF7F);
 		i++;
 	}
+}
+
+void 			draw_player(t_all *all)
+{
+	my_mlx_pixel_put(all, all->player.pos.x * SCALE, all->player.pos.y * SCALE, 0xFF0000);
+	draw_ray(all);
 }

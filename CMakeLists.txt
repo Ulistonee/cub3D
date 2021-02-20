@@ -1,24 +1,40 @@
 cmake_minimum_required(VERSION 3.17)
-project(cub3D C)
-set(CMAKE_C_FLAGS "-Lmlx -lmlx -framework OpenGL -framework AppKit")
+project(Cub3D C)
+set(CMAKE_C_STANDARD 99)
 
-link_directories(/usr/local/lib)
-include_directories(/usr/local/include)
+file(GLOB LIBFILES libft/*.c)
+add_library(LibFT STATIC ${LIBFILES})
 
-include_directories(./libft)
-add_subdirectory(./libft)
-
-add_executable(cub3D
-		main.c
-		handle_error.c
-		parser/parse_other.c
-		parser/parse_map.c
-		parser/is_map.c
-		get_next_line/get_next_line.c
-		get_next_line/get_next_line_utils.c
-		scaler.c)
-target_link_libraries(cub3D
-#		/Users/blavonne/CLionProjects/fractol/minilibx/libmlx.a
-#		"-framework OpenGL"
-#		"-framework AppKit"
-		libft)
+#add_subdirectory(./libft)
+add_executable (cub3D
+        cub3D.h
+        main.c
+        parser/parse_other.c
+        parser/parse_map.c
+        parser/is_map.c
+        get_next_line/get_next_line.c
+        get_next_line/get_next_line_utils.c
+        handle_error.c
+        scaler.c
+        draw_player.c
+        set_player_x_y.c)
+target_link_libraries(cub3D LibFT)
+if (APPLE)
+    target_link_libraries(cub3D
+            #     Cub3D ${CMAKE_SOURCE_DIR}/libft/libft.a
+            LibFT
+            ${CMAKE_SOURCE_DIR}/minilibx_opengl_20191021/libmlx.a
+            "-framework OpenGL"
+            "-framework AppKit"
+            )
+endif(APPLE)
+if (UNIX AND NOT APPLE)
+    target_link_libraries(cub3D
+            #     Cub3D ${CMAKE_SOURCE_DIR}/libft/libft.a
+            ${CMAKE_SOURCE_DIR}/libmlx/libmlx.a
+            "-lX11"
+            "-lm"
+            "-lXext"
+            "-lz"
+            )
+endif(UNIX AND NOT APPLE)

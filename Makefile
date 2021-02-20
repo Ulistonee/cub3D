@@ -10,7 +10,7 @@ SRCS	= \
 			handle_error.c \
 			scaler.c \
 			draw_player.c \
-			player_x_y.c
+			set_player_x_y.c
 
 OBJS		= $(patsubst %.c, %.o, $(SRCS))
 
