@@ -1,6 +1,6 @@
 #include "cub3D.h"
 /*
- * returns a len of the ray from player position to crossing dot.
+ * Returns the length of the ray from player position to the crossing dot.
  * Also returns the crossing dot`s coordinates.
  *
  */
@@ -35,12 +35,8 @@ int					calc_grid(t_all *all, t_ray *ray)
 	t_pos		dot2; // first grid cross occurrence
 	int 		n_x;
 	int 		n_y;
-//
-//	ray->dir.y = -1;
-//	ray->dir.x = 0;
-//	all->player.pos.x = 3.1;
-//	all->player.pos.y = 4.2;
-//	printf("dir: x: %f\ty: %f\n", all->player.dir.x, all->player.dir.y);
+
+	//	printf("dir: x: %f\ty: %f\n", all->player.dir.x, all->player.dir.y);
 //	printf("plane: x: %f\ty: %f\n", all->player.plane.x, all->player.plane.y);
 //	printf("ray: x: %f\ty: %f\n", ray->dir.x, ray->dir.y);
 	n_x = 1;
@@ -62,14 +58,14 @@ int					calc_grid(t_all *all, t_ray *ray)
 			len.y = calc_trian_y(all, ray, n_y, &dot2); // length before the cross of the y
 		if (len.x < len.y)
 		{
-			ray->len = len.x;
+			ray->len = len.x; // if the ray first crosses x, ray`s length is len.x
 			ray->dot.x = dot1.x;
 			ray->dot.y = dot1.y; // dot1.y is calculated in calc_triangle
 			n_x++;
 		}
 		else
 		{
-			ray->len = len.y;
+			ray->len = len.y; // if the ray first crosses y, ray`s length is len.y
 			ray->dot.x = dot2.x; // dot2.x is calculated in calc_triangle_y
 			ray->dot.y = dot2.y;
 			n_y++;
@@ -92,11 +88,7 @@ void				raycast(t_all *all)
 		camera_plane = 2 * x / (double)all->data.res1 - 1; // calculated camera_plane which is perpendicular
 		ray.dir.x = all->player.dir.x + all->player.plane.x * camera_plane; // current ray direction inside the camera_plane
 		ray.dir.y = all->player.dir.y + all->player.plane.y * camera_plane; // current ray direction inside the camera_plane
-//		if (camera_plane == 0.5 || camera_plane == 0 || camera_plane == -0.9)
-//		{
-//			printf("=======%f\n", camera_plane);
 		calc_grid(all, &ray);
-//		}
 		x++;
 	}
 }

@@ -16,32 +16,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d71fc4c3-af05-4a62-966f-bf38fb93ac69" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cub3D.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cub3D.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cub3D.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cub3D.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cub3D.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cub3D.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cub3D.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cub3D.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cub3D.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cub3D.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cub3D.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cub3D.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cub3D.dir/draw_player.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cub3D.dir/draw_player.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cub3D.dir/handle_error.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cub3D.dir/handle_error.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cub3D.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cub3D.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cub3D.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cub3D.dir/main.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cub3D.dir/parser/parse_map.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cub3D.dir/parser/parse_map.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cub3D.dir/parser/parse_other.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cub3D.dir/parser/parse_other.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cub3D.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cub3D.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cub3D.dir/scaler.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cub3D.dir/scaler.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cub3D.dir/set_player_x_y.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cub3D.dir/set_player_x_y.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Cub3D.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Cub3D.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cub3D" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cub3D" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cub3D.h" beforeDir="false" afterPath="$PROJECT_DIR$/cub3D.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/draw_player.c" beforeDir="false" afterPath="$PROJECT_DIR$/draw_player.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/get_next_line" beforeDir="false" afterPath="$PROJECT_DIR$/get_next_line" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/get_next_line/get_next_line.h" beforeDir="false" afterPath="$PROJECT_DIR$/get_next_line/get_next_line.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libft" beforeDir="false" afterPath="$PROJECT_DIR$/libft" afterDir="false" />
@@ -319,9 +293,6 @@
       <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/processor/process_x.c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/processor/process_x.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/va_arg.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map.cub" beforeDir="false" afterPath="$PROJECT_DIR$/map.cub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/set_player_x_y.c" beforeDir="false" afterPath="$PROJECT_DIR$/set_player_x_y.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -391,7 +362,7 @@
       <workItem from="1613647547235" duration="8394000" />
       <workItem from="1614021107568" duration="8198000" />
       <workItem from="1614071875152" duration="12766000" />
-      <workItem from="1614097150087" duration="8824000" />
+      <workItem from="1614097150087" duration="9777000" />
     </task>
     <servers />
   </component>

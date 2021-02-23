@@ -136,7 +136,7 @@ int				draw_map(t_all *all)
 		y++;
 	}
 	mlx_put_image_to_window(all->display.mlx, all->display.mlx_win,
-						 all->display.img,0, 0);
+						 all->display.img,0, 0); // ?
 	return (0);
 }
 

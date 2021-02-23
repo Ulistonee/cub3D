@@ -6,7 +6,7 @@ int 		set_player_dir(t_all *all, int x, int y)
 	{
 		all->player.dir.x = 0;
 		all->player.dir.y = -1;
-		all->player.plane.x = FOV_L;
+		all->player.plane.x = FOV_L; // ?
 		all->player.plane.y = 0;
 
 	}
