@@ -12,7 +12,8 @@
 # include "get_next_line/get_next_line.h"
 # include "libmlx/mlx.h"
 #define VALID_SYMBOLS "102 NEWS"
-#define SCALE 90
+#define SCALE 30
+# define FOV_L 0.577
 #define STEP 0.1
 #define ANGLE 0.1
 # ifdef linux
@@ -47,6 +48,7 @@ typedef struct 		s_player
 {
 	t_pos			pos;
 	t_pos			dir;
+	t_pos			plane;
 }					t_player;
 
 
@@ -91,6 +93,14 @@ typedef struct		s_all
 	t_player 		player;
 }					t_all;
 
+typedef struct		s_ray
+{
+	t_pos			dir;
+	double			len;
+	t_pos			dot;
+
+}					t_ray;
+
 
 int					parse_other(t_all *all, char *line);
 int 				parse_map(t_all *all, char *line);
@@ -100,3 +110,4 @@ int					scaler(t_all *all, int x_input, int y_input, int color);
 void				my_mlx_pixel_put(t_all *all, int x, int y, int color);
 void 				draw_player(t_all *all);
 int 				set_player_x_y(t_all *all);
+void 				raycast(t_all *all);

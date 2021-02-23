@@ -265,6 +265,9 @@
 		<Unit filename="/home/aizhan/cub3D/cub3D/my_cub3D/parser/parse_other.c">
 			<Option target="cub3D"/>
 		</Unit>
+		<Unit filename="/home/aizhan/cub3D/cub3D/my_cub3D/raycast.c">
+			<Option target="cub3D"/>
+		</Unit>
 		<Unit filename="/home/aizhan/cub3D/cub3D/my_cub3D/scaler.c">
 			<Option target="cub3D"/>
 		</Unit>

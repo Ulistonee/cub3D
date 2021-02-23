@@ -1425,6 +1425,33 @@ parser/parse_other.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/parser/parse_other.c.s
 .PHONY : parser/parse_other.c.s
 
+raycast.o: raycast.c.o
+
+.PHONY : raycast.o
+
+# target to build an object file
+raycast.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/raycast.c.o
+.PHONY : raycast.c.o
+
+raycast.i: raycast.c.i
+
+.PHONY : raycast.i
+
+# target to preprocess a source file
+raycast.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/raycast.c.i
+.PHONY : raycast.c.i
+
+raycast.s: raycast.c.s
+
+.PHONY : raycast.s
+
+# target to generate assembly for a file
+raycast.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/raycast.c.s
+.PHONY : raycast.c.s
+
 scaler.o: scaler.c.o
 
 .PHONY : scaler.o
@@ -1630,6 +1657,9 @@ help:
 	@echo "... parser/parse_other.o"
 	@echo "... parser/parse_other.i"
 	@echo "... parser/parse_other.s"
+	@echo "... raycast.o"
+	@echo "... raycast.i"
+	@echo "... raycast.s"
 	@echo "... scaler.o"
 	@echo "... scaler.i"
 	@echo "... scaler.s"

@@ -49,6 +49,13 @@ CMakeFiles/cub3D.dir/parser/parse_other.c.o
  /home/aizhan/cub3D/cub3D/my_cub3D/libmlx/mlx.h
  /home/aizhan/cub3D/cub3D/my_cub3D/minilibx_opengl_20191021/mlx.h
  /home/aizhan/cub3D/cub3D/my_cub3D/parser/parse_other.c
+CMakeFiles/cub3D.dir/raycast.c.o
+ /home/aizhan/cub3D/cub3D/my_cub3D/cub3D.h
+ /home/aizhan/cub3D/cub3D/my_cub3D/get_next_line/get_next_line.h
+ /home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+ /home/aizhan/cub3D/cub3D/my_cub3D/libmlx/mlx.h
+ /home/aizhan/cub3D/cub3D/my_cub3D/minilibx_opengl_20191021/mlx.h
+ /home/aizhan/cub3D/cub3D/my_cub3D/raycast.c
 CMakeFiles/cub3D.dir/scaler.c.o
  /home/aizhan/cub3D/cub3D/my_cub3D/cub3D.h
  /home/aizhan/cub3D/cub3D/my_cub3D/get_next_line/get_next_line.h

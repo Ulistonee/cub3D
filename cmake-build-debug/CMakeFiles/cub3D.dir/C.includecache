@@ -54,9 +54,9 @@ unistd.h
 
 /home/aizhan/cub3D/cub3D/my_cub3D/libmlx/mlx.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/main.c
+/home/aizhan/cub3D/cub3D/my_cub3D/minilibx_opengl_20191021/mlx.h
+
+/home/aizhan/cub3D/cub3D/my_cub3D/raycast.c
 cub3D.h
 /home/aizhan/cub3D/cub3D/my_cub3D/cub3D.h
-
-/home/aizhan/cub3D/cub3D/my_cub3D/minilibx_opengl_20191021/mlx.h
 

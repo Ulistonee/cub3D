@@ -22,5 +22,6 @@ void 			draw_ray(t_all *all)
 void 			draw_player(t_all *all)
 {
 	my_mlx_pixel_put(all, all->player.pos.x * SCALE, all->player.pos.y * SCALE, 0xFF0000);
-	draw_ray(all);
+//	draw_ray(all);
+	raycast(all);
 }

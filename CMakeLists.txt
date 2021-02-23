@@ -17,7 +17,8 @@ add_executable (cub3D
         handle_error.c
         scaler.c
         draw_player.c
-        set_player_x_y.c)
+        set_player_x_y.c
+        raycast.c)
 target_link_libraries(cub3D LibFT)
 if (APPLE)
     target_link_libraries(cub3D

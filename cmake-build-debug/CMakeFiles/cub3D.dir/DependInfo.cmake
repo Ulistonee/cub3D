@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/aizhan/cub3D/cub3D/my_cub3D/parser/is_map.c" "/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/parser/is_map.c.o"
   "/home/aizhan/cub3D/cub3D/my_cub3D/parser/parse_map.c" "/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/parser/parse_map.c.o"
   "/home/aizhan/cub3D/cub3D/my_cub3D/parser/parse_other.c" "/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/parser/parse_other.c.o"
+  "/home/aizhan/cub3D/cub3D/my_cub3D/raycast.c" "/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/raycast.c.o"
   "/home/aizhan/cub3D/cub3D/my_cub3D/scaler.c" "/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/scaler.c.o"
   "/home/aizhan/cub3D/cub3D/my_cub3D/set_player_x_y.c" "/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/set_player_x_y.c.o"
   )

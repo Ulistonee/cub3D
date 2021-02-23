@@ -49,6 +49,13 @@ CMakeFiles/cub3D.dir/parser/parse_other.c.o: ../libmlx/mlx.h
 CMakeFiles/cub3D.dir/parser/parse_other.c.o: ../minilibx_opengl_20191021/mlx.h
 CMakeFiles/cub3D.dir/parser/parse_other.c.o: ../parser/parse_other.c
 
+CMakeFiles/cub3D.dir/raycast.c.o: ../cub3D.h
+CMakeFiles/cub3D.dir/raycast.c.o: ../get_next_line/get_next_line.h
+CMakeFiles/cub3D.dir/raycast.c.o: ../libft/libft.h
+CMakeFiles/cub3D.dir/raycast.c.o: ../libmlx/mlx.h
+CMakeFiles/cub3D.dir/raycast.c.o: ../minilibx_opengl_20191021/mlx.h
+CMakeFiles/cub3D.dir/raycast.c.o: ../raycast.c
+
 CMakeFiles/cub3D.dir/scaler.c.o: ../cub3D.h
 CMakeFiles/cub3D.dir/scaler.c.o: ../get_next_line/get_next_line.h
 CMakeFiles/cub3D.dir/scaler.c.o: ../libft/libft.h
