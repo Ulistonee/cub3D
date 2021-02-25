@@ -12,7 +12,8 @@
 # include "get_next_line/get_next_line.h"
 //# include "libmlx/mlx.h"
 #define VALID_SYMBOLS "102 NEWS"
-#define SCALE 90
+#define SCALE 45
+# define FOV_L 0.577
 #define STEP 0.1
 #define ANGLE 0.1
 # ifdef linux
@@ -36,6 +37,13 @@
 #  define RIGHT 124
 #  define DOWN 125
 # endif
+
+typedef struct		s_walls
+{
+	double			wall_height;
+	double			top;
+	double			bottom;
+}					t_walls;
 
 typedef struct		s_pos
 {
@@ -72,10 +80,17 @@ typedef struct		s_fow
 	double			rot_speed;
 }					t_fow;
 
+typedef struct		s_posi
+{
+	int 			x;
+	int 			y;
+}					t_posi;
+
 typedef struct 		s_player
 {
 	t_pos			pos;
 	t_pos			dir;
+	t_pos			plane;
 }					t_player;
 
 
@@ -97,7 +112,7 @@ typedef struct		s_struct
 
 typedef struct		s_map
 {
-	char 			map[24][24];
+	char 			**map;
 	int 			lines;
 }					t_map;
 
@@ -119,7 +134,16 @@ typedef struct		s_all
 	t_display		display;
 	t_player 		player;
 	t_fow			fow;
+	t_walls			walls;
 }					t_all;
+
+typedef struct		s_ray
+{
+	t_pos			dir;
+	double			len;
+	t_pos			dot;
+
+}					t_ray;
 
 
 
@@ -128,8 +152,13 @@ int 				parse_map(t_all *all, char *line);
 int 				is_map(char *line);
 int 				handle_error(int code, t_all *all);
 int					scaler(t_all *all, int x_input, int y_input, int color);
-//void				my_mlx_pixel_put(t_all *all, int x, int y, int color);
+void				my_mlx_pixel_put(t_all *all, int x, int y, int color);
 void 				draw_player(t_all *all);
-int 				set_player_x_y(t_all *all);
-void				my_mlx_pixel_put(t_display *display, int x, int y, int color);
-void				raycasting(t_all *all);
+//void				my_mlx_pixel_put(t_display *display, int x, int y, int color);
+int 				set_player(t_all *all);
+void 				raycast(t_all *all);
+int					parser(t_all *all, char *file_name);
+int					visualize(t_all *all);
+int					draw_map(t_all *all);
+int					draw_walls(t_all *all, t_ray *ray, int x);
+
