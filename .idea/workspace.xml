@@ -183,14 +183,6 @@
       <change beforePath="$PROJECT_DIR$/main.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/map.cub" beforeDir="false" afterPath="$PROJECT_DIR$/map.cub" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/minilibx_opengl_20191021/libmlx.a" beforeDir="false" afterPath="$PROJECT_DIR$/minilibx_opengl_20191021/libmlx.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_init_loop.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_int_str_to_wordtab.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_mouse.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_new_image.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_new_window.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_png.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_shaders.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/minilibx_opengl_20191021/mlx_xpm.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/parser/is_map.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/parser/parse_map.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/parser/parse_other.o" beforeDir="false" />
@@ -251,7 +243,7 @@
       <workItem from="1613825609957" duration="4000" />
       <workItem from="1613825726838" duration="382000" />
       <workItem from="1613828659349" duration="1813000" />
-      <workItem from="1613843657531" duration="3116000" />
+      <workItem from="1613843657531" duration="3870000" />
     </task>
     <servers />
   </component>
