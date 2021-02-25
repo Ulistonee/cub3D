@@ -90,9 +90,22 @@ CMakeFiles/cub3D.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/main.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aizhan/cub3D/cub3D/my_cub3D/main.c -o CMakeFiles/cub3D.dir/main.c.s
 
+CMakeFiles/cub3D.dir/parser/parser.c.o: CMakeFiles/cub3D.dir/flags.make
+CMakeFiles/cub3D.dir/parser/parser.c.o: ../parser/parser.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/cub3D.dir/parser/parser.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cub3D.dir/parser/parser.c.o   -c /home/aizhan/cub3D/cub3D/my_cub3D/parser/parser.c
+
+CMakeFiles/cub3D.dir/parser/parser.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cub3D.dir/parser/parser.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aizhan/cub3D/cub3D/my_cub3D/parser/parser.c > CMakeFiles/cub3D.dir/parser/parser.c.i
+
+CMakeFiles/cub3D.dir/parser/parser.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/parser/parser.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aizhan/cub3D/cub3D/my_cub3D/parser/parser.c -o CMakeFiles/cub3D.dir/parser/parser.c.s
+
 CMakeFiles/cub3D.dir/parser/parse_other.c.o: CMakeFiles/cub3D.dir/flags.make
 CMakeFiles/cub3D.dir/parser/parse_other.c.o: ../parser/parse_other.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/cub3D.dir/parser/parse_other.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/cub3D.dir/parser/parse_other.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cub3D.dir/parser/parse_other.c.o   -c /home/aizhan/cub3D/cub3D/my_cub3D/parser/parse_other.c
 
 CMakeFiles/cub3D.dir/parser/parse_other.c.i: cmake_force
@@ -105,7 +118,7 @@ CMakeFiles/cub3D.dir/parser/parse_other.c.s: cmake_force
 
 CMakeFiles/cub3D.dir/parser/parse_map.c.o: CMakeFiles/cub3D.dir/flags.make
 CMakeFiles/cub3D.dir/parser/parse_map.c.o: ../parser/parse_map.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/cub3D.dir/parser/parse_map.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/cub3D.dir/parser/parse_map.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cub3D.dir/parser/parse_map.c.o   -c /home/aizhan/cub3D/cub3D/my_cub3D/parser/parse_map.c
 
 CMakeFiles/cub3D.dir/parser/parse_map.c.i: cmake_force
@@ -118,7 +131,7 @@ CMakeFiles/cub3D.dir/parser/parse_map.c.s: cmake_force
 
 CMakeFiles/cub3D.dir/parser/is_map.c.o: CMakeFiles/cub3D.dir/flags.make
 CMakeFiles/cub3D.dir/parser/is_map.c.o: ../parser/is_map.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/cub3D.dir/parser/is_map.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/cub3D.dir/parser/is_map.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cub3D.dir/parser/is_map.c.o   -c /home/aizhan/cub3D/cub3D/my_cub3D/parser/is_map.c
 
 CMakeFiles/cub3D.dir/parser/is_map.c.i: cmake_force
@@ -131,7 +144,7 @@ CMakeFiles/cub3D.dir/parser/is_map.c.s: cmake_force
 
 CMakeFiles/cub3D.dir/get_next_line/get_next_line.c.o: CMakeFiles/cub3D.dir/flags.make
 CMakeFiles/cub3D.dir/get_next_line/get_next_line.c.o: ../get_next_line/get_next_line.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/cub3D.dir/get_next_line/get_next_line.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/cub3D.dir/get_next_line/get_next_line.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cub3D.dir/get_next_line/get_next_line.c.o   -c /home/aizhan/cub3D/cub3D/my_cub3D/get_next_line/get_next_line.c
 
 CMakeFiles/cub3D.dir/get_next_line/get_next_line.c.i: cmake_force
@@ -144,7 +157,7 @@ CMakeFiles/cub3D.dir/get_next_line/get_next_line.c.s: cmake_force
 
 CMakeFiles/cub3D.dir/get_next_line/get_next_line_utils.c.o: CMakeFiles/cub3D.dir/flags.make
 CMakeFiles/cub3D.dir/get_next_line/get_next_line_utils.c.o: ../get_next_line/get_next_line_utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/cub3D.dir/get_next_line/get_next_line_utils.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/cub3D.dir/get_next_line/get_next_line_utils.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cub3D.dir/get_next_line/get_next_line_utils.c.o   -c /home/aizhan/cub3D/cub3D/my_cub3D/get_next_line/get_next_line_utils.c
 
 CMakeFiles/cub3D.dir/get_next_line/get_next_line_utils.c.i: cmake_force
@@ -157,7 +170,7 @@ CMakeFiles/cub3D.dir/get_next_line/get_next_line_utils.c.s: cmake_force
 
 CMakeFiles/cub3D.dir/handle_error.c.o: CMakeFiles/cub3D.dir/flags.make
 CMakeFiles/cub3D.dir/handle_error.c.o: ../handle_error.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/cub3D.dir/handle_error.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/cub3D.dir/handle_error.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cub3D.dir/handle_error.c.o   -c /home/aizhan/cub3D/cub3D/my_cub3D/handle_error.c
 
 CMakeFiles/cub3D.dir/handle_error.c.i: cmake_force
@@ -170,7 +183,7 @@ CMakeFiles/cub3D.dir/handle_error.c.s: cmake_force
 
 CMakeFiles/cub3D.dir/scaler.c.o: CMakeFiles/cub3D.dir/flags.make
 CMakeFiles/cub3D.dir/scaler.c.o: ../scaler.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/cub3D.dir/scaler.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/cub3D.dir/scaler.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cub3D.dir/scaler.c.o   -c /home/aizhan/cub3D/cub3D/my_cub3D/scaler.c
 
 CMakeFiles/cub3D.dir/scaler.c.i: cmake_force
@@ -183,7 +196,7 @@ CMakeFiles/cub3D.dir/scaler.c.s: cmake_force
 
 CMakeFiles/cub3D.dir/draw_player.c.o: CMakeFiles/cub3D.dir/flags.make
 CMakeFiles/cub3D.dir/draw_player.c.o: ../draw_player.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/cub3D.dir/draw_player.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/cub3D.dir/draw_player.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cub3D.dir/draw_player.c.o   -c /home/aizhan/cub3D/cub3D/my_cub3D/draw_player.c
 
 CMakeFiles/cub3D.dir/draw_player.c.i: cmake_force
@@ -194,22 +207,22 @@ CMakeFiles/cub3D.dir/draw_player.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/draw_player.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aizhan/cub3D/cub3D/my_cub3D/draw_player.c -o CMakeFiles/cub3D.dir/draw_player.c.s
 
-CMakeFiles/cub3D.dir/set_player_x_y.c.o: CMakeFiles/cub3D.dir/flags.make
-CMakeFiles/cub3D.dir/set_player_x_y.c.o: ../set_player_x_y.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/cub3D.dir/set_player_x_y.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cub3D.dir/set_player_x_y.c.o   -c /home/aizhan/cub3D/cub3D/my_cub3D/set_player_x_y.c
+CMakeFiles/cub3D.dir/set_player.c.o: CMakeFiles/cub3D.dir/flags.make
+CMakeFiles/cub3D.dir/set_player.c.o: ../set_player.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/cub3D.dir/set_player.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cub3D.dir/set_player.c.o   -c /home/aizhan/cub3D/cub3D/my_cub3D/set_player.c
 
-CMakeFiles/cub3D.dir/set_player_x_y.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cub3D.dir/set_player_x_y.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aizhan/cub3D/cub3D/my_cub3D/set_player_x_y.c > CMakeFiles/cub3D.dir/set_player_x_y.c.i
+CMakeFiles/cub3D.dir/set_player.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cub3D.dir/set_player.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aizhan/cub3D/cub3D/my_cub3D/set_player.c > CMakeFiles/cub3D.dir/set_player.c.i
 
-CMakeFiles/cub3D.dir/set_player_x_y.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/set_player_x_y.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aizhan/cub3D/cub3D/my_cub3D/set_player_x_y.c -o CMakeFiles/cub3D.dir/set_player_x_y.c.s
+CMakeFiles/cub3D.dir/set_player.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/set_player.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aizhan/cub3D/cub3D/my_cub3D/set_player.c -o CMakeFiles/cub3D.dir/set_player.c.s
 
 CMakeFiles/cub3D.dir/raycast.c.o: CMakeFiles/cub3D.dir/flags.make
 CMakeFiles/cub3D.dir/raycast.c.o: ../raycast.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/cub3D.dir/raycast.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/cub3D.dir/raycast.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cub3D.dir/raycast.c.o   -c /home/aizhan/cub3D/cub3D/my_cub3D/raycast.c
 
 CMakeFiles/cub3D.dir/raycast.c.i: cmake_force
@@ -220,9 +233,36 @@ CMakeFiles/cub3D.dir/raycast.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/raycast.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aizhan/cub3D/cub3D/my_cub3D/raycast.c -o CMakeFiles/cub3D.dir/raycast.c.s
 
+CMakeFiles/cub3D.dir/draw_map.c.o: CMakeFiles/cub3D.dir/flags.make
+CMakeFiles/cub3D.dir/draw_map.c.o: ../draw_map.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/cub3D.dir/draw_map.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cub3D.dir/draw_map.c.o   -c /home/aizhan/cub3D/cub3D/my_cub3D/draw_map.c
+
+CMakeFiles/cub3D.dir/draw_map.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cub3D.dir/draw_map.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aizhan/cub3D/cub3D/my_cub3D/draw_map.c > CMakeFiles/cub3D.dir/draw_map.c.i
+
+CMakeFiles/cub3D.dir/draw_map.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/draw_map.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aizhan/cub3D/cub3D/my_cub3D/draw_map.c -o CMakeFiles/cub3D.dir/draw_map.c.s
+
+CMakeFiles/cub3D.dir/visualize.c.o: CMakeFiles/cub3D.dir/flags.make
+CMakeFiles/cub3D.dir/visualize.c.o: ../visualize.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/cub3D.dir/visualize.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cub3D.dir/visualize.c.o   -c /home/aizhan/cub3D/cub3D/my_cub3D/visualize.c
+
+CMakeFiles/cub3D.dir/visualize.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cub3D.dir/visualize.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aizhan/cub3D/cub3D/my_cub3D/visualize.c > CMakeFiles/cub3D.dir/visualize.c.i
+
+CMakeFiles/cub3D.dir/visualize.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/visualize.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aizhan/cub3D/cub3D/my_cub3D/visualize.c -o CMakeFiles/cub3D.dir/visualize.c.s
+
 # Object files for target cub3D
 cub3D_OBJECTS = \
 "CMakeFiles/cub3D.dir/main.c.o" \
+"CMakeFiles/cub3D.dir/parser/parser.c.o" \
 "CMakeFiles/cub3D.dir/parser/parse_other.c.o" \
 "CMakeFiles/cub3D.dir/parser/parse_map.c.o" \
 "CMakeFiles/cub3D.dir/parser/is_map.c.o" \
@@ -231,13 +271,16 @@ cub3D_OBJECTS = \
 "CMakeFiles/cub3D.dir/handle_error.c.o" \
 "CMakeFiles/cub3D.dir/scaler.c.o" \
 "CMakeFiles/cub3D.dir/draw_player.c.o" \
-"CMakeFiles/cub3D.dir/set_player_x_y.c.o" \
-"CMakeFiles/cub3D.dir/raycast.c.o"
+"CMakeFiles/cub3D.dir/set_player.c.o" \
+"CMakeFiles/cub3D.dir/raycast.c.o" \
+"CMakeFiles/cub3D.dir/draw_map.c.o" \
+"CMakeFiles/cub3D.dir/visualize.c.o"
 
 # External object files for target cub3D
 cub3D_EXTERNAL_OBJECTS =
 
 cub3D: CMakeFiles/cub3D.dir/main.c.o
+cub3D: CMakeFiles/cub3D.dir/parser/parser.c.o
 cub3D: CMakeFiles/cub3D.dir/parser/parse_other.c.o
 cub3D: CMakeFiles/cub3D.dir/parser/parse_map.c.o
 cub3D: CMakeFiles/cub3D.dir/parser/is_map.c.o
@@ -246,13 +289,15 @@ cub3D: CMakeFiles/cub3D.dir/get_next_line/get_next_line_utils.c.o
 cub3D: CMakeFiles/cub3D.dir/handle_error.c.o
 cub3D: CMakeFiles/cub3D.dir/scaler.c.o
 cub3D: CMakeFiles/cub3D.dir/draw_player.c.o
-cub3D: CMakeFiles/cub3D.dir/set_player_x_y.c.o
+cub3D: CMakeFiles/cub3D.dir/set_player.c.o
 cub3D: CMakeFiles/cub3D.dir/raycast.c.o
+cub3D: CMakeFiles/cub3D.dir/draw_map.c.o
+cub3D: CMakeFiles/cub3D.dir/visualize.c.o
 cub3D: CMakeFiles/cub3D.dir/build.make
 cub3D: libLibFT.a
 cub3D: ../libmlx/libmlx.a
 cub3D: CMakeFiles/cub3D.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C executable cub3D"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking C executable cub3D"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cub3D.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

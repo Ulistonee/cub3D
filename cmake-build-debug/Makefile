@@ -156,6 +156,33 @@ LibFT/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/build
 .PHONY : LibFT/fast
 
+draw_map.o: draw_map.c.o
+
+.PHONY : draw_map.o
+
+# target to build an object file
+draw_map.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/draw_map.c.o
+.PHONY : draw_map.c.o
+
+draw_map.i: draw_map.c.i
+
+.PHONY : draw_map.i
+
+# target to preprocess a source file
+draw_map.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/draw_map.c.i
+.PHONY : draw_map.c.i
+
+draw_map.s: draw_map.c.s
+
+.PHONY : draw_map.s
+
+# target to generate assembly for a file
+draw_map.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/draw_map.c.s
+.PHONY : draw_map.c.s
+
 draw_player.o: draw_player.c.o
 
 .PHONY : draw_player.o
@@ -1425,6 +1452,33 @@ parser/parse_other.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/parser/parse_other.c.s
 .PHONY : parser/parse_other.c.s
 
+parser/parser.o: parser/parser.c.o
+
+.PHONY : parser/parser.o
+
+# target to build an object file
+parser/parser.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/parser/parser.c.o
+.PHONY : parser/parser.c.o
+
+parser/parser.i: parser/parser.c.i
+
+.PHONY : parser/parser.i
+
+# target to preprocess a source file
+parser/parser.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/parser/parser.c.i
+.PHONY : parser/parser.c.i
+
+parser/parser.s: parser/parser.c.s
+
+.PHONY : parser/parser.s
+
+# target to generate assembly for a file
+parser/parser.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/parser/parser.c.s
+.PHONY : parser/parser.c.s
+
 raycast.o: raycast.c.o
 
 .PHONY : raycast.o
@@ -1479,32 +1533,59 @@ scaler.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/scaler.c.s
 .PHONY : scaler.c.s
 
-set_player_x_y.o: set_player_x_y.c.o
+set_player.o: set_player.c.o
 
-.PHONY : set_player_x_y.o
+.PHONY : set_player.o
 
 # target to build an object file
-set_player_x_y.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/set_player_x_y.c.o
-.PHONY : set_player_x_y.c.o
+set_player.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/set_player.c.o
+.PHONY : set_player.c.o
 
-set_player_x_y.i: set_player_x_y.c.i
+set_player.i: set_player.c.i
 
-.PHONY : set_player_x_y.i
+.PHONY : set_player.i
 
 # target to preprocess a source file
-set_player_x_y.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/set_player_x_y.c.i
-.PHONY : set_player_x_y.c.i
+set_player.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/set_player.c.i
+.PHONY : set_player.c.i
 
-set_player_x_y.s: set_player_x_y.c.s
+set_player.s: set_player.c.s
 
-.PHONY : set_player_x_y.s
+.PHONY : set_player.s
 
 # target to generate assembly for a file
-set_player_x_y.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/set_player_x_y.c.s
-.PHONY : set_player_x_y.c.s
+set_player.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/set_player.c.s
+.PHONY : set_player.c.s
+
+visualize.o: visualize.c.o
+
+.PHONY : visualize.o
+
+# target to build an object file
+visualize.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/visualize.c.o
+.PHONY : visualize.c.o
+
+visualize.i: visualize.c.i
+
+.PHONY : visualize.i
+
+# target to preprocess a source file
+visualize.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/visualize.c.i
+.PHONY : visualize.c.i
+
+visualize.s: visualize.c.s
+
+.PHONY : visualize.s
+
+# target to generate assembly for a file
+visualize.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/visualize.c.s
+.PHONY : visualize.c.s
 
 # Help Target
 help:
@@ -1516,6 +1597,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... LibFT"
 	@echo "... cub3D"
+	@echo "... draw_map.o"
+	@echo "... draw_map.i"
+	@echo "... draw_map.s"
 	@echo "... draw_player.o"
 	@echo "... draw_player.i"
 	@echo "... draw_player.s"
@@ -1657,15 +1741,21 @@ help:
 	@echo "... parser/parse_other.o"
 	@echo "... parser/parse_other.i"
 	@echo "... parser/parse_other.s"
+	@echo "... parser/parser.o"
+	@echo "... parser/parser.i"
+	@echo "... parser/parser.s"
 	@echo "... raycast.o"
 	@echo "... raycast.i"
 	@echo "... raycast.s"
 	@echo "... scaler.o"
 	@echo "... scaler.i"
 	@echo "... scaler.s"
-	@echo "... set_player_x_y.o"
-	@echo "... set_player_x_y.i"
-	@echo "... set_player_x_y.s"
+	@echo "... set_player.o"
+	@echo "... set_player.i"
+	@echo "... set_player.s"
+	@echo "... visualize.o"
+	@echo "... visualize.i"
+	@echo "... visualize.s"
 .PHONY : help
 
 

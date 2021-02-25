@@ -9,6 +9,7 @@ add_library(LibFT STATIC ${LIBFILES})
 add_executable (cub3D
         cub3D.h
         main.c
+        parser/parser.c
         parser/parse_other.c
         parser/parse_map.c
         parser/is_map.c
@@ -17,8 +18,10 @@ add_executable (cub3D
         handle_error.c
         scaler.c
         draw_player.c
-        set_player_x_y.c
-        raycast.c)
+        set_player.c
+        raycast.c
+        draw_map.c
+        visualize.c)
 target_link_libraries(cub3D LibFT)
 if (APPLE)
     target_link_libraries(cub3D

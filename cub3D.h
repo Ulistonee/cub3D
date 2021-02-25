@@ -12,7 +12,7 @@
 # include "get_next_line/get_next_line.h"
 # include "libmlx/mlx.h"
 #define VALID_SYMBOLS "102 NEWS"
-#define SCALE 30
+#define SCALE 45
 # define FOV_L 0.577
 #define STEP 0.1
 #define ANGLE 0.1
@@ -43,6 +43,12 @@ typedef struct		s_pos
 	double 			x;
 	double 			y;
 }					t_pos;
+
+typedef struct		s_posi
+{
+	int 			x;
+	int 			y;
+}					t_posi;
 
 typedef struct 		s_player
 {
@@ -109,5 +115,8 @@ int 				handle_error(int code, t_all *all);
 int					scaler(t_all *all, int x_input, int y_input, int color);
 void				my_mlx_pixel_put(t_all *all, int x, int y, int color);
 void 				draw_player(t_all *all);
-int 				set_player_x_y(t_all *all);
+int 				set_player(t_all *all);
 void 				raycast(t_all *all);
+int					parser(t_all *all, char *file_name);
+int					visualize(t_all *all);
+int					draw_map(t_all *all);
