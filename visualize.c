@@ -14,7 +14,7 @@ int 				display(t_all *all)
 int			visualize(t_all *all)
 {
 	display(all);
-	draw_map(all);
+//	draw_map(all);
 
 	return (0);
 }

@@ -43,6 +43,7 @@ typedef struct		s_walls
 	double			wall_height;
 	double			top;
 	double			bottom;
+	int				side;
 }					t_walls;
 
 typedef struct		s_pos
