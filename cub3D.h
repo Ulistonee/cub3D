@@ -10,7 +10,7 @@
 # include "minilibx_opengl_20191021/mlx.h"
 # include "libft/libft.h"
 # include "get_next_line/get_next_line.h"
-# include "libmlx/mlx.h"
+//# include "libmlx/mlx.h"
 #define VALID_SYMBOLS "102 NEWS"
 #define SCALE 45
 # define FOV_L 0.577
@@ -38,11 +38,48 @@
 #  define DOWN 125
 # endif
 
+typedef struct		s_walls
+{
+	double			wall_height;
+	double			top;
+	double			bottom;
+	int				side;
+}					t_walls;
+
 typedef struct		s_pos
 {
 	double 			x;
 	double 			y;
 }					t_pos;
+
+typedef struct		s_pos_i
+{
+	int 			x;
+	int 			y;
+}					t_pos_i;
+
+typedef struct		s_fow
+{
+	t_pos			plane;
+	t_pos			old_plane;
+	t_pos			ray_dir;
+	t_pos			dir;
+	t_pos			old_dir;
+	double			camera_x;
+	t_pos_i 		map;
+	t_pos			pos;
+	t_pos			side_dist;
+	t_pos			delta_dist;
+	double			perp_wall_dist;
+	t_pos			step;
+	int				hit;
+	int				side;
+	int				line_height;
+	int				draw_start;
+	int				draw_end;
+	double			move_speed;
+	double			rot_speed;
+}					t_fow;
 
 typedef struct		s_posi
 {
@@ -97,6 +134,8 @@ typedef struct		s_all
 	t_struct		data;
 	t_display		display;
 	t_player 		player;
+	t_fow			fow;
+	t_walls			walls;
 }					t_all;
 
 typedef struct		s_ray
@@ -106,6 +145,7 @@ typedef struct		s_ray
 	t_pos			dot;
 
 }					t_ray;
+
 
 
 int					parse_other(t_all *all, char *line);
@@ -120,3 +160,5 @@ void 				raycast(t_all *all);
 int					parser(t_all *all, char *file_name);
 int					visualize(t_all *all);
 int					draw_map(t_all *all);
+int					draw_walls(t_all *all, t_ray *ray, int x);
+

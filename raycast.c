@@ -50,17 +50,26 @@ int					calc_grid(t_all *all, t_ray *ray)
 			len.y = calc_trian_y(all, ray, n.y, &dot2); // length before the cross of the y
 		if (len.x < len.y)
 		{
+			if (ray->dir.x < 0)
+//				all->walls.side = all->data.no;
+				all->walls.side = 0xFF1493;
+			if (ray->dir.x > 0)
+				all->walls.side = 0xAFEEEE;
 			ray->len = len.x; // if the ray first crosses x, ray`s length is len.x
 			ray->dot = dot1;
 			map.x += n.x;
 		}
 		else
 		{
+			if (ray->dir.y > 0)
+				all->walls.side = 0x008000;
+			if (ray->dir.y < 0)
+				all->walls.side = 0x2F4F4F;
 			ray->len = len.y; // if the ray first crosses y, ray`s length is len.y
 			ray->dot = dot2; // dot2.x is calculated in calc_triangle_y
 			map.y += n.y;
 		}
-		my_mlx_pixel_put(all, (int)(ray->dot.x * SCALE), (int)(ray->dot.y * SCALE), 0xFF0000);
+//		my_mlx_pixel_put(all, (int)(ray->dot.x * SCALE), (int)(ray->dot.y * SCALE), 0xFF0000);
 	}
 	return (0);
 }
@@ -78,6 +87,7 @@ void				raycast(t_all *all)
 		ray.dir.x = all->player.dir.x + all->player.plane.x * camera_plane; // current ray direction inside the camera_plane
 		ray.dir.y = all->player.dir.y + all->player.plane.y * camera_plane; // current ray direction inside the camera_plane
 		calc_grid(all, &ray);
+		draw_walls(all, &ray, x);
 		x++;
 	}
 }

@@ -52,7 +52,7 @@ int 			key_hook(int keynumber, t_all *all)
 		all->display.img = mlx_new_image(all->display.mlx, all->data.res1, all->data.res2);
 		all->display.addr = mlx_get_data_addr(all->display.img, &all->display.bits_per_pixel,
 											  &all->display.line_length, &all->display.endian);
-		draw_map(all);
+//		draw_map(all);
 		draw_player(all);
 		mlx_put_image_to_window(all->display.mlx, all->display.mlx_win, all->display.img, 0, 0);
 		return (0);
