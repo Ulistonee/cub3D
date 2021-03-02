@@ -69,7 +69,7 @@ int					calc_grid(t_all *all, t_ray *ray)
 			ray->dot = dot2; // dot2.x is calculated in calc_triangle_y
 			map.y += n.y;
 		}
-//		my_mlx_pixel_put(all, (int)(ray->dot.x * SCALE), (int)(ray->dot.y * SCALE), 0xFF0000);
+		my_mlx_pixel_put(all, (int)(ray->dot.x * SCALE), (int)(ray->dot.y * SCALE), 0xFF0000);
 	}
 	return (0);
 }
@@ -84,8 +84,11 @@ void				raycast(t_all *all)
 	while (x < all->data.res1)
 	{
 		camera_plane = 2 * x / (double)all->data.res1 - 1; // calculated camera_plane which is perpendicular
-		ray.dir.x = all->player.dir.x + all->player.plane.x * camera_plane; // current ray direction inside the camera_plane
-		ray.dir.y = all->player.dir.y + all->player.plane.y * camera_plane; // current ray direction inside the camera_plane
+//		ray.dir.x = 0; // current ray direction inside the camera_plane
+//		ray.dir.y = 0; // current ray direction inside the camera_plane
+		ray.dir.x = all->player.dir.x + all->player.plane.x * camera_plane * cos(30); // current ray direction inside the camera_plane
+		ray.dir.y = all->player.dir.y + all->player.plane.y * camera_plane * cos(30);
+		printf("vector length %f\n", sqrt(pow(ray.dir.x, 2) + pow(ray.dir.y, 2)));
 		calc_grid(all, &ray);
 		draw_walls(all, &ray, x);
 		x++;

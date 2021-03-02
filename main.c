@@ -14,7 +14,7 @@ void			my_mlx_pixel_put(t_all *all, int x, int y, int color)
 
 int 			key_hook(int keynumber, t_all *all)
 {
-		double 			old_x;
+		double			old_x;
 
 		if (keynumber == ESC)
 			exit(0);

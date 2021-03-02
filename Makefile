@@ -30,7 +30,7 @@ all:		init ${NAME}
 init:
 			@ echo "......init......"
 			make -C libft
-			make -C minilibx_opengl_20191021
+			make -C libmlx
 
 $(NAME):	$(OBJS) $(HEADER)
 #MAC:
