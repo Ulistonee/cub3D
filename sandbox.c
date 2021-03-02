@@ -1,27 +1,7 @@
 #include "cub3D.h"
-#include "libmlx/mlx.h"
+#include "minilibx_opengl_20191021//mlx.h"
 
-typedef struct  s_vars {
-	void        *mlx;
-	void        *win;
-}               t_vars;
-
-int             key_hook(int keycode, t_vars *vars)
-{
-	printf("Hello from key_hook!\n");
-}
-
-int             main(void)
-{
-	t_vars      vars;
-
-	vars.mlx = mlx_init();
-	vars.win = mlx_new_window(vars.mlx, 640, 480, "Hello world!");
-	mlx_key_hook(vars.win, key_hook, &vars);
-	mlx_loop(vars.mlx);
-}
-
-/*typedef struct  s_data {
+typedef struct  s_data {
 	void        *img;
 	char        *addr;
 	int         bits_per_pixel;
@@ -29,7 +9,25 @@ int             main(void)
 	int         endian;
 }               t_data;
 
-void            my_mlx_pixel_put(t_data *data, int x, int y, int color)
+int     main(void)
+{
+	void    *mlx;
+	void    *img, *win;
+	char    *relative_path = "./cowboy.xpm";
+	int     img_width;
+	int     img_height;
+
+	mlx = mlx_init();
+	img = mlx_xpm_file_to_image(mlx, relative_path, &img_width, &img_height);
+	win = mlx_new_window(mlx, 1920, 1080, "My_cub3D");
+//	img.img = mlx_new_image(mlx, 1920, 1080);
+//	img.addr = mlx_get_data_addr(img.img, &img.bits_per_pixel, &img.line_length,
+//								 &img.endian);
+	mlx_put_image_to_window(mlx, win, img, 0, 0);
+	mlx_loop(mlx);
+}
+
+/*void            my_mlx_pixel_put(t_data *data, int x, int y, int color)
 {
 	char    *dst;
 
@@ -104,4 +102,5 @@ int             main(void)
 }
 
 // line for compilation -  gcc sandbox.c -Lminilibx-linux -lmlx -Imlx_linux -lXext -lX11 -lm -lz
+// line for compilation om Mac - gcc sandbox.c -Llibft -lft -Lminilibx_opengl_20191021 -lmlx -framework OpenGL -framework AppKit
 */
