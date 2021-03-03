@@ -5,7 +5,7 @@ int				draw_walls(t_all *all, t_ray *ray, int x)
 	int				y;
 
 	y = 0;
-	all->walls.wall_height = all->data.res2 / ray->len;
+	all->walls.wall_height = all->data.res2 / ray->k;
 	all->walls.top = all->data.res2 / 2 - all->walls.wall_height / 2;
 	all->walls.bottom = all->data.res2 / 2 + all->walls.wall_height / 2;
 	while (y < all->data.res2)

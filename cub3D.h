@@ -142,6 +142,7 @@ typedef struct		s_ray
 {
 	t_pos			dir;
 	double			len;
+	double			k;
 	t_pos			dot;
 
 }					t_ray;
@@ -163,4 +164,5 @@ int					draw_map(t_all *all);
 int					draw_walls(t_all *all, t_ray *ray, int x);
 double				len_of_vec(double x, double y);
 double				dist_dots(double x, double y, double a, double b);
+double				perp_vector(t_all *all, double camera_plane, t_ray *ray);
 
