@@ -109,6 +109,10 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
 =======
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/cub3D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/draw_map.o" beforeDir="false" />
+=======
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
 >>>>>>> 615bbb0236ced079648dd661ad8d6a07d7d7f17a
@@ -150,10 +154,289 @@
       <change beforePath="$PROJECT_DIR$/cub3D.h" beforeDir="false" afterPath="$PROJECT_DIR$/cub3D.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cub3D.h.gch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/draw_player.c" beforeDir="false" afterPath="$PROJECT_DIR$/draw_player.c" afterDir="false" />
+>>>>>>> 3b2c46c1a94f8b40301a7dd37b1d4657a3e03a79
       <change beforePath="$PROJECT_DIR$/draw_player.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/get_next_line" beforeDir="false" afterPath="$PROJECT_DIR$/get_next_line" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/get_next_line/get_next_line.h" beforeDir="false" afterPath="$PROJECT_DIR$/get_next_line/get_next_line.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/handle_error.o" beforeDir="false" />
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/libft" beforeDir="false" afterPath="$PROJECT_DIR$/libft" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libft/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_printf.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_printf.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_atoi.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_bzero.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_calloc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_free_mem.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_isalnum.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_isalpha.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_isascii.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_isdigit.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_isprint.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_itoa.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_itoa_base.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_itoa_u.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_itoa_uhex.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_lstnew.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_memccpy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_memchr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_memcmp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_memcpy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_memmove.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_memset.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_putchar_fd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_putendl_fd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_putnbr_fd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_putstr_fd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_split.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_strchr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_strdup.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_strjoin.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_strlcat.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_strlcpy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_strlen.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_strmapi.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_strncmp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_strnstr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_strrchr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_strtrim.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_substr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_tolower.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/ft_toupper.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft/libft.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/parser/ft_parser.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/parser/ft_parser_utils.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/processor/ft_processor.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/processor/process_c.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/processor/process_d.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/processor/process_p.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/processor/process_s.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/processor/process_u.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/processor/process_x.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/check_printf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/ft_printf/check" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/ft_printf/ft_printf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/my_printf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/.idea/printf_before_norm.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/42TESTERS-PRINTF/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/42TESTERS-PRINTF/runtest.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/42TESTERS-PRINTF/srcs/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/42TESTERS-PRINTF/srcs/main_tester.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/C.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/ft_printf.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_atoi.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_bzero.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_calloc.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_free_mem.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_isalnum.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_isalpha.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_isascii.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_isdigit.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_isprint.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_itoa.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_itoa_base.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_itoa_u.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_itoa_uhex.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_lstnew.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_memccpy.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_memchr.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_memcmp.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_memcpy.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_memmove.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_memset.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_putchar_fd.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_putendl_fd.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_putnbr_fd.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_putstr_fd.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_split.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_strchr.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_strdup.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_strjoin.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_strlcat.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_strlcpy.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_strlen.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_strmapi.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_strncmp.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_strnstr.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_strrchr.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_strtrim.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_substr.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_tolower.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/libft/ft_toupper.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/main.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/parser/ft_parser.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/processor/ft_processor.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/processor/process_c.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/processor/process_d.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/processor/process_p.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/processor/process_s.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/processor/process_u.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/processor/process_x.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/printf_before_norm.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/printf_before_norm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/cmake-build-debug/printf_before_norm.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/ft_printf.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/ft_printf.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/ft_printf.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_atoi.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_atoi.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_bzero.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_bzero.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_calloc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_calloc.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_free_mem.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_free_mem.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_isalnum.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_isalnum.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_isalpha.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_isalpha.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_isascii.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_isascii.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_isdigit.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_isdigit.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_isprint.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_isprint.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_itoa.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_itoa.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_itoa_base.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_itoa_base.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_itoa_u.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_itoa_u.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_itoa_uhex.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_itoa_uhex.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_lstnew.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_memccpy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_memccpy.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_memchr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_memchr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_memcmp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_memcmp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_memcpy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_memcpy.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_memmove.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_memmove.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_memset.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_memset.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_putchar_fd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_putchar_fd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_putendl_fd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_putendl_fd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_putnbr_fd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_putnbr_fd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_putstr_fd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_putstr_fd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_split.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_split.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_strchr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_strchr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_strdup.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_strdup.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_strjoin.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_strjoin.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_strlcat.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_strlcat.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_strlcpy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_strlcpy.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_strlen.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_strlen.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_strmapi.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_strmapi.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_strncmp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_strncmp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_strnstr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_strnstr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_strrchr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_strrchr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_strtrim.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_strtrim.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_substr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_substr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_tolower.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_tolower.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_toupper.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/ft_toupper.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/libft.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libft/libft.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/libftprintf.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/main_example.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/main_example.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/parser/ft_parser.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/parser/ft_parser.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/pft_2019" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/printf_jerrod/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/printf_jerrod/additional_functions.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/printf_jerrod/additional_functions.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/printf_jerrod/ft_printf.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/printf_jerrod/libftprintf.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/printf_jerrod/list_functions.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/printf_jerrod/list_functions.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/printf_jerrod/numwid.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/printf_jerrod/numwid.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/printf_jerrod/parser.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/printf_jerrod/parser.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/printf_jerrod/print_functions.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/printf_jerrod/print_functions.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/printf_jerrod/print_spec_part1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/printf_jerrod/print_spec_part1.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/printf_jerrod/print_spec_part2.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/printf_jerrod/print_spec_part2.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/printf_jerrod/write_functions.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/printf_jerrod/write_functions.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/printf_jerrod/write_hex.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/printf_jerrod/write_hex.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/printf_jerrod/write_nbr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/printf_jerrod/write_nbr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/processor/ft_processor.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/processor/ft_processor.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/processor/process_c.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/processor/process_c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/processor/process_d.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/processor/process_d.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/processor/process_p.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/processor/process_p.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/processor/process_s.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/processor/process_s.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/processor/process_u.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/processor/process_u.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/processor/process_x.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/processor/process_x.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/sandbox/printf_before_norm/va_arg.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.o" beforeDir="false" />
+=======
       <change beforePath="$PROJECT_DIR$/libmlx/mlx_clear_window.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/libmlx/mlx_destroy_display.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/libmlx/mlx_destroy_image.o" beforeDir="false" />
@@ -190,10 +473,17 @@
       <change beforePath="$PROJECT_DIR$/map.cub" beforeDir="false" afterPath="$PROJECT_DIR$/map.cub" afterDir="false" />
 <<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/minilibx_opengl_20191021/libmlx.a" beforeDir="false" afterPath="$PROJECT_DIR$/minilibx_opengl_20191021/libmlx.a" afterDir="false" />
+>>>>>>> 3b2c46c1a94f8b40301a7dd37b1d4657a3e03a79
       <change beforePath="$PROJECT_DIR$/parser/is_map.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/parser/parse_map.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/parser/parse_other.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/parser/parser.o" beforeDir="false" />
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/raycast.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scaler.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/set_player.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/visualize.o" beforeDir="false" />
+=======
       <change beforePath="$PROJECT_DIR$/player_x_y.c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/player_x_y.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/scaler.o" beforeDir="false" />
@@ -205,6 +495,7 @@
       <change beforePath="$PROJECT_DIR$/set_player_x_y.c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/set_player_x_y.o" beforeDir="false" />
 >>>>>>> 615bbb0236ced079648dd661ad8d6a07d7d7f17a
+>>>>>>> 3b2c46c1a94f8b40301a7dd37b1d4657a3e03a79
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -300,8 +591,12 @@
       <workItem from="1614021107568" duration="8198000" />
       <workItem from="1614071875152" duration="12766000" />
       <workItem from="1614097150087" duration="19309000" />
+<<<<<<< HEAD
+      <workItem from="1614177486991" duration="17066000" />
+=======
       <workItem from="1614177486991" duration="15205000" />
 >>>>>>> 615bbb0236ced079648dd661ad8d6a07d7d7f17a
+>>>>>>> 3b2c46c1a94f8b40301a7dd37b1d4657a3e03a79
     </task>
     <servers />
   </component>
