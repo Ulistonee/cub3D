@@ -155,11 +155,12 @@ int 				handle_error(int code, t_all *all);
 int					scaler(t_all *all, int x_input, int y_input, int color);
 void				my_mlx_pixel_put(t_all *all, int x, int y, int color);
 void 				draw_player(t_all *all);
-//void				my_mlx_pixel_put(t_display *display, int x, int y, int color);
 int 				set_player(t_all *all);
 void 				raycast(t_all *all);
 int					parser(t_all *all, char *file_name);
 int					visualize(t_all *all);
 int					draw_map(t_all *all);
 int					draw_walls(t_all *all, t_ray *ray, int x);
+double				len_of_vec(double x, double y);
+double				dist_dots(double x, double y, double a, double b);
 
