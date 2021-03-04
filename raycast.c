@@ -72,16 +72,23 @@ void				raycast(t_all *all)
 	int			x;
 	int			k;
 	double		ray_len;
+	double		cath_len;
+	double		a;
+	double		b;
 
 	x = 0;
 	while (x < all->data.res1)
 	{
 		camera_plane = 2 * x / (double)all->data.res1 - 1; // calculated camera_plane which is perpendicular
-//		printf("camera_plane: %f\n", camera_plane);
-		ray.dir.x = all->player.dir.x + all->player.plane.x * camera_plane; // current ray direction inside the camera_plane
-		ray.dir.y = all->player.dir.y + all->player.plane.y * camera_plane;
-		ray_len =
-//		printf("vector length %f\n", sqrt(pow(ray.dir.x, 2) + pow(ray.dir.y, 2)));
+		a = all->player.dir.x + all->player.plane.x * camera_plane; // current ray direction inside the camera_plane
+		b = all->player.dir.y + all->player.plane.y * camera_plane;
+		ray_len = len_of_vec(a, b);
+		cath_len = len_of_vec((all->player.plane.x * camera_plane), (all->player.plane.y * camera_plane));
+		k = sqrt(pow(ray_len, 2) - pow(cath_len, 2));
+		ray.dir.x = all->player.dir.x + all->player.plane.x * camera_plane * k; // current ray direction inside the camera_plane
+		ray.dir.y = all->player.dir.y + all->player.plane.y * camera_plane * k;
+//		printf("ray_len: %f\n", ray_len);
+//		printf("cath_len: %f\n", cath_len);
 		calc_grid(all, &ray);
 		draw_walls(all, &ray, x);
 		x++;

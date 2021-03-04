@@ -16,10 +16,13 @@ int     main(void)
 	char    *relative_path = "./cowboy.xpm";
 	int     img_width;
 	int     img_height;
+	double	len;
 
 	mlx = mlx_init();
 	img = mlx_xpm_file_to_image(mlx, relative_path, &img_width, &img_height);
 	win = mlx_new_window(mlx, 1920, 1080, "My_cub3D");
+	len = len_of_vec(3,3);
+	printf("len: %f", len);
 //	img.img = mlx_new_image(mlx, 1920, 1080);
 //	img.addr = mlx_get_data_addr(img.img, &img.bits_per_pixel, &img.line_length,
 //								 &img.endian);

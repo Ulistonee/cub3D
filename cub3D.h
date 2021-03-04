@@ -161,4 +161,6 @@ int					parser(t_all *all, char *file_name);
 int					visualize(t_all *all);
 int					draw_map(t_all *all);
 int					draw_walls(t_all *all, t_ray *ray, int x);
+double				len_of_vec(double x, double y);
+double				dist_dots(double x, double y, double a, double b);
 

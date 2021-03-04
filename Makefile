@@ -16,6 +16,8 @@ SRCS	= \
 			visualize.c \
 			draw_map.c \
 			draw_walls.c\
+			len_of_vec.c \
+			dist_dots.c \
 
 OBJS		= $(patsubst %.c, %.o, $(SRCS))
 
