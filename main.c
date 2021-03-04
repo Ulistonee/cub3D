@@ -15,15 +15,30 @@ void			my_mlx_pixel_put(t_all *all, int x, int y, int color)
 int 			key_hook(int keynumber, t_all *all)
 {
 		double			old_x;
+		t_pos			new_pos;
 
 		if (keynumber == ESC)
 			exit(0);
 		if (keynumber == W || keynumber == UP)
-			if (all->map.map[(int)(all->player.pos.y - STEP)][(int)(all->player.pos.x)] == '0')
-				all->player.pos.y -= STEP;
+		{
+			new_pos.x = all->player.dir.x * STEP + all->player.pos.x;
+			new_pos.y = all->player.dir.y * STEP + all->player.pos.y;
+			if (all->map.map[(int)new_pos.y][(int)new_pos.x] == '0')
+			{
+				all->player.pos.x = new_pos.x;
+				all->player.pos.y = new_pos.y;
+			}
+		}
 		if (keynumber == S || keynumber == DOWN)
-			if (all->map.map[(int)(all->player.pos.y + STEP)][(int)(all->player.pos.x)] == '0')
-				all->player.pos.y += STEP;
+		{
+			new_pos.x = -all->player.dir.x * STEP + all->player.pos.x;
+			new_pos.y = -all->player.dir.y * STEP + all->player.pos.y;
+			if (all->map.map[(int) (new_pos.y)][(int) (new_pos.x)] == '0')
+			{
+				all->player.pos.x = new_pos.x;
+				all->player.pos.y = new_pos.y;
+			}
+		}
 		if (keynumber == LEFT)
 		{
 			old_x = all->player.dir.x;
@@ -34,11 +49,25 @@ int 			key_hook(int keynumber, t_all *all)
 			all->player.plane.y = old_x * sin(-ANGLE) + all->player.plane.y * cos(-ANGLE);
 		}
 		if (keynumber == A)
-			if (all->map.map[(int)(all->player.pos.y)][(int)(all->player.pos.x - STEP)] == '0')
-				all->player.pos.x -= STEP;
+		{
+			new_pos.x = all->player.pos.x + all->player.dir.y * STEP;
+			new_pos.y = all->player.pos.y - all->player.dir.x * STEP;
+			if (all->map.map[(int) (new_pos.y)][(int) (new_pos.x)] == '0')
+			{
+				all->player.pos.x = new_pos.x;
+				all->player.pos.y = new_pos.y;
+			}
+		}
 		if (keynumber == D)
-			if (all->map.map[(int)(all->player.pos.y)][(int)(all->player.pos.x + STEP)] == '0')
-				all->player.pos.x += STEP;
+		{
+			new_pos.x = all->player.pos.x - all->player.dir.y * STEP;
+			new_pos.y = all->player.pos.y + all->player.dir.x * STEP;
+			if (all->map.map[(int) (new_pos.y)][(int) (new_pos.x)] == '0')
+			{
+				all->player.pos.x = new_pos.x;
+				all->player.pos.y = new_pos.y;
+			}
+		}
 		if (keynumber == RIGHT)
 			{
 				old_x = all->player.dir.x;
@@ -55,6 +84,9 @@ int 			key_hook(int keynumber, t_all *all)
 //		draw_map(all);
 		draw_player(all);
 		mlx_put_image_to_window(all->display.mlx, all->display.mlx_win, all->display.img, 0, 0);
+//		printf("PLAYER DIR_X_Y:\t(%.2f; %.2f)\nPLAYER POS_X_Y:\t(%.2f; %.2f)\nPLAYER PLANE_X_Y\t(%.2f; %.2f)\n",
+//		 all->player.dir.x, all->player.dir.y, all->player.pos.x, all->player.pos.y,
+//		 all->player.plane.x, all->player.plane.y);
 		return (0);
 }
 

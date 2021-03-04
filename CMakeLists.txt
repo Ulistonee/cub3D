@@ -21,7 +21,11 @@ add_executable (cub3D
         set_player.c
         raycast.c
         draw_map.c
-        visualize.c)
+        visualize.c
+        draw_walls.c
+        len_of_vec.c
+        dist_dots.c
+        perp_vector.c)
 target_link_libraries(cub3D LibFT)
 if (APPLE)
     target_link_libraries(cub3D

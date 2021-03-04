@@ -6,25 +6,21 @@ int			set_player_plane(t_all *all, int x, int y)
 	{
 		all->player.plane.x = FOV_L; // height of the camera plane 0.577
 		all->player.plane.y = 0;
-		all->walls.side = 0xFF00FF;
 	}
 	if (all->map.map[y][x] == 'E')
 	{
 		all->player.plane.x = 0;
 		all->player.plane.y = FOV_L;
-		all->walls.side = 0x7FFFD4;
 	}
 	if (all->map.map[y][x] == 'W')
 	{
 		all->player.plane.x = 0;
 		all->player.plane.y = -FOV_L;
-		all->walls.side = 0x6B8E23;
 	}
 	if (all->map.map[y][x] == 'S')
 	{
 		all->player.plane.x = -FOV_L;
 		all->player.plane.y = 0;
-		all->walls.side = 0xFBC8F8F;
 	}
 	return (1);
 }

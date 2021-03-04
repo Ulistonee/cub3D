@@ -1,0 +1,4 @@
+/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles/cub3D.dir
+/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles/LibFT.dir

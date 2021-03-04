@@ -12,7 +12,10 @@ int				draw_walls(t_all *all, t_ray *ray, int x)
 	{
 		if (y > all->walls.top && y < all->walls.bottom)
 			my_mlx_pixel_put(all, x, y, all->walls.side);
-//			printf("wall_color: %d\n", all->walls.side);
+		if (y < all->walls.top)
+			my_mlx_pixel_put(all, x, y, all->data.flr);
+		if (y > all->walls.bottom)
+			my_mlx_pixel_put(all, x, y, all->data.ceil);
 		y++;
 	}
 	return (0);

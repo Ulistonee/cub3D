@@ -14,8 +14,8 @@
 #define VALID_SYMBOLS "102 NEWS"
 #define SCALE 45
 # define FOV_L 0.577
-#define STEP 0.1
-#define ANGLE 0.1
+#define STEP 0.09
+#define ANGLE 0.09
 # ifdef linux
 #  define ESC 65307
 #  define W 119
@@ -109,6 +109,8 @@ typedef struct		s_struct
 	int 			ceil_1;
 	int 			ceil_2;
 	int 			ceil_3;
+	int				flr;
+	int				ceil;
 }					t_struct;
 
 typedef struct		s_map
@@ -165,4 +167,5 @@ int					draw_walls(t_all *all, t_ray *ray, int x);
 double				len_of_vec(double x, double y);
 double				dist_dots(double x, double y, double a, double b);
 double				perp_vector(t_all *all, double camera_plane, t_ray *ray);
+int					create_rgb(int r, int g, int b);
 

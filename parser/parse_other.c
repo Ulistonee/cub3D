@@ -42,6 +42,7 @@ int			parse_other(t_all *all, char *line)
 		all->data.flr_2 = ft_atoi(1 + srch);
 		srch = ft_strchr(1 + srch, ',');
 		all->data.flr_3 = ft_atoi(1 + srch);
+		all->data.flr = create_rgb(all->data.flr_1, all->data.flr_2, all->data.flr_3);
 	}
 	else if (*line == 'C')
 	{
@@ -52,6 +53,7 @@ int			parse_other(t_all *all, char *line)
 //		printf("DEBUG_CEIL_2: %d\n", data->ceil_2);
 		srch = ft_strchr(1 + srch, ',');
 		all->data.ceil_3 = ft_atoi(1 + srch);
+		all->data.ceil = create_rgb(all->data.ceil_1, all->data.ceil_2, all->data.ceil_3);
 	}
 	return (0);
 }
