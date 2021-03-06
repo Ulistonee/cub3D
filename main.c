@@ -83,6 +83,7 @@ int 			key_hook(int keynumber, t_all *all)
 											  &all->display.line_length, &all->display.endian);
 //		draw_map(all);
 		draw_player(all);
+		init_textures(all);
 		mlx_put_image_to_window(all->display.mlx, all->display.mlx_win, all->display.img, 0, 0);
 //		printf("PLAYER DIR_X_Y:\t(%.2f; %.2f)\nPLAYER POS_X_Y:\t(%.2f; %.2f)\nPLAYER PLANE_X_Y\t(%.2f; %.2f)\n",
 //		 all->player.dir.x, all->player.dir.y, all->player.pos.x, all->player.pos.y,

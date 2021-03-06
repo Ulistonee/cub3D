@@ -1,12 +1,12 @@
 R 640 440
-NO ./path_to_the_north_texture
-SO ./path_to_the_south_texture
-WE ./path_to_the_west_texture
-EA ./path_to_the_east_texture
-S ./path_to_the_sprite_texture
+NO ../cowboy.xpm
+SO ../cowboy.xpm
+WE ../cowboy.xpm
+EA ../cowboy.xpm
+
 F 255, 140, 0
 C 128,128,0
-01234567890123456789012345678901
+
 1111111111111111111111111
 1000000000110000000000001
 101100S001110000002000001

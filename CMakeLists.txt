@@ -25,7 +25,8 @@ add_executable (cub3D
         draw_walls.c
         len_of_vec.c
         dist_dots.c
-        perp_vector.c)
+        perp_vector.c
+        create_rgb.c)
 target_link_libraries(cub3D LibFT)
 if (APPLE)
     target_link_libraries(cub3D

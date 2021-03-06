@@ -6,163 +6,163 @@
 
 #IncludeRegexTransform: 
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_atoi.c
+/Users/rchalmer/c/cub3D/libft/ft_atoi.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_bzero.c
+/Users/rchalmer/c/cub3D/libft/ft_bzero.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_calloc.c
+/Users/rchalmer/c/cub3D/libft/ft_calloc.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_free_mem.c
+/Users/rchalmer/c/cub3D/libft/ft_free_mem.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_isalnum.c
+/Users/rchalmer/c/cub3D/libft/ft_isalnum.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_isalpha.c
+/Users/rchalmer/c/cub3D/libft/ft_isalpha.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_isascii.c
+/Users/rchalmer/c/cub3D/libft/ft_isascii.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_isdigit.c
+/Users/rchalmer/c/cub3D/libft/ft_isdigit.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_isprint.c
+/Users/rchalmer/c/cub3D/libft/ft_isprint.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_itoa.c
+/Users/rchalmer/c/cub3D/libft/ft_itoa.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_itoa_base.c
+/Users/rchalmer/c/cub3D/libft/ft_itoa_base.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_itoa_u.c
+/Users/rchalmer/c/cub3D/libft/ft_itoa_u.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_itoa_uhex.c
+/Users/rchalmer/c/cub3D/libft/ft_itoa_uhex.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_lstnew.c
+/Users/rchalmer/c/cub3D/libft/ft_lstnew.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_memccpy.c
+/Users/rchalmer/c/cub3D/libft/ft_memccpy.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_memchr.c
+/Users/rchalmer/c/cub3D/libft/ft_memchr.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_memcmp.c
+/Users/rchalmer/c/cub3D/libft/ft_memcmp.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_memcpy.c
+/Users/rchalmer/c/cub3D/libft/ft_memcpy.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_memmove.c
+/Users/rchalmer/c/cub3D/libft/ft_memmove.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_memset.c
+/Users/rchalmer/c/cub3D/libft/ft_memset.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_putchar_fd.c
+/Users/rchalmer/c/cub3D/libft/ft_putchar_fd.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_putendl_fd.c
+/Users/rchalmer/c/cub3D/libft/ft_putendl_fd.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_putnbr_fd.c
+/Users/rchalmer/c/cub3D/libft/ft_putnbr_fd.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_putstr_fd.c
+/Users/rchalmer/c/cub3D/libft/ft_putstr_fd.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_split.c
+/Users/rchalmer/c/cub3D/libft/ft_split.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_strchr.c
+/Users/rchalmer/c/cub3D/libft/ft_strchr.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_strdup.c
+/Users/rchalmer/c/cub3D/libft/ft_strdup.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_strjoin.c
+/Users/rchalmer/c/cub3D/libft/ft_strjoin.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_strlcat.c
+/Users/rchalmer/c/cub3D/libft/ft_strlcat.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_strlcpy.c
+/Users/rchalmer/c/cub3D/libft/ft_strlcpy.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_strlen.c
+/Users/rchalmer/c/cub3D/libft/ft_strlen.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_strmapi.c
+/Users/rchalmer/c/cub3D/libft/ft_strmapi.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_strncmp.c
+/Users/rchalmer/c/cub3D/libft/ft_strncmp.c
 string.h
 -
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_strnstr.c
+/Users/rchalmer/c/cub3D/libft/ft_strnstr.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_strrchr.c
+/Users/rchalmer/c/cub3D/libft/ft_strrchr.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_strtrim.c
+/Users/rchalmer/c/cub3D/libft/ft_strtrim.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_substr.c
+/Users/rchalmer/c/cub3D/libft/ft_substr.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_tolower.c
+/Users/rchalmer/c/cub3D/libft/ft_tolower.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/ft_toupper.c
+/Users/rchalmer/c/cub3D/libft/ft_toupper.c
 libft.h
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
+/Users/rchalmer/c/cub3D/libft/libft.h
 stddef.h
 -
 stdlib.h
