@@ -52,7 +52,11 @@ unistd.h
 
 /home/aizhan/cub3D/cub3D/my_cub3D/minilibx_opengl_20191021/mlx.h
 
-/home/aizhan/cub3D/cub3D/my_cub3D/perp_vector.c
+/home/aizhan/cub3D/cub3D/my_cub3D/parser/parser.c
+../cub3D.h
+/home/aizhan/cub3D/cub3D/my_cub3D/cub3D.h
+
+/home/aizhan/cub3D/cub3D/my_cub3D/visualize.c
 cub3D.h
 /home/aizhan/cub3D/cub3D/my_cub3D/cub3D.h
 

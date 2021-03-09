@@ -156,6 +156,33 @@ LibFT/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/build
 .PHONY : LibFT/fast
 
+create_rgb.o: create_rgb.c.o
+
+.PHONY : create_rgb.o
+
+# target to build an object file
+create_rgb.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/create_rgb.c.o
+.PHONY : create_rgb.c.o
+
+create_rgb.i: create_rgb.c.i
+
+.PHONY : create_rgb.i
+
+# target to preprocess a source file
+create_rgb.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/create_rgb.c.i
+.PHONY : create_rgb.c.i
+
+create_rgb.s: create_rgb.c.s
+
+.PHONY : create_rgb.s
+
+# target to generate assembly for a file
+create_rgb.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/create_rgb.c.s
+.PHONY : create_rgb.c.s
+
 dist_dots.o: dist_dots.c.o
 
 .PHONY : dist_dots.o
@@ -1705,6 +1732,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... LibFT"
 	@echo "... cub3D"
+	@echo "... create_rgb.o"
+	@echo "... create_rgb.i"
+	@echo "... create_rgb.s"
 	@echo "... dist_dots.o"
 	@echo "... dist_dots.i"
 	@echo "... dist_dots.s"

@@ -118,6 +118,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/aizhan/cub3D/cub3D/my_cub3D/create_rgb.c">
+			<Option target="cub3D"/>
+		</Unit>
 		<Unit filename="/home/aizhan/cub3D/cub3D/my_cub3D/cub3D.h">
 			<Option target="cub3D"/>
 		</Unit>

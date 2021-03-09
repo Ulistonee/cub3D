@@ -83,6 +83,7 @@ int 			key_hook(int keynumber, t_all *all)
 											  &all->display.line_length, &all->display.endian);
 //		draw_map(all);
 		draw_player(all);
+//		init_textures(all);
 		mlx_put_image_to_window(all->display.mlx, all->display.mlx_win, all->display.img, 0, 0);
 //		printf("PLAYER DIR_X_Y:\t(%.2f; %.2f)\nPLAYER POS_X_Y:\t(%.2f; %.2f)\nPLAYER PLANE_X_Y\t(%.2f; %.2f)\n",
 //		 all->player.dir.x, all->player.dir.y, all->player.pos.x, all->player.pos.y,
@@ -98,6 +99,7 @@ int				main(int argc, char *argv[])
 //	handle_error(errno, &all); // identify errors on the initial stage such as no file etc.
 	set_player(&all);
 	visualize(&all);
+	printf("check\n");
 	raycast(&all);
 	mlx_hook(all.display.mlx_win, 2, (1L<<0), key_hook, &all);
 	mlx_loop(all.display.mlx);

@@ -38,19 +38,46 @@
 #  define DOWN 125
 # endif
 
-typedef struct		s_walls
-{
-	double			wall_height;
-	double			top;
-	double			bottom;
-	int				side;
-}					t_walls;
-
 typedef struct		s_pos
 {
 	double 			x;
 	double 			y;
 }					t_pos;
+typedef struct		s_sprite
+{
+	t_pos			coord;
+}					t_sprite;
+
+typedef struct		s_image
+{
+	void			*img;
+	char			*addr;
+	int				bits_per_pixel;
+	int				line_length;
+	int				endian;
+	void			*mlx;
+	void			*mlx_win;
+	int				h;
+	int				w;
+	int				tag;
+}					t_image;
+
+typedef struct		s_tex
+{
+	t_image			n_tex;
+	t_image			e_tex;
+	t_image			w_tex;
+	t_image			s_tex;
+}					t_tex;
+
+typedef struct		s_walls
+{
+	double			wall_height;
+	double			top;
+	double			bottom;
+	t_image			side;
+}					t_walls;
+
 
 typedef struct		s_pos_i
 {
@@ -138,6 +165,8 @@ typedef struct		s_all
 	t_player 		player;
 	t_fow			fow;
 	t_walls			walls;
+	t_tex			tex;
+	t_image			image;
 }					t_all;
 
 typedef struct		s_ray
@@ -168,4 +197,5 @@ double				len_of_vec(double x, double y);
 double				dist_dots(double x, double y, double a, double b);
 double				perp_vector(t_all *all, double camera_plane, t_ray *ray);
 int					create_rgb(int r, int g, int b);
+int					init_textures(t_all *all);
 

@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/home/aizhan/cub3D/cub3D/my_cub3D/create_rgb.c" "/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/create_rgb.c.o"
   "/home/aizhan/cub3D/cub3D/my_cub3D/dist_dots.c" "/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/dist_dots.c.o"
   "/home/aizhan/cub3D/cub3D/my_cub3D/draw_map.c" "/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/draw_map.c.o"
   "/home/aizhan/cub3D/cub3D/my_cub3D/draw_player.c" "/home/aizhan/cub3D/cub3D/my_cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/draw_player.c.o"
