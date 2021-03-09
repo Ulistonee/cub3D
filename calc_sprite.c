@@ -1,13 +1,14 @@
 #include "cub3D.h"
 
-int				calc_sprite(t_all *all)
+double						calc_sprite(t_all *all)
 {
-	t_pos_i		map;
+	t_pos				map;
+	int 				i = 0;
 
-	map.x = (int)all->player.pos.x;
-	map.y = (int)all->player.pos.y;
-	while (all->map.map[map.y][map.x] == '2')
-	{
+	all->spr.coord.x = map.x - all->player.pos.x;
+	all->spr.coord.y = map.y - all->player.pos.y;
+	all->dist = len_of_vec(all->spr.coord.x, all->spr.coord.y);
 
-	}
+//	printf("SPR_DIST: %f\n", all->spr.dist);
+	return (0);
 }

@@ -53,6 +53,7 @@ int 		set_player(t_all *all)
 {
 	int x = 0;
 	int y = 0;
+	int count = 0;
 
 	while (y < all->map.lines)
 	{
@@ -65,11 +66,15 @@ int 		set_player(t_all *all)
 				all->player.pos.y = y + 0.5;
 				set_player_dir(all, x, y);
 				set_player_plane(all, x, y);
-				all->map.map[y][x] = '0'; // to get rid of the invisible wall
+				all->map.map[y][x] = '0';
 			}
+			if (all->map.map[y][x] == '2')
+				count++;
+			all->spr_count = count;
 			x++;
 		}
 		y++;
 	}
+
 	return (0);
 }

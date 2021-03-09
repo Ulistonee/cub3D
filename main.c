@@ -99,7 +99,6 @@ int				main(int argc, char *argv[])
 //	handle_error(errno, &all); // identify errors on the initial stage such as no file etc.
 	set_player(&all);
 	visualize(&all);
-	printf("check\n");
 	raycast(&all);
 	mlx_hook(all.display.mlx_win, 2, (1L<<0), key_hook, &all);
 	mlx_loop(all.display.mlx);

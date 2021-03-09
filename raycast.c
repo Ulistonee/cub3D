@@ -64,6 +64,10 @@ int					calc_grid(t_all *all, t_ray *ray)
 			all->walls.side = (ray->dir.y < 0) ? all->tex.n_tex : all->tex.s_tex;
 			all->walls.side.tag = (ray->dir.y < 0) ? 'N' : 'S';
 		}
+		if (all->map.map[map.y][map.x] == '2')
+		{
+			calc_sprite(all);
+		}
 	}
 	return (0);
 }

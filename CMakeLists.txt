@@ -26,7 +26,8 @@ add_executable (cub3D
         len_of_vec.c
         dist_dots.c
         perp_vector.c
-        create_rgb.c)
+        create_rgb.c
+        calc_sprite.c)
 target_link_libraries(cub3D LibFT)
 if (APPLE)
     target_link_libraries(cub3D
