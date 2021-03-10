@@ -66,7 +66,7 @@ int					calc_grid(t_all *all, t_ray *ray)
 		}
 		if (all->map.map[map.y][map.x] == '2')
 		{
-			calc_sprite(all);
+			add_spr_to_arr(all);
 		}
 	}
 	return (0);
@@ -88,6 +88,7 @@ void				raycast(t_all *all)
 		ray.k = perp_vector(all, camera_plane, &ray);
 //		printf("len: %.4f\tk: %.4f\n", ray.len, ray.k);
 		draw_walls(all, &ray, x);
+		draw_sprite();
 		x++;
 	}
 }

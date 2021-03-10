@@ -20,7 +20,7 @@ SRCS	= \
 			dist_dots.c \
 			perp_vector.c \
 			create_rgb.c \
-			calc_sprite.c \
+			add_spr_to_arr.c \
 
 OBJS		= $(patsubst %.c, %.o, $(SRCS))
 

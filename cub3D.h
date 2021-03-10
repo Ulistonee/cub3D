@@ -48,7 +48,6 @@ typedef struct		s_sprite
 {
 	t_pos			coord;
 	double			dist;
-	int				count;
 }					t_sprite;
 
 typedef struct		s_image
@@ -202,5 +201,5 @@ double				dist_dots(double x, double y, double a, double b);
 double				perp_vector(t_all *all, double camera_plane, t_ray *ray);
 int					create_rgb(int r, int g, int b);
 int					init_textures(t_all *all);
-double				calc_sprite(t_all *all);
+double				add_spr_to_arr(t_all *all);
 
