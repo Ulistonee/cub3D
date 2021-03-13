@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/rchalmer/c/cub3D/cub3D.h
+/home/aizhan/cub3D/cub3D/my_cub3D/cub3D.h
 unistd.h
 -
 stdlib.h
@@ -26,13 +26,13 @@ stdlib.h
 math.h
 -
 minilibx_opengl_20191021/mlx.h
-/Users/rchalmer/c/cub3D/minilibx_opengl_20191021/mlx.h
+/home/aizhan/cub3D/cub3D/my_cub3D/minilibx_opengl_20191021/mlx.h
 libft/libft.h
-/Users/rchalmer/c/cub3D/libft/libft.h
+/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
 get_next_line/get_next_line.h
-/Users/rchalmer/c/cub3D/get_next_line/get_next_line.h
+/home/aizhan/cub3D/cub3D/my_cub3D/get_next_line/get_next_line.h
 
-/Users/rchalmer/c/cub3D/get_next_line/get_next_line.h
+/home/aizhan/cub3D/cub3D/my_cub3D/get_next_line/get_next_line.h
 stdio.h
 -
 stdlib.h
@@ -42,7 +42,7 @@ unistd.h
 fcntl.h
 -
 
-/Users/rchalmer/c/cub3D/libft/libft.h
+/home/aizhan/cub3D/cub3D/my_cub3D/libft/libft.h
 stddef.h
 -
 stdlib.h
@@ -50,9 +50,9 @@ stdlib.h
 unistd.h
 -
 
-/Users/rchalmer/c/cub3D/minilibx_opengl_20191021/mlx.h
+/home/aizhan/cub3D/cub3D/my_cub3D/minilibx_opengl_20191021/mlx.h
 
-/Users/rchalmer/c/cub3D/set_player.c
+/home/aizhan/cub3D/cub3D/my_cub3D/raycast.c
 cub3D.h
-/Users/rchalmer/c/cub3D/cub3D.h
+/home/aizhan/cub3D/cub3D/my_cub3D/cub3D.h
 

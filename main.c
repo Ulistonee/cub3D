@@ -98,6 +98,7 @@ int				main(int argc, char *argv[])
 	parser(&all, argv[1]);
 //	handle_error(errno, &all); // identify errors on the initial stage such as no file etc.
 	set_player(&all);
+	add_spr_to_arr(&all, &all.spr_arr);
 	visualize(&all);
 	raycast(&all);
 	mlx_hook(all.display.mlx_win, 2, (1L<<0), key_hook, &all);

@@ -64,10 +64,6 @@ int					calc_grid(t_all *all, t_ray *ray)
 			all->walls.side = (ray->dir.y < 0) ? all->tex.n_tex : all->tex.s_tex;
 			all->walls.side.tag = (ray->dir.y < 0) ? 'N' : 'S';
 		}
-		if (all->map.map[map.y][map.x] == '2')
-		{
-			add_spr_to_arr(all);
-		}
 	}
 	return (0);
 }
@@ -77,18 +73,23 @@ void				raycast(t_all *all)
 	t_ray		ray;
 	double		camera_plane;
 	int			x;
+	double		z_buf[all->data.res1];
+	int 		i;
 
 	x = 0;
+	i = 0;
 	while (x < all->data.res1)
 	{
 		camera_plane = 2 * x / (double)all->data.res1 - 1; // calculated camera_plane which is perpendicular
 		ray.dir.x = all->player.dir.x + all->player.plane.x * camera_plane; // current ray direction inside the camera_plane
 		ray.dir.y = all->player.dir.y + all->player.plane.y * camera_plane;
 		calc_grid(all, &ray);
+		z_buf[i] = ray.len;
+		i++;
 		ray.k = perp_vector(all, camera_plane, &ray);
 //		printf("len: %.4f\tk: %.4f\n", ray.len, ray.k);
 		draw_walls(all, &ray, x);
-		draw_sprite();
 		x++;
 	}
+	draw_sprite(z_buf, all);
 }

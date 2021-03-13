@@ -53,8 +53,8 @@ int 		set_player(t_all *all)
 {
 	int x = 0;
 	int y = 0;
-	int count = 0;
 
+	all->spr_count = 0;
 	while (y < all->map.lines)
 	{
 		x = 0;
@@ -69,8 +69,9 @@ int 		set_player(t_all *all)
 				all->map.map[y][x] = '0';
 			}
 			if (all->map.map[y][x] == '2')
-				count++;
-			all->spr_count = count;
+			{
+				all->spr_count++;
+			}
 			x++;
 		}
 		y++;
