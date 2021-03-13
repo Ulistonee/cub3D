@@ -1,5 +1,22 @@
 #include "../cub3D.h"
 
+//void				count_spr(t_all *all)
+//{
+//	t_posi		map;
+//	int			count;
+//
+//	count = 0;
+//	map.x = (int)all->player.pos.x;
+//	map.y = (int)all->player.pos.y;
+//	while (all->map.map[map.y][map.x] == '2')
+//	{
+//		count++;
+//		map.y += 1;
+//		map.x += 1;
+//	}
+//	all->spr.count = count;
+//}
+
 int 				parse_file(char *file_name, t_all *all)
 {
 	int 			fd;
@@ -52,5 +69,6 @@ int				parser(t_all *all, char *file_name)
 	count_lines(all, file_name);
 	if (!(parse_file(file_name, all)))
 		return (-1);
+//	count_spr(all);
 	return (0);
 }

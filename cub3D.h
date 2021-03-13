@@ -43,9 +43,11 @@ typedef struct		s_pos
 	double 			x;
 	double 			y;
 }					t_pos;
+
 typedef struct		s_sprite
 {
 	t_pos			coord;
+	double			dist;
 }					t_sprite;
 
 typedef struct		s_image
@@ -167,6 +169,9 @@ typedef struct		s_all
 	t_walls			walls;
 	t_tex			tex;
 	t_image			image;
+	int				spr_count;
+	t_sprite		*spr_arr;
+	t_sprite		spr;
 }					t_all;
 
 typedef struct		s_ray
@@ -177,8 +182,6 @@ typedef struct		s_ray
 	t_pos			dot;
 
 }					t_ray;
-
-
 
 int					parse_other(t_all *all, char *line);
 int 				parse_map(t_all *all, char *line);
@@ -198,4 +201,5 @@ double				dist_dots(double x, double y, double a, double b);
 double				perp_vector(t_all *all, double camera_plane, t_ray *ray);
 int					create_rgb(int r, int g, int b);
 int					init_textures(t_all *all);
+double				add_spr_to_arr(t_all *all);
 

@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/cub3D.dir/calc_sprite.c.o"
   "CMakeFiles/cub3D.dir/create_rgb.c.o"
   "CMakeFiles/cub3D.dir/dist_dots.c.o"
   "CMakeFiles/cub3D.dir/draw_map.c.o"

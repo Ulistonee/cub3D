@@ -64,6 +64,10 @@ int					calc_grid(t_all *all, t_ray *ray)
 			all->walls.side = (ray->dir.y < 0) ? all->tex.n_tex : all->tex.s_tex;
 			all->walls.side.tag = (ray->dir.y < 0) ? 'N' : 'S';
 		}
+		if (all->map.map[map.y][map.x] == '2')
+		{
+			add_spr_to_arr(all);
+		}
 	}
 	return (0);
 }
@@ -84,6 +88,7 @@ void				raycast(t_all *all)
 		ray.k = perp_vector(all, camera_plane, &ray);
 //		printf("len: %.4f\tk: %.4f\n", ray.len, ray.k);
 		draw_walls(all, &ray, x);
+		draw_sprite();
 		x++;
 	}
 }
