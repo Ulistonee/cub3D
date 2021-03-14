@@ -203,3 +203,4 @@ int					create_rgb(int r, int g, int b);
 int					init_textures(t_all *all);
 //t_sprite			*add_spr_to_arr(t_all *all);
 void 				add_spr_to_arr(t_all *all, t_sprite **arr_m);
+void				draw_sprite(double *z_buf, t_all *all);
