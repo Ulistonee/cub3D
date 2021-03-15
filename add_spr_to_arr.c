@@ -12,7 +12,7 @@ void 					bubble_sort(t_all *all)
 		j = all->spr_count - 1;
 		while(j > i)
 		{
-			if(all->spr_arr[j - 1].dist > all->spr_arr[j].dist)
+			if(all->spr_arr[j - 1].dist < all->spr_arr[j].dist)
 			{
 				temp = all->spr_arr[j - 1];
 				all->spr_arr[j - 1] = all->spr_arr[j];
@@ -34,14 +34,10 @@ void					count_dist(t_all *all)
 	j = 0;
 	while (i < all->spr_count)
 	{
-		while(j < all->spr_count)
-		{
-			dist_to_spr = len_of_vec(all->player.pos.x - all->spr_arr->coord.x, all->player.pos.y - all->spr_arr->coord.y);
-			all->spr_arr[i].dist = dist_to_spr;
-		}
-		j++;
+		dist_to_spr = len_of_vec(all->player.pos.x - all->spr_arr[i].coord.x, all->player.pos.y - all->spr_arr[i].coord.y);
+		all->spr_arr[i].dist = dist_to_spr;
+		i++;
 	}
-	i++;
 }
 
 void					draw_sprite(double *z_buf, t_all *all)
@@ -55,12 +51,13 @@ void					draw_sprite(double *z_buf, t_all *all)
  */
 void 					add_spr_to_arr(t_all *all, t_sprite **arr_m)
 {
-	t_sprite			arr[all->spr_count];
+	t_sprite			*arr;
 	int 				i;
 	int 				x;
 	int 				y;
 	t_sprite			spr;
 
+	arr = (t_sprite *)malloc(all->spr_count*sizeof(t_sprite)); // we have to free this pointer
 	x = 0;
 	y = 0;
 	i = 0;

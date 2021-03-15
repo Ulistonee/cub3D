@@ -1,0 +1,1 @@
+1. to free *arr in add_spr_to_arr.c
