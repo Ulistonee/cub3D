@@ -1,5 +1,53 @@
 #include "cub3D.h"
 
+t_pos 					v_sub(t_pos v1, t_pos v2)
+{
+	t_pos 		res;
+
+	res.x = v1.x - v2.x;
+	res.y = v1.y - v2.y;
+	return (res);
+}
+
+t_pos 					project_spr(t_pos m, t_pos n, t_pos d0, t_pos dot)
+{
+	t_pos 		proj;
+	t_pos 		sub_dot;
+	double		det;
+
+	sub_dot = v_sub(dot, d0);
+	det = m.x * n.y - m.y * n.x;
+	proj.x = 1 / det * (n.y * sub_dot.x - n.x * sub_dot.y);
+	proj.y = 1 / det * (-m.y * sub_dot.x + m.x * sub_dot.y);
+	return (proj);
+}
+
+void					visualize_sprite(t_all *all, t_sprite sprite, t_pos proj_coor)
+{
+	double				j;
+
+	sprite.width = all->data.res1 / proj_coor.y;
+	sprite.start.x = proj_coor.x - sprite.width / 2;
+	sprite.start.y = all->data.res2 / 2 - all->data.res2 / proj_coor.y / 2 - 1;
+
+//	sp->end.y = (double)set->win.img.res.y / set->player.hor + sp->h / 2;
+//	sp->start.y = (double)set->win.img.res.y / set->player.hor -
+//				  sp->h / 2 - 1;
+//
+	sprite.end.x = proj_coor.x + sprite.width / 2;
+	sprite.end.y = all->data.res2 / 2 + all->data.res2 / proj_coor.y / 2;
+	while (sprite.start.x < sprite.end.x)
+	{
+		j = sprite.start.y;
+		while (j < sprite.end.y)
+		{
+			my_mlx_pixel_put(all, (int)sprite.start.x, (int)j, 0x656565);
+			j++;
+		}
+		sprite.start.x++;
+	}
+}
+
 void 					bubble_sort(t_all *all)
 {
 	int					i;
@@ -42,8 +90,12 @@ void					count_dist(t_all *all)
 
 void					draw_sprite(double *z_buf, t_all *all)
 {
+	t_pos 				proj_coor;
+
 	count_dist(all);
 	bubble_sort(all);
+	proj_coor = project_spr(all->player.plane, all->player.dir, all->player.pos, all->spr_arr[0].coord);
+	visualize_sprite(all, all->spr, proj_coor);
 }
 
 /*

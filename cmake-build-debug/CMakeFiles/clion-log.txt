@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /snap/clion/145/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/ulistonee/cub3D
 -- The C compiler identification is GNU 9.3.0
 -- Check for working C compiler: /usr/bin/cc
@@ -25,3 +26,9 @@ CMake Error at CMakeLists.txt:6 (add_library):
 
 
 CMake Generate step failed.  Build files cannot be regenerated correctly.
+=======
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/rchalmer/c/cub3D
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/rchalmer/c/cub3D/cmake-build-debug
+>>>>>>> 115e9b423ac65f09b65c95d256c6841d84c537d2
