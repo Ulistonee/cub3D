@@ -48,6 +48,9 @@ typedef struct		s_sprite
 {
 	t_pos			coord;
 	double			dist;
+	t_pos			start;
+	t_pos			end;
+	double			width;
 }					t_sprite;
 
 typedef struct		s_image
