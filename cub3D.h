@@ -51,6 +51,7 @@ typedef struct		s_sprite
 	t_pos			start;
 	t_pos			end;
 	double			width;
+	int				tag_vis;
 }					t_sprite;
 
 typedef struct		s_image
@@ -73,6 +74,7 @@ typedef struct		s_tex
 	t_image			e_tex;
 	t_image			w_tex;
 	t_image			s_tex;
+	t_image			s;
 }					t_tex;
 
 typedef struct		s_walls
@@ -143,6 +145,7 @@ typedef struct		s_struct
 	int 			ceil_3;
 	int				flr;
 	int				ceil;
+	char			*s;
 }					t_struct;
 
 typedef struct		s_map
@@ -171,10 +174,10 @@ typedef struct		s_all
 	t_fow			fow;
 	t_walls			walls;
 	t_tex			tex;
+	t_tex			s;
 	t_image			image;
 	int				spr_count;
 	t_sprite		*spr_arr;
-	t_sprite		spr;
 }					t_all;
 
 typedef struct		s_ray
@@ -207,3 +210,6 @@ int					init_textures(t_all *all);
 //t_sprite			*add_spr_to_arr(t_all *all);
 void 				add_spr_to_arr(t_all *all, t_sprite **arr_m);
 void				draw_sprite(double *z_buf, t_all *all);
+void				hide_spr(t_all *all);
+int					get_color(t_image *image, int x, int y);
+void				init_spr(t_all *all);

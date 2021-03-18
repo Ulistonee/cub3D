@@ -4,7 +4,7 @@ void			my_mlx_pixel_put(t_all *all, int x, int y, int color)
 {
 	char		*dst;
 
-	if (x < all->data.res1 && y < all->data.res2)
+	if (x < all->data.res1 && y < all->data.res2 && x > 0 && y > 0)
 	{
 		dst = all->display.addr + (y * all->display.line_length + x *
 				(all->display.bits_per_pixel / 8));

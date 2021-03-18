@@ -1,20 +1,5 @@
 #include "cub3D.h"
 
-static int				get_color(t_image *image, int x, int y)
-{
-	char		*dst;
-	int			res;
-
-	image->addr = mlx_get_data_addr(image->img,
-		 &image->bits_per_pixel, &image->line_length, &image->endian);
-	if (x < image->w && y < image->h)
-	{
-		dst = image->addr + (y * image->line_length + x * (image->bits_per_pixel / 8));
-		res = (*(int*)dst);
-		return(res);
-	}
-}
-
 int						draw_walls(t_all *all, t_ray *ray, int x)
 {
 	int						y;

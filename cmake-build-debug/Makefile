@@ -59,19 +59,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /snap/clion/145/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = /snap/clion/145/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/rchalmer/c/cub3D
+CMAKE_SOURCE_DIR = /home/ulistonee/cub3D
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/rchalmer/c/cub3D/cmake-build-debug
+CMAKE_BINARY_DIR = /home/ulistonee/cub3D/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,7 +79,7 @@ CMAKE_BINARY_DIR = /Users/rchalmer/c/cub3D/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/145/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -90,7 +90,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/145/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles /Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ulistonee/cub3D/cmake-build-debug/CMakeFiles /home/ulistonee/cub3D/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ulistonee/cub3D/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -155,33 +155,6 @@ LibFT: cmake_check_build_system
 LibFT/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/build
 .PHONY : LibFT/fast
-
-add_spr_to_arr.o: add_spr_to_arr.c.o
-
-.PHONY : add_spr_to_arr.o
-
-# target to build an object file
-add_spr_to_arr.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/add_spr_to_arr.c.o
-.PHONY : add_spr_to_arr.c.o
-
-add_spr_to_arr.i: add_spr_to_arr.c.i
-
-.PHONY : add_spr_to_arr.i
-
-# target to preprocess a source file
-add_spr_to_arr.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/add_spr_to_arr.c.i
-.PHONY : add_spr_to_arr.c.i
-
-add_spr_to_arr.s: add_spr_to_arr.c.s
-
-.PHONY : add_spr_to_arr.s
-
-# target to generate assembly for a file
-add_spr_to_arr.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/add_spr_to_arr.c.s
-.PHONY : add_spr_to_arr.c.s
 
 create_rgb.o: create_rgb.c.o
 
@@ -1722,6 +1695,33 @@ set_player.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/set_player.c.s
 .PHONY : set_player.c.s
 
+sprite_utils.o: sprite_utils.c.o
+
+.PHONY : sprite_utils.o
+
+# target to build an object file
+sprite_utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/sprite_utils.c.o
+.PHONY : sprite_utils.c.o
+
+sprite_utils.i: sprite_utils.c.i
+
+.PHONY : sprite_utils.i
+
+# target to preprocess a source file
+sprite_utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/sprite_utils.c.i
+.PHONY : sprite_utils.c.i
+
+sprite_utils.s: sprite_utils.c.s
+
+.PHONY : sprite_utils.s
+
+# target to generate assembly for a file
+sprite_utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/sprite_utils.c.s
+.PHONY : sprite_utils.c.s
+
 visualize.o: visualize.c.o
 
 .PHONY : visualize.o
@@ -1759,9 +1759,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... LibFT"
 	@echo "... cub3D"
-	@echo "... add_spr_to_arr.o"
-	@echo "... add_spr_to_arr.i"
-	@echo "... add_spr_to_arr.s"
 	@echo "... create_rgb.o"
 	@echo "... create_rgb.i"
 	@echo "... create_rgb.s"
@@ -1933,6 +1930,9 @@ help:
 	@echo "... set_player.o"
 	@echo "... set_player.i"
 	@echo "... set_player.s"
+	@echo "... sprite_utils.o"
+	@echo "... sprite_utils.i"
+	@echo "... sprite_utils.s"
 	@echo "... visualize.o"
 	@echo "... visualize.i"
 	@echo "... visualize.s"

@@ -44,5 +44,9 @@ int			parse_other(t_all *all, char *line)
 		all->data.ceil_3 = ft_atoi(1 + srch);
 		all->data.ceil = create_rgb(all->data.ceil_1, all->data.ceil_2, all->data.ceil_3);
 	}
+	else if (*line == 'S')
+	{
+		all->data.s = ft_strdup(2 + line);
+	}
 	return (0);
 }

@@ -1,8 +1,9 @@
-R 1920 880
+R 640 480
 NO ./cowboy.xpm
 SO ./django_unchaned.xpm
 WE ./james_din.xpm
 EA ./marilyn-monroe.xpm
+S ./barrel.xpm
 
 F 255, 140, 0
 C 128,128,0
