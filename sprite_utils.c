@@ -22,7 +22,7 @@ int				get_color(t_image *image, int x, int y)
 	char		*dst;
 	int			res;
 
-	if (x < image->w && y < image->h && x > 0 && y > 0)
+	if (x < image->w && y < image->h && x >= 0 && y >= 0)
 	{
 		dst = image->addr + (y * image->line_length + x * (image->bits_per_pixel / 8));
 		res = (*(int*)dst);
@@ -78,7 +78,8 @@ void					visualize_sprite(t_all *all, t_sprite sprite, t_pos proj_coor)
 		{
 			s_dot.y = (j - sprite.start.y) / sprite.width * all->s.s.h;
 			color = get_color((t_image *) &all->s.s.img, (int)s_dot.x, (int)s_dot.y);
-			my_mlx_pixel_put(all, (int)i, (int)j, color);
+			if (color != 0x000000)
+				my_mlx_pixel_put(all, (int)i, (int)j, color);
 			j++;
 		}
 		i++;
