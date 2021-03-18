@@ -114,12 +114,12 @@ typedef struct		s_fow
 	double			move_speed;
 	double			rot_speed;
 }					t_fow;
-
-typedef struct		s_posi
-{
-	int 			x;
-	int 			y;
-}					t_posi;
+//
+//typedef struct		s_posi
+//{
+//	int 			x;
+//	int 			y;
+//}					t_posi;
 
 typedef struct 		s_player
 {
@@ -209,7 +209,7 @@ int					create_rgb(int r, int g, int b);
 int					init_textures(t_all *all);
 //t_sprite			*add_spr_to_arr(t_all *all);
 void 				add_spr_to_arr(t_all *all, t_sprite **arr_m);
-void				draw_sprite(double *z_buf, t_all *all);
+void				draw_sprites(double *z_buf, t_all *all);
 void				hide_spr(t_all *all);
 int					get_color(t_image *image, int x, int y);
-void				init_spr(t_all *all);
+void				init_spr(t_all *all, t_pos_i map);

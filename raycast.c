@@ -29,8 +29,8 @@ int					calc_grid(t_all *all, t_ray *ray)
 	t_pos		len;
 	t_pos		dot1; // first grid cross occurrence
 	t_pos		dot2; // first grid cross occurrence
-	t_posi		map;
-	t_posi 		n;
+	t_pos_i		map;
+	t_pos_i 	n;
 
 	n.x =  (ray->dir.x < 0)? -1 : 1;
 	n.y =  (ray->dir.y < 0)? -1 : 1;
@@ -66,7 +66,7 @@ int					calc_grid(t_all *all, t_ray *ray)
 		}
 		if (all->map.map[map.y][map.x] == '2')
 		{
-			init_spr(all);
+			init_spr(all, map);
 		}
 	}
 	return (0);
@@ -82,19 +82,17 @@ void				raycast(t_all *all)
 
 	x = 0;
 	i = 0;
+	hide_spr(all);
 	while (x < all->data.res1)
 	{
 		camera_plane = 2 * x / (double)all->data.res1 - 1; // calculated camera_plane which is perpendicular
 		ray.dir.x = all->player.dir.x + all->player.plane.x * camera_plane; // current ray direction inside the camera_plane
 		ray.dir.y = all->player.dir.y + all->player.plane.y * camera_plane;
-		hide_spr(all);
 		calc_grid(all, &ray);
-		z_buf[i] = ray.len;
-		i++;
 		ray.k = perp_vector(all, camera_plane, &ray);
-//		printf("len: %.4f\tk: %.4f\n", ray.len, ray.k);
 		draw_walls(all, &ray, x);
+		z_buf[x] = all->walls.bottom;
 		x++;
 	}
-	draw_sprite(z_buf, all);
+	draw_sprites(z_buf, all);
 }
