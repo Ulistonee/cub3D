@@ -52,7 +52,5 @@ int				parser(t_all *all, char *file_name)
 	count_lines(all, file_name);
 	if (!(parse_file(file_name, all)))
 		return (-1);
-//	validator()
-//	count_spr(all);
 	return (0);
 }

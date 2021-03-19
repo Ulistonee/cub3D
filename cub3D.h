@@ -14,7 +14,7 @@
 #define VALID_SYMBOLS "102 NEWS"
 #define SCALE 45
 # define FOV_L 0.577
-#define STEP 0.09
+#define STEP 0.093
 #define ANGLE 0.09
 # ifdef linux
 #  define ESC 65307
@@ -196,7 +196,7 @@ int 				handle_error(int code, t_all *all);
 int					scaler(t_all *all, int x_input, int y_input, int color);
 void				my_mlx_pixel_put(t_all *all, int x, int y, int color);
 void 				draw_player(t_all *all);
-int 				set_player(t_all *all);
+int 				init_game(t_all *all);
 void 				raycast(t_all *all);
 int					parser(t_all *all, char *file_name);
 int					visualize(t_all *all);
@@ -213,3 +213,6 @@ void				draw_sprites(double *z_buf, t_all *all);
 void				hide_spr(t_all *all);
 int					get_color(t_image *image, int x, int y);
 void				init_spr(t_all *all, t_pos_i map);
+//int					init_textures(t_all *all);
+int 				display(t_all *all);
+void				my_mlx_pixel_put(t_all *all, int x, int y, int color);

@@ -183,6 +183,33 @@ create_rgb.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/create_rgb.c.s
 .PHONY : create_rgb.c.s
 
+display_utils.o: display_utils.c.o
+
+.PHONY : display_utils.o
+
+# target to build an object file
+display_utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/display_utils.c.o
+.PHONY : display_utils.c.o
+
+display_utils.i: display_utils.c.i
+
+.PHONY : display_utils.i
+
+# target to preprocess a source file
+display_utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/display_utils.c.i
+.PHONY : display_utils.c.i
+
+display_utils.s: display_utils.c.s
+
+.PHONY : display_utils.s
+
+# target to generate assembly for a file
+display_utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/display_utils.c.s
+.PHONY : display_utils.c.s
+
 dist_dots.o: dist_dots.c.o
 
 .PHONY : dist_dots.o
@@ -371,6 +398,33 @@ handle_error.s: handle_error.c.s
 handle_error.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/handle_error.c.s
 .PHONY : handle_error.c.s
+
+init_game.o: init_game.c.o
+
+.PHONY : init_game.o
+
+# target to build an object file
+init_game.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/init_game.c.o
+.PHONY : init_game.c.o
+
+init_game.i: init_game.c.i
+
+.PHONY : init_game.i
+
+# target to preprocess a source file
+init_game.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/init_game.c.i
+.PHONY : init_game.c.i
+
+init_game.s: init_game.c.s
+
+.PHONY : init_game.s
+
+# target to generate assembly for a file
+init_game.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/init_game.c.s
+.PHONY : init_game.c.s
 
 len_of_vec.o: len_of_vec.c.o
 
@@ -1668,33 +1722,6 @@ scaler.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/scaler.c.s
 .PHONY : scaler.c.s
 
-set_player.o: set_player.c.o
-
-.PHONY : set_player.o
-
-# target to build an object file
-set_player.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/set_player.c.o
-.PHONY : set_player.c.o
-
-set_player.i: set_player.c.i
-
-.PHONY : set_player.i
-
-# target to preprocess a source file
-set_player.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/set_player.c.i
-.PHONY : set_player.c.i
-
-set_player.s: set_player.c.s
-
-.PHONY : set_player.s
-
-# target to generate assembly for a file
-set_player.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/set_player.c.s
-.PHONY : set_player.c.s
-
 sprite_utils.o: sprite_utils.c.o
 
 .PHONY : sprite_utils.o
@@ -1722,33 +1749,6 @@ sprite_utils.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/sprite_utils.c.s
 .PHONY : sprite_utils.c.s
 
-visualize.o: visualize.c.o
-
-.PHONY : visualize.o
-
-# target to build an object file
-visualize.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/visualize.c.o
-.PHONY : visualize.c.o
-
-visualize.i: visualize.c.i
-
-.PHONY : visualize.i
-
-# target to preprocess a source file
-visualize.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/visualize.c.i
-.PHONY : visualize.c.i
-
-visualize.s: visualize.c.s
-
-.PHONY : visualize.s
-
-# target to generate assembly for a file
-visualize.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/visualize.c.s
-.PHONY : visualize.c.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1762,6 +1762,9 @@ help:
 	@echo "... create_rgb.o"
 	@echo "... create_rgb.i"
 	@echo "... create_rgb.s"
+	@echo "... display_utils.o"
+	@echo "... display_utils.i"
+	@echo "... display_utils.s"
 	@echo "... dist_dots.o"
 	@echo "... dist_dots.i"
 	@echo "... dist_dots.s"
@@ -1783,6 +1786,9 @@ help:
 	@echo "... handle_error.o"
 	@echo "... handle_error.i"
 	@echo "... handle_error.s"
+	@echo "... init_game.o"
+	@echo "... init_game.i"
+	@echo "... init_game.s"
 	@echo "... len_of_vec.o"
 	@echo "... len_of_vec.i"
 	@echo "... len_of_vec.s"
@@ -1927,15 +1933,9 @@ help:
 	@echo "... scaler.o"
 	@echo "... scaler.i"
 	@echo "... scaler.s"
-	@echo "... set_player.o"
-	@echo "... set_player.i"
-	@echo "... set_player.s"
 	@echo "... sprite_utils.o"
 	@echo "... sprite_utils.i"
 	@echo "... sprite_utils.s"
-	@echo "... visualize.o"
-	@echo "... visualize.i"
-	@echo "... visualize.s"
 .PHONY : help
 
 

@@ -80,13 +80,15 @@ void					visualize_sprite(double *z_buff, t_all *all, t_sprite sprite, t_pos pro
 	i = sprite.start.x;
 	all->s.s.w = 64;
 	all->s.s.h = 64;
+	if (i < 0)
+		i = 0;
 	while (i < sprite.end.x && i < all->data.res1)
 	{
 		if (sprite.end.y > z_buff[(int)i])
 		{
 			s_dot.x = (i - sprite.start.x) / sprite.width * all->s.s.w;
-			j = sprite.start.y;
-			while (j < sprite.end.y && j < all->data.res2)
+			j = sprite.start.y < 0 ? 0 : sprite.start.y;
+			while (j < sprite.end.y && j < all->data.res2 && j >= 0)
 			{
 				s_dot.y = (j - sprite.start.y) / sprite.width * all->s.s.h;
 				color = get_color((t_image *) &all->s.s.img, (int)s_dot.x, (int)s_dot.y);
@@ -154,7 +156,7 @@ void					draw_sprites(double *z_buf, t_all *all)
 		{
 			proj_coor = project_spr(all->player.plane, all->player.dir, all->player.pos, all->spr_arr[i].coord);
 			h = fabs(all->data.res2 / proj_coor.y);
-			proj_coor.x = (double)all->data.res1 / 2 * (1 + proj_coor.x / proj_coor.y) - h / 2;
+			proj_coor.x = (double)all->data.res1 / 2 * (1 + proj_coor.x / proj_coor.y); // - h / 2;
 			visualize_sprite(z_buf, all, all->spr_arr[i], proj_coor);
 		}
 		i++;
@@ -194,3 +196,4 @@ void 					add_spr_to_arr(t_all *all, t_sprite **arr_m)
 	}
 	*arr_m = arr;
 }
+

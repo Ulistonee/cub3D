@@ -7,6 +7,12 @@ CMakeFiles/cub3D.dir/create_rgb.c.o
  /home/ulistonee/cub3D/get_next_line/get_next_line.h
  /home/ulistonee/cub3D/libft/libft.h
  /home/ulistonee/cub3D/minilibx_opengl_20191021/mlx.h
+CMakeFiles/cub3D.dir/display_utils.c.o
+ /home/ulistonee/cub3D/cub3D.h
+ /home/ulistonee/cub3D/display_utils.c
+ /home/ulistonee/cub3D/get_next_line/get_next_line.h
+ /home/ulistonee/cub3D/libft/libft.h
+ /home/ulistonee/cub3D/minilibx_opengl_20191021/mlx.h
 CMakeFiles/cub3D.dir/dist_dots.c.o
  /home/ulistonee/cub3D/cub3D.h
  /home/ulistonee/cub3D/dist_dots.c
@@ -41,6 +47,12 @@ CMakeFiles/cub3D.dir/handle_error.c.o
  /home/ulistonee/cub3D/cub3D.h
  /home/ulistonee/cub3D/get_next_line/get_next_line.h
  /home/ulistonee/cub3D/handle_error.c
+ /home/ulistonee/cub3D/libft/libft.h
+ /home/ulistonee/cub3D/minilibx_opengl_20191021/mlx.h
+CMakeFiles/cub3D.dir/init_game.c.o
+ /home/ulistonee/cub3D/cub3D.h
+ /home/ulistonee/cub3D/get_next_line/get_next_line.h
+ /home/ulistonee/cub3D/init_game.c
  /home/ulistonee/cub3D/libft/libft.h
  /home/ulistonee/cub3D/minilibx_opengl_20191021/mlx.h
 CMakeFiles/cub3D.dir/len_of_vec.c.o
@@ -97,21 +109,9 @@ CMakeFiles/cub3D.dir/scaler.c.o
  /home/ulistonee/cub3D/libft/libft.h
  /home/ulistonee/cub3D/minilibx_opengl_20191021/mlx.h
  /home/ulistonee/cub3D/scaler.c
-CMakeFiles/cub3D.dir/set_player.c.o
- /home/ulistonee/cub3D/cub3D.h
- /home/ulistonee/cub3D/get_next_line/get_next_line.h
- /home/ulistonee/cub3D/libft/libft.h
- /home/ulistonee/cub3D/minilibx_opengl_20191021/mlx.h
- /home/ulistonee/cub3D/set_player.c
 CMakeFiles/cub3D.dir/sprite_utils.c.o
  /home/ulistonee/cub3D/cub3D.h
  /home/ulistonee/cub3D/get_next_line/get_next_line.h
  /home/ulistonee/cub3D/libft/libft.h
  /home/ulistonee/cub3D/minilibx_opengl_20191021/mlx.h
  /home/ulistonee/cub3D/sprite_utils.c
-CMakeFiles/cub3D.dir/visualize.c.o
- /home/ulistonee/cub3D/cub3D.h
- /home/ulistonee/cub3D/get_next_line/get_next_line.h
- /home/ulistonee/cub3D/libft/libft.h
- /home/ulistonee/cub3D/minilibx_opengl_20191021/mlx.h
- /home/ulistonee/cub3D/visualize.c

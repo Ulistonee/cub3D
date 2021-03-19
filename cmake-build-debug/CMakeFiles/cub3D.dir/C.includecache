@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/ulistonee/cub3D/create_rgb.c
+cub3D.h
+/home/ulistonee/cub3D/cub3D.h
+
 /home/ulistonee/cub3D/cub3D.h
 unistd.h
 -
@@ -32,6 +36,26 @@ libft/libft.h
 get_next_line/get_next_line.h
 /home/ulistonee/cub3D/get_next_line/get_next_line.h
 
+/home/ulistonee/cub3D/display_utils.c
+cub3D.h
+/home/ulistonee/cub3D/cub3D.h
+
+/home/ulistonee/cub3D/dist_dots.c
+cub3D.h
+/home/ulistonee/cub3D/cub3D.h
+
+/home/ulistonee/cub3D/draw_map.c
+cub3D.h
+/home/ulistonee/cub3D/cub3D.h
+
+/home/ulistonee/cub3D/draw_player.c
+cub3D.h
+/home/ulistonee/cub3D/cub3D.h
+
+/home/ulistonee/cub3D/draw_walls.c
+cub3D.h
+/home/ulistonee/cub3D/cub3D.h
+
 /home/ulistonee/cub3D/get_next_line/get_next_line.h
 stdio.h
 -
@@ -42,6 +66,18 @@ unistd.h
 fcntl.h
 -
 
+/home/ulistonee/cub3D/handle_error.c
+cub3D.h
+/home/ulistonee/cub3D/cub3D.h
+
+/home/ulistonee/cub3D/init_game.c
+cub3D.h
+/home/ulistonee/cub3D/cub3D.h
+
+/home/ulistonee/cub3D/len_of_vec.c
+cub3D.h
+/home/ulistonee/cub3D/cub3D.h
+
 /home/ulistonee/cub3D/libft/libft.h
 stddef.h
 -
@@ -50,7 +86,39 @@ stdlib.h
 unistd.h
 -
 
+/home/ulistonee/cub3D/main.c
+cub3D.h
+/home/ulistonee/cub3D/cub3D.h
+
 /home/ulistonee/cub3D/minilibx_opengl_20191021/mlx.h
+
+/home/ulistonee/cub3D/parser/is_map.c
+../cub3D.h
+/home/ulistonee/cub3D/cub3D.h
+
+/home/ulistonee/cub3D/parser/parse_map.c
+../cub3D.h
+/home/ulistonee/cub3D/cub3D.h
+
+/home/ulistonee/cub3D/parser/parse_other.c
+../cub3D.h
+/home/ulistonee/cub3D/cub3D.h
+
+/home/ulistonee/cub3D/parser/parser.c
+../cub3D.h
+/home/ulistonee/cub3D/cub3D.h
+
+/home/ulistonee/cub3D/perp_vector.c
+cub3D.h
+/home/ulistonee/cub3D/cub3D.h
+
+/home/ulistonee/cub3D/raycast.c
+cub3D.h
+/home/ulistonee/cub3D/cub3D.h
+
+/home/ulistonee/cub3D/scaler.c
+cub3D.h
+/home/ulistonee/cub3D/cub3D.h
 
 /home/ulistonee/cub3D/sprite_utils.c
 cub3D.h

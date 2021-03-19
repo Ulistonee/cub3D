@@ -207,18 +207,18 @@ CMakeFiles/cub3D.dir/draw_player.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/draw_player.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ulistonee/cub3D/draw_player.c -o CMakeFiles/cub3D.dir/draw_player.c.s
 
-CMakeFiles/cub3D.dir/set_player.c.o: CMakeFiles/cub3D.dir/flags.make
-CMakeFiles/cub3D.dir/set_player.c.o: ../set_player.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ulistonee/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/cub3D.dir/set_player.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cub3D.dir/set_player.c.o   -c /home/ulistonee/cub3D/set_player.c
+CMakeFiles/cub3D.dir/init_game.c.o: CMakeFiles/cub3D.dir/flags.make
+CMakeFiles/cub3D.dir/init_game.c.o: ../init_game.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ulistonee/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/cub3D.dir/init_game.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cub3D.dir/init_game.c.o   -c /home/ulistonee/cub3D/init_game.c
 
-CMakeFiles/cub3D.dir/set_player.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cub3D.dir/set_player.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ulistonee/cub3D/set_player.c > CMakeFiles/cub3D.dir/set_player.c.i
+CMakeFiles/cub3D.dir/init_game.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cub3D.dir/init_game.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ulistonee/cub3D/init_game.c > CMakeFiles/cub3D.dir/init_game.c.i
 
-CMakeFiles/cub3D.dir/set_player.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/set_player.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ulistonee/cub3D/set_player.c -o CMakeFiles/cub3D.dir/set_player.c.s
+CMakeFiles/cub3D.dir/init_game.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/init_game.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ulistonee/cub3D/init_game.c -o CMakeFiles/cub3D.dir/init_game.c.s
 
 CMakeFiles/cub3D.dir/raycast.c.o: CMakeFiles/cub3D.dir/flags.make
 CMakeFiles/cub3D.dir/raycast.c.o: ../raycast.c
@@ -246,18 +246,18 @@ CMakeFiles/cub3D.dir/draw_map.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/draw_map.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ulistonee/cub3D/draw_map.c -o CMakeFiles/cub3D.dir/draw_map.c.s
 
-CMakeFiles/cub3D.dir/visualize.c.o: CMakeFiles/cub3D.dir/flags.make
-CMakeFiles/cub3D.dir/visualize.c.o: ../visualize.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ulistonee/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/cub3D.dir/visualize.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cub3D.dir/visualize.c.o   -c /home/ulistonee/cub3D/visualize.c
+CMakeFiles/cub3D.dir/display_utils.c.o: CMakeFiles/cub3D.dir/flags.make
+CMakeFiles/cub3D.dir/display_utils.c.o: ../display_utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ulistonee/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/cub3D.dir/display_utils.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cub3D.dir/display_utils.c.o   -c /home/ulistonee/cub3D/display_utils.c
 
-CMakeFiles/cub3D.dir/visualize.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cub3D.dir/visualize.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ulistonee/cub3D/visualize.c > CMakeFiles/cub3D.dir/visualize.c.i
+CMakeFiles/cub3D.dir/display_utils.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cub3D.dir/display_utils.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ulistonee/cub3D/display_utils.c > CMakeFiles/cub3D.dir/display_utils.c.i
 
-CMakeFiles/cub3D.dir/visualize.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/visualize.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ulistonee/cub3D/visualize.c -o CMakeFiles/cub3D.dir/visualize.c.s
+CMakeFiles/cub3D.dir/display_utils.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/display_utils.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ulistonee/cub3D/display_utils.c -o CMakeFiles/cub3D.dir/display_utils.c.s
 
 CMakeFiles/cub3D.dir/draw_walls.c.o: CMakeFiles/cub3D.dir/flags.make
 CMakeFiles/cub3D.dir/draw_walls.c.o: ../draw_walls.c
@@ -349,10 +349,10 @@ cub3D_OBJECTS = \
 "CMakeFiles/cub3D.dir/handle_error.c.o" \
 "CMakeFiles/cub3D.dir/scaler.c.o" \
 "CMakeFiles/cub3D.dir/draw_player.c.o" \
-"CMakeFiles/cub3D.dir/set_player.c.o" \
+"CMakeFiles/cub3D.dir/init_game.c.o" \
 "CMakeFiles/cub3D.dir/raycast.c.o" \
 "CMakeFiles/cub3D.dir/draw_map.c.o" \
-"CMakeFiles/cub3D.dir/visualize.c.o" \
+"CMakeFiles/cub3D.dir/display_utils.c.o" \
 "CMakeFiles/cub3D.dir/draw_walls.c.o" \
 "CMakeFiles/cub3D.dir/len_of_vec.c.o" \
 "CMakeFiles/cub3D.dir/dist_dots.c.o" \
@@ -373,10 +373,10 @@ cub3D: CMakeFiles/cub3D.dir/get_next_line/get_next_line_utils.c.o
 cub3D: CMakeFiles/cub3D.dir/handle_error.c.o
 cub3D: CMakeFiles/cub3D.dir/scaler.c.o
 cub3D: CMakeFiles/cub3D.dir/draw_player.c.o
-cub3D: CMakeFiles/cub3D.dir/set_player.c.o
+cub3D: CMakeFiles/cub3D.dir/init_game.c.o
 cub3D: CMakeFiles/cub3D.dir/raycast.c.o
 cub3D: CMakeFiles/cub3D.dir/draw_map.c.o
-cub3D: CMakeFiles/cub3D.dir/visualize.c.o
+cub3D: CMakeFiles/cub3D.dir/display_utils.c.o
 cub3D: CMakeFiles/cub3D.dir/draw_walls.c.o
 cub3D: CMakeFiles/cub3D.dir/len_of_vec.c.o
 cub3D: CMakeFiles/cub3D.dir/dist_dots.c.o

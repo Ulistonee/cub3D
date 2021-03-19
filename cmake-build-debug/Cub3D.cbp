@@ -120,6 +120,9 @@
 		<Unit filename="/home/ulistonee/cub3D/cub3D.h">
 			<Option target="cub3D"/>
 		</Unit>
+		<Unit filename="/home/ulistonee/cub3D/display_utils.c">
+			<Option target="cub3D"/>
+		</Unit>
 		<Unit filename="/home/ulistonee/cub3D/dist_dots.c">
 			<Option target="cub3D"/>
 		</Unit>
@@ -142,6 +145,9 @@
 			<Option target="cub3D"/>
 		</Unit>
 		<Unit filename="/home/ulistonee/cub3D/handle_error.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/home/ulistonee/cub3D/init_game.c">
 			<Option target="cub3D"/>
 		</Unit>
 		<Unit filename="/home/ulistonee/cub3D/len_of_vec.c">
@@ -288,13 +294,7 @@
 		<Unit filename="/home/ulistonee/cub3D/scaler.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/set_player.c">
-			<Option target="cub3D"/>
-		</Unit>
 		<Unit filename="/home/ulistonee/cub3D/sprite_utils.c">
-			<Option target="cub3D"/>
-		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/visualize.c">
 			<Option target="cub3D"/>
 		</Unit>
 		<Unit filename="/home/ulistonee/cub3D/CMakeLists.txt">

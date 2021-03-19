@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/home/ulistonee/cub3D/create_rgb.c" "/home/ulistonee/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/create_rgb.c.o"
+  "/home/ulistonee/cub3D/display_utils.c" "/home/ulistonee/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/display_utils.c.o"
   "/home/ulistonee/cub3D/dist_dots.c" "/home/ulistonee/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/dist_dots.c.o"
   "/home/ulistonee/cub3D/draw_map.c" "/home/ulistonee/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/draw_map.c.o"
   "/home/ulistonee/cub3D/draw_player.c" "/home/ulistonee/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/draw_player.c.o"
@@ -12,6 +13,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/ulistonee/cub3D/get_next_line/get_next_line.c" "/home/ulistonee/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/get_next_line/get_next_line.c.o"
   "/home/ulistonee/cub3D/get_next_line/get_next_line_utils.c" "/home/ulistonee/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/get_next_line/get_next_line_utils.c.o"
   "/home/ulistonee/cub3D/handle_error.c" "/home/ulistonee/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/handle_error.c.o"
+  "/home/ulistonee/cub3D/init_game.c" "/home/ulistonee/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/init_game.c.o"
   "/home/ulistonee/cub3D/len_of_vec.c" "/home/ulistonee/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/len_of_vec.c.o"
   "/home/ulistonee/cub3D/main.c" "/home/ulistonee/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/main.c.o"
   "/home/ulistonee/cub3D/parser/is_map.c" "/home/ulistonee/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/parser/is_map.c.o"
@@ -21,9 +23,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/ulistonee/cub3D/perp_vector.c" "/home/ulistonee/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/perp_vector.c.o"
   "/home/ulistonee/cub3D/raycast.c" "/home/ulistonee/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/raycast.c.o"
   "/home/ulistonee/cub3D/scaler.c" "/home/ulistonee/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/scaler.c.o"
-  "/home/ulistonee/cub3D/set_player.c" "/home/ulistonee/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/set_player.c.o"
   "/home/ulistonee/cub3D/sprite_utils.c" "/home/ulistonee/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/sprite_utils.c.o"
-  "/home/ulistonee/cub3D/visualize.c" "/home/ulistonee/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/visualize.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

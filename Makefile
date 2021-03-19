@@ -10,10 +10,10 @@ SRCS	= \
 			handle_error.c \
 			scaler.c \
 			draw_player.c \
-			set_player.c \
+			init_game.c \
 			raycast.c \
 			parser/parser.c \
-			visualize.c \
+			display_utils.c \
 			draw_map.c \
 			draw_walls.c\
 			len_of_vec.c \
