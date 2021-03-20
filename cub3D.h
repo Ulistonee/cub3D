@@ -216,3 +216,4 @@ void				init_spr(t_all *all, t_pos_i map);
 //int					init_textures(t_all *all);
 int 				display(t_all *all);
 void				my_mlx_pixel_put(t_all *all, int x, int y, int color);
+int					enter_validator(t_all *all, char *file_name);

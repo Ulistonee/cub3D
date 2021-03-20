@@ -25,7 +25,7 @@ int 				parse_file(char *file_name, t_all *all)
 	return (1);
 }
 
-int 			count_lines(t_all *all, char *file_name)
+int 				count_lines(t_all *all, char *file_name)
 {
 	int 			fd;
 	char			*line;
@@ -47,7 +47,7 @@ int 			count_lines(t_all *all, char *file_name)
 	return (0);
 }
 
-int				parser(t_all *all, char *file_name)
+int					parser(t_all *all, char *file_name)
 {
 	count_lines(all, file_name);
 	if (!(parse_file(file_name, all)))

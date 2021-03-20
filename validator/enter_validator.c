@@ -9,24 +9,37 @@ int					valid_res(char *line)
 
 }
 
-int					validator(char *line)
+int					validate_map(t_all *all)
 {
-	if (*line == 'R' && *(1 + line) == ' ')
-	{
-		valid_res(2 + line);
+	int 			x;
+	int 			y;
 
+	x = 0;
+	y = 0;
+	while (y < all->map.lines)
+	{
+		x = 0;
+		while (all->map.map[y][x] != '\0')
+		{
+			if (!ft_strchr(VALID_SYMBOLS, all->map.map[y][x])
+				return (-1);
+			x++;
+		}
+		y++;
 	}
 }
 
 
-int					enter_validator(t_all *all, char *file_name)
-{
-	int				fd;
-	char			*line;
 
-	fd = open(file_name, O_RDONLY);
-	while(get_next_line(fd, &line))
-	{
-		validator(line);
-	}
-}
+
+//int					enter_validator(t_all *all, char *file_name)
+//{
+//	int				fd;
+//	char			*line;
+//
+//	fd = open(file_name, O_RDONLY);
+//	while(get_next_line(fd, &line))
+//	{
+//		validator(line);
+//	}
+//}
