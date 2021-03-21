@@ -29,18 +29,27 @@ int 				count_lines(t_all *all, char *file_name)
 {
 	int 			fd;
 	char			*line;
-	int 			counter;
+	int				counter;
+	int				flag;
+	int				res;
 
 	counter = 0; // lines` counter
 	fd = open(file_name, O_RDONLY);
 //	handle_error(errno, &all); // identify errors on the initial stage such as no file etc.
-	while (get_next_line(fd, &line)) // start GNL to count map size
+	flag = 0;
+	while ((res = get_next_line(fd, &line)) >= 0) // start GNL to count map size
 	{
 		if (is_map(line))
 		{
+			if (flag)
+				handle_error("Invalid map\n", all);
 			counter++;
 			ft_free_mem(&line);
 		}
+		else if (counter > 0)
+			flag = 1;
+		if (res == 0)
+			break;
 	}
 	all->map.lines = counter;
 	close(fd);

@@ -426,6 +426,33 @@ init_game.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/init_game.c.s
 .PHONY : init_game.c.s
 
+key_hook.o: key_hook.c.o
+
+.PHONY : key_hook.o
+
+# target to build an object file
+key_hook.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/key_hook.c.o
+.PHONY : key_hook.c.o
+
+key_hook.i: key_hook.c.i
+
+.PHONY : key_hook.i
+
+# target to preprocess a source file
+key_hook.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/key_hook.c.i
+.PHONY : key_hook.c.i
+
+key_hook.s: key_hook.c.s
+
+.PHONY : key_hook.s
+
+# target to generate assembly for a file
+key_hook.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/key_hook.c.s
+.PHONY : key_hook.c.s
+
 len_of_vec.o: len_of_vec.c.o
 
 .PHONY : len_of_vec.o
@@ -1749,6 +1776,33 @@ sprite_utils.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/sprite_utils.c.s
 .PHONY : sprite_utils.c.s
 
+validator/enter_validator.o: validator/enter_validator.c.o
+
+.PHONY : validator/enter_validator.o
+
+# target to build an object file
+validator/enter_validator.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/validator/enter_validator.c.o
+.PHONY : validator/enter_validator.c.o
+
+validator/enter_validator.i: validator/enter_validator.c.i
+
+.PHONY : validator/enter_validator.i
+
+# target to preprocess a source file
+validator/enter_validator.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/validator/enter_validator.c.i
+.PHONY : validator/enter_validator.c.i
+
+validator/enter_validator.s: validator/enter_validator.c.s
+
+.PHONY : validator/enter_validator.s
+
+# target to generate assembly for a file
+validator/enter_validator.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/validator/enter_validator.c.s
+.PHONY : validator/enter_validator.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1789,6 +1843,9 @@ help:
 	@echo "... init_game.o"
 	@echo "... init_game.i"
 	@echo "... init_game.s"
+	@echo "... key_hook.o"
+	@echo "... key_hook.i"
+	@echo "... key_hook.s"
 	@echo "... len_of_vec.o"
 	@echo "... len_of_vec.i"
 	@echo "... len_of_vec.s"
@@ -1936,6 +1993,9 @@ help:
 	@echo "... sprite_utils.o"
 	@echo "... sprite_utils.i"
 	@echo "... sprite_utils.s"
+	@echo "... validator/enter_validator.o"
+	@echo "... validator/enter_validator.i"
+	@echo "... validator/enter_validator.s"
 .PHONY : help
 
 

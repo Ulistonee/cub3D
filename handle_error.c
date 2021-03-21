@@ -1,12 +1,9 @@
 #include "cub3D.h"
 
-int 			handle_error(int code, t_all *all)
+void 			handle_error(char *message, t_all *all)
 {
-	if (code != 0)
-	{
-		ft_putstr_fd(strerror(code), 1);
+	ft_putstr_fd("Error\n", 0);
+	ft_putstr_fd(message, 1);
 //		clear_all(all);
-		exit(EXIT_FAILURE);
-	}
-	return (1);
+	exit(EXIT_FAILURE);
 }

@@ -21,6 +21,8 @@ SRCS	= \
 			perp_vector.c \
 			create_rgb.c \
 			sprite_utils.c \
+			validator/enter_validator.c \
+			key_hook.c \
 
 OBJS		= $(patsubst %.c, %.o, $(SRCS))
 
@@ -35,8 +37,8 @@ all:		init ${NAME}
 init:
 			@ echo "......init......"
 			make -C libft
-			make -C libmlx
-# 			make -C minilibx_opengl_20191021
+# 			make -C libmlx
+			make -C minilibx_opengl_20191021
 
 $(NAME):	$(OBJS) $(HEADER)
 #MAC:

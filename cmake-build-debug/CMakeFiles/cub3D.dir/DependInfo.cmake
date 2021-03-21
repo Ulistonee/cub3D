@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/rchalmer/c/cub3D/get_next_line/get_next_line_utils.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/get_next_line/get_next_line_utils.c.o"
   "/Users/rchalmer/c/cub3D/handle_error.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/handle_error.c.o"
   "/Users/rchalmer/c/cub3D/init_game.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/init_game.c.o"
+  "/Users/rchalmer/c/cub3D/key_hook.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/key_hook.c.o"
   "/Users/rchalmer/c/cub3D/len_of_vec.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/len_of_vec.c.o"
   "/Users/rchalmer/c/cub3D/main.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/main.c.o"
   "/Users/rchalmer/c/cub3D/parser/is_map.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/parser/is_map.c.o"
@@ -24,6 +25,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/rchalmer/c/cub3D/raycast.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/raycast.c.o"
   "/Users/rchalmer/c/cub3D/scaler.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/scaler.c.o"
   "/Users/rchalmer/c/cub3D/sprite_utils.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/sprite_utils.c.o"
+  "/Users/rchalmer/c/cub3D/validator/enter_validator.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/validator/enter_validator.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

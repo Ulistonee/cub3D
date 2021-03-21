@@ -83,7 +83,7 @@ int 		init_game(t_all *all)
 			if (ft_strchr("NEWS", all->map.map[y][x]))
 			{
 				all->player.pos.x = x + 0.5;
-				all->player.pos.y = y + 0.5;
+				all->player.pos.y = y + 0.5000000001;
 				set_player_dir(all, x, y);
 				set_player_plane(all, x, y);
 				all->map.map[y][x] = '0';

@@ -154,6 +154,9 @@
 		<Unit filename="/Users/rchalmer/c/cub3D/init_game.c">
 			<Option target="cub3D"/>
 		</Unit>
+		<Unit filename="/Users/rchalmer/c/cub3D/key_hook.c">
+			<Option target="cub3D"/>
+		</Unit>
 		<Unit filename="/Users/rchalmer/c/cub3D/len_of_vec.c">
 			<Option target="cub3D"/>
 		</Unit>
@@ -299,6 +302,9 @@
 			<Option target="cub3D"/>
 		</Unit>
 		<Unit filename="/Users/rchalmer/c/cub3D/sprite_utils.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/rchalmer/c/cub3D/validator/enter_validator.c">
 			<Option target="cub3D"/>
 		</Unit>
 		<Unit filename="/Users/rchalmer/c/cub3D/CMakeLists.txt">
