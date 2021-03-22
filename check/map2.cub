@@ -1,0 +1,15 @@
+R 640 480
+NO ./cowboy.xpm
+SO ./django_unchaned.xpm
+WE ./james_din.xpm
+EA ./marilyn-monroe.xpm
+S ./barrel.xpm
+
+F 255, 140, 0
+C 128,128,0
+
+111111111111
+1L2020102011
+1000N0000111
+111111111111
+

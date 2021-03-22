@@ -38,7 +38,7 @@ if (APPLE)
       libft
       "-framework OpenGL"
       "-framework AppKit"
-      ${CMAKE_SOURCE_DIR}/libmlx_mac/libmlx.a
+      ${CMAKE_SOURCE_DIR}/minilibx_opengl_20191021/libmlx.a
       )
 endif(APPLE)
 if (UNIX AND NOT APPLE)

@@ -37,15 +37,15 @@ all:		init ${NAME}
 init:
 			@ echo "......init......"
 			make -C libft
-			make -C libmlx
-# 			make -C minilibx_opengl_20191021
+# 			make -C libmlx
+			make -C minilibx_opengl_20191021
 
 $(NAME):	$(OBJS) $(HEADER)
 #MAC:
-			#$(CC) $(FLAGS) $? $(HEADER) -Llibft -lft -Lminilibx_opengl_20191021 -lmlx -framework OpenGL -framework AppKit
+			$(CC) $(FLAGS) $? $(HEADER) -Llibft -lft -Lminilibx_opengl_20191021 -lmlx -framework OpenGL -framework AppKit
 
 #Lnx:
-			$(CC) $(FLAGS) $? $(HEADER) -Llibft -lft -Llibmlx -lmlx -lXext -lX11 -lbsd -lm -o $(NAME)
+			#$(CC) $(FLAGS) $? $(HEADER) -Llibft -lft -Llibmlx -lmlx -lXext -lX11 -lbsd -lm -o $(NAME)
 
 %.o : %.c
 			${CC} $(FLAGS) -c $< -o $@

@@ -41,13 +41,13 @@ int 				count_lines(t_all *all, char *file_name)
 	{
 		if (is_map(line))
 		{
-			if (flag)
-				handle_error("Invalid map\n", all);
+//			if (flag)
+//				handle_error("Invalid map\n", all);
 			counter++;
-			ft_free_mem(&line);
+//			ft_free_mem(&line);
 		}
-		else if (counter > 0)
-			flag = 1;
+//		else if (counter > 0)
+//			flag = 1;
 		if (res == 0)
 			break;
 	}
