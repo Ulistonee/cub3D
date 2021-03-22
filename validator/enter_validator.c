@@ -1,13 +1,40 @@
 #include "../cub3D.h"
 
-void				restore_map(t_all *all, int x, int y)
+void				restore_map(t_all *all)
 {
-	if (all->map.map[y][x] == '3')
-		all->map.map[y][x] = '0';
-	if (all->map.map[y][x] == 'N')
-		all->map.map[y][x] = 'n';
+	int				x;
+	int				y;
+	int				i;
 
-
+	x = 0;
+	y = 0;
+	i = 0;
+	while(y < all->map.lines)
+	{
+		x = 0;
+		while (all->map.map[y][x] != '\0')
+		{
+			if (all->map.map[y][x] == 'P')
+			{
+				all->map.map[y][x] = all->data.p;
+				i++;
+			}
+			if (all->map.map[y][x] == '3')
+				all->map.map[y][x] = '0';
+		//	if (all->map.map[y][x] == 'P')
+		//	{
+		//		all->map.map[y][x] = all->data.p;
+		//	}
+			if (all->map.map[y][x] == 't')
+			{
+				all->map.map[y][x] = '2';
+			}
+			x++;
+		}
+		y++;
+	}
+	if (i != 1)
+		handle_error("Invalid number of players\n", all);
 }
 
 int					valid_closed(t_all *all, int x, int y)
@@ -18,15 +45,11 @@ int					valid_closed(t_all *all, int x, int y)
 		return (1);
 	if (all->map.map[y][x] == '0')
 		all->map.map[y][x] = '3';
-	all->data.p = ft_strchr("NEWS", all->map.map[y][x]);
-	if (*all->data.p == 'N')
-		all->map.map[y][x] = 'n';
-	if (*all->data.p == 'E')
-		all->map.map[y][x] = 'E';
-	if (*all->data.p == 'W')
-		all->map.map[y][x] = 'W';
-	if (*all->data.p == 'S')
-		all->map.map[y][x] = 'S';
+	if (ft_strchr("NEWS", all->map.map[y][x]))
+	{
+		all->data.p = all->map.map[y][x];
+		all->map.map[y][x] = 'P';
+	}
 	if (all->map.map[y][x] == '2')
 		all->map.map[y][x] = 't';
 	return(	valid_closed(all, x, y - 1) &&
@@ -36,33 +59,26 @@ int					valid_closed(t_all *all, int x, int y)
 			);
 }
 
-int					valid_res(char *line)
+void				valid_res(t_all *all, char *line)
 {
-	while (*line == ' ')
+	while(*line == ' ')
 		line++;
-	while (ft_isdigit(line))
-		line++;
-
-}
-
-void					valid_map(t_all *all)
-{
-	int 			x;
-	int 			y;
-
-	x = 0;
-	y = 0;
-	while (y < all->map.lines)
+	if(ft_isdigit(*line))
 	{
-		x = 0;
-		while (all->map.map[y][x] != '\0')
-		{
-			if (!ft_strchr(VALID_SYMBOLS, all->map.map[y][x]))
-				printf("Invalid map\n");
-			x++;
-		}
-		y++;
+		all->data.res1 = ft_atoi(line);
 	}
+	while(ft_isdigit(*line))
+		line++;
+	while(*line == ' ')
+		line++;
+	if (ft_isdigit(*line))
+		all->data.res2 = ft_atoi(line);
+	while(ft_isdigit(*line))
+		line++;
+	while(*line == ' ')
+		line++;
+	if (*line != '\0')
+		handle_error("Invalid resolution format\n", all);
 }
 
 int					enter_validator(t_all *all)
@@ -72,8 +88,6 @@ int					enter_validator(t_all *all)
 
 	x = 0;
 	y = 0;
-//	if (!valid_map(all))
-//		return (-1);
 	while(y < all->map.lines)
 	{
 		x = 0;
@@ -87,5 +101,6 @@ int					enter_validator(t_all *all)
 		}
 		y++;
 	}
+	restore_map(all);
 	return (0);
 }

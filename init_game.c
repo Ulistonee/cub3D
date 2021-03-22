@@ -88,10 +88,10 @@ int 		init_game(t_all *all)
 				set_player_plane(all, x, y);
 				all->map.map[y][x] = '0';
 			}
-			if (all->map.map[y][x] == '2')
-			{
-				all->spr_count++;
-			}
+//			if (all->map.map[y][x] == '2')
+//			{
+//				all->spr_count++;
+//			}
 			x++;
 		}
 		y++;

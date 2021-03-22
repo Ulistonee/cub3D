@@ -6,9 +6,11 @@ int			parse_other(t_all *all, char *line)
 
 	if (*line == 'R')
 	{
-		all->data.res1 = ft_atoi(2 + line);
-		srch = ft_strchr(2+line, ' ');
-		all->data.res2 = ft_atoi(srch);
+		line++;
+		valid_res(all, line);
+//		all->data.res1 = ft_atoi(1 + line);
+//		srch = ft_strchr(1 + line, ' ');
+//		all->data.res2 = ft_atoi(srch);
 	}
 	else if (*line == 'N' && *(1 + line) == 'O')
 	{

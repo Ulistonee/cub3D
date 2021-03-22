@@ -7,10 +7,10 @@
 # include <errno.h> // for errno
 # include <stdlib.h> // for exit
 # include <math.h>
-# include "minilibx_opengl_20191021/mlx.h"
+//# include "minilibx_opengl_20191021/mlx.h"
 # include "libft/libft.h"
 # include "get_next_line/get_next_line.h"
-//# include "libmlx/mlx.h"
+# include "libmlx/mlx.h"
 #define VALID_SYMBOLS "102 NEWS"
 #define SCALE 45
 # define FOV_L 0.577
@@ -140,7 +140,7 @@ typedef struct		s_struct
 	int				flr;
 	int				ceil;
 	char			*s;
-	char			*p;
+	char			p;
 }					t_struct;
 
 typedef struct		s_map
@@ -213,3 +213,4 @@ int 				display(t_all *all);
 void				my_mlx_pixel_put(t_all *all, int x, int y, int color);
 int					enter_validator(t_all *all);
 int 				key_hook(int keynumber, t_all *all);
+void				valid_res(t_all *all, char *line);

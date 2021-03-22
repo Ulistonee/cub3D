@@ -1,12 +1,13 @@
-cmake_minimum_required(VERSION 3.17)
+ cmake_minimum_required(VERSION 3.17)
 project(Cub3D C)
-set(CMAKE_C_STANDARD 99)
 
-file(GLOB LIBFILES libft/*.c)
-add_library(LibFT STATIC ${LIBFILES})
+set(CMAKE_C_STANDARD 11)
 
-#add_subdirectory(./libft)
-add_executable (cub3D
+include_directories(.)
+
+add_subdirectory(./libft)
+
+add_executable(Cub3D
         cub3D.h
         main.c
         parser/parser.c
@@ -30,22 +31,23 @@ add_executable (cub3D
         sprite_utils.c
         validator/enter_validator.c
         key_hook.c)
-target_link_libraries(cub3D LibFT)
+
 if (APPLE)
-    target_link_libraries(cub3D
-            #     Cub3D ${CMAKE_SOURCE_DIR}/libft/libft.a
-            LibFT
-            ${CMAKE_SOURCE_DIR}/minilibx_opengl_20191021/libmlx.a
-            "-framework OpenGL"
-            "-framework AppKit"
-            )
+  target_link_libraries(Cub3D
+  #    Cub3D ${CMAKE_SOURCE_DIR}/libft/libft.a
+      libft
+      "-framework OpenGL"
+      "-framework AppKit"
+      ${CMAKE_SOURCE_DIR}/libmlx_mac/libmlx.a
+      )
 endif(APPLE)
 if (UNIX AND NOT APPLE)
-    target_link_libraries(cub3D
-            #     Cub3D ${CMAKE_SOURCE_DIR}/libft/libft.a
-            ${CMAKE_SOURCE_DIR}/libmlx/libmlx.a
-            "-lX11"
-            "-lm"
-            "-lXext"
-            )
+  target_link_libraries(Cub3D
+      #    Cub3D ${CMAKE_SOURCE_DIR}/libft/libft.a
+      libft
+      ${CMAKE_SOURCE_DIR}/libmlx/libmlx.a
+      "-lX11"
+      "-lm"
+      "-lXext"
+  )
 endif(UNIX AND NOT APPLE)

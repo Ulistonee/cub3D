@@ -5,8 +5,7 @@ int					main(int argc, char *argv[])
 	t_all			all;
 
 	parser(&all, argv[1]);
-	if (!enter_validator(&all))
-		return (-1);
+	enter_validator(&all);
 	all.display.mlx = mlx_init();
 	all.display.mlx_win = mlx_new_window(all.display.mlx, all.data.res1, all.data.res2,
 										  "My_cub3D");
