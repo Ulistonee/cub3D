@@ -35,6 +35,15 @@ void				restore_map(t_all *all)
 	}
 	if (i != 1)
 		handle_error("Invalid number of players\n", all);
+
+//
+//	y = 0;
+//	while(y < all->map.lines)
+//	{
+//		printf("%s\n", all->map.map[y]);
+//		y++;
+//	}
+
 }
 
 int					valid_closed(t_all *all, int x, int y)
