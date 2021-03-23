@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Install script for directory: /home/ulistonee/cub3D/libft
+=======
+# Install script for directory: /Users/rchalmer/c/cub3D/libft
+>>>>>>> b127273649f43c267e7ec4da462dc0aaa907e883
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -27,11 +31,14 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+<<<<<<< HEAD
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
+=======
+>>>>>>> b127273649f43c267e7ec4da462dc0aaa907e883
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")

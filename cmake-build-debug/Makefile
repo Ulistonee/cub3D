@@ -131,30 +131,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Cub3D
+# Target rules for targets named cub3D
 
 # Build rule for target.
-Cub3D: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Cub3D
-.PHONY : Cub3D
+cub3D: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cub3D
+.PHONY : cub3D
 
 # fast build rule for target.
-Cub3D/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/build
-.PHONY : Cub3D/fast
+cub3D/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/build
+.PHONY : cub3D/fast
 
 #=============================================================================
-# Target rules for targets named libft
+# Target rules for targets named LibFT
 
 # Build rule for target.
-libft: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libft
-.PHONY : libft
+LibFT: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LibFT
+.PHONY : LibFT
 
 # fast build rule for target.
-libft/fast:
-	$(MAKE) $(MAKESILENT) -f libft/CMakeFiles/libft.dir/build.make libft/CMakeFiles/libft.dir/build
-.PHONY : libft/fast
+LibFT/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/build
+.PHONY : LibFT/fast
 
 create_rgb.o: create_rgb.c.o
 
@@ -162,7 +162,7 @@ create_rgb.o: create_rgb.c.o
 
 # target to build an object file
 create_rgb.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/create_rgb.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/create_rgb.c.o
 .PHONY : create_rgb.c.o
 
 create_rgb.i: create_rgb.c.i
@@ -171,7 +171,7 @@ create_rgb.i: create_rgb.c.i
 
 # target to preprocess a source file
 create_rgb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/create_rgb.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/create_rgb.c.i
 .PHONY : create_rgb.c.i
 
 create_rgb.s: create_rgb.c.s
@@ -180,7 +180,7 @@ create_rgb.s: create_rgb.c.s
 
 # target to generate assembly for a file
 create_rgb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/create_rgb.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/create_rgb.c.s
 .PHONY : create_rgb.c.s
 
 display_utils.o: display_utils.c.o
@@ -189,7 +189,7 @@ display_utils.o: display_utils.c.o
 
 # target to build an object file
 display_utils.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/display_utils.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/display_utils.c.o
 .PHONY : display_utils.c.o
 
 display_utils.i: display_utils.c.i
@@ -198,7 +198,7 @@ display_utils.i: display_utils.c.i
 
 # target to preprocess a source file
 display_utils.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/display_utils.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/display_utils.c.i
 .PHONY : display_utils.c.i
 
 display_utils.s: display_utils.c.s
@@ -207,7 +207,7 @@ display_utils.s: display_utils.c.s
 
 # target to generate assembly for a file
 display_utils.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/display_utils.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/display_utils.c.s
 .PHONY : display_utils.c.s
 
 dist_dots.o: dist_dots.c.o
@@ -216,7 +216,7 @@ dist_dots.o: dist_dots.c.o
 
 # target to build an object file
 dist_dots.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/dist_dots.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/dist_dots.c.o
 .PHONY : dist_dots.c.o
 
 dist_dots.i: dist_dots.c.i
@@ -225,7 +225,7 @@ dist_dots.i: dist_dots.c.i
 
 # target to preprocess a source file
 dist_dots.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/dist_dots.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/dist_dots.c.i
 .PHONY : dist_dots.c.i
 
 dist_dots.s: dist_dots.c.s
@@ -234,7 +234,7 @@ dist_dots.s: dist_dots.c.s
 
 # target to generate assembly for a file
 dist_dots.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/dist_dots.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/dist_dots.c.s
 .PHONY : dist_dots.c.s
 
 draw_map.o: draw_map.c.o
@@ -243,7 +243,7 @@ draw_map.o: draw_map.c.o
 
 # target to build an object file
 draw_map.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/draw_map.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/draw_map.c.o
 .PHONY : draw_map.c.o
 
 draw_map.i: draw_map.c.i
@@ -252,7 +252,7 @@ draw_map.i: draw_map.c.i
 
 # target to preprocess a source file
 draw_map.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/draw_map.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/draw_map.c.i
 .PHONY : draw_map.c.i
 
 draw_map.s: draw_map.c.s
@@ -261,7 +261,7 @@ draw_map.s: draw_map.c.s
 
 # target to generate assembly for a file
 draw_map.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/draw_map.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/draw_map.c.s
 .PHONY : draw_map.c.s
 
 draw_player.o: draw_player.c.o
@@ -270,7 +270,7 @@ draw_player.o: draw_player.c.o
 
 # target to build an object file
 draw_player.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/draw_player.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/draw_player.c.o
 .PHONY : draw_player.c.o
 
 draw_player.i: draw_player.c.i
@@ -279,7 +279,7 @@ draw_player.i: draw_player.c.i
 
 # target to preprocess a source file
 draw_player.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/draw_player.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/draw_player.c.i
 .PHONY : draw_player.c.i
 
 draw_player.s: draw_player.c.s
@@ -288,7 +288,7 @@ draw_player.s: draw_player.c.s
 
 # target to generate assembly for a file
 draw_player.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/draw_player.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/draw_player.c.s
 .PHONY : draw_player.c.s
 
 draw_walls.o: draw_walls.c.o
@@ -297,7 +297,7 @@ draw_walls.o: draw_walls.c.o
 
 # target to build an object file
 draw_walls.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/draw_walls.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/draw_walls.c.o
 .PHONY : draw_walls.c.o
 
 draw_walls.i: draw_walls.c.i
@@ -306,7 +306,7 @@ draw_walls.i: draw_walls.c.i
 
 # target to preprocess a source file
 draw_walls.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/draw_walls.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/draw_walls.c.i
 .PHONY : draw_walls.c.i
 
 draw_walls.s: draw_walls.c.s
@@ -315,7 +315,7 @@ draw_walls.s: draw_walls.c.s
 
 # target to generate assembly for a file
 draw_walls.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/draw_walls.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/draw_walls.c.s
 .PHONY : draw_walls.c.s
 
 get_next_line/get_next_line.o: get_next_line/get_next_line.c.o
@@ -324,7 +324,7 @@ get_next_line/get_next_line.o: get_next_line/get_next_line.c.o
 
 # target to build an object file
 get_next_line/get_next_line.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/get_next_line/get_next_line.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/get_next_line/get_next_line.c.o
 .PHONY : get_next_line/get_next_line.c.o
 
 get_next_line/get_next_line.i: get_next_line/get_next_line.c.i
@@ -333,7 +333,7 @@ get_next_line/get_next_line.i: get_next_line/get_next_line.c.i
 
 # target to preprocess a source file
 get_next_line/get_next_line.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/get_next_line/get_next_line.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/get_next_line/get_next_line.c.i
 .PHONY : get_next_line/get_next_line.c.i
 
 get_next_line/get_next_line.s: get_next_line/get_next_line.c.s
@@ -342,7 +342,7 @@ get_next_line/get_next_line.s: get_next_line/get_next_line.c.s
 
 # target to generate assembly for a file
 get_next_line/get_next_line.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/get_next_line/get_next_line.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/get_next_line/get_next_line.c.s
 .PHONY : get_next_line/get_next_line.c.s
 
 get_next_line/get_next_line_utils.o: get_next_line/get_next_line_utils.c.o
@@ -351,7 +351,7 @@ get_next_line/get_next_line_utils.o: get_next_line/get_next_line_utils.c.o
 
 # target to build an object file
 get_next_line/get_next_line_utils.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/get_next_line/get_next_line_utils.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/get_next_line/get_next_line_utils.c.o
 .PHONY : get_next_line/get_next_line_utils.c.o
 
 get_next_line/get_next_line_utils.i: get_next_line/get_next_line_utils.c.i
@@ -360,7 +360,7 @@ get_next_line/get_next_line_utils.i: get_next_line/get_next_line_utils.c.i
 
 # target to preprocess a source file
 get_next_line/get_next_line_utils.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/get_next_line/get_next_line_utils.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/get_next_line/get_next_line_utils.c.i
 .PHONY : get_next_line/get_next_line_utils.c.i
 
 get_next_line/get_next_line_utils.s: get_next_line/get_next_line_utils.c.s
@@ -369,7 +369,7 @@ get_next_line/get_next_line_utils.s: get_next_line/get_next_line_utils.c.s
 
 # target to generate assembly for a file
 get_next_line/get_next_line_utils.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/get_next_line/get_next_line_utils.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/get_next_line/get_next_line_utils.c.s
 .PHONY : get_next_line/get_next_line_utils.c.s
 
 handle_error.o: handle_error.c.o
@@ -378,7 +378,7 @@ handle_error.o: handle_error.c.o
 
 # target to build an object file
 handle_error.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/handle_error.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/handle_error.c.o
 .PHONY : handle_error.c.o
 
 handle_error.i: handle_error.c.i
@@ -387,7 +387,7 @@ handle_error.i: handle_error.c.i
 
 # target to preprocess a source file
 handle_error.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/handle_error.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/handle_error.c.i
 .PHONY : handle_error.c.i
 
 handle_error.s: handle_error.c.s
@@ -396,7 +396,7 @@ handle_error.s: handle_error.c.s
 
 # target to generate assembly for a file
 handle_error.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/handle_error.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/handle_error.c.s
 .PHONY : handle_error.c.s
 
 init_game.o: init_game.c.o
@@ -405,7 +405,7 @@ init_game.o: init_game.c.o
 
 # target to build an object file
 init_game.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/init_game.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/init_game.c.o
 .PHONY : init_game.c.o
 
 init_game.i: init_game.c.i
@@ -414,7 +414,7 @@ init_game.i: init_game.c.i
 
 # target to preprocess a source file
 init_game.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/init_game.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/init_game.c.i
 .PHONY : init_game.c.i
 
 init_game.s: init_game.c.s
@@ -423,35 +423,8 @@ init_game.s: init_game.c.s
 
 # target to generate assembly for a file
 init_game.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/init_game.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/init_game.c.s
 .PHONY : init_game.c.s
-
-key_hook.o: key_hook.c.o
-
-.PHONY : key_hook.o
-
-# target to build an object file
-key_hook.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/key_hook.c.o
-.PHONY : key_hook.c.o
-
-key_hook.i: key_hook.c.i
-
-.PHONY : key_hook.i
-
-# target to preprocess a source file
-key_hook.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/key_hook.c.i
-.PHONY : key_hook.c.i
-
-key_hook.s: key_hook.c.s
-
-.PHONY : key_hook.s
-
-# target to generate assembly for a file
-key_hook.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/key_hook.c.s
-.PHONY : key_hook.c.s
 
 len_of_vec.o: len_of_vec.c.o
 
@@ -459,7 +432,7 @@ len_of_vec.o: len_of_vec.c.o
 
 # target to build an object file
 len_of_vec.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/len_of_vec.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/len_of_vec.c.o
 .PHONY : len_of_vec.c.o
 
 len_of_vec.i: len_of_vec.c.i
@@ -468,7 +441,7 @@ len_of_vec.i: len_of_vec.c.i
 
 # target to preprocess a source file
 len_of_vec.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/len_of_vec.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/len_of_vec.c.i
 .PHONY : len_of_vec.c.i
 
 len_of_vec.s: len_of_vec.c.s
@@ -477,8 +450,1061 @@ len_of_vec.s: len_of_vec.c.s
 
 # target to generate assembly for a file
 len_of_vec.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/len_of_vec.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/len_of_vec.c.s
 .PHONY : len_of_vec.c.s
+
+libft/ft_atoi.o: libft/ft_atoi.c.o
+
+.PHONY : libft/ft_atoi.o
+
+# target to build an object file
+libft/ft_atoi.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_atoi.c.o
+.PHONY : libft/ft_atoi.c.o
+
+libft/ft_atoi.i: libft/ft_atoi.c.i
+
+.PHONY : libft/ft_atoi.i
+
+# target to preprocess a source file
+libft/ft_atoi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_atoi.c.i
+.PHONY : libft/ft_atoi.c.i
+
+libft/ft_atoi.s: libft/ft_atoi.c.s
+
+.PHONY : libft/ft_atoi.s
+
+# target to generate assembly for a file
+libft/ft_atoi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_atoi.c.s
+.PHONY : libft/ft_atoi.c.s
+
+libft/ft_bzero.o: libft/ft_bzero.c.o
+
+.PHONY : libft/ft_bzero.o
+
+# target to build an object file
+libft/ft_bzero.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_bzero.c.o
+.PHONY : libft/ft_bzero.c.o
+
+libft/ft_bzero.i: libft/ft_bzero.c.i
+
+.PHONY : libft/ft_bzero.i
+
+# target to preprocess a source file
+libft/ft_bzero.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_bzero.c.i
+.PHONY : libft/ft_bzero.c.i
+
+libft/ft_bzero.s: libft/ft_bzero.c.s
+
+.PHONY : libft/ft_bzero.s
+
+# target to generate assembly for a file
+libft/ft_bzero.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_bzero.c.s
+.PHONY : libft/ft_bzero.c.s
+
+libft/ft_calloc.o: libft/ft_calloc.c.o
+
+.PHONY : libft/ft_calloc.o
+
+# target to build an object file
+libft/ft_calloc.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_calloc.c.o
+.PHONY : libft/ft_calloc.c.o
+
+libft/ft_calloc.i: libft/ft_calloc.c.i
+
+.PHONY : libft/ft_calloc.i
+
+# target to preprocess a source file
+libft/ft_calloc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_calloc.c.i
+.PHONY : libft/ft_calloc.c.i
+
+libft/ft_calloc.s: libft/ft_calloc.c.s
+
+.PHONY : libft/ft_calloc.s
+
+# target to generate assembly for a file
+libft/ft_calloc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_calloc.c.s
+.PHONY : libft/ft_calloc.c.s
+
+libft/ft_free_mem.o: libft/ft_free_mem.c.o
+
+.PHONY : libft/ft_free_mem.o
+
+# target to build an object file
+libft/ft_free_mem.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_free_mem.c.o
+.PHONY : libft/ft_free_mem.c.o
+
+libft/ft_free_mem.i: libft/ft_free_mem.c.i
+
+.PHONY : libft/ft_free_mem.i
+
+# target to preprocess a source file
+libft/ft_free_mem.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_free_mem.c.i
+.PHONY : libft/ft_free_mem.c.i
+
+libft/ft_free_mem.s: libft/ft_free_mem.c.s
+
+.PHONY : libft/ft_free_mem.s
+
+# target to generate assembly for a file
+libft/ft_free_mem.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_free_mem.c.s
+.PHONY : libft/ft_free_mem.c.s
+
+libft/ft_isalnum.o: libft/ft_isalnum.c.o
+
+.PHONY : libft/ft_isalnum.o
+
+# target to build an object file
+libft/ft_isalnum.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_isalnum.c.o
+.PHONY : libft/ft_isalnum.c.o
+
+libft/ft_isalnum.i: libft/ft_isalnum.c.i
+
+.PHONY : libft/ft_isalnum.i
+
+# target to preprocess a source file
+libft/ft_isalnum.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_isalnum.c.i
+.PHONY : libft/ft_isalnum.c.i
+
+libft/ft_isalnum.s: libft/ft_isalnum.c.s
+
+.PHONY : libft/ft_isalnum.s
+
+# target to generate assembly for a file
+libft/ft_isalnum.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_isalnum.c.s
+.PHONY : libft/ft_isalnum.c.s
+
+libft/ft_isalpha.o: libft/ft_isalpha.c.o
+
+.PHONY : libft/ft_isalpha.o
+
+# target to build an object file
+libft/ft_isalpha.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_isalpha.c.o
+.PHONY : libft/ft_isalpha.c.o
+
+libft/ft_isalpha.i: libft/ft_isalpha.c.i
+
+.PHONY : libft/ft_isalpha.i
+
+# target to preprocess a source file
+libft/ft_isalpha.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_isalpha.c.i
+.PHONY : libft/ft_isalpha.c.i
+
+libft/ft_isalpha.s: libft/ft_isalpha.c.s
+
+.PHONY : libft/ft_isalpha.s
+
+# target to generate assembly for a file
+libft/ft_isalpha.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_isalpha.c.s
+.PHONY : libft/ft_isalpha.c.s
+
+libft/ft_isascii.o: libft/ft_isascii.c.o
+
+.PHONY : libft/ft_isascii.o
+
+# target to build an object file
+libft/ft_isascii.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_isascii.c.o
+.PHONY : libft/ft_isascii.c.o
+
+libft/ft_isascii.i: libft/ft_isascii.c.i
+
+.PHONY : libft/ft_isascii.i
+
+# target to preprocess a source file
+libft/ft_isascii.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_isascii.c.i
+.PHONY : libft/ft_isascii.c.i
+
+libft/ft_isascii.s: libft/ft_isascii.c.s
+
+.PHONY : libft/ft_isascii.s
+
+# target to generate assembly for a file
+libft/ft_isascii.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_isascii.c.s
+.PHONY : libft/ft_isascii.c.s
+
+libft/ft_isdigit.o: libft/ft_isdigit.c.o
+
+.PHONY : libft/ft_isdigit.o
+
+# target to build an object file
+libft/ft_isdigit.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_isdigit.c.o
+.PHONY : libft/ft_isdigit.c.o
+
+libft/ft_isdigit.i: libft/ft_isdigit.c.i
+
+.PHONY : libft/ft_isdigit.i
+
+# target to preprocess a source file
+libft/ft_isdigit.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_isdigit.c.i
+.PHONY : libft/ft_isdigit.c.i
+
+libft/ft_isdigit.s: libft/ft_isdigit.c.s
+
+.PHONY : libft/ft_isdigit.s
+
+# target to generate assembly for a file
+libft/ft_isdigit.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_isdigit.c.s
+.PHONY : libft/ft_isdigit.c.s
+
+libft/ft_isprint.o: libft/ft_isprint.c.o
+
+.PHONY : libft/ft_isprint.o
+
+# target to build an object file
+libft/ft_isprint.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_isprint.c.o
+.PHONY : libft/ft_isprint.c.o
+
+libft/ft_isprint.i: libft/ft_isprint.c.i
+
+.PHONY : libft/ft_isprint.i
+
+# target to preprocess a source file
+libft/ft_isprint.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_isprint.c.i
+.PHONY : libft/ft_isprint.c.i
+
+libft/ft_isprint.s: libft/ft_isprint.c.s
+
+.PHONY : libft/ft_isprint.s
+
+# target to generate assembly for a file
+libft/ft_isprint.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_isprint.c.s
+.PHONY : libft/ft_isprint.c.s
+
+libft/ft_itoa.o: libft/ft_itoa.c.o
+
+.PHONY : libft/ft_itoa.o
+
+# target to build an object file
+libft/ft_itoa.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_itoa.c.o
+.PHONY : libft/ft_itoa.c.o
+
+libft/ft_itoa.i: libft/ft_itoa.c.i
+
+.PHONY : libft/ft_itoa.i
+
+# target to preprocess a source file
+libft/ft_itoa.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_itoa.c.i
+.PHONY : libft/ft_itoa.c.i
+
+libft/ft_itoa.s: libft/ft_itoa.c.s
+
+.PHONY : libft/ft_itoa.s
+
+# target to generate assembly for a file
+libft/ft_itoa.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_itoa.c.s
+.PHONY : libft/ft_itoa.c.s
+
+libft/ft_itoa_base.o: libft/ft_itoa_base.c.o
+
+.PHONY : libft/ft_itoa_base.o
+
+# target to build an object file
+libft/ft_itoa_base.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_itoa_base.c.o
+.PHONY : libft/ft_itoa_base.c.o
+
+libft/ft_itoa_base.i: libft/ft_itoa_base.c.i
+
+.PHONY : libft/ft_itoa_base.i
+
+# target to preprocess a source file
+libft/ft_itoa_base.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_itoa_base.c.i
+.PHONY : libft/ft_itoa_base.c.i
+
+libft/ft_itoa_base.s: libft/ft_itoa_base.c.s
+
+.PHONY : libft/ft_itoa_base.s
+
+# target to generate assembly for a file
+libft/ft_itoa_base.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_itoa_base.c.s
+.PHONY : libft/ft_itoa_base.c.s
+
+libft/ft_itoa_u.o: libft/ft_itoa_u.c.o
+
+.PHONY : libft/ft_itoa_u.o
+
+# target to build an object file
+libft/ft_itoa_u.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_itoa_u.c.o
+.PHONY : libft/ft_itoa_u.c.o
+
+libft/ft_itoa_u.i: libft/ft_itoa_u.c.i
+
+.PHONY : libft/ft_itoa_u.i
+
+# target to preprocess a source file
+libft/ft_itoa_u.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_itoa_u.c.i
+.PHONY : libft/ft_itoa_u.c.i
+
+libft/ft_itoa_u.s: libft/ft_itoa_u.c.s
+
+.PHONY : libft/ft_itoa_u.s
+
+# target to generate assembly for a file
+libft/ft_itoa_u.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_itoa_u.c.s
+.PHONY : libft/ft_itoa_u.c.s
+
+libft/ft_itoa_uhex.o: libft/ft_itoa_uhex.c.o
+
+.PHONY : libft/ft_itoa_uhex.o
+
+# target to build an object file
+libft/ft_itoa_uhex.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_itoa_uhex.c.o
+.PHONY : libft/ft_itoa_uhex.c.o
+
+libft/ft_itoa_uhex.i: libft/ft_itoa_uhex.c.i
+
+.PHONY : libft/ft_itoa_uhex.i
+
+# target to preprocess a source file
+libft/ft_itoa_uhex.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_itoa_uhex.c.i
+.PHONY : libft/ft_itoa_uhex.c.i
+
+libft/ft_itoa_uhex.s: libft/ft_itoa_uhex.c.s
+
+.PHONY : libft/ft_itoa_uhex.s
+
+# target to generate assembly for a file
+libft/ft_itoa_uhex.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_itoa_uhex.c.s
+.PHONY : libft/ft_itoa_uhex.c.s
+
+libft/ft_lstnew.o: libft/ft_lstnew.c.o
+
+.PHONY : libft/ft_lstnew.o
+
+# target to build an object file
+libft/ft_lstnew.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_lstnew.c.o
+.PHONY : libft/ft_lstnew.c.o
+
+libft/ft_lstnew.i: libft/ft_lstnew.c.i
+
+.PHONY : libft/ft_lstnew.i
+
+# target to preprocess a source file
+libft/ft_lstnew.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_lstnew.c.i
+.PHONY : libft/ft_lstnew.c.i
+
+libft/ft_lstnew.s: libft/ft_lstnew.c.s
+
+.PHONY : libft/ft_lstnew.s
+
+# target to generate assembly for a file
+libft/ft_lstnew.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_lstnew.c.s
+.PHONY : libft/ft_lstnew.c.s
+
+libft/ft_memccpy.o: libft/ft_memccpy.c.o
+
+.PHONY : libft/ft_memccpy.o
+
+# target to build an object file
+libft/ft_memccpy.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_memccpy.c.o
+.PHONY : libft/ft_memccpy.c.o
+
+libft/ft_memccpy.i: libft/ft_memccpy.c.i
+
+.PHONY : libft/ft_memccpy.i
+
+# target to preprocess a source file
+libft/ft_memccpy.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_memccpy.c.i
+.PHONY : libft/ft_memccpy.c.i
+
+libft/ft_memccpy.s: libft/ft_memccpy.c.s
+
+.PHONY : libft/ft_memccpy.s
+
+# target to generate assembly for a file
+libft/ft_memccpy.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_memccpy.c.s
+.PHONY : libft/ft_memccpy.c.s
+
+libft/ft_memchr.o: libft/ft_memchr.c.o
+
+.PHONY : libft/ft_memchr.o
+
+# target to build an object file
+libft/ft_memchr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_memchr.c.o
+.PHONY : libft/ft_memchr.c.o
+
+libft/ft_memchr.i: libft/ft_memchr.c.i
+
+.PHONY : libft/ft_memchr.i
+
+# target to preprocess a source file
+libft/ft_memchr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_memchr.c.i
+.PHONY : libft/ft_memchr.c.i
+
+libft/ft_memchr.s: libft/ft_memchr.c.s
+
+.PHONY : libft/ft_memchr.s
+
+# target to generate assembly for a file
+libft/ft_memchr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_memchr.c.s
+.PHONY : libft/ft_memchr.c.s
+
+libft/ft_memcmp.o: libft/ft_memcmp.c.o
+
+.PHONY : libft/ft_memcmp.o
+
+# target to build an object file
+libft/ft_memcmp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_memcmp.c.o
+.PHONY : libft/ft_memcmp.c.o
+
+libft/ft_memcmp.i: libft/ft_memcmp.c.i
+
+.PHONY : libft/ft_memcmp.i
+
+# target to preprocess a source file
+libft/ft_memcmp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_memcmp.c.i
+.PHONY : libft/ft_memcmp.c.i
+
+libft/ft_memcmp.s: libft/ft_memcmp.c.s
+
+.PHONY : libft/ft_memcmp.s
+
+# target to generate assembly for a file
+libft/ft_memcmp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_memcmp.c.s
+.PHONY : libft/ft_memcmp.c.s
+
+libft/ft_memcpy.o: libft/ft_memcpy.c.o
+
+.PHONY : libft/ft_memcpy.o
+
+# target to build an object file
+libft/ft_memcpy.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_memcpy.c.o
+.PHONY : libft/ft_memcpy.c.o
+
+libft/ft_memcpy.i: libft/ft_memcpy.c.i
+
+.PHONY : libft/ft_memcpy.i
+
+# target to preprocess a source file
+libft/ft_memcpy.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_memcpy.c.i
+.PHONY : libft/ft_memcpy.c.i
+
+libft/ft_memcpy.s: libft/ft_memcpy.c.s
+
+.PHONY : libft/ft_memcpy.s
+
+# target to generate assembly for a file
+libft/ft_memcpy.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_memcpy.c.s
+.PHONY : libft/ft_memcpy.c.s
+
+libft/ft_memmove.o: libft/ft_memmove.c.o
+
+.PHONY : libft/ft_memmove.o
+
+# target to build an object file
+libft/ft_memmove.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_memmove.c.o
+.PHONY : libft/ft_memmove.c.o
+
+libft/ft_memmove.i: libft/ft_memmove.c.i
+
+.PHONY : libft/ft_memmove.i
+
+# target to preprocess a source file
+libft/ft_memmove.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_memmove.c.i
+.PHONY : libft/ft_memmove.c.i
+
+libft/ft_memmove.s: libft/ft_memmove.c.s
+
+.PHONY : libft/ft_memmove.s
+
+# target to generate assembly for a file
+libft/ft_memmove.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_memmove.c.s
+.PHONY : libft/ft_memmove.c.s
+
+libft/ft_memset.o: libft/ft_memset.c.o
+
+.PHONY : libft/ft_memset.o
+
+# target to build an object file
+libft/ft_memset.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_memset.c.o
+.PHONY : libft/ft_memset.c.o
+
+libft/ft_memset.i: libft/ft_memset.c.i
+
+.PHONY : libft/ft_memset.i
+
+# target to preprocess a source file
+libft/ft_memset.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_memset.c.i
+.PHONY : libft/ft_memset.c.i
+
+libft/ft_memset.s: libft/ft_memset.c.s
+
+.PHONY : libft/ft_memset.s
+
+# target to generate assembly for a file
+libft/ft_memset.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_memset.c.s
+.PHONY : libft/ft_memset.c.s
+
+libft/ft_putchar_fd.o: libft/ft_putchar_fd.c.o
+
+.PHONY : libft/ft_putchar_fd.o
+
+# target to build an object file
+libft/ft_putchar_fd.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_putchar_fd.c.o
+.PHONY : libft/ft_putchar_fd.c.o
+
+libft/ft_putchar_fd.i: libft/ft_putchar_fd.c.i
+
+.PHONY : libft/ft_putchar_fd.i
+
+# target to preprocess a source file
+libft/ft_putchar_fd.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_putchar_fd.c.i
+.PHONY : libft/ft_putchar_fd.c.i
+
+libft/ft_putchar_fd.s: libft/ft_putchar_fd.c.s
+
+.PHONY : libft/ft_putchar_fd.s
+
+# target to generate assembly for a file
+libft/ft_putchar_fd.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_putchar_fd.c.s
+.PHONY : libft/ft_putchar_fd.c.s
+
+libft/ft_putendl_fd.o: libft/ft_putendl_fd.c.o
+
+.PHONY : libft/ft_putendl_fd.o
+
+# target to build an object file
+libft/ft_putendl_fd.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_putendl_fd.c.o
+.PHONY : libft/ft_putendl_fd.c.o
+
+libft/ft_putendl_fd.i: libft/ft_putendl_fd.c.i
+
+.PHONY : libft/ft_putendl_fd.i
+
+# target to preprocess a source file
+libft/ft_putendl_fd.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_putendl_fd.c.i
+.PHONY : libft/ft_putendl_fd.c.i
+
+libft/ft_putendl_fd.s: libft/ft_putendl_fd.c.s
+
+.PHONY : libft/ft_putendl_fd.s
+
+# target to generate assembly for a file
+libft/ft_putendl_fd.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_putendl_fd.c.s
+.PHONY : libft/ft_putendl_fd.c.s
+
+libft/ft_putnbr_fd.o: libft/ft_putnbr_fd.c.o
+
+.PHONY : libft/ft_putnbr_fd.o
+
+# target to build an object file
+libft/ft_putnbr_fd.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_putnbr_fd.c.o
+.PHONY : libft/ft_putnbr_fd.c.o
+
+libft/ft_putnbr_fd.i: libft/ft_putnbr_fd.c.i
+
+.PHONY : libft/ft_putnbr_fd.i
+
+# target to preprocess a source file
+libft/ft_putnbr_fd.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_putnbr_fd.c.i
+.PHONY : libft/ft_putnbr_fd.c.i
+
+libft/ft_putnbr_fd.s: libft/ft_putnbr_fd.c.s
+
+.PHONY : libft/ft_putnbr_fd.s
+
+# target to generate assembly for a file
+libft/ft_putnbr_fd.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_putnbr_fd.c.s
+.PHONY : libft/ft_putnbr_fd.c.s
+
+libft/ft_putstr_fd.o: libft/ft_putstr_fd.c.o
+
+.PHONY : libft/ft_putstr_fd.o
+
+# target to build an object file
+libft/ft_putstr_fd.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_putstr_fd.c.o
+.PHONY : libft/ft_putstr_fd.c.o
+
+libft/ft_putstr_fd.i: libft/ft_putstr_fd.c.i
+
+.PHONY : libft/ft_putstr_fd.i
+
+# target to preprocess a source file
+libft/ft_putstr_fd.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_putstr_fd.c.i
+.PHONY : libft/ft_putstr_fd.c.i
+
+libft/ft_putstr_fd.s: libft/ft_putstr_fd.c.s
+
+.PHONY : libft/ft_putstr_fd.s
+
+# target to generate assembly for a file
+libft/ft_putstr_fd.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_putstr_fd.c.s
+.PHONY : libft/ft_putstr_fd.c.s
+
+libft/ft_split.o: libft/ft_split.c.o
+
+.PHONY : libft/ft_split.o
+
+# target to build an object file
+libft/ft_split.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_split.c.o
+.PHONY : libft/ft_split.c.o
+
+libft/ft_split.i: libft/ft_split.c.i
+
+.PHONY : libft/ft_split.i
+
+# target to preprocess a source file
+libft/ft_split.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_split.c.i
+.PHONY : libft/ft_split.c.i
+
+libft/ft_split.s: libft/ft_split.c.s
+
+.PHONY : libft/ft_split.s
+
+# target to generate assembly for a file
+libft/ft_split.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_split.c.s
+.PHONY : libft/ft_split.c.s
+
+libft/ft_strchr.o: libft/ft_strchr.c.o
+
+.PHONY : libft/ft_strchr.o
+
+# target to build an object file
+libft/ft_strchr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_strchr.c.o
+.PHONY : libft/ft_strchr.c.o
+
+libft/ft_strchr.i: libft/ft_strchr.c.i
+
+.PHONY : libft/ft_strchr.i
+
+# target to preprocess a source file
+libft/ft_strchr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_strchr.c.i
+.PHONY : libft/ft_strchr.c.i
+
+libft/ft_strchr.s: libft/ft_strchr.c.s
+
+.PHONY : libft/ft_strchr.s
+
+# target to generate assembly for a file
+libft/ft_strchr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_strchr.c.s
+.PHONY : libft/ft_strchr.c.s
+
+libft/ft_strdup.o: libft/ft_strdup.c.o
+
+.PHONY : libft/ft_strdup.o
+
+# target to build an object file
+libft/ft_strdup.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_strdup.c.o
+.PHONY : libft/ft_strdup.c.o
+
+libft/ft_strdup.i: libft/ft_strdup.c.i
+
+.PHONY : libft/ft_strdup.i
+
+# target to preprocess a source file
+libft/ft_strdup.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_strdup.c.i
+.PHONY : libft/ft_strdup.c.i
+
+libft/ft_strdup.s: libft/ft_strdup.c.s
+
+.PHONY : libft/ft_strdup.s
+
+# target to generate assembly for a file
+libft/ft_strdup.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_strdup.c.s
+.PHONY : libft/ft_strdup.c.s
+
+libft/ft_strjoin.o: libft/ft_strjoin.c.o
+
+.PHONY : libft/ft_strjoin.o
+
+# target to build an object file
+libft/ft_strjoin.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_strjoin.c.o
+.PHONY : libft/ft_strjoin.c.o
+
+libft/ft_strjoin.i: libft/ft_strjoin.c.i
+
+.PHONY : libft/ft_strjoin.i
+
+# target to preprocess a source file
+libft/ft_strjoin.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_strjoin.c.i
+.PHONY : libft/ft_strjoin.c.i
+
+libft/ft_strjoin.s: libft/ft_strjoin.c.s
+
+.PHONY : libft/ft_strjoin.s
+
+# target to generate assembly for a file
+libft/ft_strjoin.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_strjoin.c.s
+.PHONY : libft/ft_strjoin.c.s
+
+libft/ft_strlcat.o: libft/ft_strlcat.c.o
+
+.PHONY : libft/ft_strlcat.o
+
+# target to build an object file
+libft/ft_strlcat.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_strlcat.c.o
+.PHONY : libft/ft_strlcat.c.o
+
+libft/ft_strlcat.i: libft/ft_strlcat.c.i
+
+.PHONY : libft/ft_strlcat.i
+
+# target to preprocess a source file
+libft/ft_strlcat.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_strlcat.c.i
+.PHONY : libft/ft_strlcat.c.i
+
+libft/ft_strlcat.s: libft/ft_strlcat.c.s
+
+.PHONY : libft/ft_strlcat.s
+
+# target to generate assembly for a file
+libft/ft_strlcat.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_strlcat.c.s
+.PHONY : libft/ft_strlcat.c.s
+
+libft/ft_strlcpy.o: libft/ft_strlcpy.c.o
+
+.PHONY : libft/ft_strlcpy.o
+
+# target to build an object file
+libft/ft_strlcpy.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_strlcpy.c.o
+.PHONY : libft/ft_strlcpy.c.o
+
+libft/ft_strlcpy.i: libft/ft_strlcpy.c.i
+
+.PHONY : libft/ft_strlcpy.i
+
+# target to preprocess a source file
+libft/ft_strlcpy.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_strlcpy.c.i
+.PHONY : libft/ft_strlcpy.c.i
+
+libft/ft_strlcpy.s: libft/ft_strlcpy.c.s
+
+.PHONY : libft/ft_strlcpy.s
+
+# target to generate assembly for a file
+libft/ft_strlcpy.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_strlcpy.c.s
+.PHONY : libft/ft_strlcpy.c.s
+
+libft/ft_strlen.o: libft/ft_strlen.c.o
+
+.PHONY : libft/ft_strlen.o
+
+# target to build an object file
+libft/ft_strlen.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_strlen.c.o
+.PHONY : libft/ft_strlen.c.o
+
+libft/ft_strlen.i: libft/ft_strlen.c.i
+
+.PHONY : libft/ft_strlen.i
+
+# target to preprocess a source file
+libft/ft_strlen.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_strlen.c.i
+.PHONY : libft/ft_strlen.c.i
+
+libft/ft_strlen.s: libft/ft_strlen.c.s
+
+.PHONY : libft/ft_strlen.s
+
+# target to generate assembly for a file
+libft/ft_strlen.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_strlen.c.s
+.PHONY : libft/ft_strlen.c.s
+
+libft/ft_strmapi.o: libft/ft_strmapi.c.o
+
+.PHONY : libft/ft_strmapi.o
+
+# target to build an object file
+libft/ft_strmapi.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_strmapi.c.o
+.PHONY : libft/ft_strmapi.c.o
+
+libft/ft_strmapi.i: libft/ft_strmapi.c.i
+
+.PHONY : libft/ft_strmapi.i
+
+# target to preprocess a source file
+libft/ft_strmapi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_strmapi.c.i
+.PHONY : libft/ft_strmapi.c.i
+
+libft/ft_strmapi.s: libft/ft_strmapi.c.s
+
+.PHONY : libft/ft_strmapi.s
+
+# target to generate assembly for a file
+libft/ft_strmapi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_strmapi.c.s
+.PHONY : libft/ft_strmapi.c.s
+
+libft/ft_strncmp.o: libft/ft_strncmp.c.o
+
+.PHONY : libft/ft_strncmp.o
+
+# target to build an object file
+libft/ft_strncmp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_strncmp.c.o
+.PHONY : libft/ft_strncmp.c.o
+
+libft/ft_strncmp.i: libft/ft_strncmp.c.i
+
+.PHONY : libft/ft_strncmp.i
+
+# target to preprocess a source file
+libft/ft_strncmp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_strncmp.c.i
+.PHONY : libft/ft_strncmp.c.i
+
+libft/ft_strncmp.s: libft/ft_strncmp.c.s
+
+.PHONY : libft/ft_strncmp.s
+
+# target to generate assembly for a file
+libft/ft_strncmp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_strncmp.c.s
+.PHONY : libft/ft_strncmp.c.s
+
+libft/ft_strnstr.o: libft/ft_strnstr.c.o
+
+.PHONY : libft/ft_strnstr.o
+
+# target to build an object file
+libft/ft_strnstr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_strnstr.c.o
+.PHONY : libft/ft_strnstr.c.o
+
+libft/ft_strnstr.i: libft/ft_strnstr.c.i
+
+.PHONY : libft/ft_strnstr.i
+
+# target to preprocess a source file
+libft/ft_strnstr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_strnstr.c.i
+.PHONY : libft/ft_strnstr.c.i
+
+libft/ft_strnstr.s: libft/ft_strnstr.c.s
+
+.PHONY : libft/ft_strnstr.s
+
+# target to generate assembly for a file
+libft/ft_strnstr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_strnstr.c.s
+.PHONY : libft/ft_strnstr.c.s
+
+libft/ft_strrchr.o: libft/ft_strrchr.c.o
+
+.PHONY : libft/ft_strrchr.o
+
+# target to build an object file
+libft/ft_strrchr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_strrchr.c.o
+.PHONY : libft/ft_strrchr.c.o
+
+libft/ft_strrchr.i: libft/ft_strrchr.c.i
+
+.PHONY : libft/ft_strrchr.i
+
+# target to preprocess a source file
+libft/ft_strrchr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_strrchr.c.i
+.PHONY : libft/ft_strrchr.c.i
+
+libft/ft_strrchr.s: libft/ft_strrchr.c.s
+
+.PHONY : libft/ft_strrchr.s
+
+# target to generate assembly for a file
+libft/ft_strrchr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_strrchr.c.s
+.PHONY : libft/ft_strrchr.c.s
+
+libft/ft_strtrim.o: libft/ft_strtrim.c.o
+
+.PHONY : libft/ft_strtrim.o
+
+# target to build an object file
+libft/ft_strtrim.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_strtrim.c.o
+.PHONY : libft/ft_strtrim.c.o
+
+libft/ft_strtrim.i: libft/ft_strtrim.c.i
+
+.PHONY : libft/ft_strtrim.i
+
+# target to preprocess a source file
+libft/ft_strtrim.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_strtrim.c.i
+.PHONY : libft/ft_strtrim.c.i
+
+libft/ft_strtrim.s: libft/ft_strtrim.c.s
+
+.PHONY : libft/ft_strtrim.s
+
+# target to generate assembly for a file
+libft/ft_strtrim.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_strtrim.c.s
+.PHONY : libft/ft_strtrim.c.s
+
+libft/ft_substr.o: libft/ft_substr.c.o
+
+.PHONY : libft/ft_substr.o
+
+# target to build an object file
+libft/ft_substr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_substr.c.o
+.PHONY : libft/ft_substr.c.o
+
+libft/ft_substr.i: libft/ft_substr.c.i
+
+.PHONY : libft/ft_substr.i
+
+# target to preprocess a source file
+libft/ft_substr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_substr.c.i
+.PHONY : libft/ft_substr.c.i
+
+libft/ft_substr.s: libft/ft_substr.c.s
+
+.PHONY : libft/ft_substr.s
+
+# target to generate assembly for a file
+libft/ft_substr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_substr.c.s
+.PHONY : libft/ft_substr.c.s
+
+libft/ft_tolower.o: libft/ft_tolower.c.o
+
+.PHONY : libft/ft_tolower.o
+
+# target to build an object file
+libft/ft_tolower.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_tolower.c.o
+.PHONY : libft/ft_tolower.c.o
+
+libft/ft_tolower.i: libft/ft_tolower.c.i
+
+.PHONY : libft/ft_tolower.i
+
+# target to preprocess a source file
+libft/ft_tolower.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_tolower.c.i
+.PHONY : libft/ft_tolower.c.i
+
+libft/ft_tolower.s: libft/ft_tolower.c.s
+
+.PHONY : libft/ft_tolower.s
+
+# target to generate assembly for a file
+libft/ft_tolower.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_tolower.c.s
+.PHONY : libft/ft_tolower.c.s
+
+libft/ft_toupper.o: libft/ft_toupper.c.o
+
+.PHONY : libft/ft_toupper.o
+
+# target to build an object file
+libft/ft_toupper.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_toupper.c.o
+.PHONY : libft/ft_toupper.c.o
+
+libft/ft_toupper.i: libft/ft_toupper.c.i
+
+.PHONY : libft/ft_toupper.i
+
+# target to preprocess a source file
+libft/ft_toupper.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_toupper.c.i
+.PHONY : libft/ft_toupper.c.i
+
+libft/ft_toupper.s: libft/ft_toupper.c.s
+
+.PHONY : libft/ft_toupper.s
+
+# target to generate assembly for a file
+libft/ft_toupper.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibFT.dir/build.make CMakeFiles/LibFT.dir/libft/ft_toupper.c.s
+.PHONY : libft/ft_toupper.c.s
 
 main.o: main.c.o
 
@@ -486,7 +1512,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/main.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -495,7 +1521,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -504,7 +1530,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/main.c.s
 .PHONY : main.c.s
 
 parser/is_map.o: parser/is_map.c.o
@@ -513,7 +1539,7 @@ parser/is_map.o: parser/is_map.c.o
 
 # target to build an object file
 parser/is_map.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/parser/is_map.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/parser/is_map.c.o
 .PHONY : parser/is_map.c.o
 
 parser/is_map.i: parser/is_map.c.i
@@ -522,7 +1548,7 @@ parser/is_map.i: parser/is_map.c.i
 
 # target to preprocess a source file
 parser/is_map.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/parser/is_map.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/parser/is_map.c.i
 .PHONY : parser/is_map.c.i
 
 parser/is_map.s: parser/is_map.c.s
@@ -531,7 +1557,7 @@ parser/is_map.s: parser/is_map.c.s
 
 # target to generate assembly for a file
 parser/is_map.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/parser/is_map.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/parser/is_map.c.s
 .PHONY : parser/is_map.c.s
 
 parser/parse_map.o: parser/parse_map.c.o
@@ -540,7 +1566,7 @@ parser/parse_map.o: parser/parse_map.c.o
 
 # target to build an object file
 parser/parse_map.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/parser/parse_map.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/parser/parse_map.c.o
 .PHONY : parser/parse_map.c.o
 
 parser/parse_map.i: parser/parse_map.c.i
@@ -549,7 +1575,7 @@ parser/parse_map.i: parser/parse_map.c.i
 
 # target to preprocess a source file
 parser/parse_map.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/parser/parse_map.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/parser/parse_map.c.i
 .PHONY : parser/parse_map.c.i
 
 parser/parse_map.s: parser/parse_map.c.s
@@ -558,7 +1584,7 @@ parser/parse_map.s: parser/parse_map.c.s
 
 # target to generate assembly for a file
 parser/parse_map.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/parser/parse_map.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/parser/parse_map.c.s
 .PHONY : parser/parse_map.c.s
 
 parser/parse_other.o: parser/parse_other.c.o
@@ -567,7 +1593,7 @@ parser/parse_other.o: parser/parse_other.c.o
 
 # target to build an object file
 parser/parse_other.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/parser/parse_other.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/parser/parse_other.c.o
 .PHONY : parser/parse_other.c.o
 
 parser/parse_other.i: parser/parse_other.c.i
@@ -576,7 +1602,7 @@ parser/parse_other.i: parser/parse_other.c.i
 
 # target to preprocess a source file
 parser/parse_other.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/parser/parse_other.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/parser/parse_other.c.i
 .PHONY : parser/parse_other.c.i
 
 parser/parse_other.s: parser/parse_other.c.s
@@ -585,7 +1611,7 @@ parser/parse_other.s: parser/parse_other.c.s
 
 # target to generate assembly for a file
 parser/parse_other.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/parser/parse_other.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/parser/parse_other.c.s
 .PHONY : parser/parse_other.c.s
 
 parser/parser.o: parser/parser.c.o
@@ -594,7 +1620,7 @@ parser/parser.o: parser/parser.c.o
 
 # target to build an object file
 parser/parser.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/parser/parser.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/parser/parser.c.o
 .PHONY : parser/parser.c.o
 
 parser/parser.i: parser/parser.c.i
@@ -603,7 +1629,7 @@ parser/parser.i: parser/parser.c.i
 
 # target to preprocess a source file
 parser/parser.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/parser/parser.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/parser/parser.c.i
 .PHONY : parser/parser.c.i
 
 parser/parser.s: parser/parser.c.s
@@ -612,7 +1638,7 @@ parser/parser.s: parser/parser.c.s
 
 # target to generate assembly for a file
 parser/parser.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/parser/parser.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/parser/parser.c.s
 .PHONY : parser/parser.c.s
 
 perp_vector.o: perp_vector.c.o
@@ -621,7 +1647,7 @@ perp_vector.o: perp_vector.c.o
 
 # target to build an object file
 perp_vector.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/perp_vector.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/perp_vector.c.o
 .PHONY : perp_vector.c.o
 
 perp_vector.i: perp_vector.c.i
@@ -630,7 +1656,7 @@ perp_vector.i: perp_vector.c.i
 
 # target to preprocess a source file
 perp_vector.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/perp_vector.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/perp_vector.c.i
 .PHONY : perp_vector.c.i
 
 perp_vector.s: perp_vector.c.s
@@ -639,7 +1665,7 @@ perp_vector.s: perp_vector.c.s
 
 # target to generate assembly for a file
 perp_vector.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/perp_vector.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/perp_vector.c.s
 .PHONY : perp_vector.c.s
 
 raycast.o: raycast.c.o
@@ -648,7 +1674,7 @@ raycast.o: raycast.c.o
 
 # target to build an object file
 raycast.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/raycast.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/raycast.c.o
 .PHONY : raycast.c.o
 
 raycast.i: raycast.c.i
@@ -657,7 +1683,7 @@ raycast.i: raycast.c.i
 
 # target to preprocess a source file
 raycast.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/raycast.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/raycast.c.i
 .PHONY : raycast.c.i
 
 raycast.s: raycast.c.s
@@ -666,7 +1692,7 @@ raycast.s: raycast.c.s
 
 # target to generate assembly for a file
 raycast.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/raycast.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/raycast.c.s
 .PHONY : raycast.c.s
 
 scaler.o: scaler.c.o
@@ -675,7 +1701,7 @@ scaler.o: scaler.c.o
 
 # target to build an object file
 scaler.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/scaler.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/scaler.c.o
 .PHONY : scaler.c.o
 
 scaler.i: scaler.c.i
@@ -684,7 +1710,7 @@ scaler.i: scaler.c.i
 
 # target to preprocess a source file
 scaler.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/scaler.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/scaler.c.i
 .PHONY : scaler.c.i
 
 scaler.s: scaler.c.s
@@ -693,7 +1719,7 @@ scaler.s: scaler.c.s
 
 # target to generate assembly for a file
 scaler.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/scaler.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/scaler.c.s
 .PHONY : scaler.c.s
 
 sprite_utils.o: sprite_utils.c.o
@@ -702,7 +1728,7 @@ sprite_utils.o: sprite_utils.c.o
 
 # target to build an object file
 sprite_utils.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/sprite_utils.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/sprite_utils.c.o
 .PHONY : sprite_utils.c.o
 
 sprite_utils.i: sprite_utils.c.i
@@ -711,7 +1737,7 @@ sprite_utils.i: sprite_utils.c.i
 
 # target to preprocess a source file
 sprite_utils.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/sprite_utils.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/sprite_utils.c.i
 .PHONY : sprite_utils.c.i
 
 sprite_utils.s: sprite_utils.c.s
@@ -720,7 +1746,7 @@ sprite_utils.s: sprite_utils.c.s
 
 # target to generate assembly for a file
 sprite_utils.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/sprite_utils.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/sprite_utils.c.s
 .PHONY : sprite_utils.c.s
 
 validator/enter_validator.o: validator/enter_validator.c.o
@@ -729,7 +1755,7 @@ validator/enter_validator.o: validator/enter_validator.c.o
 
 # target to build an object file
 validator/enter_validator.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/validator/enter_validator.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/validator/enter_validator.c.o
 .PHONY : validator/enter_validator.c.o
 
 validator/enter_validator.i: validator/enter_validator.c.i
@@ -738,7 +1764,7 @@ validator/enter_validator.i: validator/enter_validator.c.i
 
 # target to preprocess a source file
 validator/enter_validator.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/validator/enter_validator.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/validator/enter_validator.c.i
 .PHONY : validator/enter_validator.c.i
 
 validator/enter_validator.s: validator/enter_validator.c.s
@@ -747,7 +1773,7 @@ validator/enter_validator.s: validator/enter_validator.c.s
 
 # target to generate assembly for a file
 validator/enter_validator.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cub3D.dir/build.make CMakeFiles/Cub3D.dir/validator/enter_validator.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/validator/enter_validator.c.s
 .PHONY : validator/enter_validator.c.s
 
 # Help Target
@@ -758,8 +1784,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Cub3D"
-	@echo "... libft"
+	@echo "... LibFT"
+	@echo "... cub3D"
 	@echo "... create_rgb.o"
 	@echo "... create_rgb.i"
 	@echo "... create_rgb.s"
@@ -790,12 +1816,126 @@ help:
 	@echo "... init_game.o"
 	@echo "... init_game.i"
 	@echo "... init_game.s"
-	@echo "... key_hook.o"
-	@echo "... key_hook.i"
-	@echo "... key_hook.s"
 	@echo "... len_of_vec.o"
 	@echo "... len_of_vec.i"
 	@echo "... len_of_vec.s"
+	@echo "... libft/ft_atoi.o"
+	@echo "... libft/ft_atoi.i"
+	@echo "... libft/ft_atoi.s"
+	@echo "... libft/ft_bzero.o"
+	@echo "... libft/ft_bzero.i"
+	@echo "... libft/ft_bzero.s"
+	@echo "... libft/ft_calloc.o"
+	@echo "... libft/ft_calloc.i"
+	@echo "... libft/ft_calloc.s"
+	@echo "... libft/ft_free_mem.o"
+	@echo "... libft/ft_free_mem.i"
+	@echo "... libft/ft_free_mem.s"
+	@echo "... libft/ft_isalnum.o"
+	@echo "... libft/ft_isalnum.i"
+	@echo "... libft/ft_isalnum.s"
+	@echo "... libft/ft_isalpha.o"
+	@echo "... libft/ft_isalpha.i"
+	@echo "... libft/ft_isalpha.s"
+	@echo "... libft/ft_isascii.o"
+	@echo "... libft/ft_isascii.i"
+	@echo "... libft/ft_isascii.s"
+	@echo "... libft/ft_isdigit.o"
+	@echo "... libft/ft_isdigit.i"
+	@echo "... libft/ft_isdigit.s"
+	@echo "... libft/ft_isprint.o"
+	@echo "... libft/ft_isprint.i"
+	@echo "... libft/ft_isprint.s"
+	@echo "... libft/ft_itoa.o"
+	@echo "... libft/ft_itoa.i"
+	@echo "... libft/ft_itoa.s"
+	@echo "... libft/ft_itoa_base.o"
+	@echo "... libft/ft_itoa_base.i"
+	@echo "... libft/ft_itoa_base.s"
+	@echo "... libft/ft_itoa_u.o"
+	@echo "... libft/ft_itoa_u.i"
+	@echo "... libft/ft_itoa_u.s"
+	@echo "... libft/ft_itoa_uhex.o"
+	@echo "... libft/ft_itoa_uhex.i"
+	@echo "... libft/ft_itoa_uhex.s"
+	@echo "... libft/ft_lstnew.o"
+	@echo "... libft/ft_lstnew.i"
+	@echo "... libft/ft_lstnew.s"
+	@echo "... libft/ft_memccpy.o"
+	@echo "... libft/ft_memccpy.i"
+	@echo "... libft/ft_memccpy.s"
+	@echo "... libft/ft_memchr.o"
+	@echo "... libft/ft_memchr.i"
+	@echo "... libft/ft_memchr.s"
+	@echo "... libft/ft_memcmp.o"
+	@echo "... libft/ft_memcmp.i"
+	@echo "... libft/ft_memcmp.s"
+	@echo "... libft/ft_memcpy.o"
+	@echo "... libft/ft_memcpy.i"
+	@echo "... libft/ft_memcpy.s"
+	@echo "... libft/ft_memmove.o"
+	@echo "... libft/ft_memmove.i"
+	@echo "... libft/ft_memmove.s"
+	@echo "... libft/ft_memset.o"
+	@echo "... libft/ft_memset.i"
+	@echo "... libft/ft_memset.s"
+	@echo "... libft/ft_putchar_fd.o"
+	@echo "... libft/ft_putchar_fd.i"
+	@echo "... libft/ft_putchar_fd.s"
+	@echo "... libft/ft_putendl_fd.o"
+	@echo "... libft/ft_putendl_fd.i"
+	@echo "... libft/ft_putendl_fd.s"
+	@echo "... libft/ft_putnbr_fd.o"
+	@echo "... libft/ft_putnbr_fd.i"
+	@echo "... libft/ft_putnbr_fd.s"
+	@echo "... libft/ft_putstr_fd.o"
+	@echo "... libft/ft_putstr_fd.i"
+	@echo "... libft/ft_putstr_fd.s"
+	@echo "... libft/ft_split.o"
+	@echo "... libft/ft_split.i"
+	@echo "... libft/ft_split.s"
+	@echo "... libft/ft_strchr.o"
+	@echo "... libft/ft_strchr.i"
+	@echo "... libft/ft_strchr.s"
+	@echo "... libft/ft_strdup.o"
+	@echo "... libft/ft_strdup.i"
+	@echo "... libft/ft_strdup.s"
+	@echo "... libft/ft_strjoin.o"
+	@echo "... libft/ft_strjoin.i"
+	@echo "... libft/ft_strjoin.s"
+	@echo "... libft/ft_strlcat.o"
+	@echo "... libft/ft_strlcat.i"
+	@echo "... libft/ft_strlcat.s"
+	@echo "... libft/ft_strlcpy.o"
+	@echo "... libft/ft_strlcpy.i"
+	@echo "... libft/ft_strlcpy.s"
+	@echo "... libft/ft_strlen.o"
+	@echo "... libft/ft_strlen.i"
+	@echo "... libft/ft_strlen.s"
+	@echo "... libft/ft_strmapi.o"
+	@echo "... libft/ft_strmapi.i"
+	@echo "... libft/ft_strmapi.s"
+	@echo "... libft/ft_strncmp.o"
+	@echo "... libft/ft_strncmp.i"
+	@echo "... libft/ft_strncmp.s"
+	@echo "... libft/ft_strnstr.o"
+	@echo "... libft/ft_strnstr.i"
+	@echo "... libft/ft_strnstr.s"
+	@echo "... libft/ft_strrchr.o"
+	@echo "... libft/ft_strrchr.i"
+	@echo "... libft/ft_strrchr.s"
+	@echo "... libft/ft_strtrim.o"
+	@echo "... libft/ft_strtrim.i"
+	@echo "... libft/ft_strtrim.s"
+	@echo "... libft/ft_substr.o"
+	@echo "... libft/ft_substr.i"
+	@echo "... libft/ft_substr.s"
+	@echo "... libft/ft_tolower.o"
+	@echo "... libft/ft_tolower.i"
+	@echo "... libft/ft_tolower.s"
+	@echo "... libft/ft_toupper.o"
+	@echo "... libft/ft_toupper.i"
+	@echo "... libft/ft_toupper.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
