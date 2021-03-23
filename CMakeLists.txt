@@ -28,7 +28,8 @@ add_executable (cub3D
         perp_vector.c
         create_rgb.c
         sprite_utils.c
-        validator/enter_validator.c)
+        validator/enter_validator.c
+        take_screenshot.c)
 target_link_libraries(cub3D LibFT)
 if (APPLE)
     target_link_libraries(cub3D

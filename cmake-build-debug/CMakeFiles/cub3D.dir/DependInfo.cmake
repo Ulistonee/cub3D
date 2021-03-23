@@ -24,6 +24,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/ulistonee/cub3D/raycast.c" "/home/ulistonee/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/raycast.c.o"
   "/home/ulistonee/cub3D/scaler.c" "/home/ulistonee/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/scaler.c.o"
   "/home/ulistonee/cub3D/sprite_utils.c" "/home/ulistonee/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/sprite_utils.c.o"
+  "/home/ulistonee/cub3D/take_screenshot.c" "/home/ulistonee/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/take_screenshot.c.o"
   "/home/ulistonee/cub3D/validator/enter_validator.c" "/home/ulistonee/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/validator/enter_validator.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

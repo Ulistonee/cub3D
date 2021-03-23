@@ -179,6 +179,7 @@ typedef struct		s_all
 	t_image			image;
 	int				spr_count;
 	t_sprite		*spr_arr;
+	int				save_flag;
 }					t_all;
 
 typedef struct		s_ray
@@ -220,3 +221,4 @@ int					enter_validator(t_all *all);
 void 				handle_error(char *message, t_all *all);
 void				validate_map(t_all *all, char *file_name);
 int 				parse_file(char *file_name, t_all *all);
+void				take_screenshot(t_all *all);

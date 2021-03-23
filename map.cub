@@ -1,11 +1,12 @@
-R 1920 880
+R 1920 564654645
 NO ./cowboy.xpm
 SO ./django_unchaned.xpm
 WE ./james_din.xpm
 EA ./marilyn-monroe.xpm
 S ./barrel.xpm
-F 0240, 140, 0
+F 240, 140, 0
 C 128,128,0
+
 
 1111111111111111111111111
 1000202000110000002222001

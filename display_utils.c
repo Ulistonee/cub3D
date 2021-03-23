@@ -19,6 +19,8 @@ int 				display(t_all *all)
 										  &all->display.line_length, &all->display.endian);
 	//to call all the calculations and drawing
 	raycast(all);
+	if (all->save_flag == 1)
+		take_screenshot(all);
 	mlx_put_image_to_window(all->display.mlx, all->display.mlx_win, all->display.img, 0, 0);
 	mlx_destroy_image(all->display.mlx, all->display.img);
 	return (1);

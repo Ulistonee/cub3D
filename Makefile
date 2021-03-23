@@ -22,6 +22,7 @@ SRCS	= \
 			create_rgb.c \
 			sprite_utils.c \
 			validator/enter_validator.c \
+			take_screenshot.c \
 
 OBJS		= $(patsubst %.c, %.o, $(SRCS))
 

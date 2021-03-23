@@ -1749,6 +1749,33 @@ sprite_utils.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/sprite_utils.c.s
 .PHONY : sprite_utils.c.s
 
+take_screenshot.o: take_screenshot.c.o
+
+.PHONY : take_screenshot.o
+
+# target to build an object file
+take_screenshot.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/take_screenshot.c.o
+.PHONY : take_screenshot.c.o
+
+take_screenshot.i: take_screenshot.c.i
+
+.PHONY : take_screenshot.i
+
+# target to preprocess a source file
+take_screenshot.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/take_screenshot.c.i
+.PHONY : take_screenshot.c.i
+
+take_screenshot.s: take_screenshot.c.s
+
+.PHONY : take_screenshot.s
+
+# target to generate assembly for a file
+take_screenshot.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/take_screenshot.c.s
+.PHONY : take_screenshot.c.s
+
 validator/enter_validator.o: validator/enter_validator.c.o
 
 .PHONY : validator/enter_validator.o
@@ -1963,6 +1990,9 @@ help:
 	@echo "... sprite_utils.o"
 	@echo "... sprite_utils.i"
 	@echo "... sprite_utils.s"
+	@echo "... take_screenshot.o"
+	@echo "... take_screenshot.i"
+	@echo "... take_screenshot.s"
 	@echo "... validator/enter_validator.o"
 	@echo "... validator/enter_validator.i"
 	@echo "... validator/enter_validator.s"

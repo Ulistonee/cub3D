@@ -297,6 +297,9 @@
 		<Unit filename="/home/ulistonee/cub3D/sprite_utils.c">
 			<Option target="cub3D"/>
 		</Unit>
+		<Unit filename="/home/ulistonee/cub3D/take_screenshot.c">
+			<Option target="cub3D"/>
+		</Unit>
 		<Unit filename="/home/ulistonee/cub3D/validator/enter_validator.c">
 			<Option target="cub3D"/>
 		</Unit>
