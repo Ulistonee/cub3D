@@ -5,3 +5,5 @@
 5. need to fix invalid flag --save i.e. --savel
 6. to fix 2.cub directory
 7. get rid of leaks
+8. scaling of sprites
+9. floor and ceiling problems

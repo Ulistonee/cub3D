@@ -35,9 +35,9 @@ int						draw_walls(t_all *all, t_ray *ray, int x)
 			my_mlx_pixel_put(all, x, y, color);
 		}
 		if (y < all->walls.top)
-			my_mlx_pixel_put(all, x, y, all->data.flr);
-		if (y > all->walls.bottom)
 			my_mlx_pixel_put(all, x, y, all->data.ceil);
+		if (y > all->walls.bottom)
+			my_mlx_pixel_put(all, x, y, all->data.flr);
 		y++;
 	}
 	return (0);

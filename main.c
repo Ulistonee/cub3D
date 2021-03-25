@@ -41,7 +41,7 @@ void				auto_clear(t_all *all)
 			ft_free_mem(p);
 			p++;
 		}
-		free(all->map.map);
+		ft_free_mem(all->map.map);
 	}
 	if (all->sarr)
 		ft_free_mem((char **)&all->sarr);

@@ -1,15 +1,15 @@
 R  1920     880
 
-SO textures/django_unchaned.xpm
-NO textures/cowboy.xpm
-WE textures/james_din.xpm
-EA textures/marilyn-monroe.xpm
-S textures/barrel.xpm
-F  204, 255, 255
-C  51,    102,    0
+SO textures/mc_bg.xpm
+NO textures/mc_bg.xpm
+WE textures/mc_bg.xpm
+EA textures/mc_bg.xpm
+S textures/sprite.xpm
+C  204, 255, 255
+F  51,    102,    0
 
 
-1111111111111111111111111
+1101111111111111111111111
 1000202000110000002222001
 1011000001110E00002222001
 1001000000000000002222001

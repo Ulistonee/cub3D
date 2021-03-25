@@ -79,9 +79,8 @@ void		vsl_sprite(double *z_buff, t_all *all, t_sprite sprite, t_pos proj_coor)
 	double				i;
 	t_pos				s_dot;
 	int					color;
-	int					n;
+	int					scl;
 
-	i = 0;
 	sprite.width = fabs(all->data.res2 / proj_coor.y);
 	sprite.start.x = proj_coor.x - sprite.width / 2;
 	sprite.end.x = proj_coor.x + sprite.width / 2;
@@ -90,6 +89,7 @@ void		vsl_sprite(double *z_buff, t_all *all, t_sprite sprite, t_pos proj_coor)
 	i = sprite.start.x;
 	all->s.s.w = 64;
 	all->s.s.h = 64;
+//	scl = all->s.s.h/all->walls.wall_height;
 	if (i < 0)
 		i = 0;
 	while (i < sprite.end.x && i < all->data.res1)
@@ -102,8 +102,9 @@ void		vsl_sprite(double *z_buff, t_all *all, t_sprite sprite, t_pos proj_coor)
 			{
 				s_dot.y = (j - sprite.start.y) / sprite.width * all->s.s.h;
 				color = get_color((t_image *) &all->s.s.img, (int)s_dot.x, (int)s_dot.y);
-				if (color != 0x000000)
+				if (color != 0xFFFFFF)
 					my_mlx_pixel_put(all, (int)i, (int)j, color);
+//					scaler(all, (int)i, (int)j, color);
 				j++;
 			}
 		}

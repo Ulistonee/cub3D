@@ -66,6 +66,7 @@ typedef struct		s_image
 	int				h;
 	int				w;
 	int				tag;
+	int				scl;
 }					t_image;
 
 typedef struct		s_tex
