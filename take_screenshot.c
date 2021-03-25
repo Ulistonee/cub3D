@@ -6,7 +6,7 @@ static void			init_bmp_header(t_all *all, int fd)
 
 	write(fd, "BM", 2);
 	val = 14 + 40 + all->data.res1 * all->data.res2 *
-					all->display.bits_per_pixel / 8;
+					all->dsp.bits_per_pixel / 8;
 	write(fd, &val, 4);
 	val = 0;
 	write(fd, &val, 4);
@@ -18,7 +18,7 @@ static void			init_bmp_header(t_all *all, int fd)
 	write(fd, &all->data.res2, 4);
 	val = 1;
 	write(fd, &val, 2);
-	write(fd, &all->display.bits_per_pixel, 2);
+	write(fd, &all->dsp.bits_per_pixel, 2);
 	write(fd, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 24);
 }
 
@@ -36,8 +36,8 @@ void				take_screenshot(t_all *all)
 	i = all->data.res2;
 	while (i-- > 0)
 	{
-		write(fd, (all->display.addr + i * all->display.line_length),
-			  (all->data.res1 * all->display.bits_per_pixel / 8));
+		write(fd, (all->dsp.addr + i * all->dsp.line_length),
+			  (all->data.res1 * all->dsp.bits_per_pixel / 8));
 	}
 	close(fd);
 	exit(0);

@@ -59,19 +59,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/145/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/145/bin/cmake/linux/bin/cmake -E rm -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ulistonee/cub3D
+CMAKE_SOURCE_DIR = /Users/rchalmer/c/cub3D
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ulistonee/cub3D/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/rchalmer/c/cub3D/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,7 +79,7 @@ CMAKE_BINARY_DIR = /home/ulistonee/cub3D/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/145/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -90,7 +90,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/145/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ulistonee/cub3D/cmake-build-debug/CMakeFiles /home/ulistonee/cub3D/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles /Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ulistonee/cub3D/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -425,6 +425,33 @@ init_game.s: init_game.c.s
 init_game.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/init_game.c.s
 .PHONY : init_game.c.s
+
+key_hook.o: key_hook.c.o
+
+.PHONY : key_hook.o
+
+# target to build an object file
+key_hook.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/key_hook.c.o
+.PHONY : key_hook.c.o
+
+key_hook.i: key_hook.c.i
+
+.PHONY : key_hook.i
+
+# target to preprocess a source file
+key_hook.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/key_hook.c.i
+.PHONY : key_hook.c.i
+
+key_hook.s: key_hook.c.s
+
+.PHONY : key_hook.s
+
+# target to generate assembly for a file
+key_hook.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/key_hook.c.s
+.PHONY : key_hook.c.s
 
 len_of_vec.o: len_of_vec.c.o
 
@@ -1843,6 +1870,9 @@ help:
 	@echo "... init_game.o"
 	@echo "... init_game.i"
 	@echo "... init_game.s"
+	@echo "... key_hook.o"
+	@echo "... key_hook.i"
+	@echo "... key_hook.s"
 	@echo "... len_of_vec.o"
 	@echo "... len_of_vec.i"
 	@echo "... len_of_vec.s"

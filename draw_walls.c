@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   draw_walls.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rchalmer <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/03/24 20:48:50 by rchalmer          #+#    #+#             */
+/*   Updated: 2021/03/24 20:48:54 by rchalmer         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "cub3D.h"
 
 int						draw_walls(t_all *all, t_ray *ray, int x)
@@ -8,8 +20,8 @@ int						draw_walls(t_all *all, t_ray *ray, int x)
 
 	y = 0;
 	all->walls.wall_height = all->data.res2 / ray->k;
-	all->walls.top = all->data.res2 / 2 - all->walls.wall_height / 2;
-	all->walls.bottom = all->data.res2 / 2 + all->walls.wall_height / 2;
+	all->walls.top = (double)all->data.res2 / 2 - all->walls.wall_height / 2;
+	all->walls.bottom = (double)all->data.res2 / 2 + all->walls.wall_height / 2;
 	if (all->walls.side.tag == 'N' || all->walls.side.tag == 'S')
 		text_dot.x = (ray->dot.x - (int)ray->dot.x) * all->walls.side.w;
 	else

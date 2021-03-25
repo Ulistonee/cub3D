@@ -1,6 +1,35 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rchalmer <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/03/24 19:55:38 by rchalmer          #+#    #+#             */
+/*   Updated: 2021/03/24 19:58:15 by rchalmer         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "cub3D.h"
 
-void			auto_clear(t_all *all)
+void				exit_program(t_all *all)
+{
+	exit(EXIT_SUCCESS);
+}
+
+void				check_screen_size(t_all *all)
+{
+	int				width;
+	int				height;
+
+	mlx_get_screen_size(&width, &height);
+	if (all->data.res1 > width)
+		all->data.res1 = width;
+	if (all->data.res2 > height)
+		all->data.res2 = height;
+}
+
+void				auto_clear(t_all *all)
 {
 	char		**p;
 
@@ -14,11 +43,11 @@ void			auto_clear(t_all *all)
 		}
 		free(all->map.map);
 	}
-	if (all->spr_arr)
-		ft_free_mem((char **) &all->spr_arr);
+	if (all->sarr)
+		ft_free_mem((char **)&all->sarr);
 }
 
-static int		check_extension(char *file, char *exp)
+static int			check_extension(char *file, char *exp)
 {
 	int			f_len;
 	int			e_len;
@@ -35,74 +64,6 @@ static int		check_extension(char *file, char *exp)
 	return (1);
 }
 
-int 			key_hook(int keynumber, t_all *all)
-{
-		double			old_x;
-		t_pos			new_pos;
-
-		if (keynumber == ESC)
-			exit(0);
-		if (keynumber == W || keynumber == UP)
-		{
-			new_pos.x = all->player.dir.x * STEP + all->player.pos.x;
-			new_pos.y = all->player.dir.y * STEP + all->player.pos.y;
-			if (all->map.map[(int)new_pos.y][(int)new_pos.x] == '0')
-			{
-				all->player.pos.x = new_pos.x;
-				all->player.pos.y = new_pos.y;
-			}
-		}
-		if (keynumber == S || keynumber == DOWN)
-		{
-			new_pos.x = -all->player.dir.x * STEP + all->player.pos.x;
-			new_pos.y = -all->player.dir.y * STEP + all->player.pos.y;
-			if (all->map.map[(int) (new_pos.y)][(int) (new_pos.x)] == '0')
-			{
-				all->player.pos.x = new_pos.x;
-				all->player.pos.y = new_pos.y;
-			}
-		}
-		if (keynumber == LEFT)
-		{
-			old_x = all->player.dir.x;
-			all->player.dir.x = old_x * cos(-ANGLE) - all->player.dir.y * sin(-ANGLE);
-			all->player.dir.y = old_x * sin(-ANGLE) + all->player.dir.y * cos(-ANGLE);
-			old_x = all->player.plane.x;
-			all->player.plane.x = old_x * cos(-ANGLE) - all->player.plane.y * sin(-ANGLE);
-			all->player.plane.y = old_x * sin(-ANGLE) + all->player.plane.y * cos(-ANGLE);
-		}
-		if (keynumber == A)
-		{
-			new_pos.x = all->player.pos.x + all->player.dir.y * STEP;
-			new_pos.y = all->player.pos.y - all->player.dir.x * STEP;
-			if (all->map.map[(int) (new_pos.y)][(int) (new_pos.x)] == '0')
-			{
-				all->player.pos.x = new_pos.x;
-				all->player.pos.y = new_pos.y;
-			}
-		}
-		if (keynumber == D)
-		{
-			new_pos.x = all->player.pos.x - all->player.dir.y * STEP;
-			new_pos.y = all->player.pos.y + all->player.dir.x * STEP;
-			if (all->map.map[(int) (new_pos.y)][(int) (new_pos.x)] == '0')
-			{
-				all->player.pos.x = new_pos.x;
-				all->player.pos.y = new_pos.y;
-			}
-		}
-		if (keynumber == RIGHT)
-			{
-				old_x = all->player.dir.x;
-				all->player.dir.x = old_x * cos(ANGLE) - all->player.dir.y * sin(ANGLE);
-				all->player.dir.y = old_x * sin(ANGLE) + all->player.dir.y * cos(ANGLE);
-				old_x = all->player.plane.x;
-				all->player.plane.x = old_x * cos(ANGLE) - all->player.plane.y * sin(ANGLE);
-				all->player.plane.y = old_x * sin(ANGLE) + all->player.plane.y * cos(ANGLE);
-			}
-		return (0);
-}
-
 int					main(int argc, char *argv[])
 {
 	t_all			all;
@@ -114,16 +75,19 @@ int					main(int argc, char *argv[])
 		if (argc == 3)
 			all.save_flag = 1;
 		parser(&all, argv[1]);
-		all.display.mlx = mlx_init();
-		all.display.mlx_win = mlx_new_window(all.display.mlx, all.data.res1, all.data.res2,
-											  "My_cub3D");
+		all.dsp.mlx = mlx_init();
+		if (all.save_flag != 1)
+			check_screen_size(&all);
+		all.dsp.mlx_win = mlx_new_window(all.dsp.mlx,
+								all.data.res1, all.data.res2,"My_cub3D");
 		init_game(&all);
 		display(&all);
-		mlx_hook(all.display.mlx_win, 2, (1L<<0), key_hook, &all);
-		mlx_loop_hook(all.display.mlx, display, &all);
-		mlx_loop(all.display.mlx);
+		mlx_hook(all.dsp.mlx_win, 17, (1L << 0), exit_program, &all);
+		mlx_hook(all.dsp.mlx_win, 2, (1L << 0), key_hook, &all);
+		mlx_loop_hook(all.dsp.mlx, display, &all);
+		mlx_loop(all.dsp.mlx);
 	}
 	else
 		handle_error("Exit game\n", &all);
-	return 0;
+	return (0);
 }

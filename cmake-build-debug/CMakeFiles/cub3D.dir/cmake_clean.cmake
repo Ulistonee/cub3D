@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/cub3D.dir/get_next_line/get_next_line_utils.c.o"
   "CMakeFiles/cub3D.dir/handle_error.c.o"
   "CMakeFiles/cub3D.dir/init_game.c.o"
+  "CMakeFiles/cub3D.dir/key_hook.c.o"
   "CMakeFiles/cub3D.dir/len_of_vec.c.o"
   "CMakeFiles/cub3D.dir/main.c.o"
   "CMakeFiles/cub3D.dir/parser/is_map.c.o"

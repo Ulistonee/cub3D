@@ -1,60 +1,70 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   sprite_utils.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rchalmer <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/03/24 22:33:21 by rchalmer          #+#    #+#             */
+/*   Updated: 2021/03/24 22:33:24 by rchalmer         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "cub3D.h"
 
-void			init_spr(t_all *all, t_pos_i map)
+void		init_spr(t_all *all, t_pos_i map)
 {
 	int				i;
 
 	i = 0;
-	while(i < all->spr_count)
+	while (i < all->spr_count)
 	{
-		if ((int)all->spr_arr[i].coord.x == map.x  && (int)all->spr_arr[i].coord.y == map.y)
-		{
-			all->spr_arr[i].tag_vis = 1;
-		}
+		if ((int)all->sarr[i].crd.x == map.x  && (int)all->sarr[i].crd.y == map.y)
+			all->sarr[i].tag_vis = 1;
 		i++;
 	}
 }
 
-void			hide_spr(t_all *all)
+void		hide_spr(t_all *all)
 {
 	int				i;
 
 	i = 0;
-	while(i < all->spr_count)
+	while (i < all->spr_count)
 	{
-		all->spr_arr[i].tag_vis = 0;
+		all->sarr[i].tag_vis = 0;
 		i++;
 	}
 }
 
-int				get_color(t_image *image, int x, int y)
+int			get_color(t_image *image, int x, int y)
 {
 	char		*dst;
 	int			res;
 
 	if (x < image->w && y < image->h && x >= 0 && y >= 0)
 	{
-		dst = image->addr + (y * image->line_length + x * (image->bits_per_pixel / 8));
+		dst = image->addr + (y * image->len + x * (image->bpp / 8));
 		res = (*(int*)dst);
-		return(res);
+		return (res);
 	}
 	return (0);
 }
 
-t_pos 					v_sub(t_pos v1, t_pos v2)
+t_pos		v_sub(t_pos v1, t_pos v2)
 {
-	t_pos 		res;
+	t_pos				res;
 
 	res.x = v1.x - v2.x;
 	res.y = v1.y - v2.y;
 	return (res);
 }
 
-t_pos 					project_spr(t_pos m, t_pos n, t_pos d0, t_pos dot)
+t_pos		project_spr(t_pos m, t_pos n, t_pos d0, t_pos dot)
 {
-	t_pos 		proj;
-	t_pos 		sub_dot;
-	double		det;
+	t_pos				proj;
+	t_pos				sub_dot;
+	double				det;
 
 	sub_dot = v_sub(dot, d0);
 	det = m.x * n.y - m.y * n.x;
@@ -63,7 +73,7 @@ t_pos 					project_spr(t_pos m, t_pos n, t_pos d0, t_pos dot)
 	return (proj);
 }
 
-void					visualize_sprite(double *z_buff, t_all *all, t_sprite sprite, t_pos proj_coor)
+void		vsl_sprite(double *z_buff, t_all *all, t_sprite sprite, t_pos proj_coor)
 {
 	double				j;
 	double				i;
@@ -101,23 +111,23 @@ void					visualize_sprite(double *z_buff, t_all *all, t_sprite sprite, t_pos pro
 	}
 }
 
-void 					bubble_sort(t_all *all)
+void 		bubble_sort(t_all *all)
 {
 	int					i;
 	int					j;
 	t_sprite 			temp;
 
 	i = 0;
-	while(i < all->spr_count)
+	while (i < all->spr_count)
 	{
 		j = all->spr_count - 1;
-		while(j > i)
+		while (j > i)
 		{
-			if(all->spr_arr[j - 1].dist < all->spr_arr[j].dist)
+			if (all->sarr[j - 1].dist < all->sarr[j].dist)
 			{
-				temp = all->spr_arr[j - 1];
-				all->spr_arr[j - 1] = all->spr_arr[j];
-				all->spr_arr[j] = temp;
+				temp = all->sarr[j - 1];
+				all->sarr[j - 1] = all->sarr[j];
+				all->sarr[j] = temp;
 			}
 			j--;
 		}
@@ -125,7 +135,7 @@ void 					bubble_sort(t_all *all)
 	}
 }
 
-void					count_dist(t_all *all)
+void		count_dist(t_all *all)
 {
 	double				dist_to_spr;
 	int					i;
@@ -135,13 +145,13 @@ void					count_dist(t_all *all)
 	j = 0;
 	while (i < all->spr_count)
 	{
-		dist_to_spr = len_of_vec(all->player.pos.x - all->spr_arr[i].coord.x, all->player.pos.y - all->spr_arr[i].coord.y);
-		all->spr_arr[i].dist = dist_to_spr;
+		dist_to_spr = len_of_vec(all->plr.pos.x - all->sarr[i].crd.x, all->plr.pos.y - all->sarr[i].crd.y);
+		all->sarr[i].dist = dist_to_spr;
 		i++;
 	}
 }
 
-void					draw_sprites(double *z_buf, t_all *all)
+void		draw_sprites(double *z_buf, t_all *all)
 {
 	t_pos 				proj_coor;
 	int					i;
@@ -152,21 +162,21 @@ void					draw_sprites(double *z_buf, t_all *all)
 	bubble_sort(all);
 	while (i < all->spr_count)
 	{
-		if (all->spr_arr[i].tag_vis == 1) // all->spr_arr[i].dist < z_buf[i] &&
+		if (all->sarr[i].tag_vis == 1) // all->sarr[i].dist < z_buf[i] &&
 		{
-			proj_coor = project_spr(all->player.plane, all->player.dir, all->player.pos, all->spr_arr[i].coord);
+			proj_coor = project_spr(all->plr.plane, all->plr.dir, all->plr.pos, all->sarr[i].crd);
 			h = fabs(all->data.res2 / proj_coor.y);
 			proj_coor.x = (double)all->data.res1 / 2 * (1 + proj_coor.x / proj_coor.y); // - h / 2;
-			visualize_sprite(z_buf, all, all->spr_arr[i], proj_coor);
+			vsl_sprite(z_buf, all, all->sarr[i], proj_coor);
 		}
 		i++;
 	}
 }
 
 /*
- * we initialize a sprite, then we add it to the spr_array. We include info about its coordinates.
+ * we initialize a sprite, then we add it to the sarray. We include info about its crdinates.
  */
-void 					add_spr_to_arr(t_all *all, t_sprite **arr_m)
+void		add_spr_to_arr(t_all *all, t_sprite **arr_m)
 {
 	t_sprite			*arr;
 	int 				i;
@@ -185,8 +195,8 @@ void 					add_spr_to_arr(t_all *all, t_sprite **arr_m)
 		{
 			if (all->map.map[y][x] == '2')
 			{
-				spr.coord.x = x + 0.5;
-				spr.coord.y = y + 0.5;
+				spr.crd.x = x + 0.5;
+				spr.crd.y = y + 0.5;
 				arr[i] = spr;
 				i++;
 			}
