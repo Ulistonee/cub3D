@@ -31,20 +31,18 @@ void				check_screen_size(t_all *all)
 
 void				auto_clear(t_all *all)
 {
-	char		**p;
+	int				i;
 
-	if (all->map.map)
+	i = 0;
+	while (i > all->map.lines)
 	{
-		p = all->map.map;
-		while (*p)
-		{
-			ft_free_mem(p);
-			p++;
-		}
-		ft_free_mem(all->map.map);
+		ft_free_mem(&all->map.map[i]);
+		i--;
 	}
+	if (all->map.map)
+		ft_free_mem(all->map.map);
 	if (all->sarr)
-		ft_free_mem((char **)&all->sarr);
+		ft_free_mem((char **) all->sarr);
 }
 
 static int			check_extension(char *file, char *exp)
@@ -52,12 +50,17 @@ static int			check_extension(char *file, char *exp)
 	int			f_len;
 	int			e_len;
 	int			i;
+	int			fd;
 
 	f_len = (int)ft_strlen(file);
 	e_len = (int)ft_strlen(exp);
 	i = -1;
-	if (f_len <= e_len)
+	fd = 0;
+	if ((fd = open(file, O_DIRECTORY)) > 0)
 		return (0);
+	if (f_len <= e_len) {
+		return (0);
+	}
 	while (++i < e_len)
 		if (exp[e_len - 1 - i] != file[f_len - 1 - i])
 			return (0);
@@ -70,7 +73,7 @@ int					main(int argc, char *argv[])
 
 	all.save_flag = 0;
 	if ((argc == 2 && check_extension(argv[1], ".cub"))
-		|| (argc == 3 && (!ft_strncmp("--save", argv[2], 6))))
+		|| (argc == 3 && (!ft_strncmp("--save", argv[2], ft_strlen(argv[2])))))
 	{
 		if (argc == 3)
 			all.save_flag = 1;

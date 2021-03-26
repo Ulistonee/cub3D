@@ -1,9 +1,9 @@
 R 680 680
-NO           ./cowboy.xpm
-SO      ./django_unchaned.xpm
-WE     ./james_din.xpm
-EA    ./marilyn-monroe.xpm
-S ./barrel.xpm
+NO           textures/cowboy.xpm
+SO      textures/django_unchaned.xpm
+WE     textures/james_din.xpm
+EA    textures/marilyn-monroe.xpm
+S textures/barrel.xpm
 
 F 255, 140, 0
 C 0,    0,0

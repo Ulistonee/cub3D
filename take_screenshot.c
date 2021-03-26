@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   take_screenshot.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rchalmer <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/03/26 16:28:06 by rchalmer          #+#    #+#             */
+/*   Updated: 2021/03/26 16:28:09 by rchalmer         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "cub3D.h"
 
 static void			init_bmp_header(t_all *all, int fd)
@@ -37,7 +49,7 @@ void				take_screenshot(t_all *all)
 	while (i-- > 0)
 	{
 		write(fd, (all->dsp.addr + i * all->dsp.line_length),
-			  (all->data.res1 * all->dsp.bits_per_pixel / 8));
+		(all->data.res1 * all->dsp.bits_per_pixel / 8));
 	}
 	close(fd);
 	exit(0);

@@ -80,7 +80,7 @@ typedef struct		s_tex
 
 typedef struct		s_walls
 {
-	double			wall_height;
+	double			wall_h;
 	double			top;
 	double			bottom;
 	t_image			side;
@@ -168,7 +168,7 @@ typedef struct		s_all
 	t_dsp			dsp;
 	t_player 		plr;
 	t_fow			fow;
-	t_walls			walls;
+	t_walls			w;
 	t_tex			tex;
 	t_tex			s;
 	t_image			image;

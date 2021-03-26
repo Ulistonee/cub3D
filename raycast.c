@@ -53,16 +53,16 @@ int					calc_grid(t_all *all, t_ray *ray)
 			ray->len = len.x; // if the ray first crosses x, ray`s length is len.x
 			ray->dot = dot1;
 			map.x += n.x;
-			all->walls.side = (ray->dir.x < 0) ? all->tex.wtx : all->tex.etx;
-			all->walls.side.tag = (ray->dir.x < 0) ? 'W' : 'E';
+			all->w.side = (ray->dir.x < 0) ? all->tex.wtx : all->tex.etx;
+			all->w.side.tag = (ray->dir.x < 0) ? 'W' : 'E';
 		}
 		else
 		{
 			ray->len = len.y; // if the ray first crosses y, ray`s length is len.y
 			ray->dot = dot2; // dot2.x is calculated in calc_triangle_y
 			map.y += n.y;
-			all->walls.side = (ray->dir.y < 0) ? all->tex.ntx : all->tex.stx;
-			all->walls.side.tag = (ray->dir.y < 0) ? 'N' : 'S';
+			all->w.side = (ray->dir.y < 0) ? all->tex.ntx : all->tex.stx;
+			all->w.side.tag = (ray->dir.y < 0) ? 'N' : 'S';
 		}
 		if (all->map.map[map.y][map.x] == '2')
 		{
@@ -89,7 +89,7 @@ void				raycast(t_all *all)
 		calc_grid(all, &ray);
 		perp_vector(all, camera_plane, &ray);
 		draw_walls(all, &ray, x);
-		z_buf[x] = all->walls.bottom;
+		z_buf[x] = all->w.bottom;
 		x++;
 	}
 	draw_sprites(z_buf, all);

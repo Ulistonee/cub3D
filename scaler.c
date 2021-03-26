@@ -10,7 +10,7 @@ int			scaler(t_all *all, int x_input, int y_input, int color)
 //	printf("check\n");
 	x = 0;
 	y = 0;
-	all->s.s.scl = all->s.s.h/all->walls.wall_height;
+	all->s.s.scl = all->s.s.h/all->w.wall_h;
 	while (y < scl)
 	{
 		x = 0;
