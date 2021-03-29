@@ -9,6 +9,7 @@ void				restore_map(t_all *all)
 
 	y = 0;
 	i = 0;
+	all->spr_count = 0;
 	while(y < all->map.lines)
 	{
 		x = 0;
@@ -22,7 +23,10 @@ void				restore_map(t_all *all)
 			if (all->map.map[y][x] == '3')
 				all->map.map[y][x] = '0';
 			if (all->map.map[y][x] == 't')
+			{
 				all->map.map[y][x] = '2';
+				all->spr_count++;
+			}
 			x++;
 		}
 		y++;

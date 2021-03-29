@@ -12,6 +12,30 @@
 
 #include "cub3D.h"
 
+void			get_new_pos(int keynumber, t_all *all, t_pos *new_pos)
+{
+	if (keynumber == W || keynumber == UP)
+	{
+		new_pos->x = all->plr.dir.x * STEP + all->plr.pos.x;
+		new_pos->y = all->plr.dir.y * STEP + all->plr.pos.y;
+	}
+	if (keynumber == S || keynumber == DOWN)
+	{
+		new_pos->x = -all->plr.dir.x * STEP + all->plr.pos.x;
+		new_pos->y = -all->plr.dir.y * STEP + all->plr.pos.y;
+	}
+	if (keynumber == A)
+	{
+		new_pos->x = all->plr.pos.x + all->plr.dir.y * STEP;
+		new_pos->y = all->plr.pos.y - all->plr.dir.x * STEP;
+	}
+	if (keynumber == D)
+	{
+		new_pos->x = all->plr.pos.x - all->plr.dir.y * STEP;
+		new_pos->y = all->plr.pos.y + all->plr.dir.x * STEP;
+	}
+}
+
 int				key_hook(int keynumber, t_all *all)
 {
 	double			old_x;
@@ -21,8 +45,7 @@ int				key_hook(int keynumber, t_all *all)
 		exit(EXIT_SUCCESS);
 	if (keynumber == W || keynumber == UP)
 	{
-		new_pos.x = all->plr.dir.x * STEP + all->plr.pos.x;
-		new_pos.y = all->plr.dir.y * STEP + all->plr.pos.y;
+		get_new_pos(keynumber, all, &new_pos);
 		if (all->map.map[(int)new_pos.y][(int)new_pos.x] == '0')
 		{
 			all->plr.pos.x = new_pos.x;
@@ -31,8 +54,7 @@ int				key_hook(int keynumber, t_all *all)
 	}
 	if (keynumber == S || keynumber == DOWN)
 	{
-		new_pos.x = -all->plr.dir.x * STEP + all->plr.pos.x;
-		new_pos.y = -all->plr.dir.y * STEP + all->plr.pos.y;
+		get_new_pos(keynumber, all, &new_pos);
 		if (all->map.map[(int)(new_pos.y)][(int)(new_pos.x)] == '0')
 		{
 			all->plr.pos.x = new_pos.x;
@@ -50,8 +72,7 @@ int				key_hook(int keynumber, t_all *all)
 	}
 	if (keynumber == A)
 	{
-		new_pos.x = all->plr.pos.x + all->plr.dir.y * STEP;
-		new_pos.y = all->plr.pos.y - all->plr.dir.x * STEP;
+		get_new_pos(keynumber, all, &new_pos);
 		if (all->map.map[(int)(new_pos.y)][(int)(new_pos.x)] == '0')
 		{
 			all->plr.pos.x = new_pos.x;
@@ -60,8 +81,7 @@ int				key_hook(int keynumber, t_all *all)
 	}
 	if (keynumber == D)
 	{
-		new_pos.x = all->plr.pos.x - all->plr.dir.y * STEP;
-		new_pos.y = all->plr.pos.y + all->plr.dir.x * STEP;
+		get_new_pos(keynumber, all, &new_pos);
 		if (all->map.map[(int)(new_pos.y)][(int)(new_pos.x)] == '0')
 		{
 			all->plr.pos.x = new_pos.x;

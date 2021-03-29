@@ -12,33 +12,37 @@
 
 #include "cub3D.h"
 
+void				get_address(t_all *all)
+{
+	all->tx.ntx.addr = mlx_get_data_addr(all->tx.ntx.img,
+				&all->tx.ntx.bpp, &all->tx.ntx.len, &all->tx.ntx.end);
+	all->tx.etx.addr = mlx_get_data_addr(all->tx.etx.img,
+				&all->tx.etx.bpp, &all->tx.etx.len, &all->tx.etx.end);
+	all->tx.wtx.addr = mlx_get_data_addr(all->tx.wtx.img,
+				&all->tx.wtx.bpp, &all->tx.wtx.len, &all->tx.wtx.end);
+	all->tx.stx.addr = mlx_get_data_addr(all->tx.stx.img,
+				&all->tx.stx.bpp, &all->tx.stx.len, &all->tx.stx.end);
+	all->s.s.addr = mlx_get_data_addr(all->s.s.img,
+				&all->s.s.bpp, &all->s.s.len, &all->s.s.end);
+}
+
 int					init_textures(t_all *all)
 {
 	if (!(all->tx.ntx.img = mlx_xpm_file_to_image(all->dsp.mlx,
-										all->data.no, &all->tx.ntx.w, &all->tx.ntx.h)))
-		handle_error("Invalid txture file\n", all);
+							all->data.no, &all->tx.ntx.w, &all->tx.ntx.h)))
+		handle_error("Invalid texture file\n", all);
 	if (!(all->tx.etx.img = mlx_xpm_file_to_image(all->dsp.mlx,
-										all->data.ea, &all->tx.etx.w, &all->tx.etx.h)))
-		handle_error("Invalid txture file\n", all);
+							all->data.ea, &all->tx.etx.w, &all->tx.etx.h)))
+		handle_error("Invalid texture file\n", all);
 	if (!(all->tx.wtx.img = mlx_xpm_file_to_image(all->dsp.mlx,
-										all->data.we, &all->tx.wtx.w, &all->tx.wtx.h)))
-		handle_error("Invalid txture file\n", all);
+							all->data.we, &all->tx.wtx.w, &all->tx.wtx.h)))
+		handle_error("Invalid texture file\n", all);
 	if (!(all->tx.stx.img = mlx_xpm_file_to_image(all->dsp.mlx,
-										all->data.so, &all->tx.stx.w, &all->tx.stx.h)))
-		handle_error("Invalid txture file\n", all);
+							all->data.so, &all->tx.stx.w, &all->tx.stx.h)))
+		handle_error("Invalid texture file\n", all);
 	if (!(all->s.s.img = mlx_xpm_file_to_image(all->dsp.mlx,
-										all->data.s, &all->s.s.w, &all->s.s.h)))
-		handle_error("Invalid txture file\n", all);
-	all->tx.ntx.addr = mlx_get_data_addr(all->tx.ntx.img,
-											&all->tx.ntx.bpp, &all->tx.ntx.len, &all->tx.ntx.end);
-	all->tx.etx.addr = mlx_get_data_addr(all->tx.etx.img,
-											&all->tx.etx.bpp, &all->tx.etx.len, &all->tx.etx.end);
-	all->tx.wtx.addr = mlx_get_data_addr(all->tx.wtx.img,
-											&all->tx.wtx.bpp, &all->tx.wtx.len, &all->tx.wtx.end);
-	all->tx.stx.addr = mlx_get_data_addr(all->tx.stx.img,
-											&all->tx.stx.bpp, &all->tx.stx.len, &all->tx.stx.end);
-	all->s.s.addr = mlx_get_data_addr(all->s.s.img,
-									  &all->s.s.bpp, &all->s.s.len, &all->s.s.end);
+							all->data.s, &all->s.s.w, &all->s.s.h)))
+		handle_error("Invalid texture file\n", all);
 	return (0);
 }
 
@@ -46,7 +50,7 @@ int					set_player_plane(t_all *all, int x, int y)
 {
 	if (all->map.map[y][x] == 'N')
 	{
-		all->plr.plane.x = FOV_L; // height of the camera plane 0.577
+		all->plr.plane.x = FOV_L;
 		all->plr.plane.y = 0;
 	}
 	if (all->map.map[y][x] == 'E')
@@ -98,10 +102,10 @@ int					set_player_dir(t_all *all, int x, int y)
 
 int					init_game(t_all *all)
 {
-	int x = 0;
-	int y = 0;
+	int x;
+	int y;
 
-	all->spr_count = 0;
+	y = 0;
 	while (y < all->map.lines)
 	{
 		x = 0;
@@ -115,16 +119,12 @@ int					init_game(t_all *all)
 				set_player_plane(all, x, y);
 				all->map.map[y][x] = '0';
 			}
-			if (all->map.map[y][x] == '2')
-			{
-				all->spr_count++;
-			}
 			x++;
 		}
 		y++;
 	}
 	init_textures(all);
-//	get_address
+	get_address(all);
 	add_spr_to_arr(all, &all->sarr);
 	return (0);
 }
