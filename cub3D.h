@@ -169,7 +169,7 @@ typedef struct		s_all
 	t_player 		plr;
 	t_fow			fow;
 	t_walls			w;
-	t_tex			tex;
+	t_tex			tx;
 	t_tex			s;
 	t_image			image;
 	int				spr_count;

@@ -53,7 +53,7 @@ int					calc_grid(t_all *all, t_ray *ray)
 			ray->len = len.x; // if the ray first crosses x, ray`s length is len.x
 			ray->dot = dot1;
 			map.x += n.x;
-			all->w.side = (ray->dir.x < 0) ? all->tex.wtx : all->tex.etx;
+			all->w.side = (ray->dir.x < 0) ? all->tx.wtx : all->tx.etx;
 			all->w.side.tag = (ray->dir.x < 0) ? 'W' : 'E';
 		}
 		else
@@ -61,7 +61,7 @@ int					calc_grid(t_all *all, t_ray *ray)
 			ray->len = len.y; // if the ray first crosses y, ray`s length is len.y
 			ray->dot = dot2; // dot2.x is calculated in calc_triangle_y
 			map.y += n.y;
-			all->w.side = (ray->dir.y < 0) ? all->tex.ntx : all->tex.stx;
+			all->w.side = (ray->dir.y < 0) ? all->tx.ntx : all->tx.stx;
 			all->w.side.tag = (ray->dir.y < 0) ? 'N' : 'S';
 		}
 		if (all->map.map[map.y][map.x] == '2')

@@ -14,30 +14,35 @@
 
 int					init_textures(t_all *all)
 {
-	if (!(all->tex.ntx.img = mlx_xpm_file_to_image(all->dsp.mlx, all->data.no, &all->tex.ntx.w, &all->tex.ntx.h)))
-		handle_error("Invalid texture file\n", all);
-	if (!(all->tex.etx.img = mlx_xpm_file_to_image(all->dsp.mlx, all->data.ea, &all->tex.etx.w, &all->tex.etx.h)))
-		handle_error("Invalid texture file\n", all);
-	if (!(all->tex.wtx.img = mlx_xpm_file_to_image(all->dsp.mlx, all->data.we, &all->tex.wtx.w, &all->tex.wtx.h)))
-		handle_error("Invalid texture file\n", all);
-	if (!(all->tex.stx.img = mlx_xpm_file_to_image(all->dsp.mlx, all->data.so, &all->tex.stx.w, &all->tex.stx.h)))
-		handle_error("Invalid texture file\n", all);
-	if (!(all->s.s.img = mlx_xpm_file_to_image(all->dsp.mlx, all->data.s, &all->s.s.w, &all->s.s.h)))
-		handle_error("Invalid texture file\n", all);
-	all->tex.ntx.addr = mlx_get_data_addr(all->tex.ntx.img,
-											&all->tex.ntx.bpp, &all->tex.ntx.len, &all->tex.ntx.end);
-	all->tex.etx.addr = mlx_get_data_addr(all->tex.etx.img,
-											&all->tex.etx.bpp, &all->tex.etx.len, &all->tex.etx.end);
-	all->tex.wtx.addr = mlx_get_data_addr(all->tex.wtx.img,
-											&all->tex.wtx.bpp, &all->tex.wtx.len, &all->tex.wtx.end);
-	all->tex.stx.addr = mlx_get_data_addr(all->tex.stx.img,
-											&all->tex.stx.bpp, &all->tex.stx.len, &all->tex.stx.end);
+	if (!(all->tx.ntx.img = mlx_xpm_file_to_image(all->dsp.mlx,
+										all->data.no, &all->tx.ntx.w, &all->tx.ntx.h)))
+		handle_error("Invalid txture file\n", all);
+	if (!(all->tx.etx.img = mlx_xpm_file_to_image(all->dsp.mlx,
+										all->data.ea, &all->tx.etx.w, &all->tx.etx.h)))
+		handle_error("Invalid txture file\n", all);
+	if (!(all->tx.wtx.img = mlx_xpm_file_to_image(all->dsp.mlx,
+										all->data.we, &all->tx.wtx.w, &all->tx.wtx.h)))
+		handle_error("Invalid txture file\n", all);
+	if (!(all->tx.stx.img = mlx_xpm_file_to_image(all->dsp.mlx,
+										all->data.so, &all->tx.stx.w, &all->tx.stx.h)))
+		handle_error("Invalid txture file\n", all);
+	if (!(all->s.s.img = mlx_xpm_file_to_image(all->dsp.mlx,
+										all->data.s, &all->s.s.w, &all->s.s.h)))
+		handle_error("Invalid txture file\n", all);
+	all->tx.ntx.addr = mlx_get_data_addr(all->tx.ntx.img,
+											&all->tx.ntx.bpp, &all->tx.ntx.len, &all->tx.ntx.end);
+	all->tx.etx.addr = mlx_get_data_addr(all->tx.etx.img,
+											&all->tx.etx.bpp, &all->tx.etx.len, &all->tx.etx.end);
+	all->tx.wtx.addr = mlx_get_data_addr(all->tx.wtx.img,
+											&all->tx.wtx.bpp, &all->tx.wtx.len, &all->tx.wtx.end);
+	all->tx.stx.addr = mlx_get_data_addr(all->tx.stx.img,
+											&all->tx.stx.bpp, &all->tx.stx.len, &all->tx.stx.end);
 	all->s.s.addr = mlx_get_data_addr(all->s.s.img,
 									  &all->s.s.bpp, &all->s.s.len, &all->s.s.end);
 	return (0);
 }
 
-int			set_player_plane(t_all *all, int x, int y)
+int					set_player_plane(t_all *all, int x, int y)
 {
 	if (all->map.map[y][x] == 'N')
 	{
@@ -64,7 +69,7 @@ int			set_player_plane(t_all *all, int x, int y)
 	return (1);
 }
 
-int 		set_player_dir(t_all *all, int x, int y)
+int					set_player_dir(t_all *all, int x, int y)
 {
 	if (all->map.map[y][x] == 'N')
 	{
@@ -89,8 +94,9 @@ int 		set_player_dir(t_all *all, int x, int y)
 	all->plr.dir.x += 0.001;
 	all->plr.dir.y += 0.001;
 	return (1);
-};
-int 		init_game(t_all *all)
+}
+
+int					init_game(t_all *all)
 {
 	int x = 0;
 	int y = 0;
@@ -117,8 +123,8 @@ int 		init_game(t_all *all)
 		}
 		y++;
 	}
-//	display(all);
 	init_textures(all);
+//	get_address
 	add_spr_to_arr(all, &all->sarr);
 	return (0);
 }
