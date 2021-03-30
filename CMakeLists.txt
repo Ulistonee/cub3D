@@ -29,7 +29,8 @@ add_executable (cub3D
         create_rgb.c
         sprite_utils.c
         validator/enter_validator.c
-        take_screenshot.c)
+        take_screenshot.c
+        key_hook.c)
 target_link_libraries(cub3D LibFT)
 if (APPLE)
     target_link_libraries(cub3D

@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/ulistonee/cub3D/get_next_line/get_next_line_utils.c" "/home/ulistonee/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/get_next_line/get_next_line_utils.c.o"
   "/home/ulistonee/cub3D/handle_error.c" "/home/ulistonee/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/handle_error.c.o"
   "/home/ulistonee/cub3D/init_game.c" "/home/ulistonee/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/init_game.c.o"
+  "/home/ulistonee/cub3D/key_hook.c" "/home/ulistonee/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/key_hook.c.o"
   "/home/ulistonee/cub3D/len_of_vec.c" "/home/ulistonee/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/len_of_vec.c.o"
   "/home/ulistonee/cub3D/main.c" "/home/ulistonee/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/main.c.o"
   "/home/ulistonee/cub3D/parser/is_map.c" "/home/ulistonee/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/parser/is_map.c.o"

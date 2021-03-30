@@ -150,6 +150,9 @@
 		<Unit filename="/home/ulistonee/cub3D/init_game.c">
 			<Option target="cub3D"/>
 		</Unit>
+		<Unit filename="/home/ulistonee/cub3D/key_hook.c">
+			<Option target="cub3D"/>
+		</Unit>
 		<Unit filename="/home/ulistonee/cub3D/len_of_vec.c">
 			<Option target="cub3D"/>
 		</Unit>

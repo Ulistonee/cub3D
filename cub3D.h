@@ -7,10 +7,10 @@
 # include <errno.h> // for errno
 # include <stdlib.h> // for exit
 # include <math.h>
-//# include "minilibx_opengl_20191021/mlx.h"
+# include "minilibx_opengl_20191021/mlx.h"
 # include "libft/libft.h"
 # include "get_next_line/get_next_line.h"
-# include "libmlx/mlx.h"
+//# include "libmlx/mlx.h"
 #define VALID_SYMBOLS "102 NEWS"
 #define SCALE 45
 # define FOV_L 0.577
@@ -46,7 +46,7 @@ typedef struct		s_pos
 
 typedef struct		s_sprite
 {
-	t_pos			coord;
+	t_pos			crd;
 	double			dist;
 	t_pos			start;
 	t_pos			end;
@@ -58,28 +58,29 @@ typedef struct		s_image
 {
 	void			*img;
 	char			*addr;
-	int				bits_per_pixel;
-	int				line_length;
-	int				endian;
+	int				bpp;
+	int				len;
+	int				end;
 	void			*mlx;
 	void			*mlx_win;
 	int				h;
 	int				w;
 	int				tag;
+	int				scl;
 }					t_image;
 
 typedef struct		s_tex
 {
-	t_image			n_tex;
-	t_image			e_tex;
-	t_image			w_tex;
-	t_image			s_tex;
+	t_image			ntx;
+	t_image			etx;
+	t_image			wtx;
+	t_image			stx;
 	t_image			s;
 }					t_tex;
 
 typedef struct		s_walls
 {
-	double			wall_height;
+	double			wall_h;
 	double			top;
 	double			bottom;
 	t_image			side;
@@ -114,12 +115,6 @@ typedef struct		s_fow
 	double			move_speed;
 	double			rot_speed;
 }					t_fow;
-//
-//typedef struct		s_posi
-//{
-//	int 			x;
-//	int 			y;
-//}					t_posi;
 
 typedef struct 		s_player
 {
@@ -155,7 +150,7 @@ typedef struct		s_map
 	int 			lines;
 }					t_map;
 
-typedef struct		s_display
+typedef struct		s_dsp
 {
 	void			*img;
 	char			*addr;
@@ -164,21 +159,21 @@ typedef struct		s_display
 	int				endian;
 	void			*mlx;
 	void			*mlx_win;
-}					t_display;
+}					t_dsp;
 
 typedef struct		s_all
 {
 	t_map			map;
 	t_struct		data;
-	t_display		display;
-	t_player 		player;
+	t_dsp			dsp;
+	t_player 		plr;
 	t_fow			fow;
-	t_walls			walls;
+	t_walls			w;
 	t_tex			tex;
 	t_tex			s;
 	t_image			image;
 	int				spr_count;
-	t_sprite		*spr_arr;
+	t_sprite		*sarr;
 	int				save_flag;
 }					t_all;
 
@@ -205,7 +200,7 @@ int					draw_map(t_all *all);
 int					draw_walls(t_all *all, t_ray *ray, int x);
 double				len_of_vec(double x, double y);
 double				dist_dots(double x, double y, double a, double b);
-double				perp_vector(t_all *all, double camera_plane, t_ray *ray);
+void				perp_vector(t_all *all, double camera_plane, t_ray *ray);
 int					create_rgb(int r, int g, int b);
 int					init_textures(t_all *all);
 //t_sprite			*add_spr_to_arr(t_all *all);
@@ -222,3 +217,5 @@ void 				handle_error(char *message, t_all *all);
 void				validate_map(t_all *all, char *file_name);
 int 				parse_file(char *file_name, t_all *all);
 void				take_screenshot(t_all *all);
+int 				key_hook(int keynumber, t_all *all);
+void				auto_clear(t_all *all);

@@ -1,0 +1,2 @@
+7. get rid of leaks
+8. flags WWW
