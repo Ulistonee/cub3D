@@ -14,7 +14,7 @@
 #define VALID_SYMBOLS "102 NEWS"
 #define SCALE 45
 # define FOV_L 0.577
-#define STEP 0.093
+#define STEP 0.1
 #define ANGLE 0.09
 # ifdef linux
 #  define ESC 65307
@@ -214,5 +214,5 @@ int					enter_validator(t_all *all);
 void 				handle_error(char *message, t_all *all);
 int 				parse_file(char *file_name, t_all *all);
 void				take_screenshot(t_all *all);
-int					key_hook(int keynumber, t_all *all);
+void				key_hook(int keynumber, t_all *all);
 void				auto_clear(t_all *all);

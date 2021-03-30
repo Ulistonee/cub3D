@@ -56,3 +56,11 @@ cub3D.h
 
 /Users/rchalmer/c/cub3D/minilibx_opengl_20191021/mlx.h
 
+/Users/rchalmer/c/cub3D/parser/parser.c
+../cub3D.h
+/Users/rchalmer/c/cub3D/cub3D.h
+
+/Users/rchalmer/c/cub3D/sprite_utils.c
+cub3D.h
+/Users/rchalmer/c/cub3D/cub3D.h
+

@@ -1,3 +1,5 @@
 7. get rid of leaks
 8. flags WWW
 9. redo Makefile
+10. redo auto_clear,  free the map if the all.map.map exists. Add 'map.map = NULL'
+11. redo screenshot with flag --sav

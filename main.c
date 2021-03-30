@@ -34,15 +34,17 @@ void				auto_clear(t_all *all)
 	int				i;
 
 	i = 0;
-	while (i > all->map.lines)
-	{
-		ft_free_mem(&all->map.map[i]);
-		i--;
-	}
 	if (all->map.map)
+	{
+		while (i < all->map.lines)
+		{
+			ft_free_mem(&all->map.map[i]);
+			i++;
+		}
 		ft_free_mem(all->map.map);
+	}
 	if (all->sarr)
-		ft_free_mem((char **) all->sarr);
+		ft_free_mem((char **)all->sarr);
 }
 
 static int			check_extension(char *file, char *exp)
@@ -58,9 +60,8 @@ static int			check_extension(char *file, char *exp)
 	fd = 0;
 	if ((fd = open(file, O_DIRECTORY)) > 0)
 		return (0);
-	if (f_len <= e_len) {
+	if (f_len <= e_len)
 		return (0);
-	}
 	while (++i < e_len)
 		if (exp[e_len - 1 - i] != file[f_len - 1 - i])
 			return (0);
@@ -72,6 +73,8 @@ int					main(int argc, char *argv[])
 	t_all			all;
 
 	all.save_flag = 0;
+	all.map.map = NULL;
+	all.sarr = NULL;
 	if ((argc == 2 && check_extension(argv[1], ".cub"))
 		|| (argc == 3 && (!ft_strncmp("--save", argv[2], ft_strlen(argv[2])))))
 	{
@@ -82,7 +85,7 @@ int					main(int argc, char *argv[])
 		if (all.save_flag != 1)
 			check_screen_size(&all);
 		all.dsp.mlx_win = mlx_new_window(all.dsp.mlx,
-								all.data.res1, all.data.res2,"My_cub3D");
+							all.data.res1, all.data.res2, "cub3D");
 		init_game(&all);
 		display(&all);
 		mlx_hook(all.dsp.mlx_win, 17, (1L << 0), exit_program, &all);
