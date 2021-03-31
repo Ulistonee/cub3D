@@ -1,4 +1,4 @@
-#include "cub3D.h"
+#include "../cub3D.h"
 
 
 int			scaler(t_all *all, int x_input, int y_input, int color)

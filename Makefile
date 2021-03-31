@@ -2,13 +2,11 @@ NAME		= cub3D
 
 SRCS	= \
 			parser/parse_other.c \
-			parser/parse_map.c \
 			parser/is_map.c \
 			get_next_line/get_next_line.c \
 			get_next_line/get_next_line_utils.c \
 			main.c \
 			handle_error.c \
-			scaler.c \
 			draw_player.c \
 			init_game.c \
 			raycast.c \
@@ -28,7 +26,7 @@ SRCS	= \
 OBJS		= $(patsubst %.c, %.o, $(SRCS))
 
 CC			= gcc
-FLAGS		= #-Wall -Wextra -Werror
+FLAGS		= -Wall -Wextra -Werror
 HEADER		= cub3D.h
 
 RM			= rm -f
@@ -38,15 +36,15 @@ all:		init ${NAME}
 init:
 			@ echo "......init......"
 			make -C libft
-# 			make -C libmlx
-			make -C minilibx_opengl_20191021
+			make -C libmlx
+# 			make -C minilibx_opengl_20191021
 
 $(NAME):	$(OBJS) $(HEADER)
 #MAC:
-			$(CC) $(FLAGS) $? $(HEADER) -Llibft -lft -Lminilibx_opengl_20191021 -lmlx -framework OpenGL -framework AppKit
+			#$(CC) $(FLAGS) $? $(HEADER) -Llibft -lft -Lminilibx_opengl_20191021 -lmlx -framework OpenGL -framework AppKit
 
 #Lnx:
-			#$(CC) $(FLAGS) $? $(HEADER) -Llibft -lft -Llibmlx -lmlx -lXext -lX11 -lbsd -lm -o $(NAME)
+			$(CC) $(FLAGS) $? $(HEADER) -Llibft -lft -Llibmlx -lmlx -lXext -lX11 -lbsd -lm -o $(NAME)
 
 %.o : %.c
 			${CC} $(FLAGS) -c $< -o $@

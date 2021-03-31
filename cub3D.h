@@ -14,7 +14,7 @@
 #define VALID_SYMBOLS "102 NEWS"
 #define SCALE 45
 # define FOV_L 0.577
-#define STEP 0.093
+#define STEP 0.1
 #define ANGLE 0.09
 # ifdef linux
 #  define ESC 65307
@@ -169,7 +169,7 @@ typedef struct		s_all
 	t_player 		plr;
 	t_fow			fow;
 	t_walls			w;
-	t_tex			tex;
+	t_tex			tx;
 	t_tex			s;
 	t_image			image;
 	int				spr_count;
@@ -183,39 +183,36 @@ typedef struct		s_ray
 	double			len;
 	double			k;
 	t_pos			dot;
-
 }					t_ray;
 
+//typedef	struct		s_new_pos
+//{
+//	t_pos			new_pos;
+//}					t_new_pos;
+
+
 void				parse_other(t_all *all, char *line);
-//int 				parse_map(t_all *all, char *line);
 int 				is_map(char *line);
 int					scaler(t_all *all, int x_input, int y_input, int color);
 void				my_mlx_pixel_put(t_all *all, int x, int y, int color);
-void 				draw_player(t_all *all);
 int 				init_game(t_all *all);
 void 				raycast(t_all *all);
 void				parser(t_all *all, char *file_name);
-int					visualize(t_all *all);
-int					draw_map(t_all *all);
 int					draw_walls(t_all *all, t_ray *ray, int x);
 double				len_of_vec(double x, double y);
-double				dist_dots(double x, double y, double a, double b);
 void				perp_vector(t_all *all, double camera_plane, t_ray *ray);
 int					create_rgb(int r, int g, int b);
 int					init_textures(t_all *all);
-//t_sprite			*add_spr_to_arr(t_all *all);
 void 				add_spr_to_arr(t_all *all, t_sprite **arr_m);
 void				draw_sprites(double *z_buf, t_all *all);
 void				hide_spr(t_all *all);
 int					get_color(t_image *image, int x, int y);
 void				init_spr(t_all *all, t_pos_i map);
-//int					init_textures(t_all *all);
 int 				display(t_all *all);
 void				my_mlx_pixel_put(t_all *all, int x, int y, int color);
 int					enter_validator(t_all *all);
 void 				handle_error(char *message, t_all *all);
-void				validate_map(t_all *all, char *file_name);
 int 				parse_file(char *file_name, t_all *all);
 void				take_screenshot(t_all *all);
-int 				key_hook(int keynumber, t_all *all);
+int					key_hook(int keynumber, t_all *all);
 void				auto_clear(t_all *all);

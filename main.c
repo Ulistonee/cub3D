@@ -12,9 +12,11 @@
 
 #include "cub3D.h"
 
-void				exit_program(t_all *all)
+int				exit_program(t_all *all)
 {
+	auto_clear(all);
 	exit(EXIT_SUCCESS);
+	return (0);
 }
 
 void				check_screen_size(t_all *all)
@@ -34,13 +36,15 @@ void				auto_clear(t_all *all)
 	int				i;
 
 	i = 0;
-	while (i > all->map.lines)
-	{
-		ft_free_mem(&all->map.map[i]);
-		i--;
-	}
 	if (all->map.map)
+	{
+		while (i < all->map.lines)
+		{
+			ft_free_mem(&all->map.map[i]);
+			i++;
+		}
 		ft_free_mem(all->map.map);
+	}
 	if (all->sarr)
 		ft_free_mem((char **)all->sarr);
 }
@@ -71,6 +75,8 @@ int					main(int argc, char *argv[])
 	t_all			all;
 
 	all.save_flag = 0;
+	all.map.map = NULL;
+	all.sarr = NULL;
 	if ((argc == 2 && check_extension(argv[1], ".cub"))
 		|| (argc == 3 && (!ft_strncmp("--save", argv[2], ft_strlen(argv[2])))))
 	{
@@ -80,8 +86,8 @@ int					main(int argc, char *argv[])
 		all.dsp.mlx = mlx_init();
 		if (all.save_flag != 1)
 			check_screen_size(&all);
-		all.dsp.mlx_win = mlx_new_window(all.dsp.mlx, all.data.res1,
-								all.data.res2,"My_cub3D");
+		all.dsp.mlx_win = mlx_new_window(all.dsp.mlx,
+							all.data.res1, all.data.res2, "cub3D");
 		init_game(&all);
 		display(&all);
 		mlx_hook(all.dsp.mlx_win, 17, (1L << 0), exit_program, &all);

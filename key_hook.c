@@ -12,33 +12,10 @@
 
 #include "cub3D.h"
 
-int				key_hook(int keynumber, t_all *all)
+void				get_rotated(int keynumber, t_all *all)
 {
-	double			old_x;
-	t_pos			new_pos;
+	double		old_x;
 
-	if (keynumber == ESC)
-		exit(EXIT_SUCCESS);
-	if (keynumber == W || keynumber == UP)
-	{
-		new_pos.x = all->plr.dir.x * STEP + all->plr.pos.x;
-		new_pos.y = all->plr.dir.y * STEP + all->plr.pos.y;
-		if (all->map.map[(int)new_pos.y][(int)new_pos.x] == '0')
-		{
-			all->plr.pos.x = new_pos.x;
-			all->plr.pos.y = new_pos.y;
-		}
-	}
-	if (keynumber == S || keynumber == DOWN)
-	{
-		new_pos.x = -all->plr.dir.x * STEP + all->plr.pos.x;
-		new_pos.y = -all->plr.dir.y * STEP + all->plr.pos.y;
-		if (all->map.map[(int)(new_pos.y)][(int)(new_pos.x)] == '0')
-		{
-			all->plr.pos.x = new_pos.x;
-			all->plr.pos.y = new_pos.y;
-		}
-	}
 	if (keynumber == LEFT)
 	{
 		old_x = all->plr.dir.x;
@@ -47,26 +24,6 @@ int				key_hook(int keynumber, t_all *all)
 		old_x = all->plr.plane.x;
 		all->plr.plane.x = old_x * cos(-ANGLE) - all->plr.plane.y * sin(-ANGLE);
 		all->plr.plane.y = old_x * sin(-ANGLE) + all->plr.plane.y * cos(-ANGLE);
-	}
-	if (keynumber == A)
-	{
-		new_pos.x = all->plr.pos.x + all->plr.dir.y * STEP;
-		new_pos.y = all->plr.pos.y - all->plr.dir.x * STEP;
-		if (all->map.map[(int)(new_pos.y)][(int)(new_pos.x)] == '0')
-		{
-			all->plr.pos.x = new_pos.x;
-			all->plr.pos.y = new_pos.y;
-		}
-	}
-	if (keynumber == D)
-	{
-		new_pos.x = all->plr.pos.x - all->plr.dir.y * STEP;
-		new_pos.y = all->plr.pos.y + all->plr.dir.x * STEP;
-		if (all->map.map[(int)(new_pos.y)][(int)(new_pos.x)] == '0')
-		{
-			all->plr.pos.x = new_pos.x;
-			all->plr.pos.y = new_pos.y;
-		}
 	}
 	if (keynumber == RIGHT)
 	{
@@ -77,5 +34,62 @@ int				key_hook(int keynumber, t_all *all)
 		all->plr.plane.x = old_x * cos(ANGLE) - all->plr.plane.y * sin(ANGLE);
 		all->plr.plane.y = old_x * sin(ANGLE) + all->plr.plane.y * cos(ANGLE);
 	}
+}
+
+void				get_coordinates(t_all *all, t_pos *new_pos)
+{
+	all->plr.pos.x = new_pos->x;
+	all->plr.pos.y = new_pos->y;
+}
+
+void				get_new_pos(int keynumber, t_all *all, t_pos *new_pos)
+{
+	if (keynumber == W || keynumber == UP)
+	{
+		new_pos->x = all->plr.dir.x * STEP + all->plr.pos.x;
+		new_pos->y = all->plr.dir.y * STEP + all->plr.pos.y;
+	}
+	if (keynumber == S || keynumber == DOWN)
+	{
+		new_pos->x = -all->plr.dir.x * STEP + all->plr.pos.x;
+		new_pos->y = -all->plr.dir.y * STEP + all->plr.pos.y;
+	}
+	if (keynumber == A)
+	{
+		new_pos->x = all->plr.pos.x + all->plr.dir.y * STEP;
+		new_pos->y = all->plr.pos.y - all->plr.dir.x * STEP;
+	}
+	if (keynumber == D)
+	{
+		new_pos->x = all->plr.pos.x - all->plr.dir.y * STEP;
+		new_pos->y = all->plr.pos.y + all->plr.dir.x * STEP;
+	}
+}
+
+void				make_movement(int keynumber, t_all *all, t_pos *new_pos)
+{
+	get_new_pos(keynumber, all, new_pos);
+	if (all->map.map[(int)new_pos->y][(int)new_pos->x] == '0')
+		get_coordinates(all, new_pos);
+}
+
+int				key_hook(int keynumber, t_all *all)
+{
+	t_pos			new_pos;
+
+	if (keynumber == ESC)
+		exit(EXIT_SUCCESS);
+	else if (keynumber == W || keynumber == UP)
+		make_movement(keynumber, all, &new_pos);
+	else if (keynumber == S || keynumber == DOWN)
+		make_movement(keynumber, all, &new_pos);
+	else if (keynumber == LEFT)
+		get_rotated(keynumber, all);
+	else if (keynumber == A)
+		make_movement(keynumber, all, &new_pos);
+	else if (keynumber == D)
+		make_movement(keynumber, all, &new_pos);
+	else if (keynumber == RIGHT)
+		get_rotated(keynumber, all);
 	return (0);
 }

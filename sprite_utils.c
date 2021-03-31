@@ -102,7 +102,7 @@ void		vsl_sprite(double *z_buff, t_all *all, t_sprite sprite, t_pos proj_coor)
 			{
 				s_dot.y = (j - sprite.start.y) / sprite.width * all->s.s.h;
 				color = get_color((t_image *) &all->s.s.img, (int)s_dot.x, (int)s_dot.y);
-				if (color != 0x000000)
+				if (color != 0xFFFFFF && color != 0x000000)
 					my_mlx_pixel_put(all, (int)i, (int)j, color);
 //					scaler(all, (int)i, (int)j, color);
 				j++;
@@ -185,7 +185,8 @@ void		add_spr_to_arr(t_all *all, t_sprite **arr_m)
 	int 				y;
 	t_sprite			spr;
 
-	arr = (t_sprite *)malloc(all->spr_count*sizeof(t_sprite)); // we have to free this pointer
+	if (!(arr = (t_sprite *)malloc(all->spr_count*sizeof(t_sprite))))
+		handle_error("Memory allocation error\n, Exit game\n", all); // we have to free this pointer
 	x = 0;
 	y = 0;
 	i = 0;
