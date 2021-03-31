@@ -100,20 +100,13 @@ int					set_player_dir(t_all *all, int x, int y)
 	return (1);
 }
 
-<<<<<<< HEAD
-int 		init_game(t_all *all)
-=======
 int					init_game(t_all *all)
->>>>>>> 1a87733e17059438d04574b5c4fb86b97000ea74
 {
 	int x;
 	int y;
 
 	y = 0;
-<<<<<<< HEAD
 	all->spr_count = 0;
-=======
->>>>>>> 1a87733e17059438d04574b5c4fb86b97000ea74
 	while (y < all->map.lines)
 	{
 		x = 0;
