@@ -95,7 +95,8 @@ void		draw_sprites(double *z_buf, t_all *all)
 		if (all->sarr[i].tag_vis == 1)
 		{
 			all->proj_coor = project_spr(all, all->sarr[i].crd);
-			all->proj_coor.x = (double)all->data.res1 / 2 * (1 + all->proj_coor.x / all->proj_coor.y);
+			all->proj_coor.x = (double)all->data.res1 / 2 *
+					(1 + all->proj_coor.x / all->proj_coor.y);
 			vsl_sprite(z_buf, all, all->sarr[i]);
 		}
 		i++;
