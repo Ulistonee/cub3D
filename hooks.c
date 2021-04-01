@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   dist_dots.c                                        :+:      :+:    :+:   */
+/*   hooks.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rchalmer <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/03/24 20:46:32 by rchalmer          #+#    #+#             */
-/*   Updated: 2021/03/24 20:46:41 by rchalmer         ###   ########.fr       */
+/*   Created: 2021/03/31 22:05:12 by rchalmer          #+#    #+#             */
+/*   Updated: 2021/03/31 22:05:16 by rchalmer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3D.h"
 
-double			dist_dots(double x, double y, double a, double b)
+void			hooks(t_all *all)
 {
-	double			dist;
-
-	dist = sqrt(pow((x - a), 2) + pow((a - b), 2));
-	return (dist);
+	mlx_hook(all->dsp.mlx_win, 17, (1L << 0), exit_program, all);
+	mlx_hook(all->dsp.mlx_win, 2, (1L << 0), key_hook, all);
+	mlx_loop_hook(all->dsp.mlx, display, all);
+	mlx_loop(all->dsp.mlx);
 }

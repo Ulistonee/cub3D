@@ -13,6 +13,8 @@ CMakeFiles/cub3D.dir/display_utils.c.o: ../get_next_line/get_next_line.h
 CMakeFiles/cub3D.dir/display_utils.c.o: ../libft/libft.h
 CMakeFiles/cub3D.dir/display_utils.c.o: ../minilibx_opengl_20191021/mlx.h
 
+<<<<<<< HEAD
+=======
 CMakeFiles/cub3D.dir/dist_dots.c.o: ../cub3D.h
 CMakeFiles/cub3D.dir/dist_dots.c.o: ../dist_dots.c
 CMakeFiles/cub3D.dir/dist_dots.c.o: ../get_next_line/get_next_line.h
@@ -25,6 +27,7 @@ CMakeFiles/cub3D.dir/draw_player.c.o: ../get_next_line/get_next_line.h
 CMakeFiles/cub3D.dir/draw_player.c.o: ../libft/libft.h
 CMakeFiles/cub3D.dir/draw_player.c.o: ../minilibx_opengl_20191021/mlx.h
 
+>>>>>>> master
 CMakeFiles/cub3D.dir/draw_walls.c.o: ../cub3D.h
 CMakeFiles/cub3D.dir/draw_walls.c.o: ../draw_walls.c
 CMakeFiles/cub3D.dir/draw_walls.c.o: ../get_next_line/get_next_line.h
@@ -42,6 +45,12 @@ CMakeFiles/cub3D.dir/handle_error.c.o: ../get_next_line/get_next_line.h
 CMakeFiles/cub3D.dir/handle_error.c.o: ../handle_error.c
 CMakeFiles/cub3D.dir/handle_error.c.o: ../libft/libft.h
 CMakeFiles/cub3D.dir/handle_error.c.o: ../minilibx_opengl_20191021/mlx.h
+
+CMakeFiles/cub3D.dir/hooks.c.o: ../cub3D.h
+CMakeFiles/cub3D.dir/hooks.c.o: ../get_next_line/get_next_line.h
+CMakeFiles/cub3D.dir/hooks.c.o: ../hooks.c
+CMakeFiles/cub3D.dir/hooks.c.o: ../libft/libft.h
+CMakeFiles/cub3D.dir/hooks.c.o: ../minilibx_opengl_20191021/mlx.h
 
 CMakeFiles/cub3D.dir/init_game.c.o: ../cub3D.h
 CMakeFiles/cub3D.dir/init_game.c.o: ../get_next_line/get_next_line.h
@@ -67,12 +76,30 @@ CMakeFiles/cub3D.dir/main.c.o: ../libft/libft.h
 CMakeFiles/cub3D.dir/main.c.o: ../main.c
 CMakeFiles/cub3D.dir/main.c.o: ../minilibx_opengl_20191021/mlx.h
 
+<<<<<<< HEAD
+CMakeFiles/cub3D.dir/other/dist_dots.c.o: ../cub3D.h
+CMakeFiles/cub3D.dir/other/dist_dots.c.o: ../get_next_line/get_next_line.h
+CMakeFiles/cub3D.dir/other/dist_dots.c.o: ../libft/libft.h
+CMakeFiles/cub3D.dir/other/dist_dots.c.o: ../minilibx_opengl_20191021/mlx.h
+CMakeFiles/cub3D.dir/other/dist_dots.c.o: ../other/dist_dots.c
+
+=======
+>>>>>>> master
 CMakeFiles/cub3D.dir/other/draw_map.c.o: ../cub3D.h
 CMakeFiles/cub3D.dir/other/draw_map.c.o: ../get_next_line/get_next_line.h
 CMakeFiles/cub3D.dir/other/draw_map.c.o: ../libft/libft.h
 CMakeFiles/cub3D.dir/other/draw_map.c.o: ../minilibx_opengl_20191021/mlx.h
 CMakeFiles/cub3D.dir/other/draw_map.c.o: ../other/draw_map.c
 
+<<<<<<< HEAD
+CMakeFiles/cub3D.dir/other/draw_player.c.o: ../cub3D.h
+CMakeFiles/cub3D.dir/other/draw_player.c.o: ../get_next_line/get_next_line.h
+CMakeFiles/cub3D.dir/other/draw_player.c.o: ../libft/libft.h
+CMakeFiles/cub3D.dir/other/draw_player.c.o: ../minilibx_opengl_20191021/mlx.h
+CMakeFiles/cub3D.dir/other/draw_player.c.o: ../other/draw_player.c
+
+=======
+>>>>>>> master
 CMakeFiles/cub3D.dir/other/scaler.c.o: ../cub3D.h
 CMakeFiles/cub3D.dir/other/scaler.c.o: ../get_next_line/get_next_line.h
 CMakeFiles/cub3D.dir/other/scaler.c.o: ../libft/libft.h

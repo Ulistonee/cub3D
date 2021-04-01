@@ -11,6 +11,17 @@ add_executable (cub3D
         main.c
         parser/parser.c
         parser/parse_other.c
+<<<<<<< HEAD
+		parser/is_map.c
+        get_next_line/get_next_line.c
+        get_next_line/get_next_line_utils.c
+        handle_error.c
+		other/scaler.c
+		other/draw_player.c
+        init_game.c
+        raycast.c
+		other/draw_map.c
+=======
         parser/is_map.c
         get_next_line/get_next_line.c
         get_next_line/get_next_line_utils.c
@@ -20,16 +31,18 @@ add_executable (cub3D
         init_game.c
         raycast.c
         other/draw_map.c
+>>>>>>> master
         display_utils.c
         draw_walls.c
         len_of_vec.c
-        dist_dots.c
+		other/dist_dots.c
         perp_vector.c
         create_rgb.c
         sprite_utils.c
         validator/enter_validator.c
         take_screenshot.c
-        key_hook.c)
+        key_hook.c
+		hooks.c)
 target_link_libraries(cub3D LibFT)
 if (APPLE)
     target_link_libraries(cub3D

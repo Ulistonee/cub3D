@@ -175,6 +175,10 @@ typedef struct		s_all
 	int				spr_count;
 	t_sprite		*sarr;
 	int				save_flag;
+	t_pos			len;
+	t_pos			dot1;
+	t_pos			dot2;
+	t_pos_i			n;
 }					t_all;
 
 typedef struct		s_ray
@@ -200,7 +204,7 @@ void 				raycast(t_all *all);
 void				parser(t_all *all, char *file_name);
 int					draw_walls(t_all *all, t_ray *ray, int x);
 double				len_of_vec(double x, double y);
-void				perp_vector(t_all *all, double camera_plane, t_ray *ray);
+void				perp_vector(t_ray *ray);
 int					create_rgb(int r, int g, int b);
 int					init_textures(t_all *all);
 void 				add_spr_to_arr(t_all *all, t_sprite **arr_m);
@@ -215,4 +219,10 @@ void 				handle_error(char *message, t_all *all);
 int 				parse_file(char *file_name, t_all *all);
 void				take_screenshot(t_all *all);
 int					key_hook(int keynumber, t_all *all);
+<<<<<<< HEAD
 void				auto_clear(t_all *all);
+void				hooks(t_all *all);
+int					exit_program(t_all *all);
+=======
+void				auto_clear(t_all *all);
+>>>>>>> master

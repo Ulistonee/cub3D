@@ -6,17 +6,27 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/rchalmer/c/cub3D/create_rgb.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/create_rgb.c.o"
   "/Users/rchalmer/c/cub3D/display_utils.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/display_utils.c.o"
+<<<<<<< HEAD
+=======
   "/Users/rchalmer/c/cub3D/dist_dots.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/dist_dots.c.o"
   "/Users/rchalmer/c/cub3D/draw_player.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/draw_player.c.o"
+>>>>>>> master
   "/Users/rchalmer/c/cub3D/draw_walls.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/draw_walls.c.o"
   "/Users/rchalmer/c/cub3D/get_next_line/get_next_line.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/get_next_line/get_next_line.c.o"
   "/Users/rchalmer/c/cub3D/get_next_line/get_next_line_utils.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/get_next_line/get_next_line_utils.c.o"
   "/Users/rchalmer/c/cub3D/handle_error.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/handle_error.c.o"
+  "/Users/rchalmer/c/cub3D/hooks.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/hooks.c.o"
   "/Users/rchalmer/c/cub3D/init_game.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/init_game.c.o"
   "/Users/rchalmer/c/cub3D/key_hook.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/key_hook.c.o"
   "/Users/rchalmer/c/cub3D/len_of_vec.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/len_of_vec.c.o"
   "/Users/rchalmer/c/cub3D/main.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/main.c.o"
+<<<<<<< HEAD
+  "/Users/rchalmer/c/cub3D/other/dist_dots.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/other/dist_dots.c.o"
   "/Users/rchalmer/c/cub3D/other/draw_map.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/other/draw_map.c.o"
+  "/Users/rchalmer/c/cub3D/other/draw_player.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/other/draw_player.c.o"
+=======
+  "/Users/rchalmer/c/cub3D/other/draw_map.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/other/draw_map.c.o"
+>>>>>>> master
   "/Users/rchalmer/c/cub3D/other/scaler.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/other/scaler.c.o"
   "/Users/rchalmer/c/cub3D/parser/is_map.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/parser/is_map.c.o"
   "/Users/rchalmer/c/cub3D/parser/parse_other.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/parser/parse_other.c.o"

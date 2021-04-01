@@ -7,25 +7,28 @@ SRCS	= \
 			get_next_line/get_next_line_utils.c \
 			main.c \
 			handle_error.c \
+<<<<<<< HEAD
+=======
 			draw_player.c \
+>>>>>>> master
 			init_game.c \
 			raycast.c \
 			parser/parser.c \
 			display_utils.c \
 			draw_walls.c\
 			len_of_vec.c \
-			dist_dots.c \
 			perp_vector.c \
 			create_rgb.c \
 			sprite_utils.c \
 			validator/enter_validator.c \
 			take_screenshot.c \
-			key_hook.c
+			key_hook.c \
+			hooks.c
 
 OBJS		= $(patsubst %.c, %.o, $(SRCS))
 
 CC			= gcc
-FLAGS		= #-Wall -Wextra -Werror
+FLAGS		= -Wall -Wextra -Werror
 HEADER		= cub3D.h
 
 RM			= rm -f

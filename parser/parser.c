@@ -46,10 +46,7 @@ int 				parse_file(char *file_name, t_all *all)
 	if (!(all->map.map = (char**)malloc(sizeof(char*) * all->map.lines)))
 		handle_error("Memory allocation error\n, Exit game\n", all);// allocate memory for two-dimensional array
 	while (i < all->map.lines)
-	{
 		all->map.map[i++] = NULL;
-//		i++;
-	}
 	i = 0;
 	if ((fd = open(file_name, O_RDONLY)) < 0)
 		handle_error("Can't open the file, invalid file\n", all);
@@ -72,6 +69,7 @@ int 				parse_file(char *file_name, t_all *all)
 		}
 	}
 	ft_free_mem(&line);
+	return (0);
 }
 
 // we use the sequence pattern: !is_map -> is_map -> '\0'.

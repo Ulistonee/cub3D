@@ -12,7 +12,11 @@
 
 #include "cub3D.h"
 
+<<<<<<< HEAD
+int					exit_program(t_all *all)
+=======
 int				exit_program(t_all *all)
+>>>>>>> master
 {
 	auto_clear(all);
 	exit(EXIT_SUCCESS);
@@ -45,8 +49,6 @@ void				auto_clear(t_all *all)
 		}
 		ft_free_mem(all->map.map);
 	}
-	if (all->sarr)
-		ft_free_mem((char **)all->sarr);
 }
 
 static int			check_extension(char *file, char *exp)
@@ -78,7 +80,8 @@ int					main(int argc, char *argv[])
 	all.map.map = NULL;
 	all.sarr = NULL;
 	if ((argc == 2 && check_extension(argv[1], ".cub"))
-		|| (argc == 3 && (!ft_strncmp("--save", argv[2], ft_strlen(argv[2])))))
+		|| (argc == 3 && (!ft_strncmp("--save", argv[2], 6))
+		&& (!ft_strncmp("--save", argv[2], ft_strlen(argv[2])))))
 	{
 		if (argc == 3)
 			all.save_flag = 1;
@@ -90,10 +93,7 @@ int					main(int argc, char *argv[])
 							all.data.res1, all.data.res2, "cub3D");
 		init_game(&all);
 		display(&all);
-		mlx_hook(all.dsp.mlx_win, 17, (1L << 0), exit_program, &all);
-		mlx_hook(all.dsp.mlx_win, 2, (1L << 0), key_hook, &all);
-		mlx_loop_hook(all.dsp.mlx, display, &all);
-		mlx_loop(all.dsp.mlx);
+		hooks(&all);
 	}
 	else
 		handle_error("Exit game\n", &all);

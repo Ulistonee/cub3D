@@ -127,12 +127,15 @@
 		<Unit filename="/Users/rchalmer/c/cub3D/display_utils.c">
 			<Option target="cub3D"/>
 		</Unit>
+<<<<<<< HEAD
+=======
 		<Unit filename="/Users/rchalmer/c/cub3D/dist_dots.c">
 			<Option target="cub3D"/>
 		</Unit>
 		<Unit filename="/Users/rchalmer/c/cub3D/draw_player.c">
 			<Option target="cub3D"/>
 		</Unit>
+>>>>>>> master
 		<Unit filename="/Users/rchalmer/c/cub3D/draw_walls.c">
 			<Option target="cub3D"/>
 		</Unit>
@@ -146,6 +149,9 @@
 			<Option target="cub3D"/>
 		</Unit>
 		<Unit filename="/Users/rchalmer/c/cub3D/handle_error.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/rchalmer/c/cub3D/hooks.c">
 			<Option target="cub3D"/>
 		</Unit>
 		<Unit filename="/Users/rchalmer/c/cub3D/init_game.c">
@@ -277,12 +283,27 @@
 		<Unit filename="/Users/rchalmer/c/cub3D/main.c">
 			<Option target="cub3D"/>
 		</Unit>
+<<<<<<< HEAD
+		<Unit filename="/Users/rchalmer/c/cub3D/other/dist_dots.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/rchalmer/c/cub3D/other/draw_map.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/rchalmer/c/cub3D/other/draw_player.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/rchalmer/c/cub3D/other/scaler.c">
+			<Option target="cub3D"/>
+		</Unit>
+=======
 		<Unit filename="/Users/rchalmer/c/cub3D/other/draw_map.c">
 			<Option target="cub3D"/>
 		</Unit>
 		<Unit filename="/Users/rchalmer/c/cub3D/other/scaler.c">
 			<Option target="cub3D"/>
 		</Unit>
+>>>>>>> master
 		<Unit filename="/Users/rchalmer/c/cub3D/parser/is_map.c">
 			<Option target="cub3D"/>
 		</Unit>

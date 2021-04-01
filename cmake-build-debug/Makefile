@@ -210,6 +210,8 @@ display_utils.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/display_utils.c.s
 .PHONY : display_utils.c.s
 
+<<<<<<< HEAD
+=======
 dist_dots.o: dist_dots.c.o
 
 .PHONY : dist_dots.o
@@ -264,6 +266,7 @@ draw_player.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/draw_player.c.s
 .PHONY : draw_player.c.s
 
+>>>>>>> master
 draw_walls.o: draw_walls.c.o
 
 .PHONY : draw_walls.o
@@ -371,6 +374,33 @@ handle_error.s: handle_error.c.s
 handle_error.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/handle_error.c.s
 .PHONY : handle_error.c.s
+
+hooks.o: hooks.c.o
+
+.PHONY : hooks.o
+
+# target to build an object file
+hooks.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/hooks.c.o
+.PHONY : hooks.c.o
+
+hooks.i: hooks.c.i
+
+.PHONY : hooks.i
+
+# target to preprocess a source file
+hooks.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/hooks.c.i
+.PHONY : hooks.c.i
+
+hooks.s: hooks.c.s
+
+.PHONY : hooks.s
+
+# target to generate assembly for a file
+hooks.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/hooks.c.s
+.PHONY : hooks.c.s
 
 init_game.o: init_game.c.o
 
@@ -1533,6 +1563,36 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/main.c.s
 .PHONY : main.c.s
 
+<<<<<<< HEAD
+other/dist_dots.o: other/dist_dots.c.o
+
+.PHONY : other/dist_dots.o
+
+# target to build an object file
+other/dist_dots.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/other/dist_dots.c.o
+.PHONY : other/dist_dots.c.o
+
+other/dist_dots.i: other/dist_dots.c.i
+
+.PHONY : other/dist_dots.i
+
+# target to preprocess a source file
+other/dist_dots.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/other/dist_dots.c.i
+.PHONY : other/dist_dots.c.i
+
+other/dist_dots.s: other/dist_dots.c.s
+
+.PHONY : other/dist_dots.s
+
+# target to generate assembly for a file
+other/dist_dots.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/other/dist_dots.c.s
+.PHONY : other/dist_dots.c.s
+
+=======
+>>>>>>> master
 other/draw_map.o: other/draw_map.c.o
 
 .PHONY : other/draw_map.o
@@ -1560,6 +1620,36 @@ other/draw_map.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/other/draw_map.c.s
 .PHONY : other/draw_map.c.s
 
+<<<<<<< HEAD
+other/draw_player.o: other/draw_player.c.o
+
+.PHONY : other/draw_player.o
+
+# target to build an object file
+other/draw_player.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/other/draw_player.c.o
+.PHONY : other/draw_player.c.o
+
+other/draw_player.i: other/draw_player.c.i
+
+.PHONY : other/draw_player.i
+
+# target to preprocess a source file
+other/draw_player.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/other/draw_player.c.i
+.PHONY : other/draw_player.c.i
+
+other/draw_player.s: other/draw_player.c.s
+
+.PHONY : other/draw_player.s
+
+# target to generate assembly for a file
+other/draw_player.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/other/draw_player.c.s
+.PHONY : other/draw_player.c.s
+
+=======
+>>>>>>> master
 other/scaler.o: other/scaler.c.o
 
 .PHONY : other/scaler.o
@@ -1819,12 +1909,15 @@ help:
 	@echo "... display_utils.o"
 	@echo "... display_utils.i"
 	@echo "... display_utils.s"
+<<<<<<< HEAD
+=======
 	@echo "... dist_dots.o"
 	@echo "... dist_dots.i"
 	@echo "... dist_dots.s"
 	@echo "... draw_player.o"
 	@echo "... draw_player.i"
 	@echo "... draw_player.s"
+>>>>>>> master
 	@echo "... draw_walls.o"
 	@echo "... draw_walls.i"
 	@echo "... draw_walls.s"
@@ -1837,6 +1930,9 @@ help:
 	@echo "... handle_error.o"
 	@echo "... handle_error.i"
 	@echo "... handle_error.s"
+	@echo "... hooks.o"
+	@echo "... hooks.i"
+	@echo "... hooks.s"
 	@echo "... init_game.o"
 	@echo "... init_game.i"
 	@echo "... init_game.s"
@@ -1966,9 +2062,21 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+<<<<<<< HEAD
+	@echo "... other/dist_dots.o"
+	@echo "... other/dist_dots.i"
+	@echo "... other/dist_dots.s"
 	@echo "... other/draw_map.o"
 	@echo "... other/draw_map.i"
 	@echo "... other/draw_map.s"
+	@echo "... other/draw_player.o"
+	@echo "... other/draw_player.i"
+	@echo "... other/draw_player.s"
+=======
+	@echo "... other/draw_map.o"
+	@echo "... other/draw_map.i"
+	@echo "... other/draw_map.s"
+>>>>>>> master
 	@echo "... other/scaler.o"
 	@echo "... other/scaler.i"
 	@echo "... other/scaler.s"

@@ -181,18 +181,25 @@ CMakeFiles/cub3D.dir/other/scaler.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/other/scaler.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rchalmer/c/cub3D/other/scaler.c -o CMakeFiles/cub3D.dir/other/scaler.c.s
 
+<<<<<<< HEAD
+CMakeFiles/cub3D.dir/other/draw_player.c.o: CMakeFiles/cub3D.dir/flags.make
+CMakeFiles/cub3D.dir/other/draw_player.c.o: ../other/draw_player.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/cub3D.dir/other/draw_player.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cub3D.dir/other/draw_player.c.o   -c /Users/rchalmer/c/cub3D/other/draw_player.c
+=======
 CMakeFiles/cub3D.dir/draw_player.c.o: CMakeFiles/cub3D.dir/flags.make
 CMakeFiles/cub3D.dir/draw_player.c.o: ../draw_player.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/cub3D.dir/draw_player.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cub3D.dir/draw_player.c.o   -c /Users/rchalmer/c/cub3D/draw_player.c
+>>>>>>> master
 
-CMakeFiles/cub3D.dir/draw_player.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cub3D.dir/draw_player.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/rchalmer/c/cub3D/draw_player.c > CMakeFiles/cub3D.dir/draw_player.c.i
+CMakeFiles/cub3D.dir/other/draw_player.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cub3D.dir/other/draw_player.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/rchalmer/c/cub3D/other/draw_player.c > CMakeFiles/cub3D.dir/other/draw_player.c.i
 
-CMakeFiles/cub3D.dir/draw_player.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/draw_player.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rchalmer/c/cub3D/draw_player.c -o CMakeFiles/cub3D.dir/draw_player.c.s
+CMakeFiles/cub3D.dir/other/draw_player.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/other/draw_player.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rchalmer/c/cub3D/other/draw_player.c -o CMakeFiles/cub3D.dir/other/draw_player.c.s
 
 CMakeFiles/cub3D.dir/init_game.c.o: CMakeFiles/cub3D.dir/flags.make
 CMakeFiles/cub3D.dir/init_game.c.o: ../init_game.c
@@ -272,18 +279,25 @@ CMakeFiles/cub3D.dir/len_of_vec.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/len_of_vec.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rchalmer/c/cub3D/len_of_vec.c -o CMakeFiles/cub3D.dir/len_of_vec.c.s
 
+<<<<<<< HEAD
+CMakeFiles/cub3D.dir/other/dist_dots.c.o: CMakeFiles/cub3D.dir/flags.make
+CMakeFiles/cub3D.dir/other/dist_dots.c.o: ../other/dist_dots.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/cub3D.dir/other/dist_dots.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cub3D.dir/other/dist_dots.c.o   -c /Users/rchalmer/c/cub3D/other/dist_dots.c
+=======
 CMakeFiles/cub3D.dir/dist_dots.c.o: CMakeFiles/cub3D.dir/flags.make
 CMakeFiles/cub3D.dir/dist_dots.c.o: ../dist_dots.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/cub3D.dir/dist_dots.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cub3D.dir/dist_dots.c.o   -c /Users/rchalmer/c/cub3D/dist_dots.c
+>>>>>>> master
 
-CMakeFiles/cub3D.dir/dist_dots.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cub3D.dir/dist_dots.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/rchalmer/c/cub3D/dist_dots.c > CMakeFiles/cub3D.dir/dist_dots.c.i
+CMakeFiles/cub3D.dir/other/dist_dots.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cub3D.dir/other/dist_dots.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/rchalmer/c/cub3D/other/dist_dots.c > CMakeFiles/cub3D.dir/other/dist_dots.c.i
 
-CMakeFiles/cub3D.dir/dist_dots.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/dist_dots.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rchalmer/c/cub3D/dist_dots.c -o CMakeFiles/cub3D.dir/dist_dots.c.s
+CMakeFiles/cub3D.dir/other/dist_dots.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/other/dist_dots.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rchalmer/c/cub3D/other/dist_dots.c -o CMakeFiles/cub3D.dir/other/dist_dots.c.s
 
 CMakeFiles/cub3D.dir/perp_vector.c.o: CMakeFiles/cub3D.dir/flags.make
 CMakeFiles/cub3D.dir/perp_vector.c.o: ../perp_vector.c
@@ -363,6 +377,19 @@ CMakeFiles/cub3D.dir/key_hook.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/key_hook.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rchalmer/c/cub3D/key_hook.c -o CMakeFiles/cub3D.dir/key_hook.c.s
 
+CMakeFiles/cub3D.dir/hooks.c.o: CMakeFiles/cub3D.dir/flags.make
+CMakeFiles/cub3D.dir/hooks.c.o: ../hooks.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/cub3D.dir/hooks.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cub3D.dir/hooks.c.o   -c /Users/rchalmer/c/cub3D/hooks.c
+
+CMakeFiles/cub3D.dir/hooks.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cub3D.dir/hooks.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/rchalmer/c/cub3D/hooks.c > CMakeFiles/cub3D.dir/hooks.c.i
+
+CMakeFiles/cub3D.dir/hooks.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/hooks.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rchalmer/c/cub3D/hooks.c -o CMakeFiles/cub3D.dir/hooks.c.s
+
 # Object files for target cub3D
 cub3D_OBJECTS = \
 "CMakeFiles/cub3D.dir/main.c.o" \
@@ -373,20 +400,25 @@ cub3D_OBJECTS = \
 "CMakeFiles/cub3D.dir/get_next_line/get_next_line_utils.c.o" \
 "CMakeFiles/cub3D.dir/handle_error.c.o" \
 "CMakeFiles/cub3D.dir/other/scaler.c.o" \
+<<<<<<< HEAD
+"CMakeFiles/cub3D.dir/other/draw_player.c.o" \
+=======
 "CMakeFiles/cub3D.dir/draw_player.c.o" \
+>>>>>>> master
 "CMakeFiles/cub3D.dir/init_game.c.o" \
 "CMakeFiles/cub3D.dir/raycast.c.o" \
 "CMakeFiles/cub3D.dir/other/draw_map.c.o" \
 "CMakeFiles/cub3D.dir/display_utils.c.o" \
 "CMakeFiles/cub3D.dir/draw_walls.c.o" \
 "CMakeFiles/cub3D.dir/len_of_vec.c.o" \
-"CMakeFiles/cub3D.dir/dist_dots.c.o" \
+"CMakeFiles/cub3D.dir/other/dist_dots.c.o" \
 "CMakeFiles/cub3D.dir/perp_vector.c.o" \
 "CMakeFiles/cub3D.dir/create_rgb.c.o" \
 "CMakeFiles/cub3D.dir/sprite_utils.c.o" \
 "CMakeFiles/cub3D.dir/validator/enter_validator.c.o" \
 "CMakeFiles/cub3D.dir/take_screenshot.c.o" \
-"CMakeFiles/cub3D.dir/key_hook.c.o"
+"CMakeFiles/cub3D.dir/key_hook.c.o" \
+"CMakeFiles/cub3D.dir/hooks.c.o"
 
 # External object files for target cub3D
 cub3D_EXTERNAL_OBJECTS =
@@ -399,20 +431,25 @@ cub3D: CMakeFiles/cub3D.dir/get_next_line/get_next_line.c.o
 cub3D: CMakeFiles/cub3D.dir/get_next_line/get_next_line_utils.c.o
 cub3D: CMakeFiles/cub3D.dir/handle_error.c.o
 cub3D: CMakeFiles/cub3D.dir/other/scaler.c.o
+<<<<<<< HEAD
+cub3D: CMakeFiles/cub3D.dir/other/draw_player.c.o
+=======
 cub3D: CMakeFiles/cub3D.dir/draw_player.c.o
+>>>>>>> master
 cub3D: CMakeFiles/cub3D.dir/init_game.c.o
 cub3D: CMakeFiles/cub3D.dir/raycast.c.o
 cub3D: CMakeFiles/cub3D.dir/other/draw_map.c.o
 cub3D: CMakeFiles/cub3D.dir/display_utils.c.o
 cub3D: CMakeFiles/cub3D.dir/draw_walls.c.o
 cub3D: CMakeFiles/cub3D.dir/len_of_vec.c.o
-cub3D: CMakeFiles/cub3D.dir/dist_dots.c.o
+cub3D: CMakeFiles/cub3D.dir/other/dist_dots.c.o
 cub3D: CMakeFiles/cub3D.dir/perp_vector.c.o
 cub3D: CMakeFiles/cub3D.dir/create_rgb.c.o
 cub3D: CMakeFiles/cub3D.dir/sprite_utils.c.o
 cub3D: CMakeFiles/cub3D.dir/validator/enter_validator.c.o
 cub3D: CMakeFiles/cub3D.dir/take_screenshot.c.o
 cub3D: CMakeFiles/cub3D.dir/key_hook.c.o
+cub3D: CMakeFiles/cub3D.dir/hooks.c.o
 cub3D: CMakeFiles/cub3D.dir/build.make
 cub3D: libLibFT.a
 cub3D: libLibFT.a

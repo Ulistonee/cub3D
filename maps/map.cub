@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+R        500     500
+=======
 R        3000     3000
+>>>>>>> master
 SO textures/mc_bg.xpm
 NO textures/mc_bg.xpm
 

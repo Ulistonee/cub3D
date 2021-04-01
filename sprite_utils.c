@@ -79,7 +79,6 @@ void		vsl_sprite(double *z_buff, t_all *all, t_sprite sprite, t_pos proj_coor)
 	double				i;
 	t_pos				s_dot;
 	int					color;
-	int					scl;
 
 	sprite.width = fabs(all->data.res2 / proj_coor.y);
 	sprite.start.x = proj_coor.x - sprite.width / 2;
