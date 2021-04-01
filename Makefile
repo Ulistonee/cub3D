@@ -7,10 +7,6 @@ SRCS	= \
 			get_next_line/get_next_line_utils.c \
 			main.c \
 			handle_error.c \
-<<<<<<< HEAD
-=======
-			draw_player.c \
->>>>>>> master
 			init_game.c \
 			raycast.c \
 			parser/parser.c \

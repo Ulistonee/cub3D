@@ -219,10 +219,6 @@ void 				handle_error(char *message, t_all *all);
 int 				parse_file(char *file_name, t_all *all);
 void				take_screenshot(t_all *all);
 int					key_hook(int keynumber, t_all *all);
-<<<<<<< HEAD
 void				auto_clear(t_all *all);
 void				hooks(t_all *all);
 int					exit_program(t_all *all);
-=======
-void				auto_clear(t_all *all);
->>>>>>> master

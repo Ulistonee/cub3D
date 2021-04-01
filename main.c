@@ -12,11 +12,7 @@
 
 #include "cub3D.h"
 
-<<<<<<< HEAD
 int					exit_program(t_all *all)
-=======
-int				exit_program(t_all *all)
->>>>>>> master
 {
 	auto_clear(all);
 	exit(EXIT_SUCCESS);

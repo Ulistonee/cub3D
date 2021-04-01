@@ -210,63 +210,6 @@ display_utils.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/display_utils.c.s
 .PHONY : display_utils.c.s
 
-<<<<<<< HEAD
-=======
-dist_dots.o: dist_dots.c.o
-
-.PHONY : dist_dots.o
-
-# target to build an object file
-dist_dots.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/dist_dots.c.o
-.PHONY : dist_dots.c.o
-
-dist_dots.i: dist_dots.c.i
-
-.PHONY : dist_dots.i
-
-# target to preprocess a source file
-dist_dots.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/dist_dots.c.i
-.PHONY : dist_dots.c.i
-
-dist_dots.s: dist_dots.c.s
-
-.PHONY : dist_dots.s
-
-# target to generate assembly for a file
-dist_dots.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/dist_dots.c.s
-.PHONY : dist_dots.c.s
-
-draw_player.o: draw_player.c.o
-
-.PHONY : draw_player.o
-
-# target to build an object file
-draw_player.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/draw_player.c.o
-.PHONY : draw_player.c.o
-
-draw_player.i: draw_player.c.i
-
-.PHONY : draw_player.i
-
-# target to preprocess a source file
-draw_player.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/draw_player.c.i
-.PHONY : draw_player.c.i
-
-draw_player.s: draw_player.c.s
-
-.PHONY : draw_player.s
-
-# target to generate assembly for a file
-draw_player.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/draw_player.c.s
-.PHONY : draw_player.c.s
-
->>>>>>> master
 draw_walls.o: draw_walls.c.o
 
 .PHONY : draw_walls.o
@@ -1563,7 +1506,6 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/main.c.s
 .PHONY : main.c.s
 
-<<<<<<< HEAD
 other/dist_dots.o: other/dist_dots.c.o
 
 .PHONY : other/dist_dots.o
@@ -1591,8 +1533,6 @@ other/dist_dots.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/other/dist_dots.c.s
 .PHONY : other/dist_dots.c.s
 
-=======
->>>>>>> master
 other/draw_map.o: other/draw_map.c.o
 
 .PHONY : other/draw_map.o
@@ -1620,7 +1560,6 @@ other/draw_map.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/other/draw_map.c.s
 .PHONY : other/draw_map.c.s
 
-<<<<<<< HEAD
 other/draw_player.o: other/draw_player.c.o
 
 .PHONY : other/draw_player.o
@@ -1648,8 +1587,6 @@ other/draw_player.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/other/draw_player.c.s
 .PHONY : other/draw_player.c.s
 
-=======
->>>>>>> master
 other/scaler.o: other/scaler.c.o
 
 .PHONY : other/scaler.o
@@ -1909,15 +1846,6 @@ help:
 	@echo "... display_utils.o"
 	@echo "... display_utils.i"
 	@echo "... display_utils.s"
-<<<<<<< HEAD
-=======
-	@echo "... dist_dots.o"
-	@echo "... dist_dots.i"
-	@echo "... dist_dots.s"
-	@echo "... draw_player.o"
-	@echo "... draw_player.i"
-	@echo "... draw_player.s"
->>>>>>> master
 	@echo "... draw_walls.o"
 	@echo "... draw_walls.i"
 	@echo "... draw_walls.s"
@@ -2062,7 +1990,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-<<<<<<< HEAD
 	@echo "... other/dist_dots.o"
 	@echo "... other/dist_dots.i"
 	@echo "... other/dist_dots.s"
@@ -2072,11 +1999,6 @@ help:
 	@echo "... other/draw_player.o"
 	@echo "... other/draw_player.i"
 	@echo "... other/draw_player.s"
-=======
-	@echo "... other/draw_map.o"
-	@echo "... other/draw_map.i"
-	@echo "... other/draw_map.s"
->>>>>>> master
 	@echo "... other/scaler.o"
 	@echo "... other/scaler.i"
 	@echo "... other/scaler.s"

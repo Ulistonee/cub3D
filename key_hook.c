@@ -73,11 +73,7 @@ void				make_movement(int keynumber, t_all *all, t_pos *new_pos)
 		get_coordinates(all, new_pos);
 }
 
-<<<<<<< HEAD
 int					key_hook(int keynumber, t_all *all)
-=======
-int				key_hook(int keynumber, t_all *all)
->>>>>>> master
 {
 	t_pos			new_pos;
 

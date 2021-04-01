@@ -106,7 +106,6 @@ int					init_game(t_all *all)
 	int y;
 
 	y = 0;
-	all->spr_count = 0;
 	while (y < all->map.lines)
 	{
 		x = 0;

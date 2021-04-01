@@ -1,11 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cub3D.dir/create_rgb.c.o"
   "CMakeFiles/cub3D.dir/display_utils.c.o"
-<<<<<<< HEAD
-=======
-  "CMakeFiles/cub3D.dir/dist_dots.c.o"
-  "CMakeFiles/cub3D.dir/draw_player.c.o"
->>>>>>> master
   "CMakeFiles/cub3D.dir/draw_walls.c.o"
   "CMakeFiles/cub3D.dir/get_next_line/get_next_line.c.o"
   "CMakeFiles/cub3D.dir/get_next_line/get_next_line_utils.c.o"
@@ -15,13 +10,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/cub3D.dir/key_hook.c.o"
   "CMakeFiles/cub3D.dir/len_of_vec.c.o"
   "CMakeFiles/cub3D.dir/main.c.o"
-<<<<<<< HEAD
   "CMakeFiles/cub3D.dir/other/dist_dots.c.o"
   "CMakeFiles/cub3D.dir/other/draw_map.c.o"
   "CMakeFiles/cub3D.dir/other/draw_player.c.o"
-=======
-  "CMakeFiles/cub3D.dir/other/draw_map.c.o"
->>>>>>> master
   "CMakeFiles/cub3D.dir/other/scaler.c.o"
   "CMakeFiles/cub3D.dir/parser/is_map.c.o"
   "CMakeFiles/cub3D.dir/parser/parse_other.c.o"
