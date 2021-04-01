@@ -1776,6 +1776,60 @@ sprite_utils.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/sprite_utils.c.s
 .PHONY : sprite_utils.c.s
 
+sprite_utils_part_three.o: sprite_utils_part_three.c.o
+
+.PHONY : sprite_utils_part_three.o
+
+# target to build an object file
+sprite_utils_part_three.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/sprite_utils_part_three.c.o
+.PHONY : sprite_utils_part_three.c.o
+
+sprite_utils_part_three.i: sprite_utils_part_three.c.i
+
+.PHONY : sprite_utils_part_three.i
+
+# target to preprocess a source file
+sprite_utils_part_three.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/sprite_utils_part_three.c.i
+.PHONY : sprite_utils_part_three.c.i
+
+sprite_utils_part_three.s: sprite_utils_part_three.c.s
+
+.PHONY : sprite_utils_part_three.s
+
+# target to generate assembly for a file
+sprite_utils_part_three.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/sprite_utils_part_three.c.s
+.PHONY : sprite_utils_part_three.c.s
+
+sprite_utils_part_two.o: sprite_utils_part_two.c.o
+
+.PHONY : sprite_utils_part_two.o
+
+# target to build an object file
+sprite_utils_part_two.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/sprite_utils_part_two.c.o
+.PHONY : sprite_utils_part_two.c.o
+
+sprite_utils_part_two.i: sprite_utils_part_two.c.i
+
+.PHONY : sprite_utils_part_two.i
+
+# target to preprocess a source file
+sprite_utils_part_two.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/sprite_utils_part_two.c.i
+.PHONY : sprite_utils_part_two.c.i
+
+sprite_utils_part_two.s: sprite_utils_part_two.c.s
+
+.PHONY : sprite_utils_part_two.s
+
+# target to generate assembly for a file
+sprite_utils_part_two.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/sprite_utils_part_two.c.s
+.PHONY : sprite_utils_part_two.c.s
+
 take_screenshot.o: take_screenshot.c.o
 
 .PHONY : take_screenshot.o
@@ -2020,6 +2074,12 @@ help:
 	@echo "... sprite_utils.o"
 	@echo "... sprite_utils.i"
 	@echo "... sprite_utils.s"
+	@echo "... sprite_utils_part_three.o"
+	@echo "... sprite_utils_part_three.i"
+	@echo "... sprite_utils_part_three.s"
+	@echo "... sprite_utils_part_two.o"
+	@echo "... sprite_utils_part_two.i"
+	@echo "... sprite_utils_part_two.s"
 	@echo "... take_screenshot.o"
 	@echo "... take_screenshot.i"
 	@echo "... take_screenshot.s"

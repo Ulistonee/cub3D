@@ -67,15 +67,15 @@ typedef struct		s_image
 	int				w;
 	int				tag;
 	int				scl;
-}					t_image;
+}					t_img;
 
 typedef struct		s_tex
 {
-	t_image			ntx;
-	t_image			etx;
-	t_image			wtx;
-	t_image			stx;
-	t_image			s;
+	t_img			ntx;
+	t_img			etx;
+	t_img			wtx;
+	t_img			stx;
+	t_img			s;
 }					t_tex;
 
 typedef struct		s_walls
@@ -83,7 +83,7 @@ typedef struct		s_walls
 	double			wall_h;
 	double			top;
 	double			bottom;
-	t_image			side;
+	t_img			side;
 }					t_walls;
 
 
@@ -171,7 +171,7 @@ typedef struct		s_all
 	t_walls			w;
 	t_tex			tx;
 	t_tex			s;
-	t_image			image;
+	t_img			image;
 	int				spr_count;
 	t_sprite		*sarr;
 	int				save_flag;
@@ -179,6 +179,7 @@ typedef struct		s_all
 	t_pos			dot1;
 	t_pos			dot2;
 	t_pos_i			n;
+	t_pos			proj_coor;
 }					t_all;
 
 typedef struct		s_ray
@@ -210,7 +211,7 @@ int					init_textures(t_all *all);
 void 				add_spr_to_arr(t_all *all, t_sprite **arr_m);
 void				draw_sprites(double *z_buf, t_all *all);
 void				hide_spr(t_all *all);
-int					get_color(t_image *image, int x, int y);
+int					gclr(t_img *image, int x, int y);
 void				init_spr(t_all *all, t_pos_i map);
 int 				display(t_all *all);
 void				my_mlx_pixel_put(t_all *all, int x, int y, int color);
@@ -222,3 +223,6 @@ int					key_hook(int keynumber, t_all *all);
 void				auto_clear(t_all *all);
 void				hooks(t_all *all);
 int					exit_program(t_all *all);
+//t_pos				project_spr(t_pos m, t_pos n, t_pos d0, t_pos dot);
+t_pos				project_spr(t_all *all, t_pos dot);
+void				sprite_dimensions(t_all *all, t_sprite *sprite);

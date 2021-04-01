@@ -304,6 +304,12 @@
 		<Unit filename="/Users/rchalmer/c/cub3D/sprite_utils.c">
 			<Option target="cub3D"/>
 		</Unit>
+		<Unit filename="/Users/rchalmer/c/cub3D/sprite_utils_part_three.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/rchalmer/c/cub3D/sprite_utils_part_two.c">
+			<Option target="cub3D"/>
+		</Unit>
 		<Unit filename="/Users/rchalmer/c/cub3D/take_screenshot.c">
 			<Option target="cub3D"/>
 		</Unit>

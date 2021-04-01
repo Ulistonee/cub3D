@@ -16,6 +16,8 @@ SRCS	= \
 			perp_vector.c \
 			create_rgb.c \
 			sprite_utils.c \
+			sprite_utils_part_two.c \
+			sprite_utils_part_three.c \
 			validator/enter_validator.c \
 			take_screenshot.c \
 			key_hook.c \

@@ -36,7 +36,7 @@ int						draw_walls(t_all *all, t_ray *ray, int x)
 		if (y > all->w.top && y < all->w.bottom)
 		{
 			txt_d.y = (y - all->w.top) * all->w.side.h / all->w.wall_h;
-			color = get_color(&all->w.side, (int)txt_d.x, (int)txt_d.y);
+			color = gclr(&all->w.side, (int)txt_d.x, (int)txt_d.y);
 			my_mlx_pixel_put(all, x, y, color);
 		}
 		if (y < all->w.top)

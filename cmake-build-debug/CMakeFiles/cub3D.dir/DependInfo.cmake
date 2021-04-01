@@ -25,6 +25,8 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/rchalmer/c/cub3D/perp_vector.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/perp_vector.c.o"
   "/Users/rchalmer/c/cub3D/raycast.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/raycast.c.o"
   "/Users/rchalmer/c/cub3D/sprite_utils.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/sprite_utils.c.o"
+  "/Users/rchalmer/c/cub3D/sprite_utils_part_three.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/sprite_utils_part_three.c.o"
+  "/Users/rchalmer/c/cub3D/sprite_utils_part_two.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/sprite_utils_part_two.c.o"
   "/Users/rchalmer/c/cub3D/take_screenshot.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/take_screenshot.c.o"
   "/Users/rchalmer/c/cub3D/validator/enter_validator.c" "/Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/validator/enter_validator.c.o"
   )

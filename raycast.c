@@ -83,8 +83,8 @@ int					calc_grid(t_all *all, t_ray *ray)
 {
 	t_pos_i		map;
 
-	all->n.x =  (ray->dir.x < 0)? -1 : 1;
-	all->n.y =  (ray->dir.y < 0)? -1 : 1;
+	all->n.x = (ray->dir.x < 0) ? -1 : 1;
+	all->n.y = (ray->dir.y < 0) ? -1 : 1;
 	map.x = (int)all->plr.pos.x;
 	map.y = (int)all->plr.pos.y;
 	while (all->map.map[map.y][map.x] != '1')
@@ -94,28 +94,12 @@ int					calc_grid(t_all *all, t_ray *ray)
 		if (ray->dir.x == 0)
 			all->len.y = fabs(all->plr.pos.y - all->dot2.y);
 		else
-			all->len.x =  calc_trian(all, ray, &all->dot1);
+			all->len.x = calc_trian(all, ray, &all->dot1);
 		if (ray->dir.y == 0)
 			all->len.x = fabs(all->plr.pos.x - all->dot1.x);
 		else
 			all->len.y = calc_trian_y(all, ray, &all->dot2);
 		final_spot(all, ray, &map);
-//		if (all->len.x < all->len.y)
-//		{
-//			ray->len = all->len.x;
-//			ray->dot = all->dot1;
-//			map.x += all->n.x;
-//			all->w.side = (ray->dir.x < 0) ? all->tx.wtx : all->tx.etx;
-//			all->w.side.tag = (ray->dir.x < 0) ? 'W' : 'E';
-//		}
-//		else
-//		{
-//			ray->len = all->len.y;
-//			ray->dot = all->dot2;
-//			map.y += all->n.y;
-//			all->w.side = (ray->dir.y < 0) ? all->tx.ntx : all->tx.stx;
-//			all->w.side.tag = (ray->dir.y < 0) ? 'N' : 'S';
-//		}
 		if (all->map.map[map.y][map.x] == '2')
 			init_spr(all, map);
 	}

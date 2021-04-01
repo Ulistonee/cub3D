@@ -20,6 +20,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/cub3D.dir/perp_vector.c.o"
   "CMakeFiles/cub3D.dir/raycast.c.o"
   "CMakeFiles/cub3D.dir/sprite_utils.c.o"
+  "CMakeFiles/cub3D.dir/sprite_utils_part_three.c.o"
+  "CMakeFiles/cub3D.dir/sprite_utils_part_two.c.o"
   "CMakeFiles/cub3D.dir/take_screenshot.c.o"
   "CMakeFiles/cub3D.dir/validator/enter_validator.c.o"
   "cub3D"
