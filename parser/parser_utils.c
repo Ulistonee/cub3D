@@ -48,13 +48,13 @@ void					init_val(t_all *all)
 	all->data.p = 0;
 }
 
-void				parse_color_util(t_all *all, char **line, int *dst)
+void					parse_color_util(t_all *all, char **line, int *dst)
 {
 	while (**line == ' ')
 		(*line)++;
 	if (ft_isdigit(**line))
 	{
-		if(*dst != -1)
+		if (*dst != -1)
 			handle_error("Too much data\n", all);
 		*dst = ft_atoi(*line);
 	}
@@ -62,7 +62,7 @@ void				parse_color_util(t_all *all, char **line, int *dst)
 		(*line)++;
 }
 
-int					is_map(char *line)
+int						is_map(char *line)
 {
 	if (*line == '\0')
 		return (0);

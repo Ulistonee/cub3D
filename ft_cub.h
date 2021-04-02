@@ -146,7 +146,6 @@ typedef struct		s_all
 	t_walls			w;
 	t_tex			tx;
 	t_tex			s;
-	t_img			image;
 	int				spr_count;
 	t_sprite		*sarr;
 	int				save_flag;
@@ -155,6 +154,7 @@ typedef struct		s_all
 	t_pos			dot2;
 	t_pos_i			n;
 	t_pos			p_coor;
+	int				plr_count;
 }					t_all;
 
 typedef struct		s_ray
@@ -185,7 +185,6 @@ int					display(t_all *all);
 void				my_mlx_pixel_put(t_all *all, int x, int y, int color);
 int					enter_validator(t_all *all);
 void				handle_error(char *message, t_all *all);
-//int					parse_file(char *file_name, t_all *all);
 void				take_screenshot(t_all *all);
 int					key_hook(int keynumber, t_all *all);
 void				auto_clear(t_all *all);
