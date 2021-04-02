@@ -116,10 +116,12 @@ void				raycast(t_all *all)
 	t_ray		ray;
 	double		camera_plane;
 	int			x;
-	double		z_buf[all->data.res1];
+	double		*z_buf;
 
 	x = 0;
 	hide_spr(all);
+	if (!(z_buf = (double *)malloc(sizeof(double) * all->data.res1)))
+		handle_error("Memory allocation error!\n", all);
 	while (x < all->data.res1)
 	{
 		camera_plane = 2 * x / (double)all->data.res1 - 1;
@@ -132,4 +134,5 @@ void				raycast(t_all *all)
 		x++;
 	}
 	draw_sprites(z_buf, all);
+	free(z_buf);
 }

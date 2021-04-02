@@ -1,17 +1,11 @@
-R        23000     23000
-
+R        640     480
 SO textures/mc_bg.xpm
 NO textures/mc_bg.xpm
-
-
-
 WE textures/mc_bg.xpm
 EA textures/mc_bg.xpm
-S      textures/sprite.xpm
-
-C     85,     85,        85
-
-F  51,    102,    100
+S textures/sprite.xpm
+C 85,     85,        85
+F 51,    102,    100
 
 
 1111111111111111111111111
@@ -31,3 +25,4 @@ F  51,    102,    100
 11000001111111111111111110000000011
 11110111               101111010001
 11111111111111111111111111111111111
+1

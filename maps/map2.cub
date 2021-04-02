@@ -1,12 +1,11 @@
-R 680 680
-NO           textures/cowboy.xpm
-SO      textures/django_unchaned.xpm
-WE     textures/james_din.xpm
-EA    textures/marilyn-monroe.xpm
-S textures/barrel.xpm
-
-F 255, 140, 0
-C 0,    0,0
+R        640     480
+SO textures/mc_bg.xpm
+NO textures/mc_bg.xpm
+WE textures/mc_bg.xpm
+EA textures/mc_bg.xpm
+S textures/sprite.xpm
+C 85,     85,        85
+F 51,    102,    100
 
 
 111111111111
