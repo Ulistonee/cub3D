@@ -10,18 +10,18 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-# include <unistd.h>
-# include <stdlib.h>
-# include <stdarg.h>
-# include <stdio.h>
-# include <fcntl.h>
-# include <string.h> // for strerror
-# include <errno.h> // for errno
-# include <stdlib.h> // for exit
-# include <math.h>
-# include "minilibx_opengl_20191021/mlx.h"
-# include "libft/libft.h"
-# include "get_next_line/get_next_line.h"
+#include <unistd.h>
+#include <stdlib.h>
+#include <stdarg.h>
+#include <stdio.h>
+#include <fcntl.h>
+#include <string.h>
+#include <errno.h>
+#include <stdlib.h>
+#include <math.h>
+#include "minilibx_opengl_20191021/mlx.h"
+#include "libft/libft.h"
+#include "get_next_line/get_next_line.h"
 //# include "libmlx/mlx.h"
 #define VALID_SYMBOLS "102 NEWS"
 #define SCALE 45

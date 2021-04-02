@@ -2,7 +2,7 @@ NAME		= cub3D
 
 SRCS	= \
 			parser/parse_other.c \
-			parser/is_map.c \
+			parser/parser_utils.c \
 			get_next_line/get_next_line.c \
 			get_next_line/get_next_line_utils.c \
 			main.c \
@@ -27,7 +27,7 @@ OBJS		= $(patsubst %.c, %.o, $(SRCS))
 
 CC			= gcc
 FLAGS		= -Wall -Wextra -Werror
-HEADER		= cub3D.h
+HEADER		= ft_cub.h
 
 RM			= rm -f
 

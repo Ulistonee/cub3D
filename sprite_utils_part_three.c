@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cub3D.h"
+#include "ft_cub.h"
 
 void			sprite_dimensions(t_all *all, t_sprite *spr)
 {

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cub3D.h"
+#include "ft_cub.h"
 
 void		init_spr(t_all *all, t_pos_i map)
 {

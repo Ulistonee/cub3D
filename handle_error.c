@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cub3D.h"
+#include "ft_cub.h"
 
 void				handle_error(char *message, t_all *all)
 {

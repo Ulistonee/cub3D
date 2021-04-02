@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cub3D.h"
+#include "ft_cub.h"
 
 void		vsl_sprite(double *z_buff, t_all *all, t_sprite sprite)
 {

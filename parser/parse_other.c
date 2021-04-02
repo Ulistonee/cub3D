@@ -1,18 +1,16 @@
-#include "../cub3D.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   parse_other.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rchalmer <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/04/02 17:03:06 by rchalmer          #+#    #+#             */
+/*   Updated: 2021/04/02 17:03:08 by rchalmer         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void				parse_color_util(t_all *all, char **line, int *dst)
-{
-	while (**line == ' ')
-		(*line)++;
-	if (ft_isdigit(**line))
-	{
-		if(*dst != -1)
-			handle_error("Too much data\n", all);
-		*dst = ft_atoi(*line);
-	}
-	while (ft_isdigit(**line))
-		(*line)++;
-}
+#include "../ft_cub.h"
 
 void				parse_floor(t_all *all, char *line)
 {
@@ -29,7 +27,8 @@ void				parse_floor(t_all *all, char *line)
 		line++;
 	if (*line != '\0')
 		handle_error("Invalid data format\n", all);
-	all->data.flr = create_rgb(all->data.flr_1, all->data.flr_2, all->data.flr_3 );
+	all->data.flr = create_rgb(all->data.flr_1,
+							all->data.flr_2, all->data.flr_3);
 }
 
 void				parse_ceil(t_all *all, char *line)
@@ -47,7 +46,8 @@ void				parse_ceil(t_all *all, char *line)
 		line++;
 	if (*line != '\0')
 		handle_error("Invalid data format\n", all);
-	all->data.ceil = create_rgb(all->data.ceil_1, all->data.ceil_2, all->data.ceil_3 );
+	all->data.ceil = create_rgb(all->data.ceil_1,
+							all->data.ceil_2, all->data.ceil_3);
 }
 
 void				parse_path(t_all *all, char *src, char **dst)
@@ -56,35 +56,36 @@ void				parse_path(t_all *all, char *src, char **dst)
 		handle_error("Too much data in texture field\n", all);
 	*dst = ft_strtrim(src, " ");
 }
+
 void				parse_res(t_all *all, char *line)
 {
-	while(*line == ' ')
-		line++;
-	if(ft_isdigit(*line))
-	{
-		if(all->data.res1 != 0)
-			handle_error("Too much data in resolution\n", all);
-		all->data.res1 = ft_atoi(line);
-	}
-	while(ft_isdigit(*line))
-		line++;
-	while(*line == ' ')
+	while (*line == ' ')
 		line++;
 	if (ft_isdigit(*line))
 	{
-		if(all->data.res2 != 0)
+		if (all->data.res1 != 0)
+			handle_error("Too much data in resolution\n", all);
+		all->data.res1 = ft_atoi(line);
+	}
+	while (ft_isdigit(*line))
+		line++;
+	while (*line == ' ')
+		line++;
+	if (ft_isdigit(*line))
+	{
+		if (all->data.res2 != 0)
 			handle_error("Too much data in resolution\n", all);
 		all->data.res2 = ft_atoi(line);
 	}
-	while(ft_isdigit(*line))
+	while (ft_isdigit(*line))
 		line++;
-	while(*line == ' ')
+	while (*line == ' ')
 		line++;
 	if (*line != '\0')
 		handle_error("Invalid resolution format\n", all);
 }
 
-void			parse_other(t_all *all, char *line)
+void				parse_other(t_all *all, char *line)
 {
 	if (*line == 'R' && *(line + 1) == ' ')
 		parse_res(all, line + 2);

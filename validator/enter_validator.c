@@ -1,4 +1,4 @@
-#include "../cub3D.h"
+#include "../ft_cub.h"
 
 
 void				restore_map(t_all *all)
