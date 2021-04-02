@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   cub3D.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rchalmer <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/04/02 15:35:19 by rchalmer          #+#    #+#             */
+/*   Updated: 2021/04/02 15:35:21 by rchalmer         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdarg.h>
@@ -179,7 +191,7 @@ typedef struct		s_all
 	t_pos			dot1;
 	t_pos			dot2;
 	t_pos_i			n;
-	t_pos			proj_coor;
+	t_pos			p_coor;
 }					t_all;
 
 typedef struct		s_ray

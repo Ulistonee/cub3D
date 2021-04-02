@@ -17,7 +17,6 @@ int			ft_atoi(const char *str)
 	int		i;
 	long	result;
 	int		positive;
-	long	lim;
 
 	i = 0;
 	result = 0;
@@ -33,8 +32,8 @@ int			ft_atoi(const char *str)
 	while (str[i] >= '0' && str[i] <= '9')
 	{
 		result = result * 10 + str[i] - '0';
-		if (result > 2147483647 && positive ||
-				result > 2147483648 && !positive)
+		if (((result > 2147483647) && positive) ||
+				((result > 2147483648) && !positive))
 			return (-1);
 		i++;
 	}

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   sprite_utils_part_two.c                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rchalmer <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/04/02 15:30:07 by rchalmer          #+#    #+#             */
+/*   Updated: 2021/04/02 15:30:09 by rchalmer         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "cub3D.h"
 
 void		init_spr(t_all *all, t_pos_i map)
@@ -7,7 +19,8 @@ void		init_spr(t_all *all, t_pos_i map)
 	i = 0;
 	while (i < all->spr_count)
 	{
-		if ((int)all->sarr[i].crd.x == map.x  && (int)all->sarr[i].crd.y == map.y)
+		if ((int)all->sarr[i].crd.x == map.x &&
+		(int)all->sarr[i].crd.y == map.y)
 			all->sarr[i].tag_vis = 1;
 		i++;
 	}
@@ -48,20 +61,17 @@ t_pos		v_sub(t_pos v1, t_pos v2)
 	return (res);
 }
 
-//t_pos		project_spr(t_pos m, t_pos n, t_pos d0, t_pos dot)
 t_pos		project_spr(t_all *all, t_pos dot)
 {
 	t_pos				proj;
 	t_pos				sub_dot;
 	double				det;
 
-//	sub_dot = v_sub(dot, d0);
-//	det = m.x * n.y - m.y * n.x;
-//	proj.x = 1 / det * (n.y * sub_dot.x - n.x * sub_dot.y);
-//	proj.y = 1 / det * (-m.y * sub_dot.x + m.x * sub_dot.y);
 	sub_dot = v_sub(dot, all->plr.pos);
 	det = all->plr.plane.x * all->plr.dir.y - all->plr.plane.y * all->plr.dir.x;
-	proj.x = 1 / det * (all->plr.dir.y * sub_dot.x - all->plr.dir.x * sub_dot.y);
-	proj.y = 1 / det * (-all->plr.plane.y * sub_dot.x + all->plr.plane.x * sub_dot.y);
+	proj.x = 1 / det * (all->plr.dir.y * sub_dot.x -
+			all->plr.dir.x * sub_dot.y);
+	proj.y = 1 / det * (-all->plr.plane.y * sub_dot.x +
+			all->plr.plane.x * sub_dot.y);
 	return (proj);
 }

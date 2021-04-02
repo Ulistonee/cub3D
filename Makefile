@@ -34,14 +34,13 @@ RM			= rm -f
 all:		init ${NAME}
 
 init:
-			@ echo "......init......"
 			make -C libft
 # 			make -C libmlx
 			make -C minilibx_opengl_20191021
 
 $(NAME):	$(OBJS) $(HEADER)
 #MAC:
-			$(CC) $(FLAGS) $? $(HEADER) -Llibft -lft -Lminilibx_opengl_20191021 -lmlx -framework OpenGL -framework AppKit
+			$(CC) $(FLAGS) $(OBJS) -Llibft -lft -Lminilibx_opengl_20191021 -lmlx -framework OpenGL -framework AppKit -o $(NAME)
 
 #Lnx:
 			#$(CC) $(FLAGS) $? $(HEADER) -Llibft -lft -Llibmlx -lmlx -lXext -lX11 -lbsd -lm -o $(NAME)
@@ -61,6 +60,12 @@ fclean:		clean
 			make -C libft fclean
 
 re:			fclean all
+
+norm:
+			norminettev2 $(SRCS)
+			norminettev2 $(HEADER)
+			norminettev2 libft/*.c
+			norminettev2 libft/*.h
 
 .PHONY:		all clean fclean re
 

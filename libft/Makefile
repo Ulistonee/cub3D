@@ -19,27 +19,25 @@ BONUS =  ft_lstnew.c
 OBJECTS = $(SRCS:.c=.o)
 OBJECTS_B = $(BONUS:.c=.o) 
 
-FLAGS = -Wall -Wextra -Werror -c
-
-INCLUDES = ./
+FLAGS = -Wall -Wextra -Werror
 
 all: $(NAME)
 
-.c.o.:
-	gcc $(FLAGS) -I$(INCLUDES) $< -o $(<:.c=.o)
+%.o : %.c
+	gcc $(FLAGS) -c $< -o $@
 
 $(NAME): $(OBJECTS)
-	ar rcs $(NAME) $(OBJECTS)
+	ar rcs $(NAME) $?
 
 bonus: $(OBJECTS_B)
 	ar rcs $(NAME) $(OBJECTS_B)
 	
 
 clean:
-	/bin/rm -f $(OBJECTS) $(OBJECTS_B)
+	rm -f $(OBJECTS) $(OBJECTS_B)
 
 fclean: clean
-	/bin/rm -f $(NAME)
+	rm -f $(NAME)
 
 re: fclean all
 

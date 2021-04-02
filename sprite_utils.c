@@ -94,9 +94,9 @@ void		draw_sprites(double *z_buf, t_all *all)
 	{
 		if (all->sarr[i].tag_vis == 1)
 		{
-			all->proj_coor = project_spr(all, all->sarr[i].crd);
-			all->proj_coor.x = (double)all->data.res1 / 2 *
-					(1 + all->proj_coor.x / all->proj_coor.y);
+			all->p_coor = project_spr(all, all->sarr[i].crd);
+			all->p_coor.x = (double)all->data.res1 / 2 *
+					(1 + all->p_coor.x / all->p_coor.y);
 			vsl_sprite(z_buf, all, all->sarr[i]);
 		}
 		i++;
@@ -104,22 +104,23 @@ void		draw_sprites(double *z_buf, t_all *all)
 }
 
 /*
- * we initialize a sprite, then we add it to the sarray. We include info about its coordinates.
- */
+** we initialize a sprite, then we add it to the sarray.
+** We include info about its coordinates.
+*/
+
 void		add_spr_to_arr(t_all *all, t_sprite **arr_m)
 {
 	t_sprite			*arr;
-	int 				i;
-	int 				x;
-	int 				y;
+	int					i;
+	int					x;
+	int					y;
 	t_sprite			spr;
 
-	if (!(arr = (t_sprite *)malloc(all->spr_count*sizeof(t_sprite))))
-		handle_error("Memory allocation error\n, Exit game\n", all); // we have to free this pointer
-	x = 0;
-	y = 0;
+	if (!(arr = (t_sprite *)malloc(all->spr_count * sizeof(t_sprite))))
+		handle_error("Memory allocation error\n, Exit game\n", all);
+	y = -1;
 	i = 0;
-	while (y < all->map.lines)
+	while (++y < all->map.lines)
 	{
 		x = 0;
 		while (all->map.map[y][x] != '\0')
@@ -128,12 +129,10 @@ void		add_spr_to_arr(t_all *all, t_sprite **arr_m)
 			{
 				spr.crd.x = x + 0.5;
 				spr.crd.y = y + 0.5;
-				arr[i] = spr;
-				i++;
+				arr[i++] = spr;
 			}
 			x++;
 		}
-		y++;
 	}
 	*arr_m = arr;
 }
