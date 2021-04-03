@@ -59,19 +59,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /snap/clion/145/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = /snap/clion/145/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/rchalmer/c/cub3D
+CMAKE_SOURCE_DIR = /home/ulistonee/cub3D
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/rchalmer/c/cub3D/cmake-build-debug
+CMAKE_BINARY_DIR = /home/ulistonee/cub3D/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,7 +79,7 @@ CMAKE_BINARY_DIR = /Users/rchalmer/c/cub3D/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/145/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -90,7 +90,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/145/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles /Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ulistonee/cub3D/cmake-build-debug/CMakeFiles /home/ulistonee/cub3D/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rchalmer/c/cub3D/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ulistonee/cub3D/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -1506,141 +1506,6 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/main.c.s
 .PHONY : main.c.s
 
-other/dist_dots.o: other/dist_dots.c.o
-
-.PHONY : other/dist_dots.o
-
-# target to build an object file
-other/dist_dots.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/other/dist_dots.c.o
-.PHONY : other/dist_dots.c.o
-
-other/dist_dots.i: other/dist_dots.c.i
-
-.PHONY : other/dist_dots.i
-
-# target to preprocess a source file
-other/dist_dots.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/other/dist_dots.c.i
-.PHONY : other/dist_dots.c.i
-
-other/dist_dots.s: other/dist_dots.c.s
-
-.PHONY : other/dist_dots.s
-
-# target to generate assembly for a file
-other/dist_dots.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/other/dist_dots.c.s
-.PHONY : other/dist_dots.c.s
-
-other/draw_map.o: other/draw_map.c.o
-
-.PHONY : other/draw_map.o
-
-# target to build an object file
-other/draw_map.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/other/draw_map.c.o
-.PHONY : other/draw_map.c.o
-
-other/draw_map.i: other/draw_map.c.i
-
-.PHONY : other/draw_map.i
-
-# target to preprocess a source file
-other/draw_map.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/other/draw_map.c.i
-.PHONY : other/draw_map.c.i
-
-other/draw_map.s: other/draw_map.c.s
-
-.PHONY : other/draw_map.s
-
-# target to generate assembly for a file
-other/draw_map.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/other/draw_map.c.s
-.PHONY : other/draw_map.c.s
-
-other/draw_player.o: other/draw_player.c.o
-
-.PHONY : other/draw_player.o
-
-# target to build an object file
-other/draw_player.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/other/draw_player.c.o
-.PHONY : other/draw_player.c.o
-
-other/draw_player.i: other/draw_player.c.i
-
-.PHONY : other/draw_player.i
-
-# target to preprocess a source file
-other/draw_player.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/other/draw_player.c.i
-.PHONY : other/draw_player.c.i
-
-other/draw_player.s: other/draw_player.c.s
-
-.PHONY : other/draw_player.s
-
-# target to generate assembly for a file
-other/draw_player.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/other/draw_player.c.s
-.PHONY : other/draw_player.c.s
-
-other/scaler.o: other/scaler.c.o
-
-.PHONY : other/scaler.o
-
-# target to build an object file
-other/scaler.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/other/scaler.c.o
-.PHONY : other/scaler.c.o
-
-other/scaler.i: other/scaler.c.i
-
-.PHONY : other/scaler.i
-
-# target to preprocess a source file
-other/scaler.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/other/scaler.c.i
-.PHONY : other/scaler.c.i
-
-other/scaler.s: other/scaler.c.s
-
-.PHONY : other/scaler.s
-
-# target to generate assembly for a file
-other/scaler.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/other/scaler.c.s
-.PHONY : other/scaler.c.s
-
-parser/is_map.o: parser/is_map.c.o
-
-.PHONY : parser/is_map.o
-
-# target to build an object file
-parser/is_map.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/parser/is_map.c.o
-.PHONY : parser/is_map.c.o
-
-parser/is_map.i: parser/is_map.c.i
-
-.PHONY : parser/is_map.i
-
-# target to preprocess a source file
-parser/is_map.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/parser/is_map.c.i
-.PHONY : parser/is_map.c.i
-
-parser/is_map.s: parser/is_map.c.s
-
-.PHONY : parser/is_map.s
-
-# target to generate assembly for a file
-parser/is_map.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/parser/is_map.c.s
-.PHONY : parser/is_map.c.s
-
 parser/parse_other.o: parser/parse_other.c.o
 
 .PHONY : parser/parse_other.o
@@ -1694,6 +1559,33 @@ parser/parser.s: parser/parser.c.s
 parser/parser.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/parser/parser.c.s
 .PHONY : parser/parser.c.s
+
+parser/parser_utils.o: parser/parser_utils.c.o
+
+.PHONY : parser/parser_utils.o
+
+# target to build an object file
+parser/parser_utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/parser/parser_utils.c.o
+.PHONY : parser/parser_utils.c.o
+
+parser/parser_utils.i: parser/parser_utils.c.i
+
+.PHONY : parser/parser_utils.i
+
+# target to preprocess a source file
+parser/parser_utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/parser/parser_utils.c.i
+.PHONY : parser/parser_utils.c.i
+
+parser/parser_utils.s: parser/parser_utils.c.s
+
+.PHONY : parser/parser_utils.s
+
+# target to generate assembly for a file
+parser/parser_utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/parser/parser_utils.c.s
+.PHONY : parser/parser_utils.c.s
 
 perp_vector.o: perp_vector.c.o
 
@@ -2044,27 +1936,15 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... other/dist_dots.o"
-	@echo "... other/dist_dots.i"
-	@echo "... other/dist_dots.s"
-	@echo "... other/draw_map.o"
-	@echo "... other/draw_map.i"
-	@echo "... other/draw_map.s"
-	@echo "... other/draw_player.o"
-	@echo "... other/draw_player.i"
-	@echo "... other/draw_player.s"
-	@echo "... other/scaler.o"
-	@echo "... other/scaler.i"
-	@echo "... other/scaler.s"
-	@echo "... parser/is_map.o"
-	@echo "... parser/is_map.i"
-	@echo "... parser/is_map.s"
 	@echo "... parser/parse_other.o"
 	@echo "... parser/parse_other.i"
 	@echo "... parser/parse_other.s"
 	@echo "... parser/parser.o"
 	@echo "... parser/parser.i"
 	@echo "... parser/parser.s"
+	@echo "... parser/parser_utils.o"
+	@echo "... parser/parser_utils.i"
+	@echo "... parser/parser_utils.s"
 	@echo "... perp_vector.o"
 	@echo "... perp_vector.i"
 	@echo "... perp_vector.s"

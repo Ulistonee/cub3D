@@ -15,24 +15,28 @@
 void				get_rotated(int keynumber, t_all *all)
 {
 	double		old_x;
+	double		cosi;
+	double		sinu;
 
+	cosi = cos(ANGLE);
+	sinu = sin(ANGLE);
 	if (keynumber == LEFT)
 	{
 		old_x = all->plr.dir.x;
-		all->plr.dir.x = old_x * cos(-ANGLE) - all->plr.dir.y * sin(-ANGLE);
-		all->plr.dir.y = old_x * sin(-ANGLE) + all->plr.dir.y * cos(-ANGLE);
+		all->plr.dir.x = old_x * cosi - all->plr.dir.y * -sinu;
+		all->plr.dir.y = old_x * -sinu + all->plr.dir.y * cosi;
 		old_x = all->plr.plane.x;
-		all->plr.plane.x = old_x * cos(-ANGLE) - all->plr.plane.y * sin(-ANGLE);
-		all->plr.plane.y = old_x * sin(-ANGLE) + all->plr.plane.y * cos(-ANGLE);
+		all->plr.plane.x = old_x * cosi - all->plr.plane.y * -sinu;
+		all->plr.plane.y = old_x * -sinu + all->plr.plane.y * cosi;
 	}
 	if (keynumber == RIGHT)
 	{
 		old_x = all->plr.dir.x;
-		all->plr.dir.x = old_x * cos(ANGLE) - all->plr.dir.y * sin(ANGLE);
-		all->plr.dir.y = old_x * sin(ANGLE) + all->plr.dir.y * cos(ANGLE);
+		all->plr.dir.x = old_x * cosi - all->plr.dir.y * sinu;
+		all->plr.dir.y = old_x * sinu + all->plr.dir.y * cosi;
 		old_x = all->plr.plane.x;
-		all->plr.plane.x = old_x * cos(ANGLE) - all->plr.plane.y * sin(ANGLE);
-		all->plr.plane.y = old_x * sin(ANGLE) + all->plr.plane.y * cos(ANGLE);
+		all->plr.plane.x = old_x * cosi - all->plr.plane.y * sinu;
+		all->plr.plane.y = old_x * sinu + all->plr.plane.y * cosi;
 	}
 }
 

@@ -24,7 +24,7 @@ void				check_screen_size(t_all *all)
 	int				width;
 	int				height;
 
-	mlx_get_screen_size(&width, &height);
+	mlx_get_screen_size(all->dsp.mlx, &width, &height);
 	if (all->data.res1 > width)
 		all->data.res1 = width;
 	if (all->data.res2 > height)

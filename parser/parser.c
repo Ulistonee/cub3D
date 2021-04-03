@@ -98,7 +98,7 @@ static void		validate_file(t_all *all, char *file_name)
 	res = get_next_line(fd, &line);
 	res = valid_algr(&line, res, fd, all);
 	if ((res != 0 || (line && *line != '\0') ||
-	all->map.lines == 0) && ft_free_mem(&line))
+			all->map.lines == 0) && ft_free_mem(&line))
 		handle_error("Invalid map\n", all);
 	close(fd);
 }

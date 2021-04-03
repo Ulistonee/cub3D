@@ -21,11 +21,11 @@
 # include <errno.h>
 # include <stdlib.h>
 # include <math.h>
-# include "minilibx_opengl_20191021/mlx.h"
+//# include "minilibx_opengl_20191021/mlx.h"
+# include "libmlx/mlx.h"
 # include "libft/libft.h"
 # include "get_next_line/get_next_line.h"
 # define VALID_SYMBOLS "102 NEWS"
-# define SCALE 45
 # define FOV_L 0.577
 # define STEP 0.1
 # define ANGLE 0.09
