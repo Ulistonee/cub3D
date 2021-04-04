@@ -8,299 +8,303 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/ulistonee/cub3D/cmake-build-debug"/>
+				<Option working_dir="/Users/rchalmer/c/cub3D/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/ulistonee/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ulistonee/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/ulistonee/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ulistonee/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/rchalmer/c/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/rchalmer/c/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/rchalmer/c/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/rchalmer/c/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/ulistonee/cub3D/cmake-build-debug"/>
+				<Option working_dir="/Users/rchalmer/c/cub3D/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/ulistonee/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ulistonee/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/ulistonee/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ulistonee/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/rchalmer/c/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/rchalmer/c/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/rchalmer/c/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/rchalmer/c/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/ulistonee/cub3D/cmake-build-debug"/>
+				<Option working_dir="/Users/rchalmer/c/cub3D/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/ulistonee/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ulistonee/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/ulistonee/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ulistonee/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/rchalmer/c/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/rchalmer/c/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/rchalmer/c/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/rchalmer/c/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="cub3D">
-				<Option output="/home/ulistonee/cub3D/cmake-build-debug/cub3D" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/ulistonee/cub3D/cmake-build-debug"/>
+				<Option output="/Users/rchalmer/c/cub3D/cmake-build-debug/cub3D" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/rchalmer/c/cub3D/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/ulistonee/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 cub3D"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ulistonee/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/ulistonee/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ulistonee/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/rchalmer/c/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 cub3D"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/rchalmer/c/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/rchalmer/c/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/rchalmer/c/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="cub3D/fast">
-				<Option output="/home/ulistonee/cub3D/cmake-build-debug/cub3D" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/ulistonee/cub3D/cmake-build-debug"/>
+				<Option output="/Users/rchalmer/c/cub3D/cmake-build-debug/cub3D" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/rchalmer/c/cub3D/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/ulistonee/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 cub3D/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ulistonee/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/ulistonee/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ulistonee/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/rchalmer/c/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 cub3D/fast"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/rchalmer/c/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/rchalmer/c/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/rchalmer/c/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="LibFT">
-				<Option output="/home/ulistonee/cub3D/cmake-build-debug/libLibFT.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/ulistonee/cub3D/cmake-build-debug"/>
+				<Option output="/Users/rchalmer/c/cub3D/cmake-build-debug/libLibFT.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/rchalmer/c/cub3D/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/ulistonee/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 LibFT"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ulistonee/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/ulistonee/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ulistonee/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/rchalmer/c/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 LibFT"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/rchalmer/c/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/rchalmer/c/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/rchalmer/c/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="LibFT/fast">
-				<Option output="/home/ulistonee/cub3D/cmake-build-debug/libLibFT.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/ulistonee/cub3D/cmake-build-debug"/>
+				<Option output="/Users/rchalmer/c/cub3D/cmake-build-debug/libLibFT.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/rchalmer/c/cub3D/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/ulistonee/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 LibFT/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ulistonee/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/ulistonee/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ulistonee/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/rchalmer/c/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 LibFT/fast"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/rchalmer/c/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/rchalmer/c/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/rchalmer/c/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/ulistonee/cub3D/create_rgb.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/create_rgb.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/display_utils.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/display_utils.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/draw_walls.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/draw_walls.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/ft_cub.h">
+		<Unit filename="/Users/rchalmer/c/cub3D/ft_cub.h">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/get_next_line/get_next_line.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/get_next_line/get_next_line.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/get_next_line/get_next_line.h">
+		<Unit filename="/Users/rchalmer/c/cub3D/get_next_line/get_next_line.h">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/get_next_line/get_next_line_utils.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/get_next_line/get_next_line_utils.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/handle_error.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/handle_error.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/hooks.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/hooks.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/init_game.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/init_game.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/key_hook.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/key_hook.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/len_of_vec.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/len_of_vec.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_atoi.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_atoi.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_bzero.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_bzero.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_calloc.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_calloc.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_free_mem.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_free_mem.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_isalnum.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_isalnum.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_isalpha.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_isalpha.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_isascii.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_isascii.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_isdigit.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_isdigit.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_isprint.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_isprint.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_itoa.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_itoa.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_itoa_base.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_itoa_base.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_itoa_u.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_itoa_u.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_itoa_uhex.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_itoa_uhex.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_lstnew.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_lstnew.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_memccpy.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_memccpy.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_memchr.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_memchr.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_memcmp.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_memcmp.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_memcpy.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_memcpy.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_memmove.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_memmove.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_memset.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_memset.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_putchar_fd.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_putchar_fd.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_putendl_fd.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_putendl_fd.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_putnbr_fd.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_putnbr_fd.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_putstr_fd.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_putstr_fd.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_split.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_split.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_strchr.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_strchr.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_strdup.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_strdup.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_strjoin.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_strjoin.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_strlcat.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_strlcat.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_strlcpy.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_strlcpy.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_strlen.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_strlen.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_strmapi.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_strmapi.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_strncmp.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_strncmp.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_strnstr.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_strnstr.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_strrchr.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_strrchr.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_strtrim.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_strtrim.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_substr.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_substr.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_tolower.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_tolower.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/libft/ft_toupper.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/libft/ft_toupper.c">
 			<Option target="LibFT"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/main.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/main.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/parser/parse_other.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/parser/parse_other.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/parser/parser.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/parser/parser.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/parser/parser_utils.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/parser/parser_utils.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/perp_vector.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/perp_vector.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/raycast.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/raycast.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/sprite_utils.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/sprite_utils.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/sprite_utils_part_three.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/sprite_utils_part_three.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/sprite_utils_part_two.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/sprite_utils_part_two.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/take_screenshot.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/take_screenshot.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/validator/enter_validator.c">
+		<Unit filename="/Users/rchalmer/c/cub3D/validator/enter_validator.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/home/ulistonee/cub3D/CMakeLists.txt">
+		<Unit filename="/Users/rchalmer/c/cub3D/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

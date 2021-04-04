@@ -21,8 +21,7 @@
 # include <errno.h>
 # include <stdlib.h>
 # include <math.h>
-//# include "minilibx_opengl_20191021/mlx.h"
-# include "libmlx/mlx.h"
+# include "minilibx_opengl_20191021/mlx.h"
 # include "libft/libft.h"
 # include "get_next_line/get_next_line.h"
 # define VALID_SYMBOLS "102 NEWS"
@@ -62,12 +61,12 @@ typedef struct		s_image
 	int				bpp;
 	int				len;
 	int				end;
-	void			*mlx;
-	void			*mlx_win;
+//	void			*mlx;
+//	void			*mlx_win;
 	int				h;
 	int				w;
 	int				tag;
-	int				scl;
+//	int				scl;
 }					t_img;
 
 typedef struct		s_tex

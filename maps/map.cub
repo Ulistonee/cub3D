@@ -3,7 +3,7 @@ SO textures/mc_bg.xpm
 NO textures/mc_bg.xpm
 WE textures/mc_bg.xpm
 EA textures/mc_bg.xpm
-S textures/sprite.xpm
+S textures/sprite_mc.xpm
 C 85,     85,        85
 F 51,    102,    100
 

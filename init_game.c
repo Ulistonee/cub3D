@@ -75,26 +75,16 @@ int					set_player_plane(t_all *all, int x, int y)
 
 int					set_player_dir(t_all *all, int x, int y)
 {
+	all->plr.dir.x = 0;
+	all->plr.dir.y = 0;
 	if (all->map.map[y][x] == 'N')
-	{
-		all->plr.dir.x = 0;
 		all->plr.dir.y = -1;
-	}
-	if (all->map.map[y][x] == 'E')
-	{
+	else if (all->map.map[y][x] == 'E')
 		all->plr.dir.x = 1;
-		all->plr.dir.y = 0;
-	}
-	if (all->map.map[y][x] == 'W')
-	{
+	else if (all->map.map[y][x] == 'W')
 		all->plr.dir.x = -1;
-		all->plr.dir.y = 0;
-	}
-	if (all->map.map[y][x] == 'S')
-	{
-		all->plr.dir.x = 0;
+	else if (all->map.map[y][x] == 'S')
 		all->plr.dir.y = 1;
-	}
 	all->plr.dir.x += 0.001;
 	all->plr.dir.y += 0.001;
 	return (1);
