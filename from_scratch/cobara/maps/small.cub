@@ -1,0 +1,18 @@
+R 1920 500
+NO ./textures/WALL_3.xpm
+SO ./textures/cyber.xpm
+WE ./textures/WALL_1.xpm
+EA ./textures/WALL_4.xpm
+S ./textures/SPRITE.xpm
+F 220,100,0
+C 225,30,0
+
+
+1111
+1221
+1221
+1221
+1N21
+1221
+1221
+1111
