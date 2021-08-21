@@ -1,4 +1,0 @@
-8. flags WWW
-9. redo Makefile
-11. redo screenshot with flag --sav
-12. free problems with *spr_arr
